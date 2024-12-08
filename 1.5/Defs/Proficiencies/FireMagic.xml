@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--Common-->
+
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_FireI</defName>
+		<label>LLRoM_FireI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_FireMagic</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>200</costPractical>
+		<prerequisites>
+			<li>Magic_Insight</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_FireII</defName>
+		<label>LLRoM_FireII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_FireMagic</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_FireI</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+
+<!--Uncommon-->
+
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
+		<defName>LLRoM_FireIII</defName>
+		<label>LLRoM_FireIII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_FireMagic</category>
+		<description>Temp</description>
+		<costTheoretical>1000</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_FireII</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+<!--Rare-->
+</Defs>

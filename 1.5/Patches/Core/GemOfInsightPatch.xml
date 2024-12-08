@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--On Use Proficiency Gain Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="GemstoneOfInsight_Might"]</xpath>
+		<value>
+			<li Class="LLRoM.GemOfInsightProficiencyExtension">
+				<Proficiency>Physical_Insight</Proficiency>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="GemstoneOfInsight_Magic"]</xpath>
+		<value>
+			<li Class="LLRoM.GemOfInsightProficiencyExtension">
+				<Proficiency>Magic_Insight</Proficiency>
+			</li>
+		</value>
+	</Operation>
+	<!--Crafting Proficiency Patch-->
+</Patch>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--Common-->
+
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+		<defName>LLRoM_ScribI</defName>
+		<label>LLRoM_ScribI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<viewerX>1</viewerX>
+		<viewerY>1</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+
+<!--Uncommon-->
+
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
+		<defName>LLRoM_ScribII</defName>
+		<label>LLRoM_ScribII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_ScribI</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>1</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
+		<defName>LLRoM_ScribIII</defName>
+		<label>LLRoM_ScribIII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_ScribII</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>1</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+<!--Rare-->
+</Defs>

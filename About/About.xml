@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+		<name>LLARoMdev</name>
+		<packageId>albinogod.LLARoMdev</packageId>
+		<author>albinogod</author>
+		<supportedVersions>
+			<li>1.5</li>
+		</supportedVersions>
+		<modDependencies>
+			<li>
+				<packageId>GhostData.lifelessons</packageId>
+				<displayName>Life Lessons</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2920678419</steamWorkshopUrl>
+			</li>
+			<li>
+				<packageId>Torann.ARimworldOfMagic</packageId>
+				<displayName>A RimWorld of Magic</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1201382956</steamWorkshopUrl>
+			</li>
+		</modDependencies>
+		<loadAfter>
+			<li>GhostData.lifelessons</li>
+			<li>Torann.ARimworldOfMagic</li>
+			<li>Kure.AROM</li>
+			<li>ghostdata.lifelessons.medicalmishaps</li>
+			<li>ludeon.rimworld.biotech</li>
+		</loadAfter>
+		<description>To Be Written</description>
+</ModMetaData>

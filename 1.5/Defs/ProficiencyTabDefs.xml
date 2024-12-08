@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.ProficiencyTabDef>
+		<defName>LLROM_Magic</defName>
+		<label>Magic</label>
+		<description>Temp</description>
+	</LifeLessons.ProficiencyTabDef>
+	
+	<LifeLessons.ProficiencyTabDef>
+		<defName>LLROM_Might</defName>
+		<label>Might</label>
+		<description>Temp</description>
+	</LifeLessons.ProficiencyTabDef>
+	
+	<LifeLessons.ProficiencyTabDef>
+		<defName>LLROM_Arcane</defName>
+		<label>Arcane</label>
+		<description>Temp</description>
+	</LifeLessons.ProficiencyTabDef>
+</Defs>

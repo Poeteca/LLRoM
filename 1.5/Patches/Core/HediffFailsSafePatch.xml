@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Makes sure Magic and Might users have the basic proficiencies needed to not softlock-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="TM_MightUserHD"]/comps</xpath>
+		<value>
+			<li Class="LLRoM.HediffCompProperties_teacher">
+				<proficiencies>
+					<li>Physical_Insight</li>
+				</proficiencies>
+				<experienceType>Practical</experienceType>
+				<learnrate>1</learnrate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_PowerNode"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

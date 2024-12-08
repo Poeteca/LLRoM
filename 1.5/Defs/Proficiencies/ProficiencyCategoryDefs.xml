@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_BasicMagic</defName>
+		<label>Basic Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>70</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_MagicCrafting</defName>
+		<label>Magic Crafting</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>71</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_MightSkills</defName>
+		<label>Might Skills</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>72</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_MixedMagic</defName>
+		<label>Mixed Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>73</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_FireMagic</defName>
+		<label>Fire Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>74</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+</Defs>

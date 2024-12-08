@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<LLARoM_LearnMagicMissingProficiencies>{0} is not able to understand that tome.</LLARoM_LearnMagicMissingProficiencies>
+	<LLARoM_LearnMightMissingProficiencies>{0} is not able to understand that manual.</LLARoM_LearnMightMissingProficiencies>
+	<LLARoM_LearnSpellMissingProficiencies>{0} is not able to understand that scroll.</LLARoM_LearnSpellMissingProficiencies>
+	<LLAROM_GemOfInsight>{USER_labelShort} used a gem of insight to learn {1}.</LLAROM_GemOfInsight>
+</LanguageData>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--Common-->
+
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>Magic_Insight</defName>
+		<label>Magic Insight</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<viewerX>1</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+
+<!--Uncommon-->
+
+<!--Rare-->
+</Defs>
