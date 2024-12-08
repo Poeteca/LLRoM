@@ -20,6 +20,7 @@
 				<requirements>
 					<li>LLRoM_ScribII</li>
 					<li>LLRoM_FireII</li>
+					<li>LLRoM_Offensive</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
 			</li>
@@ -32,19 +33,71 @@
 				<requirements>
 					<li>LLRoM_ScribIII</li>
 					<li>LLRoM_FireIII</li>
+					<li>LLRoM_Offensive</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
 			</li>
 		</value>
 	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Torn_BookOfInnerFire"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedArcane>1</UnfinishedArcane>
+			</costList>
+			<recipeMaker>		    
+				<workAmount>2500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfInnerFire"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>100</RawMagicyte>
+				<UnfinishedAdvArcane>1</UnfinishedAdvArcane>
+			</costList>
+			<recipeMaker>
+				<workAmount>3500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>6</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+				<researchPrerequisite>
+					<li>TM_AdvancedScribing</li>
+				</researchPrerequisite>
+			</recipeMaker>
+		</value>
+	</Operation>
 	<!--Ability Cast Patch-->
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_RayofHope" or defName="TM_Firebolt"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_RayofHope"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>Magic_Insight</li>
 					<li>LLRoM_FireI</li>
+					<li>LLRoM_Defensive</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -52,13 +105,28 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_RayofHope_I" or defName="TM_RayofHope_II" or defName="TM_Fireball" or defName="TM_Fireclaw"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Firebolt"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_FireI</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Fireball" or defName="TM_Fireclaw"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>Magic_Insight</li>
 					<li>LLRoM_FireI</li>
 					<li>LLRoM_FireII</li>
+					<li>LLRoM_Offensive</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -66,7 +134,23 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_RayofHope_III" or defName="TM_Firestorm"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_RayofHope_I" or defName="TM_RayofHope_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_FireI</li>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_Defensive</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_RayofHope_III"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
@@ -74,6 +158,24 @@
 					<li>LLRoM_FireI</li>
 					<li>LLRoM_FireII</li>
 					<li>LLRoM_FireIII</li>
+					<li>LLRoM_Defensive</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Firestorm"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_FireI</li>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_FireIII</li>
+					<li>LLRoM_Offensive</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -87,6 +189,8 @@
 			<li Class="LLRoM.HediffCompProperties_teacher">
 				<proficiencies>
 					<li>LLRoM_FireI</li>
+					<li>LLRoM_Defensive</li>
+					<li>LLRoM_DefensiveBuff</li>
 				</proficiencies>
 				<experienceType>Practical</experienceType>
 				<learnrate>.1</learnrate>

@@ -5,5 +5,28 @@
 
 <!--Uncommon-->
 
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
+		<defName>LLRoM_MixFireIce</defName>
+		<label>LLRoM_MixFireIce</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MixedMagic</category>
+		<description>Temp</description>
+		<costTheoretical>2000</costTheoretical>
+		<prerequisites>
+			<li>LLRoM_FireII</li>
+			<li>Thermodynamics</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>4</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
 <!--Rare-->
 </Defs>

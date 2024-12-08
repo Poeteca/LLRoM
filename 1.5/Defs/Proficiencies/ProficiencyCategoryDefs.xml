@@ -40,4 +40,12 @@
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>74</priority>
 	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_MightandMagic</defName>
+		<label>Fire Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>69</priority>
+	</LifeLessons.ProficiencyCategoryDef>
 </Defs>

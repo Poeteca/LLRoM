@@ -17,7 +17,7 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>2</viewerY>
+		<viewerY>3</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -40,7 +40,7 @@
 			<li>LLRoM_FireI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>2</viewerY>
+		<viewerY>3</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -50,6 +50,8 @@
 	</LifeLessons.ProficiencyDef>
 
 <!--Uncommon-->
+
+<!--Rare-->
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_FireIII</defName>
@@ -62,10 +64,10 @@
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_FireII</li>
+			<li>LLRoM_MixFireIce</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
-		<viewerY>2</viewerY>
+		<viewerX>5</viewerX>
+		<viewerY>3</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>

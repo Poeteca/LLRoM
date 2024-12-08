@@ -13,15 +13,15 @@
 			</li>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_PowerNode"]</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="TM_MagicUserHD"]/comps</xpath>
 		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Physical_Insight</li>
-				</Proficiencies>
+			<li Class="LLRoM.HediffCompProperties_teacher">
+				<proficiencies>
+					<li>Magic_Insight</li>
+				</proficiencies>
 				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
+				<learnrate>1</learnrate>
 			</li>
 		</value>
 	</Operation>
