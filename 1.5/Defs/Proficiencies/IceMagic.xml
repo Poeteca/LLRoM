@@ -9,7 +9,7 @@
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_FireMagic</category>
+		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
@@ -32,7 +32,7 @@
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_FireMagic</category>
+		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
@@ -59,7 +59,7 @@
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_FireMagic</category>
+		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>

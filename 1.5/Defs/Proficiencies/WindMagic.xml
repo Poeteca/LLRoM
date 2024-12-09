@@ -7,7 +7,7 @@
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_FireMagic</category>
+		<category>ProficiencyCategory_WindMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
@@ -30,7 +30,7 @@
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_FireMagic</category>
+		<category>ProficiencyCategory_WindMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>

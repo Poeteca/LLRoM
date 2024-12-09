@@ -72,4 +72,12 @@
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>76</priority>
 	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_TransportationMagic</defName>
+		<label>Transportation Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>77</priority>
+	</LifeLessons.ProficiencyCategoryDef>
 </Defs>

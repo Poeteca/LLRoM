@@ -3,20 +3,20 @@
 <Defs>
 <!--Common-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_LightningI</defName>
-		<label>LLRoM_LightningI</label>
+		<defName>LLRoM_Summon</defName>
+		<label>LLRoM_Summon</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_LightningMagic</category>
+		<category>ProficiencyCategory_TransportationMagic</category>
 		<description>Temp</description>
-		<costTheoretical>200</costTheoretical>
-		<costPractical>200</costPractical>
+		<costTheoretical>100</costTheoretical>
+		<costPractical>50</costPractical>
 		<prerequisites>
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>7</viewerY>
+		<viewerY>8</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -26,20 +26,20 @@
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_LightningII</defName>
-		<label>LLRoM_LightningII</label>
+		<defName>LLRoM_TeleportationI</defName>
+		<label>LLRoM_TeleportationI</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_LightningMagic</category>
+		<category>ProficiencyCategory_TransportationMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_LightningI</li>
+			<li>LLRoM_Summon</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>7</viewerY>
+		<viewerY>8</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -48,22 +48,22 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
-<!--Rare-->
-	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
-		<defName>LLRoM_LightningIII</defName>
-		<label>LLRoM_LightningIII</label>
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_TeleportationII</defName>
+		<label>LLRoM_TeleportationII</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_LightningMagic</category>
+		<category>ProficiencyCategory_TransportationMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_LightningII</li>
+			<li>LLRoM_TeleportationI</li>
+			<li>QuantumPhysics</li>
 		</prerequisites>
-		<viewerX>5</viewerX>
-		<viewerY>7</viewerY>
+		<viewerX>4</viewerX>
+		<viewerY>9</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -71,4 +71,5 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
+<!--Rare-->
 </Defs>
