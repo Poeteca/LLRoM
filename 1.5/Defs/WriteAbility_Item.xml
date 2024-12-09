@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="ResourceBase" Name="LLRoM_ScrollBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<thingCategories>
+			<li>TM_Scrolls</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>BodyPartOrImplant</li>
+			<li>Arcane</li>
+			<li>ArcaneSrolls</li>
+		</tradeTags>
+		<tradeability>All</tradeability>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MarketValue>777</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0.0001</DeteriorationRate>
+			<Beauty>10</Beauty>
+			<SellPriceFactor>.8</SellPriceFactor>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<stackLimit>25</stackLimit>
+	</ThingDef>
+
+	<ThingDef ParentName="LLRoM_ScrollBase">
+		<defName>LLRoM_ScrollBasic</defName>
+		<label>Basic Blank Scroll</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>Used to make basic spell scrolls.</description>
+		<category>Item</category>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		</statBases>
+		<comps>
+		<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<costList>
+			<RawMagicyte>50</RawMagicyte>
+			<Cloth>30</Cloth>
+		</costList>
+		<recipeMaker>		    
+			<workAmount>1000</workAmount>
+			<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>TableMagicPrinter</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+			<researchPrerequisite>
+				<li>TM_MagicScribing</li>
+			</researchPrerequisite>
+		</recipeMaker>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Books/scroll</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLRoM_ScrollBase">
+		<defName>LLRoM_ScrollAdvance</defName>
+		<label>Advance Blank Scroll</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>Used to make advance spell scrolls.</description>
+		<category>Item</category>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>750</MarketValue>
+		</statBases>
+		<comps>
+		<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<costList>
+			<RawMagicyte>100</RawMagicyte>
+			<DevilstrandCloth>45</DevilstrandCloth>
+		</costList>
+		<recipeMaker>		    
+			<workAmount>1000</workAmount>
+			<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>TableMagicPrinter</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+			<researchPrerequisite>
+				<li>TM_MagicScribing</li>
+			</researchPrerequisite>
+		</recipeMaker>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Books/scroll</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLRoM_ScrollBase">
+		<defName>LLRoM_ScrollMaster</defName>
+		<label>Master Blank Scroll</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>Used to make master spell scrolls.</description>
+		<category>Item</category>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>750</MarketValue>
+		</statBases>
+		<comps>
+		<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<costList>
+			<RawMagicyte>150</RawMagicyte>
+			<DevilstrandCloth>90</DevilstrandCloth>
+		</costList>
+		<recipeMaker>		    
+			<workAmount>1000</workAmount>
+			<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>TableMagicPrinter</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+			<researchPrerequisite>
+				<li>TM_MagicScribing</li>
+			</researchPrerequisite>
+		</recipeMaker>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Books/scroll</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribIII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

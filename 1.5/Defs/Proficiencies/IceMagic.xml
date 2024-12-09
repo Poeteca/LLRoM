@@ -4,8 +4,8 @@
 <!--Common-->
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_FireI</defName>
-		<label>LLRoM_FireI</label>
+		<defName>LLRoM_IceI</defName>
+		<label>LLRoM_IceI</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
@@ -17,7 +17,7 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>5</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -27,8 +27,8 @@
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_FireII</defName>
-		<label>LLRoM_FireII</label>
+		<defName>LLRoM_IceII</defName>
+		<label>LLRoM_IceII</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
@@ -37,10 +37,10 @@
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_FireI</li>
+			<li>LLRoM_IceI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>5</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -48,14 +48,14 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
-
+	
 <!--Uncommon-->
 
 <!--Rare-->
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
-		<defName>LLRoM_FireIII</defName>
-		<label>LLRoM_FireIII</label>
+		<defName>LLRoM_IceIII</defName>
+		<label>LLRoM_IceIII</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
@@ -67,7 +67,7 @@
 			<li>LLRoM_MixFireIce</li>
 		</prerequisites>
 		<viewerX>5</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>5</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -75,5 +75,4 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
-	
 </Defs>

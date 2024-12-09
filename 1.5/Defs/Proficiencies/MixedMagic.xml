@@ -16,6 +16,7 @@
 		<costTheoretical>2000</costTheoretical>
 		<prerequisites>
 			<li>LLRoM_FireII</li>
+			<li>LLRoM_IceII</li>
 			<li>Thermodynamics</li>
 		</prerequisites>
 		<viewerX>4</viewerX>

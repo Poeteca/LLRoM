@@ -91,6 +91,29 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_OffensiveLargeArea</defName>
+		<label>LLRoM_OffensiveLargeArea</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>100</costTheoretical>
+		<costPractical>50</costPractical>
+		<prerequisites>
+			<li>LLRoM_Offensive</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 
 <!--Rare-->

@@ -2,10 +2,9 @@
 
 <Defs>
 <!--Common-->
-
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_FireI</defName>
-		<label>LLRoM_FireI</label>
+		<defName>LLRoM_LightningI</defName>
+		<label>LLRoM_LightningI</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
@@ -17,7 +16,7 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>7</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -27,8 +26,8 @@
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_FireII</defName>
-		<label>LLRoM_FireII</label>
+		<defName>LLRoM_LightningII</defName>
+		<label>LLRoM_LightningII</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
@@ -37,10 +36,10 @@
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_FireI</li>
+			<li>LLRoM_LightningI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>7</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -48,14 +47,11 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
-
 <!--Uncommon-->
-
 <!--Rare-->
-
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
-		<defName>LLRoM_FireIII</defName>
-		<label>LLRoM_FireIII</label>
+		<defName>LLRoM_LightningIII</defName>
+		<label>LLRoM_LightningIII</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
@@ -64,10 +60,10 @@
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_MixFireIce</li>
+			<li>LLRoM_LightningII</li>
 		</prerequisites>
 		<viewerX>5</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>7</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -75,5 +71,4 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
-	
 </Defs>

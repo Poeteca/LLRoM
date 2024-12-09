@@ -2,12 +2,9 @@
 
 <Patch>
 <!--Removes the ability to write random class books-->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="UnfinishedArcane" or defName="UnfinishedAdvArcane" or defName="UnfinishedMartial"]/comps</xpath>
-	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UnfinishedArcane" or defName="UnfinishedAdvArcane" or defName="UnfinishedMartial"]</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="UnfinishedArcane" or defName="UnfinishedAdvArcane" or defName="UnfinishedMartial"]/comps</xpath>
 		<value>
 			<comps Class="CompProperties_Usable" Inherit="false">
 				<li Class="CompProperties_Forbiddable" />

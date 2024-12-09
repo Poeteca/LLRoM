@@ -43,9 +43,33 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MightandMagic</defName>
-		<label>Fire Magic</label>
+		<label>Might and Magic</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>69</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_IceMagic</defName>
+		<label>Ice Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>75</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_WindMagic</defName>
+		<label>Wind Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>75</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_LightningMagic</defName>
+		<label>Lightning Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>76</priority>
 	</LifeLessons.ProficiencyCategoryDef>
 </Defs>
