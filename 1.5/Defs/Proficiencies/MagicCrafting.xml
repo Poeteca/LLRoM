@@ -21,7 +21,138 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
-
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+		<defName>LLRoM_MagicRefinement</defName>
+		<label>LLRoM_MagicRefinement</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<viewerX>1</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+		<defName>LLRoM_MagicEnchantingI</defName>
+		<label>LLRoM_MagicEnchantingI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_ScribI</li>
+			<li>LLRoM_MagicRefinement</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+		<defName>LLRoM_MagicConstructsI</defName>
+		<label>LLRoM_MagicConstructsI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_MagicRefinement</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>3</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+		<defName>LLRoM_MagicMaterials</defName>
+		<label>LLRoM_MagicMaterials</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_MagicRefinement</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>4</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+		<defName>LLRoM_MagicMetalWorking</defName>
+		<label>LLRoM_MagicMetalWorking</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_MagicRefinement</li>
+			<li>Threadcraft</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>5</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+		<defName>LLRoM_MagicWeaving</defName>
+		<label>LLRoM_MagicWeaving</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_MagicRefinement</li>
+			<li>MetalWorking</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>6</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
@@ -68,5 +199,73 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
+		<defName>LLRoM_MagicEnchantingII</defName>
+		<label>LLRoM_MagicEnchantingII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_ScribII</li>
+			<li>LLRoM_MagicEnchantingI</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
 <!--Rare-->
+
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneRare">
+		<defName>LLRoM_MagicConstructsII</defName>
+		<label>LLRoM_MagicConstructsII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_MagicConstructsI</li>
+			<li>LLRoM_MagicEnchantingI</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>3</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneRare">
+		<defName>LLRoM_DemonicMaterials</defName>
+		<label>LLRoM_DemonicMaterials</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MagicCrafting</category>
+		<description>Temp</description>
+		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>LLRoM_MagicMaterials</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>4</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 </Defs>

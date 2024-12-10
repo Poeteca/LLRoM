@@ -70,6 +70,29 @@
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_DefensiveBarrier</defName>
+		<label>LLRoM_DefensiveBarrier</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>200</costPractical>
+		<prerequisites>
+			<li>LLRoM_Defensive</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>2</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_Offensive</defName>
 		<label>LLRoM_Offensive</label>
 		<generationRules>
@@ -83,7 +106,7 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>2</viewerY>
+		<viewerY>4</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -106,7 +129,193 @@
 			<li>LLRoM_Offensive</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>2</viewerY>
+		<viewerY>4</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_OffensiveDeBuff</defName>
+		<label>LLRoM_OffensiveDeBuff</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>100</costTheoretical>
+		<costPractical>50</costPractical>
+		<prerequisites>
+			<li>LLRoM_Offensive</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>3</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_RawI</defName>
+		<label>LLRoM_RawI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>200</costPractical>
+		<prerequisites>
+			<li>Magic_Insight</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>23</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_BindingI</defName>
+		<label>LLRoM_BindingI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>200</costPractical>
+		<prerequisites>
+			<li>Magic_Insight</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>26</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_RawII</defName>
+		<label>LLRoM_RawII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>600</costTheoretical>
+		<costPractical>400</costPractical>
+		<prerequisites>
+			<li>LLRoM_RawI</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>23</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_TimeI</defName>
+		<label>LLRoM_TimeI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_RawI</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>22</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_BindingII</defName>
+		<label>LLRoM_BindingII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_RawI</li>
+			<li>LLRoM_BindingI</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>26</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_EmotionI</defName>
+		<label>LLRoM_EmotionI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>200</costPractical>
+		<prerequisites>
+			<li>Magic_Insight</li>
+			<li>Psychology</li>
+		</prerequisites>
+		<viewerX>2</viewerX>
+		<viewerY>21</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_EmotionII</defName>
+		<label>LLRoM_EmotionII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_EmotionI</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>21</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -115,6 +324,98 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
+		<defName>LLRoM_TimeII</defName>
+		<label>LLRoM_TimeII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>1000</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_TimeI</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>21</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
+		<defName>LLRoM_ChaosI</defName>
+		<label>LLRoM_ChaosI</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>1000</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_RawII</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>23</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 
 <!--Rare-->
+
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
+		<defName>LLRoM_TimeIII</defName>
+		<label>LLRoM_TimeIII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>1500</costTheoretical>
+		<costPractical>1000</costPractical>
+		<prerequisites>
+			<li>LLRoM_TimeII</li>
+		</prerequisites>
+		<viewerX>5</viewerX>
+		<viewerY>21</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
+		<defName>LLRoM_ChaosII</defName>
+		<label>LLRoM_ChaosII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_BasicMagic</category>
+		<description>Temp</description>
+		<costTheoretical>1500</costTheoretical>
+		<costPractical>1000</costPractical>
+		<prerequisites>
+			<li>LLRoM_ChaosI</li>
+			<li>QuantumPhysics</li>
+		</prerequisites>
+		<viewerX>5</viewerX>
+		<viewerY>22</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 </Defs>

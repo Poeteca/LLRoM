@@ -17,7 +17,7 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>5</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -40,7 +40,7 @@
 			<li>LLRoM_FireI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>5</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -67,7 +67,7 @@
 			<li>LLRoM_MixFireIce</li>
 		</prerequisites>
 		<viewerX>5</viewerX>
-		<viewerY>3</viewerY>
+		<viewerY>5</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>

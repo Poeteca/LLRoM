@@ -20,7 +20,55 @@
 			<li>Thermodynamics</li>
 		</prerequisites>
 		<viewerX>4</viewerX>
-		<viewerY>4</viewerY>
+		<viewerY>6</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
+		<defName>LLRoM_MixWindFireIce</defName>
+		<label>LLRoM_MixWindFireIce</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MixedMagic</category>
+		<description>Temp</description>
+		<costTheoretical>2000</costTheoretical>
+		<prerequisites>
+			<li>LLRoM_FireII</li>
+			<li>LLRoM_IceII</li>
+			<li>LLRoM_WindII</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>8</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
+		<defName>LLRoM_MixLightLightning</defName>
+		<label>LLRoM_MixLightLightning</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MixedMagic</category>
+		<description>Temp</description>
+		<costTheoretical>2000</costTheoretical>
+		<prerequisites>
+			<li>Electrodynamics</li>
+			<li>LLRoM_LightningII</li>
+			<li>LLRoM_LightII</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>10</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>

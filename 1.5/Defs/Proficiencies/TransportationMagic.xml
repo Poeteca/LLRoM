@@ -16,7 +16,30 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>8</viewerY>
+		<viewerY>14</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_SummonII</defName>
+		<label>LLRoM_SummonII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_TransportationMagic</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_Summon</li>
+		</prerequisites>
+		<viewerX>3</viewerX>
+		<viewerY>14</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -39,7 +62,7 @@
 			<li>LLRoM_Summon</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>8</viewerY>
+		<viewerY>13</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -48,7 +71,7 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
-	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_TeleportationII</defName>
 		<label>LLRoM_TeleportationII</label>
 		<generationRules>
@@ -60,10 +83,10 @@
 		<costPractical>600</costPractical>
 		<prerequisites>
 			<li>LLRoM_TeleportationI</li>
-			<li>QuantumPhysics</li>
+			<li>ExoticPhysics</li>
 		</prerequisites>
 		<viewerX>4</viewerX>
-		<viewerY>9</viewerY>
+		<viewerY>12</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>

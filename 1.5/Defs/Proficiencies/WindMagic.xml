@@ -15,7 +15,7 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>6</viewerY>
+		<viewerY>8</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -38,7 +38,7 @@
 			<li>LLRoM_WindI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>6</viewerY>
+		<viewerY>8</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -50,5 +50,26 @@
 <!--Uncommon-->
 
 <!--Rare-->
-
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
+		<defName>LLRoM_WindIII</defName>
+		<label>LLRoM_WindIII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_WindMagic</category>
+		<description>Temp</description>
+		<costTheoretical>1000</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_MixWindFireIce</li>
+		</prerequisites>
+		<viewerX>5</viewerX>
+		<viewerY>8</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 </Defs>

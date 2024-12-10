@@ -16,7 +16,7 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
-		<viewerY>7</viewerY>
+		<viewerY>9</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -39,7 +39,7 @@
 			<li>LLRoM_LightningI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>7</viewerY>
+		<viewerY>9</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -60,10 +60,10 @@
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_LightningII</li>
+			<li>LLRoM_MixLightLightning</li>
 		</prerequisites>
 		<viewerX>5</viewerX>
-		<viewerY>7</viewerY>
+		<viewerY>9</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>

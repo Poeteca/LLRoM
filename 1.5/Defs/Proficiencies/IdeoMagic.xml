@@ -2,45 +2,21 @@
 
 <Defs>
 <!--Common-->
-
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_IceI</defName>
-		<label>LLRoM_IceI</label>
+		<defName>LLRoM_HolyI</defName>
+		<label>LLRoM_HolyI</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_IceMagic</category>
+		<category>ProficiencyCategory_IdeoMagic</category>
 		<description>Temp</description>
-		<costTheoretical>200</costTheoretical>
-		<costPractical>200</costPractical>
-		<prerequisites>
-			<li>Magic_Insight</li>
-		</prerequisites>
-		<viewerX>2</viewerX>
-		<viewerY>7</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
-		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
-		<thoughtIcons>
-			<li>UI/Buttons/UsePlanetDayNightSystem</li>
-			<li>Things/Mote/Disoriented</li>
-		</thoughtIcons>
-	</LifeLessons.ProficiencyDef>
-	
-	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
-		<defName>LLRoM_IceII</defName>
-		<label>LLRoM_IceII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
-		<category>ProficiencyCategory_IceMagic</category>
-		<description>Temp</description>
-		<costTheoretical>400</costTheoretical>
+		<costTheoretical>800</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_IceI</li>
+			<li>LLRoM_RawI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
-		<viewerY>7</viewerY>
+		<viewerY>24</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -49,25 +25,21 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 	
-<!--Uncommon-->
-
-<!--Rare-->
-
-	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
-		<defName>LLRoM_IceIII</defName>
-		<label>LLRoM_IceIII</label>
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
+		<defName>LLRoM_UnholyI</defName>
+		<label>LLRoM_UnholyI</label>
 		<generationRules>
 			<generateTextbook>false</generateTextbook>
 		</generationRules>
-		<category>ProficiencyCategory_IceMagic</category>
+		<category>ProficiencyCategory_IdeoMagic</category>
 		<description>Temp</description>
-		<costTheoretical>1000</costTheoretical>
+		<costTheoretical>800</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
-			<li>LLRoM_MixFireIce</li>
+			<li>LLRoM_RawI</li>
 		</prerequisites>
-		<viewerX>5</viewerX>
-		<viewerY>7</viewerY>
+		<viewerX>3</viewerX>
+		<viewerY>25</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -75,4 +47,52 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
+<!--Uncommon-->
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
+		<defName>LLRoM_HolyII</defName>
+		<label>LLRoM_HolyII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_IdeoMagic</category>
+		<description>Temp</description>
+		<costTheoretical>2000</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_HolyI</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>24</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
+		<defName>LLRoM_UnholyII</defName>
+		<label>LLRoM_UnholyII</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_IdeoMagic</category>
+		<description>Temp</description>
+		<costTheoretical>2000</costTheoretical>
+		<costPractical>600</costPractical>
+		<prerequisites>
+			<li>LLRoM_UnholyI</li>
+		</prerequisites>
+		<viewerX>4</viewerX>
+		<viewerY>25</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+<!--Rare-->
+
 </Defs>

@@ -80,4 +80,36 @@
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>77</priority>
 	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_LightMagic</defName>
+		<label>Light Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>78</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_EarthMagic</defName>
+		<label>Earth Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>79</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_LifeMagic</defName>
+		<label>Life Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>80</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_IdeoMagic</defName>
+		<label>Ideo Magic</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>81</priority>
+	</LifeLessons.ProficiencyCategoryDef>
 </Defs>
