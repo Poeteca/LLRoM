@@ -35,9 +35,9 @@ namespace LLRoM
         [HarmonyPatch(typeof(TorannMagic.MightAbility), nameof(TorannMagic.MightAbility.PostAbilityAttempt))]
         public class PostAbilityAttempt_Postfix
         {
-            public static void Postfix(object __instance)
+            public static void Postfix(MightAbility __instance)
             {
-                AbilityXPGainExtension extension = ((PawnAbility)(object)__instance).Def.GetModExtension<AbilityXPGainExtension>();
+                AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null)
                 {
                     List<ProficiencyDef> proficiencies = new List<ProficiencyDef>();
@@ -46,10 +46,22 @@ namespace LLRoM
                     {
                         foreach (ProficiencyDef item in proficiencies)
                         {
-                            ProficiencyComp comp = ((PawnAbility)(object)__instance).Pawn.TryGetComp<ProficiencyComp>();
+                            ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
                             if (comp != null)
                             {
-                                comp.TryGainXp(extension.LearnRate, item, extension.experienceType);
+                                CompAbilityUserMight Stamina = __instance.Pawn.TryGetComp<CompAbilityUserMight>();
+                                if (Stamina != null)
+                                {
+                                    float xp = extension.LearnRate * 10 * Stamina.ActualStaminaCost(__instance.mightDef);
+                                    if (xp > 0)
+                                    {
+                                        comp.TryGainXp(xp, item, extension.experienceType);
+                                    }
+                                    else
+                                    {
+                                        comp.TryGainXp(extension.LearnRate, item, extension.experienceType);
+                                    }
+                                }
                             }
                         }
                     }
@@ -63,9 +75,9 @@ namespace LLRoM
         [HarmonyPatch(typeof(TorannMagic.MagicAbility), nameof(TorannMagic.MagicAbility.PostAbilityAttempt))]
         public class PostAbilityAttempt_Postfix
         {
-            public static void Postfix(object __instance)
+            public static void Postfix(MagicAbility __instance)
             {
-                AbilityXPGainExtension extension = ((PawnAbility)(object)__instance).Def.GetModExtension<AbilityXPGainExtension>();
+                AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null)
                 {
                     List<ProficiencyDef> proficiencies = new List<ProficiencyDef>();
@@ -74,10 +86,22 @@ namespace LLRoM
                     {
                         foreach (ProficiencyDef item in proficiencies)
                         {
-                            ProficiencyComp comp = ((PawnAbility)(object)__instance).Pawn.TryGetComp<ProficiencyComp>();
+                            ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
                             if (comp != null)
                             {
-                                comp.TryGainXp(extension.LearnRate, item, extension.experienceType);
+                                CompAbilityUserMagic mana = __instance.Pawn.TryGetComp<CompAbilityUserMagic>();
+                                if (mana != null) 
+                                { 
+                                    float xp = extension.LearnRate * 10 * mana.ActualManaCost(__instance.magicDef);
+                                    if(xp > 0)
+                                    {
+                                        comp.TryGainXp(xp, item, extension.experienceType);
+                                    }
+                                    else
+                                    {
+                                        comp.TryGainXp(extension.LearnRate, item, extension.experienceType);
+                                    }
+                                }
                             }
                         }
                     }
