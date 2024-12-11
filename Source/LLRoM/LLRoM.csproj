@@ -69,6 +69,7 @@
     <Compile Include="HediffCompProperties_teacher.cs" />
     <Compile Include="HediffComp_scaledteacher.cs" />
     <Compile Include="HediffComp_teacher.cs" />
+    <Compile Include="HideIfCantLearnExtension.cs" />
     <Compile Include="ProficiencyDefOf.cs" />
     <Compile Include="LLRoM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

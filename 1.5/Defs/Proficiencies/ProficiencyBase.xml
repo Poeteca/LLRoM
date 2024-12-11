@@ -3,26 +3,56 @@
 <Defs>
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMagic"  ParentName="ProficiencyBase">
 		<tab>LLROM_Magic</tab>
+		<modExtensions>
+			<li Class="LLRoM.HideIfCantLearnExtension">
+				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMagicUncommon"  ParentName="ProficiencyBaseUncommon">
 		<tab>LLROM_Magic</tab>
+		<modExtensions>
+			<li Class="LLRoM.HideIfCantLearnExtension">
+				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMagicRare"  ParentName="ProficiencyBaseRare">
 		<tab>LLROM_Magic</tab>
+		<modExtensions>
+			<li Class="LLRoM.HideIfCantLearnExtension">
+				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMight"  ParentName="ProficiencyBase">
 		<tab>LLROM_Might</tab>
+		<modExtensions>
+			<li Class="LLRoM.HideIfCantLearnExtension">
+				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMightUncommon"  ParentName="ProficiencyBaseUncommon">
 		<tab>LLROM_Might</tab>
+		<modExtensions>
+			<li Class="LLRoM.HideIfCantLearnExtension">
+				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMightRare"  ParentName="ProficiencyBaseRare">
 		<tab>LLROM_Might</tab>
+		<modExtensions>
+			<li Class="LLRoM.HideIfCantLearnExtension">
+				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyArcane"  ParentName="ProficiencyBase">

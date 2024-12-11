@@ -16,6 +16,7 @@ using System.Reflection.Emit;
 using System.Reflection;
 using static HarmonyLib.Code;
 using System.Security.Policy;
+using UnityEngine;
 
 namespace LLRoM
 {
@@ -30,6 +31,69 @@ namespace LLRoM
     }
 
     [HarmonyPatch]
+    public static class Hide_Proficiency_Patch_DrawRelations
+    {
+        [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawRelations")]
+        public class Hide_Proficiency_DrawRelations_PreFix
+        {
+            public static bool Prefix(ProficiencyDef def, ProficiencyViewerWindow __instance)
+            {
+                HideIfCantLearnExtension extension = def.GetModExtension<HideIfCantLearnExtension>();
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null && !Util.IsQualified(pawn, def))
+                    {
+                        return comp.CanLearn(def);
+                    }
+                }
+                return true;
+            }
+        }
+    }
+    public static class Hide_Proficiency_Patch_DrawGhostPrerequisites
+    {
+        [HarmonyPatch(typeof(ProficiencyViewerWindow), nameof(ProficiencyViewerWindow.DrawGhostPrerequisites))]
+        public class Hide_Proficiency_DrawGhostPrerequisites_PreFix
+        {
+            public static bool Prefix(ProficiencyDef def, ProficiencyViewerWindow __instance)
+            {
+                HideIfCantLearnExtension extension = def.GetModExtension<HideIfCantLearnExtension>();
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null && !Util.IsQualified(pawn, def))
+                    {
+                        return comp.CanLearn(def);
+                    }
+                }
+                return true;
+            }
+        }
+    }
+    public static class Hide_Proficiency_Patch 
+    { 
+        [HarmonyPatch(typeof(ProficiencyViewerWindow), nameof(ProficiencyViewerWindow.DrawProficiencyCard))]
+        public class Hide_Proficiency_PreFix
+        {
+            public static bool Prefix(ProficiencyDef def, ProficiencyViewerWindow __instance)
+            {
+                HideIfCantLearnExtension extension = def.GetModExtension<HideIfCantLearnExtension>();
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null && !Util.IsQualified(pawn, def))
+                    {
+                        return comp.CanLearn(def);
+                    }
+                }
+                return true;
+            }
+        } 
+    }
     public static class Skill_Proficiency_XP_Patch
     {
         [HarmonyPatch(typeof(TorannMagic.MightAbility), nameof(TorannMagic.MightAbility.PostAbilityAttempt))]
@@ -52,7 +116,7 @@ namespace LLRoM
                                 CompAbilityUserMight Stamina = __instance.Pawn.TryGetComp<CompAbilityUserMight>();
                                 if (Stamina != null)
                                 {
-                                    float xp = extension.LearnRate * 10 * Stamina.ActualStaminaCost(__instance.mightDef);
+                                    float xp = extension.LearnRate * 10 * (__instance.mightDef.staminaCost + __instance.mightDef.upkeepEnergyCost + __instance.mightDef.upkeepRegenCost);
                                     if (xp > 0)
                                     {
                                         comp.TryGainXp(xp, item, extension.experienceType);
@@ -92,7 +156,7 @@ namespace LLRoM
                                 CompAbilityUserMagic mana = __instance.Pawn.TryGetComp<CompAbilityUserMagic>();
                                 if (mana != null) 
                                 { 
-                                    float xp = extension.LearnRate * 10 * mana.ActualManaCost(__instance.magicDef);
+                                    float xp = extension.LearnRate * 10 * (__instance.magicDef.manaCost + __instance.magicDef.upkeepEnergyCost + __instance.magicDef.upkeepRegenCost);
                                     if(xp > 0)
                                     {
                                         comp.TryGainXp(xp, item, extension.experienceType);
