@@ -2,35 +2,34 @@
 <Patch>
 	<!--Learning Objects Patch-->
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Torn_BookOfDemons"]</xpath>
+		<xpath>Defs/ThingDef[defName="Torn_BookOfEarth"]</xpath>
 		<value>
 			<li Class="LifeLessons.BillProficiencyExtension">
 				<requirements>
-					<li>LLRoM_RawI</li>
+					<li>LLRoM_EarthI</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
 			</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="BookOfDemons"]</xpath>
+		<xpath>Defs/ThingDef[defName="BookOfEarth"]</xpath>
 		<value>
 			<li Class="LifeLessons.BillProficiencyExtension">
 				<requirements>
-					<li>LLRoM_UnholyI</li>
-					<li>LLRoM_BindingI</li>
+					<li>LLRoM_EarthII</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
 			</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="SpellOf_Scorn" or defName="SpellOf_PsychicShock"]</xpath>
+		<xpath>Defs/ThingDef[defName="SpellOf_Meteor"]</xpath>
 		<value>
 			<li Class="LifeLessons.BillProficiencyExtension">
 				<requirements>
-					<li>LLRoM_UnholyII</li>
-					<li>LLRoM_BindingII</li>
+					<li>LLRoM_EarthIII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
 			</li>
@@ -38,7 +37,7 @@
 	</Operation>
 	<!--Learning object recipe patch-->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Torn_BookOfDemons"]</xpath>
+		<xpath>Defs/ThingDef[defName="Torn_BookOfEarth"]</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>50</RawMagicyte>
@@ -61,7 +60,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="BookOfDemons"]</xpath>
+		<xpath>Defs/ThingDef[defName="BookOfEarth"]</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>100</RawMagicyte>
@@ -88,14 +87,14 @@
 	</Operation>
 	<!--Ability Cast Patch-->
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_SoulBond"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Stoneskin"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>Magic_Insight</li>
-					<li>LLRoM_BindingI</li>
-					<li>LLRoM_UnholyI</li>
-					<li>LLRoM_RawI</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_Defensive</li>
+					<li>LLRoM_DefensiveBarrier</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -103,12 +102,106 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ShadowCall"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Encase" or defName="TM_Encase_I" or defName="TM_EarthSprites"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>Magic_Insight</li>
-					<li>LLRoM_BindingI</li>
+					<li>LLRoM_EarthI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Encase_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_Defensive</li>
+					<li>LLRoM_EarthII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Encase_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_Defensive</li>
+					<li>LLRoM_EarthII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_EarthernHammer" or defName="TM_ShatterSentinel"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_EarthII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Sentinel"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_Defensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Meteor"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_EarthIII</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_EarthII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Meteor_I" or defName="TM_Meteor_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_EarthIII</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_EarthII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
 					<li>LLRoM_Summon</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -117,119 +210,18 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ShadowStep"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Meteor_III"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>Magic_Insight</li>
-					<li>LLRoM_BindingI</li>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_EarthIII</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_EarthII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
 					<li>LLRoM_Summon</li>
-					<li>LLRoM_TeleportationI</li>
-				</Proficiencies>
-				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ShadowBolt"]</xpath>
-		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-				</Proficiencies>
-				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ShadowBolt_I" or defName="TM_ShadowBolt_II"]</xpath>
-		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_UnholyI</li>
-					<li>LLRoM_Offensive</li>
-				</Proficiencies>
-				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ShadowBolt_III"]</xpath>
-		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_UnholyI</li>
-					<li>LLRoM_Offensive</li>
-					<li>LLRoM_UnholyII</li>
-				</Proficiencies>
-				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Dominate"]</xpath>
-		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_BindingI</li>
-					<li>LLRoM_BindingII</li>
-				</Proficiencies>
-				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Attraction" or defName="TM_Attraction_I" or defName="TM_Repulsion"or defName="TM_Repulsion_I"]</xpath>
-		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_Offensive</li>
-				</Proficiencies>
-				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Attraction_II" or defName="TM_Attraction_III" or defName="TM_Repulsion_II" or defName="TM_Repulsion_III"]</xpath>
-		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_Offensive</li>
-					<li>LLRoM_UnholyI</li>
-					<li>LLRoM_OffensiveDeBuff</li>
-				</Proficiencies>
-				<experienceType>Practical</experienceType>
-				<LearnRate>1</LearnRate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Scorn" or defName="TM_PsychicShock" or defName="TM_SummonDemon"]</xpath>
-		<value>
-			<li Class="LLRoM.AbilityXPGainExtension">
-				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_UnholyII</li>
-					<li>LLRoM_UnholyI</li>
-					<li>LLRoM_BindingII</li>
-					<li>LLRoM_BindingI</li>
+					<li>LLRoM_SummonII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

@@ -208,7 +208,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements())
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, extension.IsHardRequirement).Allowed(extension.IsHardRequirement))
+                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMagicMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
@@ -230,7 +230,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements())
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, extension.IsHardRequirement).Allowed(extension.IsHardRequirement))
+                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
@@ -252,7 +252,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements())
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, extension.IsHardRequirement).Allowed(extension.IsHardRequirement))
+                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnSpellMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
@@ -274,7 +274,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements())
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, extension.IsHardRequirement).Allowed(extension.IsHardRequirement))
+                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);

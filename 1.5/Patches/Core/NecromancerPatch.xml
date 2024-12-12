@@ -46,24 +46,6 @@
 		</value>
 	</Operation>
 	<!--Learning object recipe patch-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_ConsumeCorpse_Mass"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>30</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_LichForm"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>
-			</costList>
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Torn_BookOfUndead"]</xpath>
 		<value>

@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "LLRoM.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LLRoM.cs",
               "RelativeToolTip": "LLRoM.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAxwCUAAAAJAAAA",
+              "ViewState": "AQIAAAYBAAAAAAAAAAAowBwBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T16:52:23.334Z",
               "IsPinned": true,
@@ -88,7 +88,8 @@
               "RelativeToolTip": "AbilityXPGainExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T16:49:32.777Z"
+              "WhenOpened": "2024-12-07T16:49:32.777Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,9 +99,10 @@
               "RelativeDocumentMoniker": "HediffComp_scaledteacher.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HediffComp_scaledteacher.cs",
               "RelativeToolTip": "HediffComp_scaledteacher.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAUAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T02:58:51.541Z"
+              "WhenOpened": "2024-12-07T02:58:51.541Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

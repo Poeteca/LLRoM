@@ -5,3 +5,14 @@
 	<!--Ability Cast Patch-->
 	<!--Hediff Patch-->
 </Patch>
+
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_FoldReality"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>102</RawMagicyte>
+				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>
+			</costList>
+		</value>
+	</Operation>
