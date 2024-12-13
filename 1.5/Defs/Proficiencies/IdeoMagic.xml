@@ -15,7 +15,7 @@
 		<prerequisites>
 			<li>LLRoM_RawI</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>24</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -38,7 +38,7 @@
 		<prerequisites>
 			<li>LLRoM_RawI</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>25</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -61,7 +61,7 @@
 		<prerequisites>
 			<li>LLRoM_HolyI</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
+		<viewerX>3</viewerX>
 		<viewerY>24</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -84,7 +84,7 @@
 		<prerequisites>
 			<li>LLRoM_UnholyI</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
+		<viewerX>3</viewerX>
 		<viewerY>25</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>

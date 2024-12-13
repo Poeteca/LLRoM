@@ -12,8 +12,8 @@
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
-		<viewerX>1</viewerX>
-		<viewerY>1</viewerY>
+		<viewerX>0</viewerX>
+		<viewerY>13</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -35,7 +35,7 @@
 		<prerequisites>
 			<li>Magic_Insight</li>
 		</prerequisites>
-		<viewerX>2</viewerX>
+		<viewerX>1</viewerX>
 		<viewerY>1</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -59,7 +59,7 @@
 		<prerequisites>
 			<li>LLRoM_Defensive</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>1</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -82,7 +82,7 @@
 		<prerequisites>
 			<li>LLRoM_Defensive</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>2</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -105,7 +105,7 @@
 		<prerequisites>
 			<li>Magic_Insight</li>
 		</prerequisites>
-		<viewerX>2</viewerX>
+		<viewerX>1</viewerX>
 		<viewerY>4</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -128,7 +128,7 @@
 		<prerequisites>
 			<li>LLRoM_Offensive</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>4</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -151,7 +151,7 @@
 		<prerequisites>
 			<li>LLRoM_Offensive</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>3</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -174,7 +174,7 @@
 		<prerequisites>
 			<li>Magic_Insight</li>
 		</prerequisites>
-		<viewerX>2</viewerX>
+		<viewerX>1</viewerX>
 		<viewerY>23</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -197,7 +197,7 @@
 		<prerequisites>
 			<li>Magic_Insight</li>
 		</prerequisites>
-		<viewerX>2</viewerX>
+		<viewerX>1</viewerX>
 		<viewerY>26</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -220,7 +220,7 @@
 		<prerequisites>
 			<li>LLRoM_RawI</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>23</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -243,7 +243,7 @@
 		<prerequisites>
 			<li>LLRoM_RawI</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>22</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -267,7 +267,7 @@
 			<li>LLRoM_RawI</li>
 			<li>LLRoM_BindingI</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>26</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -291,7 +291,7 @@
 			<li>Magic_Insight</li>
 			<li>Psychology</li>
 		</prerequisites>
-		<viewerX>2</viewerX>
+		<viewerX>1</viewerX>
 		<viewerY>21</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -314,7 +314,7 @@
 		<prerequisites>
 			<li>LLRoM_EmotionI</li>
 		</prerequisites>
-		<viewerX>3</viewerX>
+		<viewerX>2</viewerX>
 		<viewerY>21</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -337,7 +337,7 @@
 		<prerequisites>
 			<li>LLRoM_TimeI</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
+		<viewerX>3</viewerX>
 		<viewerY>21</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -360,7 +360,7 @@
 		<prerequisites>
 			<li>LLRoM_RawII</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
+		<viewerX>3</viewerX>
 		<viewerY>23</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -385,7 +385,7 @@
 		<prerequisites>
 			<li>LLRoM_TimeII</li>
 		</prerequisites>
-		<viewerX>5</viewerX>
+		<viewerX>4</viewerX>
 		<viewerY>21</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -409,7 +409,7 @@
 			<li>LLRoM_ChaosI</li>
 			<li>QuantumPhysics</li>
 		</prerequisites>
-		<viewerX>5</viewerX>
+		<viewerX>4</viewerX>
 		<viewerY>22</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>

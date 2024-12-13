@@ -12,6 +12,9 @@
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
+		<prerequisites>
+			<li>ReadingWriting</li>
+		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>1</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>

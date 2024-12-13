@@ -19,7 +19,7 @@
 			<li>LLRoM_IceII</li>
 			<li>Thermodynamics</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
+		<viewerX>3</viewerX>
 		<viewerY>6</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -43,7 +43,7 @@
 			<li>LLRoM_IceII</li>
 			<li>LLRoM_WindII</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
+		<viewerX>3</viewerX>
 		<viewerY>8</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
@@ -67,7 +67,7 @@
 			<li>LLRoM_LightningII</li>
 			<li>LLRoM_LightII</li>
 		</prerequisites>
-		<viewerX>4</viewerX>
+		<viewerX>3</viewerX>
 		<viewerY>10</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>

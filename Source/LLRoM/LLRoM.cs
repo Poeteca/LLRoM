@@ -59,14 +59,27 @@ namespace LLRoM
         {
             public static bool Prefix(ProficiencyDef def, ProficiencyViewerWindow __instance)
             {
+                
                 HideIfCantLearnExtension extension = def.GetModExtension<HideIfCantLearnExtension>();
                 Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
-                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
-                {
-                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
-                    if (comp != null && !Util.IsQualified(pawn, def))
+                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null)) {
+                    ProficiencyTabDef selectedTab = Traverse.Create(__instance).Field("selectedTab").GetValue() as ProficiencyTabDef;
+                    List<ProficiencyDef> nonghostPrereqs = def.prerequisites.Where((ProficiencyDef p) => p.tab == selectedTab).ToList();
+                    int hintflag = 0;
+                    if (nonghostPrereqs.Count > 0)
                     {
-                        return comp.CanLearn(def);
+                        foreach (ProficiencyDef item in nonghostPrereqs)
+                        {
+                            if (Util.IsQualified(pawn, item) || pawn.TryGetComp<ProficiencyComp>().CanLearn(item))
+                            {
+                                hintflag = 1;
+                                break;
+                            }
+                        }
+                    }
+                    if (hintflag == 0)
+                    {
+                        return false;
                     }
                 }
                 return true;
