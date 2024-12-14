@@ -13,7 +13,30 @@
 		<description>Temp</description>
 		<costPractical>500</costPractical>
 		<viewerX>0</viewerX>
-		<viewerY>0</viewerY>
+		<viewerY>6</viewerY>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Physical_Conditioning</defName>
+		<label>LLRoM_Physical_Conditioning</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>1000</costPractical>
+		<viewerX>1</viewerX>
+		<viewerY>5</viewerY>
+		<prerequisites>
+			<li>Physical_Insight</li>
+		</prerequisites>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -22,7 +45,307 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Equipment_Mastery</defName>
+		<label>LLRoM_Equipment_Mastery</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>600</costTheoretical>
+		<costPractical>900</costPractical>
+		<viewerX>1</viewerX>
+		<viewerY>6</viewerY>
+		<prerequisites>
+			<li>Physical_Insight</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Mental_Conditioning</defName>
+		<label>LLRoM_Mental_Conditioning</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>1000</costTheoretical>
+		<costPractical>400</costPractical>
+		<viewerX>1</viewerX>
+		<viewerY>7</viewerY>
+		<prerequisites>
+			<li>Physical_Insight</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Coordination</defName>
+		<label>LLRoM_Coordination</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>800</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>2</viewerY>
+		<prerequisites>
+			<li>LLRoM_Physical_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Strength</defName>
+		<label>LLRoM_Strength</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>800</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>3</viewerY>
+		<prerequisites>
+			<li>LLRoM_Physical_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Endurance</defName>
+		<label>LLRoM_Endurance</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>800</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>4</viewerY>
+		<prerequisites>
+			<li>LLRoM_Physical_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_CQC</defName>
+		<label>LLRoM_CQC</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>800</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>5</viewerY>
+		<prerequisites>
+			<li>LLRoM_Equipment_Mastery</li>
+			<li>LLRoM_Physical_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Breath_Control</defName>
+		<label>LLRoM_Breath_Control</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>500</costTheoretical>
+		<costPractical>500</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>6</viewerY>
+		<prerequisites>
+			<li>LLRoM_Mental_Conditioning</li>
+			<li>LLRoM_Physical_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Ranged</defName>
+		<label>LLRoM_Ranged</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>7</viewerY>
+		<prerequisites>
+			<li>LLRoM_Mental_Conditioning</li>
+			<li>LLRoM_Equipment_Mastery</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Tactics</defName>
+		<label>LLRoM_Tactics</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>8</viewerY>
+		<prerequisites>
+			<li>LLRoM_Mental_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Manipulation</defName>
+		<label>LLRoM_Manipulation</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>9</viewerY>
+		<prerequisites>
+			<li>LLRoM_Mental_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Charisma</defName>
+		<label>LLRoM_Charisma</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
+		<viewerX>2</viewerX>
+		<viewerY>10</viewerY>
+		<prerequisites>
+			<li>LLRoM_Mental_Conditioning</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Extreme_Range</defName>
+		<label>LLRoM_Extreme_Range</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>1000</costTheoretical>
+		<costPractical>1500</costPractical>
+		<viewerX>3</viewerX>
+		<viewerY>7</viewerY>
+		<prerequisites>
+			<li>LLRoM_Ranged</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
+	
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
+		<defName>LLRoM_Defensive_Fighting</defName>
+		<label>LLRoM_Defensive_Fighting</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>500</costTheoretical>
+		<costPractical>2000</costPractical>
+		<viewerX>3</viewerX>
+		<viewerY>5</viewerY>
+		<prerequisites>
+			<li>LLRoM_CQC</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 <!--Rare-->
 </Defs>
