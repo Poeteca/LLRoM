@@ -348,4 +348,26 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
+	<LifeLessons.ProficiencyDef ParentName="ProficiencyMightRare">
+		<defName>LLRoM_Mind_Mastery</defName>
+		<label>LLRoM_Mind_Mastery</label>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+		</generationRules>
+		<category>ProficiencyCategory_MightSkills</category>
+		<description>Temp</description>
+		<costTheoretical>1500</costTheoretical>
+		<costPractical>1500</costPractical>
+		<viewerX>3</viewerX>
+		<viewerY>6</viewerY>
+		<prerequisites>
+			<li>LLRoM_Breath_Control</li>
+		</prerequisites>
+		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
+		<thoughtIcons>
+			<li>UI/Buttons/UsePlanetDayNightSystem</li>
+			<li>Things/Mote/Disoriented</li>
+		</thoughtIcons>
+	</LifeLessons.ProficiencyDef>
 </Defs>
