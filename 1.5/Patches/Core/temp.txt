@@ -8,11 +8,12 @@
 
 
 <Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_FoldReality"]/costList</xpath>
+		<xpath>Defs/ThingDef[defName="SpellOf_ArcaneBolt"]/costList</xpath>
 		<value>
 			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>
+				<RawMagicyte>40</RawMagicyte>
+				<Cloth>10</Cloth>
+				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
 		</value>
 	</Operation>

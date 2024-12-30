@@ -1016,6 +1016,20 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ThrowingKnife"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Coordination</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
 	<!--Burning Fury-->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="SkillOf_BurningFury"]</xpath>
@@ -1025,6 +1039,21 @@
 					<li>LLRoM_Breath_Control</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BurningFury"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>LLRoM_Breath_Control</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
 			</li>
 		</value>
 	</Operation>
@@ -1040,6 +1069,21 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_FightersFocus"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>LLRoM_Breath_Control</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
 	<!--Gear Repair-->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="SkillOf_GearRepair"]</xpath>
@@ -1049,6 +1093,19 @@
 					<li>LLRoM_Equipment_Mastery</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_GearRepair"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Equipment_Mastery</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
 			</li>
 		</value>
 	</Operation>
@@ -1064,6 +1121,20 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_HeavyBlow"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Strength</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
 	<!--Inner Healing-->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="SkillOf_InnerHealing"]</xpath>
@@ -1073,6 +1144,20 @@
 					<li>LLRoM_Endurance</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_InnerHealing"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Endurance</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
 			</li>
 		</value>
 	</Operation>
@@ -1088,6 +1173,20 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Legion"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>LLRoM_Tactics</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
 	<!--Pommel Strike-->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="SkillOf_PommelStrike"]</xpath>
@@ -1097,6 +1196,20 @@
 					<li>LLRoM_Strength</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_PommelStrike"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Strength</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
 			</li>
 		</value>
 	</Operation>
@@ -1112,6 +1225,20 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_StrongBack"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Endurance</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
 	<!--Taunt-->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="SkillOf_Taunt"]</xpath>
@@ -1121,6 +1248,20 @@
 					<li>LLRoM_Manipulation</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Taunt"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>LLRoM_Manipulation</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
 			</li>
 		</value>
 	</Operation>
@@ -1136,6 +1277,20 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_TempestStrike"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Strength</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
 	<!--Thick Skin-->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="SkillOf_ThickSkin"]</xpath>
@@ -1145,6 +1300,20 @@
 					<li>LLRoM_Endurance</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ThickSkin"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>Physical_Insight</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Endurance</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
 			</li>
 		</value>
 	</Operation>
