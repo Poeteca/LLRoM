@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TM_Manaweave"]/stuffProps/categories</xpath>
+		<value>
+			<li>LLROM_MMaterials</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TM_Arcalleum"]/stuffProps/categories</xpath>
+		<value>
+			<li>LLROM_MMaterials</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TM_Demonhide"]/stuffProps/categories</xpath>
+		<value>
+			<li>LLROM_DMaterials</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TM_Demonscale"]/stuffProps/categories</xpath>
+		<value>
+			<li>LLROM_DMaterials</li>
+		</value>
+	</Operation>
+</Patch>

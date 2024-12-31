@@ -111,7 +111,7 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 	
-	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
+<!--	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
 		<defName>LLRoM_MagicMetalWorking</defName>
 		<label>LLRoM_MagicMetalWorking</label>
 		<generationRules>
@@ -155,7 +155,7 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
-	</LifeLessons.ProficiencyDef>
+	</LifeLessons.ProficiencyDef>-->
 <!--Uncommon-->
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
