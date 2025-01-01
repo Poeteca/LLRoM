@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="GemstoneOfInsight_Magic" or defName="GemstoneOfInsight_Might"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicRefinement</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.4</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="CutMinorMPGem" 
+							or defName="CutMinorMPRegenRateGem"
+							or defName="CutMinorMPCostGem"
+							or defName="CutMinorCoolDownGem"
+							or defName="CutMinorXPGainGem"
+							or defName="CutMinorArcaneResGem"
+							or defName="CutMinorArcaneDmgGem"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicEnchantingI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.6</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="CutMPGem" 
+							or defName="CutMPRegenRateGem"
+							or defName="CutMPCostGem"
+							or defName="CutCoolDownGem"
+							or defName="CutXPGainGem"
+							or defName="CutArcaneResGem"
+							or defName="CutArcaneDmgGem"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicEnchantingII</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.6</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="CutMajorMPGem" 
+							or defName="CutMajorMPRegenRateGem"
+							or defName="CutMajorMPCostGem"
+							or defName="CutMajorCoolDownGem"
+							or defName="CutMajorXPGainGem"
+							or defName="CutMajorArcaneResGem"
+							or defName="CutMajorArcaneDmgGem"
+							or defName="CutArcaneWonderGem"
+							or defName="CutMajorArcaneWonderGem"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicEnchantingII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="CutMinorArcaneWonderGem"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicEnchantingI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>

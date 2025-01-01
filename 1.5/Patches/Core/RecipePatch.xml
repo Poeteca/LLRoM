@@ -1,792 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+
 <Patch>
-<!--Simple-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_ArcaneBolt"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Blink"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>24</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Blur"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>48</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Cooler"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>8</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_DirtDevil"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>48</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_EMP"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>48</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Extinguish"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>16</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Heal"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>24</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_HeatShield"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Heater"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>8</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Ignite"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_MageLight"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>8</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_PowerNode"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>64</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Rain"]/costList</xpath>
-		<value>
-			<costList>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_SnapFreeze"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_SmokeCloud"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>16</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Sunlight"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>64</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BrandSiphon"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>76</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BrandFitness"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>80</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BrandEmotion"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>76</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BrandVitality"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>80</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BrandProtection"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>76</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BrandAwareness"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>80</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_ChargeBattery"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>27</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_CauterizeWound"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>10</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_ConsumeCorpse_Mass"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>20</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Discord"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>58</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_DryGround"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_WetGround"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
-			</costList>
-		</value>
-	</Operation>
-<!--Advance-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_MagicWardrobe"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>92</RawMagicyte>
-				<DevilstrandCloth>50</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Invisibility"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>92</RawMagicyte>
-				<DevilstrandCloth>20</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_LightningTrap"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>92</RawMagicyte>
-				<DevilstrandCloth>20</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_ManaShield"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>74</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_ShieldOther"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>38</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_SpellMending"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>142</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_SiphonMana"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>38</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_SummonMinion"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Teleport"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>142</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_TransferMana"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_FadeEmotions"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>42</RawMagicyte>
-				<DevilstrandCloth>50</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BlankMind"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>62</RawMagicyte>
-				<DevilstrandCloth>20</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BriarPatch"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>22</RawMagicyte>
-				<DevilstrandCloth>20</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_FertileLands"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>72</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_AlterStorm"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>92</RawMagicyte>
-				<DevilstrandCloth>30</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_MechaniteReprogramming"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>92</RawMagicyte>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Overdrive"]/costList</xpath>
-		<value>
-			<costList>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Sabotage"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>22</RawMagicyte>
-				<DevilstrandCloth>10</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_TechnoShield"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>7</RawMagicyte>
-				<DevilstrandCloth>15</DevilstrandCloth>
-				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
-			</costList>
-		</value>
-	</Operation>
-<!--Master-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BattleHymn"]/costList</xpath>
-		<value>
-			<costList>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Blizzard"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_BloodMoon"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>50</RawMagicyte>
-				<DevilstrandCloth>50</DevilstrandCloth>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_EyeOfTheStorm"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>100</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Firestorm"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_FoldReality"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>250</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_GuardianSpirit"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_HolyWrath"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>90</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_LichForm"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>210</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_LivingWall"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>210</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Meteor"]/costList</xpath>
-		<value>
-			<costList>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_OrbitalStrike"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>10</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_PsychicShock"]/costList</xpath>
-		<value>
-			<costList>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Recall"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>30</RawMagicyte>
-				<DevilstrandCloth>30</DevilstrandCloth>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_RegrowLimb"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>62</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Resurrection"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>330</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Scorn"]/costList</xpath>
-		<value>
-			<costList>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_Shapeshift"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>30</RawMagicyte>
-				<DevilstrandCloth>30</DevilstrandCloth>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_SummonPoppi"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SpellOf_SpiritOfLight"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>102</RawMagicyte>
-				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
-			</costList>
-		</value>
-	</Operation>
-<!--Skill-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_ThrowingKnife"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>65</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_BurningFury"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>65</RawMagicyte>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_FightersFocus"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>35</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_GearRepair"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>60</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_HeavyBlow"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>65</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_InnerHealing"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>30</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_Legion"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>90</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_PommelStrike"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>70</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_Sprint"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>20</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_StrongBack"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>40</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_Taunt"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>100</RawMagicyte>
-				<Cloth>10</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_TempestStrike"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>50</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_ThickSkin"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>10</RawMagicyte>
-				<Cloth>40</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_HerbalBliss"]/costList</xpath>
-		<value>
-			<costList>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="SkillOf_HerbalClarity"]/costList</xpath>
-		<value>
-			<costList>
-				<RawMagicyte>60</RawMagicyte>
-				<Cloth>20</Cloth>
-				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
-			</costList>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="ManaPotion_Refined"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>MedicineCompounding</li>
+					<li>LLRoM_MagicRefinement</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_MakeManaweave"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+					<li>LLRoM_MagicMaterials</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_MakeArcalleum"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>ExoticsSmithing</li>
+					<li>LLRoM_MagicMaterials</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="ArcaneForge_ChunkToMagicyte"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EarthI</li>
+					<li>LLRoM_MagicRefinement</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.2</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_MechaGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>RoboticsAssembly</li>
+					<li>LLRoM_MagicConstructsII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_FleshGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>LLRoM_MagicConstructsII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_HollowGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Armorsmithing</li>
+					<li>LLRoM_MagicConstructsII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_StoneGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Masonry</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_MaharalGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Leatherworking</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_StrawGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_WoodGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Carpentry</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_SilkGolem_Workstation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Tailoring</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
 		</value>
 	</Operation>
 </Patch>

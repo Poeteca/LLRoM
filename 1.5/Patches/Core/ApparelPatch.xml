@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_MantleOfProtection"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_MaestersCloak"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="DemonLordCloak"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="DarkRobe"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_DiscipleRobe"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AncientMail"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC3A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RoyalArmor"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelMetalArmorC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_DreamcatcherBuckskin"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Necromancer_Body"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ArchMageRobe"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_DragonSlayer"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_WizardHat"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_HoodOfProtection"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_DiscipleHood"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ArcaneHood"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="HoodOfMadness"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_SagesMask"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RoyalHelm"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelMetalArmorC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ParagonHelm"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC2</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Necromancer_Mask"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Necromancer_Hood"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_DreamcatcherCoronet"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Artifact_BracersOfThePacifist"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Artifact_BracersOfDefense"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Artifact_BracersOfDeflection"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Artifact_RingOfKeenIntellect"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Artifact_RingOfBlood"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Artifact_RingOfEternalBlue"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Artifact_RingOfMalice"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_ShroudOfUndeath_Recipe"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_ApparelTailoredC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>

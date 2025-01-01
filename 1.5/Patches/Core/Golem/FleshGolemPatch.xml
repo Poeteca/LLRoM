@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_RestorePart"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_MuscleTissue"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_DigestiveOrgans"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_EnergySynthesis"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_LifeStage"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>LLRoM_RawI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_LeftArm_Bracer"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>MetalWorking</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_RightArm_Bracer"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>MetalWorking</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_LeftArm_Cleaver"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>MetalWorking</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_RightArm_Cleaver"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>MetalWorking</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_Tusks"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_Horns"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_SkullPlate"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>MetalWorking</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_ShoulderPlates"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>MetalWorking</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_LegPlates"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>MetalWorking</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_ChestCage"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_SpineGuard"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_Wings"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_EyesT1"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_FleshGolem_EyesT1"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Anatomy</li>
+					<li>LLRoM_RawII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>

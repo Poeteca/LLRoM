@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_ElephantSpear"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_WeaponMetal1B</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_WeaponMetal1B</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_ElephantBow"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_ThrumboAxe"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponMetal2A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponMetal2A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_ThrumboSaber"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponMetal2A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="ArcaneForge_ThrumboSaber"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponMetal2A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_ThrumBow"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_GloryMaul"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponMetal1A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_Decimation"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponMetal2A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_DemonFang"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponMetal2A</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_FireWand"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_IceWand"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_LightningWand"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E1_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_DefenderStaff"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_BlazingPowerStaff"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_WinterStaff"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_WeaponWood</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>

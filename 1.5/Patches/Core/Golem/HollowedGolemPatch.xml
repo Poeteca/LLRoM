@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_RepairComponent"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Welding</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_EnergyCell"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_EnergyConverter"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_EnergyCharge"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_Axe"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_Staff"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_Armor"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Armorsmithing</li>
+					<li>Welding</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_Helm"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Armorsmithing</li>
+					<li>Welding</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_Shoulder"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Armorsmithing</li>
+					<li>Welding</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_Crown"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>Armorsmithing</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_Cloak"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_PGFire"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_PGWater"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_IceII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_PGArcane"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_PGDeath"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+					<li>LLRoM_NecroI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_PGDoom"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroI</li>
+					<li>LLRoM_OffensiveDeBuff</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_FGFire"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_FGIce"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_IceII</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_FGArcane"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_FGDeath"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroI</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_OrbOfExtinguishedFlames"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingII</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_FlamesOfDevouringApathy"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingII</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_AffinityFire"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_FireI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_AffinityIce"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_IceI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_AffinityArcane"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_AffinityDeath"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_CoAFire"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_CoAIce"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_IceII</li>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_CoAArcane"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_HollowGolem_CoADeath"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroII</li>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>
