@@ -8,20 +8,6 @@
 			<li>Blacksmithing</li>
 			<li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -42,20 +28,6 @@
 			<li>Blacksmithing</li>
 			<li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -77,20 +49,6 @@
 			<li>PrinciplesWoodworking</li>
 			<li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -112,20 +70,6 @@
 			<li>PrinciplesWoodworking</li>
 			<li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -146,20 +90,6 @@
 			<li>Bladesmithing</li>
 			<li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -180,20 +110,6 @@
 			<li>Bladesmithing</li>
 			<li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -215,20 +131,6 @@
 			<li>PrinciplesWoodworking</li>
 			<li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -250,20 +152,6 @@
 			<li>PrinciplesWoodworking</li>
 			<li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -284,20 +172,6 @@
 			<li>PrinciplesWoodworking</li>
 			<li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
@@ -318,20 +192,6 @@
 			<li>PrinciplesWoodworking</li>
 			<li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>

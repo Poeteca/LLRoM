@@ -250,7 +250,7 @@
 		</thoughtIcons>
 	</LifeLessons.ProficiencyDef>
 	
-	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneRare">
+	<!--<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneRare">
 		<defName>LLRoM_DemonicMaterials</defName>
 		<label>LLRoM_DemonicMaterials</label>
 		<generationRules>
@@ -270,5 +270,5 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
-	</LifeLessons.ProficiencyDef>
+	</LifeLessons.ProficiencyDef>-->
 </Defs>

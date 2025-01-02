@@ -20,18 +20,6 @@
 					<li>Tailoring</li>
 				</requirements>
 			</li>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
 		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
@@ -68,18 +56,6 @@
 					<li>Tailoring</li>
 				</requirements>
 			</li>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
 		</stuffRequirements>
 		<unqualifiedPenalty>
 			<statModifiers>
@@ -106,18 +82,6 @@
 			<li>LLRoM_MagicEnchantingI</li>
 		</requirements>
 		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
 			<li>
 				<stuffCategory>Leathery</stuffCategory>
 				<requirements>
@@ -150,18 +114,6 @@
 		</requirements>
 		<stuffRequirements>
 			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-			<li>
 				<stuffCategory>Leathery</stuffCategory>
 				<requirements>
 					<li>Leatherworking</li>
@@ -193,18 +145,6 @@
 		  <li>LLRoM_MagicEnchantingI</li>
 		</requirements>
 		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
 		  <li>
 			<stuffCategory>Leathery</stuffCategory>
 			<requirements>
@@ -242,18 +182,6 @@
 		  <li>LLRoM_MagicEnchantingII</li>
 		</requirements>
 		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
 		  <li>
 			<stuffCategory>Leathery</stuffCategory>
 			<requirements>
@@ -292,20 +220,6 @@
 		  <li>Armorsmithing</li>
 		  <li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -330,20 +244,6 @@
 		  <li>Armorsmithing</li>
 		  <li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -368,20 +268,6 @@
 		  <li>Blacksmithing</li>
 		  <li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -405,20 +291,6 @@
 		  <li>Blacksmithing</li>
 		  <li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-			<li>
-				<stuffCategory>LLROM_MMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_MagicMaterials</li>
-				</requirements>
-			</li>
-			<li>
-				<stuffCategory>LLROM_DMaterials</stuffCategory>
-				<requirements>
-					<li>LLRoM_DemonicMaterials</li>
-				</requirements>
-			</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -443,20 +315,6 @@
 		  <li>Armorsmithing</li>
 		  <li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -480,20 +338,6 @@
 		  <li>Armorsmithing</li>
 		  <li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -519,20 +363,6 @@
 		  <li>Tailoring</li>
 		  <li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -557,20 +387,6 @@
 		  <li>Tailoring</li>
 		  <li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -596,20 +412,6 @@
 		  <li>Leatherworking</li>
 		  <li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -634,20 +436,6 @@
 		  <li>Leatherworking</li>
 		  <li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -673,20 +461,6 @@
 		  <li>ExoticsSmithing</li>
 		  <li>LLRoM_MagicEnchantingI</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>
@@ -711,20 +485,6 @@
 		  <li>ExoticsSmithing</li>
 		  <li>LLRoM_MagicEnchantingII</li>
 		</requirements>
-		<stuffRequirements>
-				<li>
-					<stuffCategory>LLROM_MMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_MagicMaterials</li>
-					</requirements>
-				</li>
-				<li>
-					<stuffCategory>LLROM_DMaterials</stuffCategory>
-					<requirements>
-						<li>LLRoM_DemonicMaterials</li>
-					</requirements>
-				</li>
-		</stuffRequirements>
 		<unqualifiedPenalty>
 		  <statModifiers>
 			<li>

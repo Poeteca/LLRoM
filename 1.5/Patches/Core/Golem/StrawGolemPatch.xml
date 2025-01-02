@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_RepairBlock"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+					<li>LLRoM_RawI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_EnergyRegen"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+					<li>LLRoM_RawII</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_Armor"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_LifeStage"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_Scarecrow"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/RecipeDef[defName="TM_StrawGolem_Seed"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Threadcraft</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>
