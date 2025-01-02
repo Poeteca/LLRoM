@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ArcaneConstruction"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ArcaneFundamentals"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_MagicCircle"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_Portals"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_TeleportationII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ManaStorage"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ArcaneForging"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ForgeReplication"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_BindingII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ArcaneApparel"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicRefinement</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ArcaneArtifacts"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicEnchantingI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_MagicScribing"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>ReadingWriting</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_AdvancedScribing"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_MasterScribing"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_AdvancedEnchanting"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicEnchantingI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_ExpertEnchanting"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicEnchantingII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_GolemCraftRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_HollowGolemRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicConstructsII</li>
+					<li>Armorsmithing</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_HollowGolemEquipmentRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>Armorsmithing</li>
+					<li>LLRoM_BindingII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_HollowGolemArtifactsRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingII</li>
+					<li>LLRoM_MagicEnchantingII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_MechaGolemRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicConstructsII</li>
+					<li>RoboticsAssembly</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_MechaGolemEquipmentRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingII</li>
+					<li>ExoticsWelding</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_FleshGolemRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_MagicConstructsII</li>
+					<li>Anatomy</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ResearchProjectDef[defName="TM_FleshGolemEquipmentRD"]</xpath>
+		<value>
+			<li Class="LifeLessons.ResearchProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingII</li>
+					<li>Anatomy</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_UndeadChildBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalChildStandard</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_GolemChildBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalChildStandard</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_SpiritChildBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalChildStandard</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_UndeadAdultBS_GhostEye"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_UndeadAdultBS_GhostMind"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_UndeadAdultBS_Brute"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_UndeadAdultBS_Servant"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_UndeadAdultBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_GolemAdultBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_AncientSpiritAdultBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_VengefulSpiritAdultBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_LostSpiritAdultBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/BackstoryDef[defName="TM_RegretSpiritAdultBS"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>      
+				<templates>
+					<li>MedievalAdultStandard</li>
+					<li>MedievalSoldier</li>
+				</templates>
+			</li>
+		</value>
+	</Operation>
+</Patch>
