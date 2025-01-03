@@ -257,32 +257,4 @@
 			</li>
 		</value>
 	</Operation>
-	<!--Hediff Patch-->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/HediffDef[defName="TM_RayOfHope_AuraHD"]/comps</xpath>
-		<value>
-			<li Class="LLRoM.HediffCompProperties_teacher">
-				<proficiencies>
-					<li>LLRoM_LightI</li>
-					<li>LLRoM_Defensive</li>
-					<li>LLRoM_DefensiveBuff</li>
-				</proficiencies>
-				<experienceType>Practical</experienceType>
-				<learnrate>.01</learnrate>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/HediffDef[defName="TM_HediffShield"]/comps</xpath>
-		<value>
-			<li Class="LLRoM.HediffCompProperties_teacher">
-				<proficiencies>
-					<li>LLRoM_DefensiveBarrier</li>
-					<li>LLRoM_Defensive</li>
-				</proficiencies>
-				<experienceType>Practical</experienceType>
-				<learnrate>.01</learnrate>
-			</li>
-		</value>
-	</Operation>
 </Patch>

@@ -65,14 +65,15 @@
   <ItemGroup>
     <Compile Include="AbilityXPGainExtension.cs" />
     <Compile Include="GemOfInsightProficiencyExtension.cs" />
-    <Compile Include="HediffCompProperties_scaledteacher.cs" />
+    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="HediffCompProperties_teacher.cs" />
-    <Compile Include="HediffComp_scaledteacher.cs" />
     <Compile Include="HediffComp_teacher.cs" />
     <Compile Include="HideIfCantLearnExtension.cs" />
+    <Compile Include="LockoutExtension.cs" />
     <Compile Include="ProficiencyDefOf.cs" />
     <Compile Include="LLRoM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LLRoMSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

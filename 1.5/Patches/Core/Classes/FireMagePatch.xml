@@ -180,19 +180,4 @@
 			</li>
 		</value>
 	</Operation>
-	<!--Hediff Patch-->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/HediffDef[defName="TM_InnerFire_AuraHD"]/comps</xpath>
-		<value>
-			<li Class="LLRoM.HediffCompProperties_teacher">
-				<proficiencies>
-					<li>LLRoM_FireI</li>
-					<li>LLRoM_Defensive</li>
-					<li>LLRoM_DefensiveBuff</li>
-				</proficiencies>
-				<experienceType>Practical</experienceType>
-				<learnrate>.01</learnrate>
-			</li>
-		</value>
-	</Operation>
 </Patch>

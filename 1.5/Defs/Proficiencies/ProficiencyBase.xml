@@ -7,6 +7,10 @@
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
 			</li>
+			<li Class="LLRoM.LockoutExtension">
+				<hasHediff>TM_MightUserHD</hasHediff>
+				<withouHediff>TM_MagicUserHD</withouHediff>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
@@ -15,6 +19,10 @@
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+			<li Class="LLRoM.LockoutExtension">
+				<hasHediff>TM_MightUserHD</hasHediff>
+				<withouHediff>TM_MagicUserHD</withouHediff>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -25,6 +33,10 @@
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
 			</li>
+			<li Class="LLRoM.LockoutExtension">
+				<hasHediff>TM_MightUserHD</hasHediff>
+				<withouHediff>TM_MagicUserHD</withouHediff>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -33,6 +45,10 @@
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+			<li Class="LLRoM.LockoutExtension">
+				<hasHediff>TM_MagicUserHD</hasHediff>
+				<withouHediff>TM_MightUserHD</withouHediff>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -43,6 +59,10 @@
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
 			</li>
+			<li Class="LLRoM.LockoutExtension">
+				<hasHediff>TM_MagicUserHD</hasHediff>
+				<withouHediff>TM_MightUserHD</withouHediff>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
@@ -51,6 +71,10 @@
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
+			</li>
+			<li Class="LLRoM.LockoutExtension">
+				<hasHediff>TM_MagicUserHD</hasHediff>
+				<withouHediff>TM_MightUserHD</withouHediff>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>

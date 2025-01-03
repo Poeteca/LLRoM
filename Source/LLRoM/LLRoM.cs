@@ -20,6 +20,45 @@ using UnityEngine;
 
 namespace LLRoM
 {
+    public class LLROM : Mod
+    {
+        LLRoMSettings settings;
+        public LLROM(ModContentPack content) : base(content)
+        {
+            this.settings = GetSettings<LLRoMSettings>();
+        }
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            Listing_Standard listingStandard = new Listing_Standard();
+            listingStandard.Begin(inRect);
+            listingStandard.CheckboxLabeled("ClassRequiresProficiencies".Translate(), ref settings.ClassRequiresProficiencies);
+            if (settings.ClassRequiresProficiencies)
+            { 
+                listingStandard.CheckboxLabeled("StrickMightClassLearning".Translate(), ref settings.StrickMightClassLearning);
+                listingStandard.CheckboxLabeled("StrickMagicClassLearning".Translate(), ref settings.StrickMagicClassLearning);
+            }
+            listingStandard.CheckboxLabeled("AbilityRequiresProficiencies".Translate(), ref settings.AbilityRequiresProficiencies);
+            if (settings.AbilityRequiresProficiencies)
+            {
+                listingStandard.CheckboxLabeled("StrickSkillLearning".Translate(), ref settings.StrickSkillLearning);
+                listingStandard.CheckboxLabeled("StrickSpellLearning".Translate(), ref settings.StrickSpellLearning);
+            }
+            listingStandard.CheckboxLabeled("ObscureCertianProficiencies".Translate(), ref settings.ObscureCertianProficiencies);
+            if (settings.ObscureCertianProficiencies)
+            {
+                listingStandard.CheckboxLabeled("ObscureAllProficiencies".Translate(), ref settings.ObscureAllProficiencies);
+            }
+            listingStandard.Label("XPMultiplier".Translate());
+            listingStandard.Label("ValueXPMultiplier".Translate(settings.XPMultiplier));
+            settings.XPMultiplier = listingStandard.Slider(settings.XPMultiplier, 1f, 1000f);
+            listingStandard.End();
+            base.DoSettingsWindowContents(inRect);
+        }
+        public override string SettingsCategory()
+        {
+            return "LLRoM".Translate();
+        }
+    }
     [StaticConstructorOnStartup]
     public static class LLRoM
     {
@@ -27,275 +66,6 @@ namespace LLRoM
         {
             Harmony harmony = new Harmony("albinogod.LLRoM");
             harmony.PatchAll();
-        }
-    }
-
-    [HarmonyPatch]
-    public static class Hide_Proficiency_Patch_DrawRelations
-    {
-        [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawRelations")]
-        public class Hide_Proficiency_DrawRelations_PreFix
-        {
-            public static bool Prefix(ProficiencyDef def, ProficiencyViewerWindow __instance)
-            {
-                HideIfCantLearnExtension extension = def.GetModExtension<HideIfCantLearnExtension>();
-                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
-                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
-                {
-                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
-                    if (comp != null && !Util.IsQualified(pawn, def))
-                    {
-                        return comp.CanLearn(def);
-                    }
-                }
-                return true;
-            }
-        }
-    }
-    public static class Hide_Proficiency_Patch_DrawGhostPrerequisites
-    {
-        [HarmonyPatch(typeof(ProficiencyViewerWindow), nameof(ProficiencyViewerWindow.DrawGhostPrerequisites))]
-        public class Hide_Proficiency_DrawGhostPrerequisites_PreFix
-        {
-            public static bool Prefix(ProficiencyDef def, ProficiencyViewerWindow __instance)
-            {
-                
-                HideIfCantLearnExtension extension = def.GetModExtension<HideIfCantLearnExtension>();
-                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
-                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null)) {
-                    ProficiencyTabDef selectedTab = Traverse.Create(__instance).Field("selectedTab").GetValue() as ProficiencyTabDef;
-                    List<ProficiencyDef> nonghostPrereqs = def.prerequisites.Where((ProficiencyDef p) => p.tab == selectedTab).ToList();
-                    int hintflag = 0;
-                    if (nonghostPrereqs.Count > 0)
-                    {
-                        foreach (ProficiencyDef item in nonghostPrereqs)
-                        {
-                            if (Util.IsQualified(pawn, item) || pawn.TryGetComp<ProficiencyComp>().CanLearn(item))
-                            {
-                                hintflag = 1;
-                                break;
-                            }
-                        }
-                    }
-                    if (hintflag == 0)
-                    {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-    }
-    public static class Hide_Proficiency_Patch 
-    { 
-        [HarmonyPatch(typeof(ProficiencyViewerWindow), nameof(ProficiencyViewerWindow.DrawProficiencyCard))]
-        public class Hide_Proficiency_PreFix
-        {
-            public static bool Prefix(ProficiencyDef def, ProficiencyViewerWindow __instance)
-            {
-                HideIfCantLearnExtension extension = def.GetModExtension<HideIfCantLearnExtension>();
-                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
-                if (extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
-                {
-                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
-                    if (comp != null && !Util.IsQualified(pawn, def))
-                    {
-                        return comp.CanLearn(def);
-                    }
-                }
-                return true;
-            }
-        } 
-    }
-    public static class Skill_Proficiency_XP_Patch
-    {
-        [HarmonyPatch(typeof(TorannMagic.MightAbility), nameof(TorannMagic.MightAbility.PostAbilityAttempt))]
-        public class PostAbilityAttempt_Postfix
-        {
-            public static void Postfix(MightAbility __instance)
-            {
-                AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
-                if (extension != null)
-                {
-                    List<ProficiencyDef> proficiencies = new List<ProficiencyDef>();
-                    proficiencies = extension.Proficiencies;
-                    if (proficiencies != null && proficiencies.Count > 0)
-                    {
-                        foreach (ProficiencyDef item in proficiencies)
-                        {
-                            ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
-                            if (comp != null)
-                            {
-                                CompAbilityUserMight Stamina = __instance.Pawn.TryGetComp<CompAbilityUserMight>();
-                                if (Stamina != null)
-                                {
-                                    float xp = extension.LearnRate * 10 * (__instance.mightDef.staminaCost + __instance.mightDef.upkeepEnergyCost + __instance.mightDef.upkeepRegenCost);
-                                    if (xp > 0)
-                                    {
-                                        comp.TryGainXp(xp, item, extension.experienceType);
-                                    }
-                                    else
-                                    {
-                                        comp.TryGainXp(extension.LearnRate, item, extension.experienceType);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                return;
-            }
-        }
-    }
-    public static class Spell_Proficiency_XP_Patch
-    {
-        [HarmonyPatch(typeof(TorannMagic.MagicAbility), nameof(TorannMagic.MagicAbility.PostAbilityAttempt))]
-        public class PostAbilityAttempt_Postfix
-        {
-            public static void Postfix(MagicAbility __instance)
-            {
-                AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
-                if (extension != null)
-                {
-                    List<ProficiencyDef> proficiencies = new List<ProficiencyDef>();
-                    proficiencies = extension.Proficiencies;
-                    if (proficiencies != null && proficiencies.Count > 0)
-                    {
-                        foreach (ProficiencyDef item in proficiencies)
-                        {
-                            ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
-                            if (comp != null)
-                            {
-                                CompAbilityUserMagic mana = __instance.Pawn.TryGetComp<CompAbilityUserMagic>();
-                                if (mana != null) 
-                                { 
-                                    float xp = extension.LearnRate * 10 * (__instance.magicDef.manaCost + __instance.magicDef.upkeepEnergyCost + __instance.magicDef.upkeepRegenCost);
-                                    if(xp > 0)
-                                    {
-                                        comp.TryGainXp(xp, item, extension.experienceType);
-                                    }
-                                    else
-                                    {
-                                        comp.TryGainXp(extension.LearnRate, item, extension.experienceType);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                return;
-            }
-        }
-    }
-    public static class CompUseEffect_GemOfInsight_Patch
-    {
-        [HarmonyPatch(typeof(TorannMagic.CompUseEffect_GemOfInsight), nameof(TorannMagic.CompUseEffect_GemOfInsight.DoEffect))]
-        public class DoEffect_PretFix
-        {
-            public static bool Prefix(Pawn user, object __instance)
-            {
-                CompAbilityUserMight compAbilityUserMight = user.GetCompAbilityUserMight();
-                CompAbilityUserMagic compAbilityUserMagic = user.GetCompAbilityUserMagic();
-                ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
-                if (!compAbilityUserMagic.IsMagicUser && !compAbilityUserMight.IsMightUser && !user.story.traits.HasTrait(TorannMagicDefOf.TM_Gifted) && !user.story.traits.HasTrait(TorannMagicDefOf.PhysicalProdigy) && !user.story.traits.HasTrait(TorannMagicDefOf.Undead) && !user.IsShambler && !user.IsGhoul)
-                {
-                    GemOfInsightProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<GemOfInsightProficiencyExtension>();
-                    if (extension != null)
-                    {
-                        comp.TryGainProficiency(extension.Proficiency);
-                        Messages.Message("LLAROM_GemOfInsight".Translate(user.LabelShort, extension.Proficiency.label, user.Named("USER")), user, MessageTypeDefOf.PositiveEvent);
-                    }
-                }
-                return true;
-            }
-        }
-    }
-    public static class Can_Larn_Magic_Patch
-    {
-        [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMagic), nameof (TorannMagic.CompUseEffect_LearnMagic.DoEffect))]
-        public class DoEffectk_Prefix
-        {
-            public static bool Prefix(Pawn user, object __instance)
-            {
-                BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
-                if (extension != null && extension.AnyRequirements())
-                {
-                    List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
-                    {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
-                        Messages.Message("LLARoM_LearnMagicMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-    }
-    public static class CompUseEffect_LearnMight_Patch
-    {
-        [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMight), nameof(TorannMagic.CompUseEffect_LearnMight.DoEffect))]
-        public class DoEffectk_Prefix
-        {
-            public static bool Prefix(Pawn user, object __instance)
-            {
-                BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
-                if (extension != null && extension.AnyRequirements())
-                {
-                    List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
-                    {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
-                        Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-    }
-    public static class CompUseEffect_LearnSpell_Patch
-    {
-        [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSpell), nameof(TorannMagic.CompUseEffect_LearnSpell.DoEffect))]
-        public class DoEffectk_Prefix
-        {
-            public static bool Prefix(Pawn user, object __instance)
-            {
-                BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
-                if (extension != null && extension.AnyRequirements())
-                {
-                    List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
-                    {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
-                        Messages.Message("LLARoM_LearnSpellMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-    }
-    public static class CompUseEffect_LearnSkill_Patch
-    {
-        [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSkill), nameof(TorannMagic.CompUseEffect_LearnSkill.DoEffect))]
-        public class DoEffectk_Prefix
-        {
-            public static bool Prefix(Pawn user, object __instance)
-            {
-                BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
-                if (extension != null && extension.AnyRequirements())
-                {
-                    List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, false).Allowed(false))
-                    {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
-                        Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
-                        return false;
-                    }
-                }
-                return true;
-            }
         }
     }
 }
