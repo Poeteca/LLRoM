@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using TorannMagic;
@@ -14,6 +15,45 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class TraitProficiencGenPatch
+    {
+        [HarmonyPatch(typeof(ProficiencyResolver), nameof(ProficiencyResolver.ResolveForPawn))]
+        public static class TraitProficiencGenPatchPostfix
+        {
+            public static void Postfix(Pawn pawn, ProficiencyComp comp)
+            {
+                List<Trait> traits = pawn.story.traits.TraitsSorted;
+                foreach (Trait trait in traits)
+                {
+                    TraitDef Def = trait.def;
+                    BackstoryProficiencyExtension extension = Def.GetModExtension<BackstoryProficiencyExtension>();
+                    if (extension != null)
+                    {
+                        if (!extension.templates.NullOrEmpty())
+                        {
+                            ProficiencyResolver.ResolveTemplates(pawn, comp, extension.templates, skipTests: true);
+                        }
+                        if (!extension.package.proficiencies.NullOrEmpty())
+                        {
+                            foreach (ProficiencyDef def in extension.package.proficiencies)
+                            {
+                                comp.TryGainProficiency(def, force: true);
+                            }
+                        }
+                        if (!extension.package.conditionalProficiencies.NullOrEmpty())
+                        {
+                            ProficiencyResolver.ResolveConditionalRolls(extension.package.conditionalProficiencies, pawn, comp);
+                        }
+                        if (!extension.package.conditionalTemplates.NullOrEmpty())
+                        {
+                            ProficiencyResolver.ResolveConditionalRolls(extension.package.conditionalTemplates, pawn, comp);
+                        }
+                    }
+                    ProficiencyResolver.ResolveTemplates(pawn, comp, DefDatabase<BackstoryProficiencyTemplateDef>.AllDefs.ToList());
+                }
+            }
+        }
+    }
     public static class HediffLockoutPatch
     {
         [HarmonyPatch(typeof(ProficiencyComp), nameof(ProficiencyComp.CanLearn))]
