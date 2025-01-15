@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Magic-->
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_DefensiveMagic</defName>
+		<label>Textbook (defensive magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(181, 20, 186)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Defensive</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_DefensiveBuff</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_DefensiveBarrier</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_OffensiveMagic</defName>
+		<label>Textbook (offensive magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(181, 20, 186)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Offensive</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_OffensiveLargeArea</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_OffensiveDeBuff</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_FireMagic</defName>
+		<label>Textbook (fire magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(245, 136, 12)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_FireI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_FireII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_FireIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_IceMagic</defName>
+		<label>Textbook (ice magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(153, 246, 247)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_IceI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_IceII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_IceIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_WindMagic</defName>
+		<label>Textbook (wind magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(217, 245, 140)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_WindI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_WindII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_WindIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_LightningMagic</defName>
+		<label>Textbook (lightning magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(71, 161, 245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_LightningI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_LightningII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_LightningIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_LightMagic</defName>
+		<label>Textbook (light magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(255, 254, 166)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_LightI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_LightII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_LightIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_SummonMagic</defName>
+		<label>Textbook (summoning magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(250, 125, 248)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Summon</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_SummonII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_TeleportationMagic</defName>
+		<label>Textbook (teleportation magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(250, 125, 248)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_TeleportationI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_TeleportationII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_HealingMagic</defName>
+		<label>Textbook (healing magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(32, 255, 20)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_HealingI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_HealingII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_NecroMagic</defName>
+		<label>Textbook (necro magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(7, 15, 102)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_NecroI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_NecroII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_VitalityMagic</defName>
+		<label>Textbook (vitality magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(217, 22, 22)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_VitalityI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_VitalityII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_PlantMagic</defName>
+		<label>Textbook (plant magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(84, 128, 23)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_PlantI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_PlantII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_EarthMagic</defName>
+		<label>Textbook (earth magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(148, 145, 108)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_EarthI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_EarthII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_EarthIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_EmotionMagic</defName>
+		<label>Textbook (emotion magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(254, 201, 255)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_EmotionI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_EmotionII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_RawMagic</defName>
+		<label>Textbook (raw magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(244, 42, 247)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_RawI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_RawII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_TimeMagic</defName>
+		<label>Textbook (time magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(60, 179, 181)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_TimeI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_TimeII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_TimeIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_ChaosMagic</defName>
+		<label>Textbook (chaos magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(75, 18, 82)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_ChaosI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_ChaosII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_HolyMagic</defName>
+		<label>Textbook (holy magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(227, 226, 172)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_HolyI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_HolyII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_UnholyMagic</defName>
+		<label>Textbook (unholy magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(130, 8, 8)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_UnholyI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_UnholyII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_BindingMagic</defName>
+		<label>Textbook (binding magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(153, 65, 156)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_BindingI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_BindingII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_MixFireIceMagic</defName>
+		<label>Textbook (MixFireIce magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(116, 44, 171)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_MixFireIce</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_MixWindFireIceMagic</defName>
+		<label>Textbook (MixWindFireIce magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(10, 163, 158)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_MixWindFireIce</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_MixLightLightningMagic</defName>
+		<label>Textbook (MixLightLightning magic)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(217, 227, 18)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_MixLightLightning</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	<!--Might-->
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_Physical_Conditioning</defName>
+		<label>Textbook (physical conditioning)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(214, 111, 111)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Physical_Conditioning</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Coordination</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Strength</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Endurance</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_Mental_Conditioning</defName>
+		<label>Textbook (mental conditioning)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(111, 176, 214)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Mental_Conditioning</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Tactics</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Manipulation</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Charisma</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_Ranged</defName>
+		<label>Textbook (ranged fighting)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(24, 125, 184)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Equipment_Mastery</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Ranged</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Extreme_Range</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_Melee</defName>
+		<label>Textbook (melee fighting)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(156, 23, 23)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Equipment_Mastery</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_CQC</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Defensive_Fighting</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_Breath</defName>
+		<label>Textbook (self control)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(54, 224, 85)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_Mental_Conditioning</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Physical_Conditioning</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Breath_Control</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_Mind_Mastery</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	<!--Arcane-->
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_ScribingI</defName>
+		<label>Textbook (scribing)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(188, 217, 28)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>700</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_ScribI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_ScribII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_ScribingII</defName>
+		<label>Textbook (advance scribing)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(165, 191, 21)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_ScribIII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_MagicCrafting</defName>
+		<label>Textbook (magical crafting)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(179, 60, 181)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>700</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_MagicRefinement</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_MagicEnchantingI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_MagicConstructsI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_Enchanting</defName>
+		<label>Textbook (enchanting)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(174, 42, 176)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>700</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_MagicEnchantingI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_MagicEnchantingII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_MagicConstructs</defName>
+		<label>Textbook (magic constructs)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(207, 42, 209)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>700</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_MagicConstructsI</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+					<li>
+						<proficiency>LLRoM_MagicConstructsII</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_MagicMaterials</defName>
+		<label>Textbook (magic materials)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(23, 62, 191)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>900</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>LLRoM_MagicMaterials</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+	</ThingDef>
+	<!--Gem of insight-->
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_MagicInsight</defName>
+		<label>Textbook (magic insight)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(232, 7, 225)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>Magic_Insight</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+		<costList>
+			<GemstoneOfInsight_Magic>1</GemstoneOfInsight_Magic>
+		</costList>
+		<recipeMaker>		    
+			<workAmount>6000</workAmount>
+			<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>TableMagicPrinter</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedGem</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+			<researchPrerequisite>
+				<li>TM_MagicScribing</li>
+			</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="LLTextbook_Base">
+		<defName>LLRoMTextbook_PhysicalInsight</defName>
+		<label>Textbook (physical insight)</label>
+		<tradeTags>
+			<li>LLTextbooksRare</li>
+		</tradeTags>
+		<graphicData>
+			<color>(12, 237, 57)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="LifeLessons.CompProperties_ProficiencyLearningModifier">
+				<modifiers>
+					<li>
+						<proficiency>Physical_Insight</proficiency>
+						<ticksValid>20000</ticksValid>
+						<modifier>1.75</modifier>
+						<pioneeringLengthMult>0.5</pioneeringLengthMult>
+						<pioneeringModifierMult>2.0</pioneeringModifierMult>
+					</li>
+				</modifiers>
+			</li>
+		</comps>
+		<costList>
+			<GemstoneOfInsight_Might>1</GemstoneOfInsight_Might>
+		</costList>
+		<recipeMaker>		    
+			<workAmount>6000</workAmount>
+			<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>TableMagicPrinter</li>
+			</recipeUsers>
+			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedGem</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+			<researchPrerequisite>
+				<li>TM_MagicScribing</li>
+			</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

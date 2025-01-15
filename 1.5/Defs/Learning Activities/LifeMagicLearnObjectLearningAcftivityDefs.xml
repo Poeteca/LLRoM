@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_VitalityI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfDruid</li>
+						<li>Torn_BookOfNature</li>
+						<li>BookOfNecromancer</li>
+						<li>Torn_BookOfUndead</li>
+						<li>BookOfPriest</li>
+						<li>Torn_BookOfPriest</li>
+						<li>BookOfHemomancy</li>
+						<li>Torn_BookOfHemomancy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfDruid</li>
+				<li>Torn_BookOfNature</li>
+				<li>BookOfNecromancer</li>
+				<li>Torn_BookOfUndead</li>
+				<li>BookOfPriest</li>
+				<li>Torn_BookOfPriest</li>
+				<li>BookOfHemomancy</li>
+				<li>Torn_BookOfHemomancy</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_VitalityII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_HealingI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfPriest</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfPriest</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_HealingII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_NecroI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfHemomancy</li>
+						<li>BookOfNecromancer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfHemomancy</li>
+				<li>BookOfNecromancer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_NecroII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_PlantI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfDruid</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfDruid</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_PlantII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+</Defs>

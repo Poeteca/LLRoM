@@ -5,9 +5,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_LightI</defName>
 		<label>LLRoM_LightI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_LightMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -23,14 +20,17 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_LightI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_LightII</defName>
 		<label>LLRoM_LightII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_LightMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -46,6 +46,9 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_LightII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 
@@ -53,9 +56,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_LightIII</defName>
 		<label>LLRoM_LightIII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_LightMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -71,5 +71,8 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_LightIII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!--LLRoM_Defensive-->
+
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Defensive</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Torn_BookOfValiant</li>
+						<li>BookOfValiant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Torn_BookOfValiant</li>
+				<li>BookOfValiant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Defensive</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blur</li>
+						<li>SpellOf_LightningTrap</li>
+						<li>SpellOf_HeatShield</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blur</li>
+				<li>SpellOf_LightningTrap</li>
+				<li>SpellOf_HeatShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Defensive</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blur</li>
+						<li>SpellOf_LightningTrap</li>
+						<li>SpellOf_HeatShield</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blur</li>
+				<li>SpellOf_LightningTrap</li>
+				<li>SpellOf_HeatShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_DefensiveBuff-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_DefensiveBuff</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_DefensiveBuff</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Invisibility</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Invisibility</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_DefensiveBuff</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Invisibility</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Invisibility</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_DefensiveBarrier-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_DefensiveBarrier</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_DefensiveBarrier</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_ManaShield</li>
+						<li>SpellOf_ShieldOther</li>
+						<li>SpellOf_TechnoShield</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_ManaShield</li>
+				<li>SpellOf_ShieldOther</li>
+				<li>SpellOf_TechnoShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_DefensiveBarrier</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_ManaShield</li>
+						<li>SpellOf_ShieldOther</li>
+						<li>SpellOf_TechnoShield</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_ManaShield</li>
+				<li>SpellOf_ShieldOther</li>
+				<li>SpellOf_TechnoShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+
+<!--LLRoM_Offensive-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Offensive</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Torn_BookOfStormBorn</li>
+						<li>BookOfStormBorn</li>
+						<li>BookOfInnerFire</li>
+						<li>BookOfHeartOfFrost</li>
+						<li>BookOfValiant</li>
+						<li>BookOfTheSun</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Torn_BookOfStormBorn</li>
+				<li>BookOfStormBorn</li>
+				<li>BookOfInnerFire</li>
+				<li>BookOfHeartOfFrost</li>
+				<li>BookOfValiant</li>
+				<li>BookOfTheSun</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Offensive</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_EMP</li>
+						<li>SpellOf_ArcaneBolt</li>
+						<li>SpellOf_Ignite</li>
+						<li>SpellOf_SnapFreeze</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_EMP</li>
+				<li>SpellOf_ArcaneBolt</li>
+				<li>SpellOf_Ignite</li>
+				<li>SpellOf_SnapFreeze</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Offensive</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_EMP</li>
+						<li>SpellOf_ArcaneBolt</li>
+						<li>SpellOf_Ignite</li>
+						<li>SpellOf_SnapFreeze</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_EMP</li>
+				<li>SpellOf_ArcaneBolt</li>
+				<li>SpellOf_Ignite</li>
+				<li>SpellOf_SnapFreeze</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_OffensiveLargeArea-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_OffensiveLargeArea</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfStormBorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfStormBorn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_OffensiveLargeArea</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Firestorm</li>
+						<li>SpellOf_Blizzard</li>
+						<li>SpellOf_EyeOfTheStorm</li>
+						<li>SpellOf_HolyWrath</li>
+						<li>SpellOf_Meteor</li>
+						<li>SpellOf_BloodMoon</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Firestorm</li>
+				<li>SpellOf_Blizzard</li>
+				<li>SpellOf_EyeOfTheStorm</li>
+				<li>SpellOf_HolyWrath</li>
+				<li>SpellOf_Meteor</li>
+				<li>SpellOf_BloodMoon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_OffensiveLargeArea</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Firestorm</li>
+						<li>SpellOf_Blizzard</li>
+						<li>SpellOf_EyeOfTheStorm</li>
+						<li>SpellOf_HolyWrath</li>
+						<li>SpellOf_Meteor</li>
+						<li>SpellOf_BloodMoon</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Firestorm</li>
+				<li>SpellOf_Blizzard</li>
+				<li>SpellOf_EyeOfTheStorm</li>
+				<li>SpellOf_HolyWrath</li>
+				<li>SpellOf_Meteor</li>
+				<li>SpellOf_BloodMoon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_OffensiveDeBuff-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_OffensiveDeBuff</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_OffensiveDeBuff</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Discord</li>
+						<li>SpellOf_Sabotage</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Discord</li>
+				<li>SpellOf_Sabotage</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_OffensiveDeBuff</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Discord</li>
+						<li>SpellOf_Sabotage</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Discord</li>
+				<li>SpellOf_Sabotage</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+
+<!--LLRoM_RawI-->
+
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_RawI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Torn_BookOfDemons</li>
+						<li>BookOfDemons</li>
+						<li>Torn_BookOfEnchanter</li>
+						<li>BookOfEnchanter</li>
+						<li>Torn_BookOfShamanism</li>
+						<li>BookOfShamanism</li>
+						<li>BookOfShadow</li>
+						<li>BookOfBard</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Torn_BookOfDemons</li>
+				<li>BookOfDemons</li>
+				<li>Torn_BookOfEnchanter</li>
+				<li>BookOfEnchanter</li>
+				<li>Torn_BookOfShamanism</li>
+				<li>BookOfShamanism</li>
+				<li>BookOfShadow</li>
+				<li>BookOfBard</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_RawI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blur</li>
+						<li>SpellOf_ArcaneBolt</li>
+						<li>SpellOf_Discord</li>
+						<li>SpellOf_BrandSiphon</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blur</li>
+				<li>SpellOf_ArcaneBolt</li>
+				<li>SpellOf_Discord</li>
+				<li>SpellOf_BrandSiphon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_RawI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blur</li>
+						<li>SpellOf_ArcaneBolt</li>
+						<li>SpellOf_Discord</li>
+						<li>SpellOf_BrandSiphon</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blur</li>
+				<li>SpellOf_ArcaneBolt</li>
+				<li>SpellOf_Discord</li>
+				<li>SpellOf_BrandSiphon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_RawII-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_RawII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfEnchanter</li>
+						<li>BookOfShamanism</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfEnchanter</li>
+				<li>BookOfShamanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_RawII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_TransferMana</li>
+						<li>SpellOf_SiphonMana</li>
+						<li>SpellOf_ManaShield</li>
+						<li>SpellOf_SpellMending</li>
+						<li>SpellOf_ShieldOther</li>
+						<li>SpellOf_Invisibility</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_TransferMana</li>
+				<li>SpellOf_SiphonMana</li>
+				<li>SpellOf_ManaShield</li>
+				<li>SpellOf_SpellMending</li>
+				<li>SpellOf_ShieldOther</li>
+				<li>SpellOf_Invisibility</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_RawII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_TransferMana</li>
+						<li>SpellOf_SiphonMana</li>
+						<li>SpellOf_ManaShield</li>
+						<li>SpellOf_SpellMending</li>
+						<li>SpellOf_ShieldOther</li>
+						<li>SpellOf_Invisibility</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_TransferMana</li>
+				<li>SpellOf_SiphonMana</li>
+				<li>SpellOf_ManaShield</li>
+				<li>SpellOf_SpellMending</li>
+				<li>SpellOf_ShieldOther</li>
+				<li>SpellOf_Invisibility</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_BindingI-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_BindingI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfDemons</li>
+						<li>BookOfGolemancy</li>
+						<li>Torn_BookOfGolemancy</li>
+						<li>BookOfSummoner</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfDemons</li>
+				<li>BookOfGolemancy</li>
+				<li>Torn_BookOfGolemancy</li>
+				<li>BookOfSummoner</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_BindingI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BlankMind</li>
+						<li>SpellOf_SummonMinion</li>
+						<li>SpellOf_BrandSiphon</li>
+						<li>SpellOf_BrandFitness</li>
+						<li>SpellOf_BrandEmotion</li>
+						<li>SpellOf_BrandVitality</li>
+						<li>SpellOf_BrandProtection</li>
+						<li>SpellOf_BrandAwareness</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BlankMind</li>
+				<li>SpellOf_SummonMinion</li>
+				<li>SpellOf_BrandSiphon</li>
+				<li>SpellOf_BrandFitness</li>
+				<li>SpellOf_BrandEmotion</li>
+				<li>SpellOf_BrandVitality</li>
+				<li>SpellOf_BrandProtection</li>
+				<li>SpellOf_BrandAwareness</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_BindingI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BlankMind</li>
+						<li>SpellOf_SummonMinion</li>
+						<li>SpellOf_BrandSiphon</li>
+						<li>SpellOf_BrandFitness</li>
+						<li>SpellOf_BrandEmotion</li>
+						<li>SpellOf_BrandVitality</li>
+						<li>SpellOf_BrandProtection</li>
+						<li>SpellOf_BrandAwareness</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BlankMind</li>
+				<li>SpellOf_SummonMinion</li>
+				<li>SpellOf_BrandSiphon</li>
+				<li>SpellOf_BrandFitness</li>
+				<li>SpellOf_BrandEmotion</li>
+				<li>SpellOf_BrandVitality</li>
+				<li>SpellOf_BrandProtection</li>
+				<li>SpellOf_BrandAwareness</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_BindingII-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_BindingII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfGolemancy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfGolemancy</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_BindingII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_MagicWardrobe</li>
+						<li>SpellOf_LivingWall</li>
+						<li>SpellOf_SummonPoppi</li>
+						<li>SpellOf_Scorn</li>
+						<li>SpellOf_PsychicShock</li>
+						<li>SpellOf_Recall</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_MagicWardrobe</li>
+				<li>SpellOf_LivingWall</li>
+				<li>SpellOf_SummonPoppi</li>
+				<li>SpellOf_Scorn</li>
+				<li>SpellOf_PsychicShock</li>
+				<li>SpellOf_Recall</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_BindingII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_MagicWardrobe</li>
+						<li>SpellOf_LivingWall</li>
+						<li>SpellOf_SummonPoppi</li>
+						<li>SpellOf_Scorn</li>
+						<li>SpellOf_PsychicShock</li>
+						<li>SpellOf_Recall</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_MagicWardrobe</li>
+				<li>SpellOf_LivingWall</li>
+				<li>SpellOf_SummonPoppi</li>
+				<li>SpellOf_Scorn</li>
+				<li>SpellOf_PsychicShock</li>
+				<li>SpellOf_Recall</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_EmotionI-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_EmotoinI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Torn_BookOfBard</li>
+						<li>BookOfBard</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Torn_BookOfBard</li>
+				<li>BookOfBard</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_EmotoinI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BrandEmotion</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BrandEmotion</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_EmotoinI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BrandEmotion</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BrandEmotion</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_EmotionII-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_EmotoinII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfBard</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfBard</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_EmotoinII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BlankMind</li>
+						<li>SpellOf_BattleHymn</li>
+						<li>SpellOf_FadeEmotions</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BlankMind</li>
+				<li>SpellOf_BattleHymn</li>
+				<li>SpellOf_FadeEmotions</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_EmotoinII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BlankMind</li>
+						<li>SpellOf_BattleHymn</li>
+						<li>SpellOf_FadeEmotions</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BlankMind</li>
+				<li>SpellOf_BattleHymn</li>
+				<li>SpellOf_FadeEmotions</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_TimeI-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_TimeI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Torn_BookOfChronomancer</li>
+						<li>BookOfChronomancer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Torn_BookOfChronomancer</li>
+				<li>BookOfChronomancer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_TimeI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_TimeI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_TimeII-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_TimeII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfChronomancer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfChronomancer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_TimeII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_TimeII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_TimeIII-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_TimeIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_TimeIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Recall</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Recall</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_TimeIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Recall</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Recall</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_ChaosI-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_ChaosI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfChronomancer</li>
+						<li>Torn_BookOfChaos</li>
+						<li>BookOfChaos</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfChronomancer</li>
+				<li>Torn_BookOfChaos</li>
+				<li>BookOfChaos</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_ChaosI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_ChaosI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+
+<!--LLRoM_ChaosII-->
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_ChaosII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfChaos</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfChaos</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_ChaosII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Shapeshift</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Shapeshift</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_ChaosII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Shapeshift</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Shapeshift</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+</Defs>

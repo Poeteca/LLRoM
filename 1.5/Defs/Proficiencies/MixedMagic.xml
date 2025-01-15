@@ -8,9 +8,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_MixFireIce</defName>
 		<label>LLRoM_MixFireIce</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MixedMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>
@@ -32,9 +29,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_MixWindFireIce</defName>
 		<label>LLRoM_MixWindFireIce</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MixedMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>
@@ -56,9 +50,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_MixLightLightning</defName>
 		<label>LLRoM_MixLightLightning</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MixedMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>

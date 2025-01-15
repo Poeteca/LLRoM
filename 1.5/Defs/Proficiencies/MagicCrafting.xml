@@ -6,9 +6,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
 		<defName>LLRoM_ScribI</defName>
 		<label>LLRoM_ScribI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -28,9 +25,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
 		<defName>LLRoM_MagicRefinement</defName>
 		<label>LLRoM_MagicRefinement</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -47,9 +41,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
 		<defName>LLRoM_MagicEnchantingI</defName>
 		<label>LLRoM_MagicEnchantingI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -70,9 +61,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
 		<defName>LLRoM_MagicConstructsI</defName>
 		<label>LLRoM_MagicConstructsI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -92,9 +80,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcane">
 		<defName>LLRoM_MagicMaterials</defName>
 		<label>LLRoM_MagicMaterials</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -161,9 +146,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
 		<defName>LLRoM_ScribII</defName>
 		<label>LLRoM_ScribII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -183,9 +165,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
 		<defName>LLRoM_ScribIII</defName>
 		<label>LLRoM_ScribIII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -205,9 +184,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
 		<defName>LLRoM_MagicEnchantingII</defName>
 		<label>LLRoM_MagicEnchantingII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -230,9 +206,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneRare">
 		<defName>LLRoM_MagicConstructsII</defName>
 		<label>LLRoM_MagicConstructsII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfRanger</li>
+						<li>BookOfBladedancer</li>
+						<li>BookOfGladiator</li>
+						<li>BookOfDeathKnight</li>
+						<li>BookOfMonk</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfRanger</li>
+				<li>BookOfBladedancer</li>
+				<li>BookOfGladiator</li>
+				<li>BookOfDeathKnight</li>
+				<li>BookOfMonk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfApothecary</li>
+						<li>BookOfDeathKnight</li>
+						<li>BookOfBladedancer</li>
+						<li>BookOfMonk</li>
+						<li>BookOfRanger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfApothecary</li>
+				<li>BookOfDeathKnight</li>
+				<li>BookOfBladedancer</li>
+				<li>BookOfMonk</li>
+				<li>BookOfRanger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfRanger</li>
+						<li>BookOfCommander</li>
+						<li>BookOfDeathKnight</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfRanger</li>
+				<li>BookOfCommander</li>
+				<li>BookOfDeathKnight</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Coordination</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfRanger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfRanger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Strength</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfBladedancer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfBladedancer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Endurance</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfGladiator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfGladiator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_CQC</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfBladedancer</li>
+						<li>BookOfDeathKnight</li>
+						<li>BookOfMonk</li>
+						<li>BookOfGladiator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfBladedancer</li>
+				<li>BookOfDeathKnight</li>
+				<li>BookOfMonk</li>
+				<li>BookOfGladiator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Breath_Control</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfSniper</li>
+						<li>BookOfMonk</li>
+						<li>BookOfPsionic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfSniper</li>
+				<li>BookOfMonk</li>
+				<li>BookOfPsionic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Ranged</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfRanger</li>
+						<li>BookOfSniper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfRanger</li>
+				<li>BookOfSniper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Tactics</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfCommander</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfCommander</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Manipulation</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfDeathKnight</li>
+						<li>BookOfFaceless</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfDeathKnight</li>
+				<li>BookOfFaceless</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Charisma</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfCommander</li>
+						<li>BookOfFaceless</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfCommander</li>
+				<li>BookOfFaceless</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfSniper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfSniper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfGladiator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfGladiator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfPsionic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfPsionic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+</Defs>

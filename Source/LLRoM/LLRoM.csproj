@@ -66,8 +66,6 @@
     <Compile Include="AbilityXPGainExtension.cs" />
     <Compile Include="GemOfInsightProficiencyExtension.cs" />
     <Compile Include="HarmonyPatches.cs" />
-    <Compile Include="HediffCompProperties_teacher.cs" />
-    <Compile Include="HediffComp_teacher.cs" />
     <Compile Include="HideIfCantLearnExtension.cs" />
     <Compile Include="LockoutExtension.cs" />
     <Compile Include="ProficiencyDefOf.cs" />

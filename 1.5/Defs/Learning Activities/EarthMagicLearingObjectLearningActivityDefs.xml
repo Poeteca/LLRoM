@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_EarthI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Torn_BookOfGolemancy</li>
+						<li>BookOfGolemancy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Torn_BookOfGolemancy</li>
+				<li>BookOfGolemancy</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_EarthII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfGolemancy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfGolemancy</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_EarthIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+</Defs>

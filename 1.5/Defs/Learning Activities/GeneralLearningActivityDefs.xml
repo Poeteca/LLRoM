@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.LearningActivityDef Name="LLRoM_ReadLearnObjectBase" Abstract="True">
+		<activityJob>LLRoM_StudyLearnObject</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Theoretical</experienceType>
+		<xpPerTick>0.0025</xpPerTick>
+		<dailyRepetitionsUntilExhausted>1</dailyRepetitionsUntilExhausted>
+		<effectWorking>LearnFromLecture</effectWorking>
+		<validWorkstations>
+			<li>SimpleResearchBench</li>
+		</validWorkstations>
+		<consumeIngredientTargets>false</consumeIngredientTargets>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadLearnObjectBase" Name="LLRoM_ReadMagicLearnObjectBase" Abstract="True">
+		<label>Study Arcane Tome</label>
+		<description>temp</description>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadLearnObjectBase" Name="LLRoM_ReadMightLearnObjectBase" Abstract="True">
+		<label>Study Martia Manuel.</label>
+		<description>temp</description>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef Name="LLRoM_UseScroll" Abstract="True">
+		<activityJob>LLRoM_StudyLearnObject</activityJob>
+		<label>Use Scroll</label>
+		<disabledByDefault>true</disabledByDefault>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.005</xpPerTick>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<effectWorking>LearnFromLecture</effectWorking>
+		<validWorkstations>
+			<li>SimpleResearchBench</li>
+		</validWorkstations>
+		<consumeIngredientTargets>true</consumeIngredientTargets>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef Name="LLRoM_ExamineScroll" Abstract="True">
+		<activityJob>LLRoM_StudyLearnObject</activityJob>
+		<label>Use Scroll</label>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Theoretical</experienceType>
+		<xpPerTick>0.0025</xpPerTick>
+		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
+		<effectWorking>LearnFromLecture</effectWorking>
+		<validWorkstations>
+			<li>SimpleResearchBench</li>
+		</validWorkstations>
+		<consumeIngredientTargets>false</consumeIngredientTargets>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_MagicPonder</defName>
+		<label>Ponder Gem of Insight</label>
+		<description>temp</description>
+		<activityJob>LLRoM_Ponder</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<baseTickLength>7500</baseTickLength>
+		<xpPerTick>0.0025</xpPerTick>
+		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLAnalyze</effectWorking>
+		<validWorkstations>
+			<li>SimpleResearchBench</li>
+		</validWorkstations>
+		<consumeIngredientTargets>false</consumeIngredientTargets>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GemstoneOfInsight_Magic</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GemstoneOfInsight_Magic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_MightPonder</defName>
+		<label>Ponder Gem of Might</label>
+		<description>temp</description>
+		<activityJob>LLRoM_Ponder</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<baseTickLength>7500</baseTickLength>
+		<xpPerTick>0.0025</xpPerTick>
+		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLAnalyze</effectWorking>
+		<validWorkstations>
+			<li>SimpleResearchBench</li>
+		</validWorkstations>
+		<consumeIngredientTargets>false</consumeIngredientTargets>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GemstoneOfInsight_Might</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GemstoneOfInsight_Might</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+</Defs>

@@ -6,9 +6,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_IceI</defName>
 		<label>LLRoM_IceI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -24,14 +21,17 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_IceI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_IceII</defName>
 		<label>LLRoM_IceII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -47,6 +47,9 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_IceII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 <!--Uncommon-->
@@ -56,9 +59,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_IceIII</defName>
 		<label>LLRoM_IceIII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -74,5 +74,8 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_IceIII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

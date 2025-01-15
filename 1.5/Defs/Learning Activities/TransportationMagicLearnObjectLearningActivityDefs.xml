@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_Summon</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Torn_BookOfArcanist</li>
+						<li>BookOfArcanist</li>
+						<li>Torn_BookOfSummoner</li>
+						<li>BookOfSummoner</li>
+						<li>BookOfShamanism</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Torn_BookOfArcanist</li>
+				<li>BookOfArcanist</li>
+				<li>Torn_BookOfSummoner</li>
+				<li>BookOfSummoner</li>
+				<li>BookOfShamanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_SummonII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfSummoner</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfSummoner</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_TeleportationI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BookOfArcanist</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BookOfArcanist</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
+		<defName>LLRoM_ReadMagicLearnObjectBase_TeleportationII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+</Defs>

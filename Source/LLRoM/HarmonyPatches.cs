@@ -61,7 +61,7 @@ namespace LLRoM
         {
             public static bool Prefix(ProficiencyDef def, ProficiencyComp __instance)
             {
-               LockoutExtension extension = def.GetModExtension<LockoutExtension>();
+                LockoutExtension extension = def.GetModExtension<LockoutExtension>();
                 Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
                 if (pawn != null && extension != null && !pawn.health.hediffSet.HasHediff(extension.withouHediff) && pawn.health.hediffSet.HasHediff(extension.hasHediff))
                 {

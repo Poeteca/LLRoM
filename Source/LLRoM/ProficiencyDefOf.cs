@@ -8,13 +8,18 @@ using LifeLessons;
 
 namespace LLRoM
 {
-    public class ProficiencyDefOf: DefOf
+    public class ProficiencyDefOf : DefOf
     {
         public static ProficiencyDef Magic_Insight;
         public static ProficiencyDef Physical_Insight;
+        public static ProficiencyTabDef LLROM_Magic;
+        public static ProficiencyTabDef LLROM_Might;
+        public static LearningActivityDef LLRoM_UseScroll;
         static ProficiencyDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ProficiencyDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(ProficiencyTabDef));
+            DefOfHelper.EnsureInitializedInCtor(typeof(LearningActivityDef));
         }
     }
 }

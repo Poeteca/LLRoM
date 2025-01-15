@@ -6,9 +6,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>Physical_Insight</defName>
 		<label>Physical Insight</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -20,14 +17,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MightPonder</li>
+		</practicalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Physical_Conditioning</defName>
 		<label>LLRoM_Physical_Conditioning</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -43,14 +40,17 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MightPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Equipment_Mastery</defName>
 		<label>LLRoM_Equipment_Mastery</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>600</costTheoretical>
@@ -66,14 +66,17 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MightPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Mental_Conditioning</defName>
 		<label>LLRoM_Mental_Conditioning</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -89,14 +92,17 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MightPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Coordination</defName>
 		<label>LLRoM_Coordination</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -112,14 +118,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Coordination</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Strength</defName>
 		<label>LLRoM_Strength</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -135,14 +141,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Strength</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Endurance</defName>
 		<label>LLRoM_Endurance</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -158,14 +164,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Endurance</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_CQC</defName>
 		<label>LLRoM_CQC</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -182,14 +188,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_CQC</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Breath_Control</defName>
 		<label>LLRoM_Breath_Control</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>500</costTheoretical>
@@ -206,14 +212,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Breath_Control</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Ranged</defName>
 		<label>LLRoM_Ranged</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -230,14 +236,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Ranged</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Tactics</defName>
 		<label>LLRoM_Tactics</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -253,14 +259,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Tactics</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Manipulation</defName>
 		<label>LLRoM_Manipulation</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -276,14 +282,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Manipulation</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Charisma</defName>
 		<label>LLRoM_Charisma</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -299,15 +305,15 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Charisma</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Extreme_Range</defName>
 		<label>LLRoM_Extreme_Range</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -323,14 +329,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Defensive_Fighting</defName>
 		<label>LLRoM_Defensive_Fighting</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>500</costTheoretical>
@@ -346,14 +352,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMightRare">
 		<defName>LLRoM_Mind_Mastery</defName>
 		<label>LLRoM_Mind_Mastery</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_MightSkills</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>
@@ -369,5 +375,8 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

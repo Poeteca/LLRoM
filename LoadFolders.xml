@@ -1,0 +1,14 @@
+
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		
+		<li IfModActive="ludeon.rimworld.biotech">Content/Biotech</li>
+		<li IfModActive="ludeon.rimworld.anomaly">Content/Anomaly</li>
+		<li IfModActive="ludeon.rimworld.ideology">Content/Ideology</li>
+		<li IfModActive="ludeon.rimworld.royalty">Content/Royalty</li>
+		<li IfModActive="kure.arom">Content/Kure's Class Expansion</li>
+		
+	</v1.5>
+</loadFolders>

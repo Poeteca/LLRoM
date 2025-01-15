@@ -5,9 +5,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EarthI</defName>
 		<label>LLRoM_EarthI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_EarthMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -23,14 +20,17 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_EarthI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EarthII</defName>
 		<label>LLRoM_EarthII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_EarthMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -46,14 +46,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_EarthII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_EarthIII</defName>
 		<label>LLRoM_EarthIII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_EarthMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -70,6 +70,9 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_EarthIII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
 

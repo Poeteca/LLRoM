@@ -117,7 +117,7 @@
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
 			<researchPrerequisite>
-				<li>TM_MagicScribing</li>
+				<li>TM_AdvancedScribing</li>
 			</researchPrerequisite>
 		</recipeMaker>
 		<rotatable>false</rotatable>
@@ -171,7 +171,7 @@
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
 			<researchPrerequisite>
-				<li>TM_MagicScribing</li>
+				<li>TM_MasterScribing</li>
 			</researchPrerequisite>
 		</recipeMaker>
 		<rotatable>false</rotatable>

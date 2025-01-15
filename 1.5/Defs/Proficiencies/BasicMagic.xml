@@ -6,9 +6,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>Magic_Insight</defName>
 		<label>Magic Insight</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
@@ -20,14 +17,14 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_Defensive</defName>
 		<label>LLRoM_Defensive</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>100</costTheoretical>
@@ -43,15 +40,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_Defensive</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_Defensive</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_Defensive</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
-	
-	
+		
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_DefensiveBuff</defName>
 		<label>LLRoM_DefensiveBuff</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -67,14 +68,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_DefensiveBuff</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_DefensiveBuff</li>
+			<li>LLRoM_ExamineScroll_DefensiveBuff</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_DefensiveBarrier</defName>
 		<label>LLRoM_DefensiveBarrier</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -90,14 +96,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_DefensiveBarrier</li>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_DefensiveBarrier</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_DefensiveBarrier</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_Offensive</defName>
 		<label>LLRoM_Offensive</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>100</costTheoretical>
@@ -113,14 +124,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_Offensive</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_Offensive</li>
+			<li>LLRoM_ExamineScroll_Offensive</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_OffensiveLargeArea</defName>
 		<label>LLRoM_OffensiveLargeArea</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>100</costTheoretical>
@@ -136,14 +152,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_OffensiveLargeArea</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_OffensiveLargeArea</li>
+			<li>LLRoM_ExamineScroll_OffensiveLargeArea</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_OffensiveDeBuff</defName>
 		<label>LLRoM_OffensiveDeBuff</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>100</costTheoretical>
@@ -159,14 +180,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_OffensiveDeBuff</li>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_OffensiveDeBuff</li>
+			<li>LLRoM_ExamineScroll_OffensiveDeBuff</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_RawI</defName>
 		<label>LLRoM_RawI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -182,14 +208,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_RawI</li>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_RawI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_RawI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_BindingI</defName>
 		<label>LLRoM_BindingI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -205,14 +236,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_BindingI</li>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_BindingI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_BindingI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_RawII</defName>
 		<label>LLRoM_RawII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>600</costTheoretical>
@@ -228,14 +264,18 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_RawII</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_RawII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_RawII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_TimeI</defName>
 		<label>LLRoM_TimeI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -251,14 +291,18 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_TimeI</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_TimeI</li>
+			<li>LLRoM_ExamineScroll_TimeI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_BindingII</defName>
 		<label>LLRoM_BindingII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -275,14 +319,18 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_BindingII</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_BindingII</li>
+			<li>LLRoM_ExamineScroll_BindingII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EmotionI</defName>
 		<label>LLRoM_EmotionI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -299,14 +347,19 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_EmotoinI</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_EmotoinI</li>
+			<li>LLRoM_ExamineScroll_EmotoinI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EmotionII</defName>
 		<label>LLRoM_EmotionII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -322,14 +375,18 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_EmotoinII</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_EmotoinII</li>
+			<li>LLRoM_ExamineScroll_EmotoinI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_TimeII</defName>
 		<label>LLRoM_TimeII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -345,14 +402,18 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_TimeII</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_TimeII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_TimeII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_ChaosI</defName>
 		<label>LLRoM_ChaosI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -368,6 +429,13 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_ChaosI</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_ChaosI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_ChaosI</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 
 <!--Rare-->
@@ -375,9 +443,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_TimeIII</defName>
 		<label>LLRoM_TimeIII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>
@@ -393,14 +458,18 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_TimeIII</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_TimeIII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_TimeIII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_ChaosII</defName>
 		<label>LLRoM_ChaosII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>
@@ -417,5 +486,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_ChaosII</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_ChaosII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_ChaosII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

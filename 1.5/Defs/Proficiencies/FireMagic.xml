@@ -6,9 +6,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_FireI</defName>
 		<label>LLRoM_FireI</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_FireMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -16,6 +13,12 @@
 		<prerequisites>
 			<li>Magic_Insight</li>
 		</prerequisites>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_MagicPonder</li>
+		</practicalLearningActivityDefs>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_FireI</li>
+		</theoreticalLearningActivityDefs>
 		<viewerX>1</viewerX>
 		<viewerY>5</viewerY>
 		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
@@ -29,9 +32,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_FireII</defName>
 		<label>LLRoM_FireII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_FireMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -47,6 +47,9 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_FireII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 
 <!--Uncommon-->
@@ -56,9 +59,6 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_FireIII</defName>
 		<label>LLRoM_FireIII</label>
-		<generationRules>
-			<generateTextbook>false</generateTextbook>
-		</generationRules>
 		<category>ProficiencyCategory_FireMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -74,6 +74,9 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ReadMagicLearnObjectBase_FireIII</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 </Defs>

@@ -3,6 +3,11 @@
 <Defs>
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMagic"  ParentName="ProficiencyBase">
 		<tab>LLROM_Magic</tab>
+		<canBePioneered>true</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
@@ -16,6 +21,11 @@
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMagicUncommon"  ParentName="ProficiencyBaseUncommon">
 		<tab>LLROM_Magic</tab>
+		<canBePioneered>true</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
@@ -29,6 +39,11 @@
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMagicRare"  ParentName="ProficiencyBaseRare">
 		<tab>LLROM_Magic</tab>
+		<canBePioneered>true</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
@@ -42,6 +57,11 @@
 	
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMight"  ParentName="ProficiencyBase">
 		<tab>LLROM_Might</tab>
+		<canBePioneered>true</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
@@ -55,6 +75,11 @@
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMightUncommon"  ParentName="ProficiencyBaseUncommon">
 		<tab>LLROM_Might</tab>
+		<canBePioneered>true</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
@@ -68,6 +93,11 @@
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyMightRare"  ParentName="ProficiencyBaseRare">
 		<tab>LLROM_Might</tab>
+		<canBePioneered>true</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 		<modExtensions>
 			<li Class="LLRoM.HideIfCantLearnExtension">
 				<HiddenIfCantLearn>true</HiddenIfCantLearn>
@@ -81,13 +111,28 @@
 	
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyArcane"  ParentName="ProficiencyBase">
 		<tab>LLROM_Arcane</tab>
+		<canBePioneered>false</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyArcaneUncommon"  ParentName="ProficiencyBaseUncommon">
 		<tab>LLROM_Arcane</tab>
+		<canBePioneered>false</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef Abstract="True" Name="ProficiencyArcaneRare"  ParentName="ProficiencyBaseRare">
 		<tab>LLROM_Arcane</tab>
+		<canBePioneered>false</canBePioneered>
+		<generationRules>
+			<generateTextbook>false</generateTextbook>
+			<generateNeurotrainer>false</generateNeurotrainer>
+		</generationRules>
 	</LifeLessons.ProficiencyDef>
 </Defs>
