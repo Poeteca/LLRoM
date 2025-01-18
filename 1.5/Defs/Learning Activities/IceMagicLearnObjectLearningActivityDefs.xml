@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
+<!--LLRoM_IceI-->
+
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_IceI</defName>
 		<ingredients>
@@ -22,6 +25,62 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_IceI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Cooler</li>
+						<li>SpellOf_WetGround</li>
+						<li>SpellOf_Extinguish</li>
+						<li>SpellOf_SnapFreeze</li>
+						<li>SpellOf_Rain</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Cooler</li>
+				<li>SpellOf_WetGround</li>
+				<li>SpellOf_Extinguish</li>
+				<li>SpellOf_SnapFreeze</li>
+				<li>SpellOf_Rain</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_IceI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Cooler</li>
+						<li>SpellOf_WetGround</li>
+						<li>SpellOf_Extinguish</li>
+						<li>SpellOf_SnapFreeze</li>
+						<li>SpellOf_Rain</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Cooler</li>
+				<li>SpellOf_WetGround</li>
+				<li>SpellOf_Extinguish</li>
+				<li>SpellOf_SnapFreeze</li>
+				<li>SpellOf_Rain</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_IceII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_IceII</defName>
 		<ingredients>
@@ -41,6 +100,42 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_IceII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_IceII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_IceIII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_IceIII</defName>
 		<ingredients>
@@ -54,6 +149,44 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_IceIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blizzard</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blizzard</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_IceIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blizzard</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blizzard</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

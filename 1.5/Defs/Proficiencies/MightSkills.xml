@@ -42,9 +42,11 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
+			<li>LLRoM_UseScroll_Physical_Conditioning</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</li>
+			<li>LLRoM_ExamineScroll_Physical_Conditioning</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 
@@ -68,9 +70,11 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
+			<li>LLRoM_UseScroll_Equipment_Mastery</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</li>
+			<li>LLRoM_ExamineScroll_Equipment_Mastery</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -94,8 +98,10 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
+			<li>LLRoM_UseScroll_Mental_Conditioning</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_Mental_Conditioning</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -118,8 +124,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Coordination</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Coordination</li>
+			<li>LLRoM_ExamineScroll_Coordination</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -141,8 +151,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Strength</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Strength</li>
+			<li>LLRoM_ExamineScroll_Strength</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -164,8 +178,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Endurance</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Endurance</li>
+			<li>LLRoM_ExamineScroll_Endurance</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -188,8 +206,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_CQC</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_CQC</li>
+			<li>LLRoM_ExamineScroll_CQC</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -212,8 +234,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Breath_Control</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Breath_Control</li>
+			<li>LLRoM_ExamineScroll_Breath_Control</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -236,8 +262,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Ranged</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Ranged</li>
+			<li>LLRoM_ExamineScroll_Ranged</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -259,8 +289,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Tactics</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Tactics</li>
+			<li>LLRoM_ExamineScroll_Tactics</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -282,8 +316,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Manipulation</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Manipulation</li>
+			<li>LLRoM_ExamineScroll_Manipulation</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -305,8 +343,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Charisma</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Charisma</li>
+			<li>LLRoM_ExamineScroll_Charisma</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
@@ -329,8 +371,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Extreme_Range</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</li>
+			<li>LLRoM_ExamineScroll_Extreme_Range</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -352,8 +398,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Defensive_Fighting</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</li>
+			<li>LLRoM_ExamineScroll_Defensive_Fighting</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
@@ -375,8 +425,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_Mind_Mastery</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</li>
+			<li>LLRoM_ExamineScroll_Mind_Mastery</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

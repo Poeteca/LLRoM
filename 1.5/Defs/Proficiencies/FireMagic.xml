@@ -15,9 +15,11 @@
 		</prerequisites>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_FireI</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_FireI</li>
+			<li>LLRoM_ExamineScroll_FireI</li>
 		</theoreticalLearningActivityDefs>
 		<viewerX>1</viewerX>
 		<viewerY>5</viewerY>
@@ -47,7 +49,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_FireII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_FireII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_FireII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -74,7 +80,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_FireIII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_FireIII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_FireIII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>

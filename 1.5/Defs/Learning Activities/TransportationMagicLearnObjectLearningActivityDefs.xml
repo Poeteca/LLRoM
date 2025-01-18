@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
+<!--LLRoM_Summon-->
+
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Summon</defName>
 		<ingredients>
@@ -28,6 +31,50 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Summon</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blink</li>
+						<li>SpellOf_SummonMinion</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blink</li>
+				<li>SpellOf_SummonMinion</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Summon</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blink</li>
+						<li>SpellOf_SummonMinion</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blink</li>
+				<li>SpellOf_SummonMinion</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_SummonII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_SummonII</defName>
 		<ingredients>
@@ -46,6 +93,54 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_SummonII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_MagicWardrobe</li>
+						<li>SpellOf_SummonPoppi</li>
+						<li>SpellOf_GuardianSpirit</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_MagicWardrobe</li>
+				<li>SpellOf_SummonPoppi</li>
+				<li>SpellOf_GuardianSpirit</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_SummonII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_MagicWardrobe</li>
+						<li>SpellOf_SummonPoppi</li>
+						<li>SpellOf_GuardianSpirit</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_MagicWardrobe</li>
+				<li>SpellOf_SummonPoppi</li>
+				<li>SpellOf_GuardianSpirit</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_TeleportationI-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_TeleportationI</defName>
@@ -66,6 +161,46 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_TeleportationI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Teleport</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Teleport</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_TeleportationI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Teleport</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Teleport</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_TeleportationII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_TeleportationII</defName>
 		<ingredients>
@@ -79,6 +214,44 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_TeleportationII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_FoldReality</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_FoldReality</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_TeleportationII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_FoldReality</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_FoldReality</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

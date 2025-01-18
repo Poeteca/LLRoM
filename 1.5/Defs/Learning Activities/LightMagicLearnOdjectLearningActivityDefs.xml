@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
+<!--LLRoM_LightI-->
+
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_LightI</defName>
 		<ingredients>
@@ -22,6 +25,50 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_LightI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Sunlight</li>
+						<li>SpellOf_MageLight</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Sunlight</li>
+				<li>SpellOf_MageLight</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_LightI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Sunlight</li>
+						<li>SpellOf_MageLight</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Sunlight</li>
+				<li>SpellOf_MageLight</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_LightII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_LightII</defName>
 		<ingredients>
@@ -41,6 +88,42 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_LightII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_LightII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_LightIII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_LightIII</defName>
 		<ingredients>
@@ -54,6 +137,44 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_LightIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_SpiritOfLight</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_SpiritOfLight</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_LightIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_SpiritOfLight</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_SpiritOfLight</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

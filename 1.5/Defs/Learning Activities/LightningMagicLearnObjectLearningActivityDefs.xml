@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
+<!--LLRoM_LightningI-->
+
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_LightningI</defName>
 		<ingredients>
@@ -26,6 +29,54 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_LightningI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_PowerNode</li>
+						<li>SpellOf_ChargeBattery</li>
+						<li>SpellOf_EMP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_PowerNode</li>
+				<li>SpellOf_ChargeBattery</li>
+				<li>SpellOf_EMP</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_LightningI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_PowerNode</li>
+						<li>SpellOf_ChargeBattery</li>
+						<li>SpellOf_EMP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_PowerNode</li>
+				<li>SpellOf_ChargeBattery</li>
+				<li>SpellOf_EMP</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_LightningII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_LightningII</defName>
 		<ingredients>
@@ -47,6 +98,54 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_LightningII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_OrbitalStrike</li>
+						<li>SpellOf_LightningTrap</li>
+						<li>SpellOf_MechaniteReprogramming</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_OrbitalStrike</li>
+				<li>SpellOf_LightningTrap</li>
+				<li>SpellOf_MechaniteReprogramming</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_LightningII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_OrbitalStrike</li>
+						<li>SpellOf_LightningTrap</li>
+						<li>SpellOf_MechaniteReprogramming</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_OrbitalStrike</li>
+				<li>SpellOf_LightningTrap</li>
+				<li>SpellOf_MechaniteReprogramming</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_LightningIII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_LightningIII</defName>
 		<ingredients>
@@ -60,6 +159,44 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_LightningIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_EyeOfTheStorm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_EyeOfTheStorm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_LightningIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_EyeOfTheStorm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_EyeOfTheStorm</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

@@ -22,9 +22,11 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_VitalityI</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_VitalityI</li>
+			<li>LLRoM_ExamineScroll_VitalityI</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -47,7 +49,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_NecroI</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_NecroI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_NecroI</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -71,7 +77,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_HealingI</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_HealingI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_HealingI</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -95,7 +105,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_PlantI</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_PlantI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_PlantI</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -118,7 +132,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_HealingII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_HealingII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_HealingII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -141,7 +159,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_NecroII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_NecroII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_NecroII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -164,7 +186,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_PlantII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_PlantII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_PlantII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -189,7 +215,11 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_VitalityII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLRoM_ExamineScroll_VitalityII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_VitalityII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>

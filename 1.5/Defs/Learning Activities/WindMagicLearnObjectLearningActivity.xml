@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
+<!--LLRoM_WindI-->
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_WindI</defName>
 		<ingredients>
@@ -17,6 +19,54 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_WindI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_SmokeCloud</li>
+						<li>SpellOf_DirtDevil</li>
+						<li>SpellOf_Rain</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_SmokeCloud</li>
+				<li>SpellOf_DirtDevil</li>
+				<li>SpellOf_Rain</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_WindI</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_SmokeCloud</li>
+						<li>SpellOf_DirtDevil</li>
+						<li>SpellOf_Rain</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_SmokeCloud</li>
+				<li>SpellOf_DirtDevil</li>
+				<li>SpellOf_Rain</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_WindII-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_WindII</defName>
@@ -35,6 +85,42 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_WindII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_WindII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_WindIII-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_WindIII</defName>
 		<ingredients>
@@ -48,6 +134,44 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_WindIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_AlterStorm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_AlterStorm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_WindIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_AlterStorm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_AlterStorm</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

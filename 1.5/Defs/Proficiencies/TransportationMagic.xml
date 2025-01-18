@@ -22,9 +22,11 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_Summon</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Summon</li>
+			<li>LLRoM_ExamineScroll_Summon</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -46,8 +48,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_SummonII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_SummonII</li>
+			<li>LLRoM_ExamineScroll_SummonII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -69,8 +75,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_TeleportationI</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_TeleportationI</li>
+			<li>LLRoM_ExamineScroll_TeleportationI</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
@@ -93,8 +103,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_TeleportationII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_TeleportationII</li>
+			<li>LLRoM_ExamineScroll_TeleportationII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->

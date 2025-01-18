@@ -21,9 +21,11 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_UseScroll_WindI</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindI</li>
+			<li>LLRoM_ExamineScroll_WindI</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -45,8 +47,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_WindII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindII</li>
+			<li>LLRoM_ExamineScroll_WindII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -71,8 +77,12 @@
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<practicalLearningActivityDefs>
+			<li>LLRoM_UseScroll_WindIII</li>
+		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindIII</li>
+			<li>LLRoM_ExamineScroll_WindIII</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
+<!--LLRoM_Physical_Conditioning-->
+
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</defName>
 		<ingredients>
@@ -27,6 +30,42 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Physical_Conditioning</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Physical_Conditioning</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Equipment_Mastery-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</defName>
@@ -55,6 +94,54 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Equipment_Mastery</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_GearRepair</li>
+						<li>SkillOf_HerbalClarity</li>
+						<li>SkillOf_HerbalBliss</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_GearRepair</li>
+				<li>SkillOf_HerbalClarity</li>
+				<li>SkillOf_HerbalBliss</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Equipment_Mastery</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_GearRepair</li>
+						<li>SkillOf_HerbalClarity</li>
+						<li>SkillOf_HerbalBliss</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_GearRepair</li>
+				<li>SkillOf_HerbalClarity</li>
+				<li>SkillOf_HerbalBliss</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Mental_Conditioning-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</defName>
 		<ingredients>
@@ -64,6 +151,7 @@
 						<li>BookOfRanger</li>
 						<li>BookOfCommander</li>
 						<li>BookOfDeathKnight</li>
+						<li>BookOfApothecary</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -74,9 +162,46 @@
 				<li>BookOfRanger</li>
 				<li>BookOfCommander</li>
 				<li>BookOfDeathKnight</li>
+				<li>BookOfApothecary</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Mental_Conditioning</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Mental_Conditioning</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Coordination-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Coordination</defName>
@@ -97,6 +222,46 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Coordination</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_ThrowingKnife</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_ThrowingKnife</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Coordination</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_ThrowingKnife</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_ThrowingKnife</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Strength-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Strength</defName>
 		<ingredients>
@@ -116,6 +281,54 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Strength</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_HeavyBlow</li>
+						<li>SkillOf_PommelStrike</li>
+						<li>SkillOf_TempestStrike</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_HeavyBlow</li>
+				<li>SkillOf_PommelStrike</li>
+				<li>SkillOf_TempestStrike</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Strength</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_HeavyBlow</li>
+						<li>SkillOf_PommelStrike</li>
+						<li>SkillOf_TempestStrike</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_HeavyBlow</li>
+				<li>SkillOf_PommelStrike</li>
+				<li>SkillOf_TempestStrike</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Endurance-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Endurance</defName>
 		<ingredients>
@@ -134,6 +347,58 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Endurance</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_InnerHealing</li>
+						<li>SkillOf_StrongBack</li>
+						<li>SkillOf_ThickSkin</li>
+						<li>SkillOf_Sprint</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_InnerHealing</li>
+				<li>SkillOf_StrongBack</li>
+				<li>SkillOf_ThickSkin</li>
+				<li>SkillOf_Sprint</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Endurance</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_InnerHealing</li>
+						<li>SkillOf_StrongBack</li>
+						<li>SkillOf_ThickSkin</li>
+						<li>SkillOf_Sprint</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_InnerHealing</li>
+				<li>SkillOf_StrongBack</li>
+				<li>SkillOf_ThickSkin</li>
+				<li>SkillOf_Sprint</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_CQC-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_CQC</defName>
@@ -160,6 +425,42 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_CQC</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_CQC</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Breath_Control-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Breath_Control</defName>
 		<ingredients>
@@ -183,6 +484,50 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Breath_Control</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_BurningFury</li>
+						<li>SkillOf_FightersFocus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_BurningFury</li>
+				<li>SkillOf_FightersFocus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Breath_Control</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_BurningFury</li>
+						<li>SkillOf_FightersFocus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_BurningFury</li>
+				<li>SkillOf_FightersFocus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Ranged-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Ranged</defName>
 		<ingredients>
@@ -204,6 +549,42 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Ranged</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Ranged</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Tactics-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Tactics</defName>
 		<ingredients>
@@ -222,6 +603,46 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Tactics</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_Legion</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_Legion</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Tactics</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_Legion</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_Legion</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Manipulation-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Manipulation</defName>
@@ -244,6 +665,54 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Manipulation</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_Taunt</li>
+						<li>SkillOf_HerbalClarity</li>
+						<li>SkillOf_HerbalBliss</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_Taunt</li>
+				<li>SkillOf_HerbalClarity</li>
+				<li>SkillOf_HerbalBliss</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Manipulation</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SkillOf_Taunt</li>
+						<li>SkillOf_HerbalClarity</li>
+						<li>SkillOf_HerbalBliss</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SkillOf_Taunt</li>
+				<li>SkillOf_HerbalClarity</li>
+				<li>SkillOf_HerbalBliss</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Charisma-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Charisma</defName>
 		<ingredients>
@@ -265,6 +734,42 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Charisma</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Charisma</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Extreme_Range-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</defName>
 		<ingredients>
@@ -283,6 +788,42 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Extreme_Range</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Extreme_Range</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Defensive_Fighting-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</defName>
@@ -303,6 +844,42 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Defensive_Fighting</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Defensive_Fighting</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+<!--LLRoM_Mind_Mastery-->
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMightLearnObjectBase">
 		<defName>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</defName>
 		<ingredients>
@@ -318,6 +895,40 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfPsionic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
+		<defName>LLRoM_UseScroll_Mind_Mastery</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
+		<defName>LLRoM_ExamineScroll_Mind_Mastery</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
