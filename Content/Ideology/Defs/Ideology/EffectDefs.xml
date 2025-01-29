@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  
+	<EffecterDef>
+		<defName>LLRoMDivineInspirationEffect</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<moteDef>Mote_LLROM_RitualGlowSingleRay</moteDef>
+				<rotation>0</rotation>
+				<positionRadius>1</positionRadius>
+				<ticksBetweenMotes>800</ticksBetweenMotes>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_LLROM_RitualGlowSingleRay</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>5</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(255, 180, 122)</color>
+			<texPath>Things/Mote/RitualEffects/GlowSingleRay</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>(3.0, 8.0)</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

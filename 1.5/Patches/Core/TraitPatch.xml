@@ -13,6 +13,27 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Gifted"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>Magic_Insight</li>
+				</RequiredProficiencies>
+				<BlockingHediffs>
+					<li>TM_MightUserHD</li>
+					<li>TM_MagicUserHD</li>
+				</BlockingHediffs>
+				<BlockingTraits>
+					<li>TM_Gifted</li>
+					<li>PhysicalProdigy</li>
+				</BlockingTraits>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Strict>True</Strict>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="TM_Apothecary"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -31,6 +52,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Apothecary"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>LLRoM_Equipment_Mastery</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>an</Prefix>
+				<Might>true</Might>
 			</li>
 		</value>
 	</Operation>
@@ -55,6 +94,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="HeartOfFrost"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_IceII</li>
+					<li>LLRoM_Offensive</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>an</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -85,6 +142,23 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Arcanist"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_TeleportationI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>an</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="StormBorn"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -104,6 +178,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="StormBorn"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_LightningII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -133,6 +225,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="InnerFire"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_Offensive</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Paladin"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -157,6 +267,25 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Paladin"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_HolyI</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_Defensive</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="PhysicalProdigy"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -164,6 +293,27 @@
 				<templates>
 					<li>Might_Base</li>
 				</templates>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="PhysicalProdigy"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>Physical_Insight</li>
+				</RequiredProficiencies>
+				<BlockingHediffs>
+					<li>TM_MightUserHD</li>
+					<li>TM_MagicUserHD</li>
+				</BlockingHediffs>
+				<BlockingTraits>
+					<li>TM_Gifted</li>
+					<li>PhysicalProdigy</li>
+				</BlockingTraits>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Strict>True</Strict>
 			</li>
 		</value>
 	</Operation>
@@ -193,6 +343,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Summoner"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_SummonII</li>
+					<li>LLRoM_BindingI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Gladiator"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -212,6 +380,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Gladiator"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Defensive_Fighting</li>
+					<li>LLRoM_Endurance</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
 			</li>
 		</value>
 	</Operation>
@@ -241,6 +427,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Sniper"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Breath_Control</li>
+					<li>LLRoM_Extreme_Range</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Druid"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -260,6 +464,23 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Druid"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_PlantI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -289,6 +510,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Bladedancer"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_CQC</li>
+					<li>LLRoM_Strength</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Necromancer"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -307,6 +546,23 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Necromancer"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_NecroI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -335,6 +591,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Priest"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_HolyII</li>
+					<li>LLRoM_HealingI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Ranger"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -354,6 +628,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Ranger"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Ranged</li>
+					<li>LLRoM_Coordination</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
 			</li>
 		</value>
 	</Operation>
@@ -406,6 +698,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Bard"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_EmotionII</li>
+					<li>LLRoM_RawI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Faceless"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -429,6 +739,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Faceless"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Manipulation</li>
+					<li>LLRoM_Charisma</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="TM_Psionic"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -447,6 +775,22 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Psionic"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Mind_Mastery</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Might>true</Might>
 			</li>
 		</value>
 	</Operation>
@@ -476,6 +820,25 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Succubus"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_UnholyI</li>
+					<li>LLRoM_BindingI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<GenderRequirment>Female</GenderRequirment>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Warlock"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -495,6 +858,25 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Warlock"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_UnholyI</li>
+					<li>LLRoM_BindingI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<GenderRequirment>Male</GenderRequirment>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -524,6 +906,23 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Geomancer"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_EarthII</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Technomancer"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -543,6 +942,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Technomancer"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_LightningII</li>
+					<li>Computers</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -572,6 +989,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="DeathKnight"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_CQC</li>
+					<li>LLRoM_Manipulation</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Enchanter"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -591,6 +1026,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Enchanter"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_MagicEnchantingI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>an</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -620,6 +1073,23 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="BloodMage"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_NecroI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="Chronomancer"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -644,6 +1114,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="Chronomancer"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_TimeII</li>
+					<li>LLRoM_ChaosI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="TM_Monk"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -663,6 +1151,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Monk"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Breath_Control</li>
+					<li>LLRoM_CQC</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
 			</li>
 		</value>
 	</Operation>
@@ -735,6 +1241,23 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="ChaosMage"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_ChaosII</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="TM_SuperSoldier"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -782,6 +1305,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Commander"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Tactics</li>
+					<li>LLRoM_Charisma</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="TM_TheShadow"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -800,6 +1341,23 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_TheShadow"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_RawI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>
@@ -829,6 +1387,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Brightmage"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_Offensive</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="TM_Shaman"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -853,6 +1429,24 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Shaman"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Summon</li>
+					<li>LLRoM_RawII</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TraitDef[defName="TM_Golemancer"]</xpath>
 		<value>
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
@@ -860,6 +1454,7 @@
 				<templates>
 					<li>LLROM_Construct</li>
 					<li>LLROM_Enchant</li>
+					<li>Magic_Base</li>
 				</templates>
 				<package>
 					<conditionalTemplates>
@@ -872,6 +1467,24 @@
 						</li>
 					</conditionalTemplates>
 				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Golemancer"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_BindingII</li>
+					<li>LLRoM_MagicConstructsI</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a</Prefix>
+				<Magic>true</Magic>
 			</li>
 		</value>
 	</Operation>

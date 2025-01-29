@@ -14,7 +14,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>24</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -22,11 +22,23 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_HolyI</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_HolyI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_HolyI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_HolyI</li>			
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Paladin</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -41,7 +53,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>25</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -49,11 +61,24 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_UnholyI</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_UnholyI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_UnholyI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_UnholyI</li>			
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Succubus</li>
+					<li>Warlock</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -68,7 +93,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>24</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -76,11 +101,23 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_HolyII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_HolyII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_HolyII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_HolyII</li>			
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Priest</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -95,7 +132,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>25</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -103,10 +140,15 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_UnholyII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_UnholyII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_UnholyII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_UnholyII</li>			
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->

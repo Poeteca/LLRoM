@@ -11,7 +11,7 @@
 		<costPractical>500</costPractical>
 		<viewerX>0</viewerX>
 		<viewerY>13</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -19,7 +19,15 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Gifted</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -34,7 +42,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>1</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -43,11 +51,20 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_Defensive</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_Defensive</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_Defensive</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Paladin</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 		
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -62,7 +79,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>1</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -71,10 +88,12 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_DefensiveBuff</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_DefensiveBuff</li>
 			<li>LLRoM_ExamineScroll_DefensiveBuff</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -90,7 +109,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>2</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -99,10 +118,12 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_DefensiveBarrier</li>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_DefensiveBarrier</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_DefensiveBarrier</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -118,7 +139,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>4</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -127,11 +148,23 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_Offensive</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Offensive</li>
 			<li>LLRoM_ExamineScroll_Offensive</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>InnerFire</li>
+					<li>HeartOfFrost</li>
+					<li>Paladin</li>
+					<li>TM_Brightmage</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -139,14 +172,14 @@
 		<label>LLRoM_OffensiveLargeArea</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
-		<costTheoretical>100</costTheoretical>
-		<costPractical>50</costPractical>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>200</costPractical>
 		<prerequisites>
 			<li>LLRoM_Offensive</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>4</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -155,11 +188,20 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_OffensiveLargeArea</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_OffensiveLargeArea</li>
 			<li>LLRoM_ExamineScroll_OffensiveLargeArea</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>StormBorn</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -167,14 +209,14 @@
 		<label>LLRoM_OffensiveDeBuff</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
-		<costTheoretical>100</costTheoretical>
-		<costPractical>50</costPractical>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>200</costPractical>
 		<prerequisites>
 			<li>LLRoM_Offensive</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>3</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -183,10 +225,12 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_OffensiveDeBuff</li>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_OffensiveDeBuff</li>
 			<li>LLRoM_ExamineScroll_OffensiveDeBuff</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -202,7 +246,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>23</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -211,11 +255,21 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_RawI</li>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_RawI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_RawI</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Bard</li>
+					<li>TM_TheShadow</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -230,7 +284,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>26</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -239,11 +293,22 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_BindingI</li>
 			<li>LLRoM_MagicPonder</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_BindingI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_BindingI</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Summoner</li>
+					<li>Succubus</li>
+					<li>Warlock</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -258,7 +323,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>23</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -266,11 +331,24 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_RawII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
 			<li>LLRoM_ExamineScroll_RawII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_RawII</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Enchanter</li>
+					<li>TM_Shaman</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -285,7 +363,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>22</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -293,8 +371,14 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_TimeI</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
+			<li>LLAnalyzeWriting</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_TimeI</li>
 			<li>LLRoM_ExamineScroll_TimeI</li>
 		</theoreticalLearningActivityDefs>
@@ -313,7 +397,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>26</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -321,11 +405,23 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_BindingII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_BindingII</li>
 			<li>LLRoM_ExamineScroll_BindingII</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Golemancer</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -341,7 +437,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>21</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -350,10 +446,12 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_EmotoinI</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EmotoinI</li>
 			<li>LLRoM_ExamineScroll_EmotoinI</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -369,7 +467,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>21</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -377,11 +475,23 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_EmotoinII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EmotoinII</li>
 			<li>LLRoM_ExamineScroll_EmotoinI</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Bard</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -396,7 +506,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>21</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -404,11 +514,24 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_TimeII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_TimeII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_TimeII</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
+			<li>LLAnalyzeWriting</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Chronomancer</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -423,7 +546,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>23</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -431,11 +554,23 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_ChaosI</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_ChaosI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_ChaosI</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Chronomancer</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 <!--Rare-->
@@ -452,7 +587,7 @@
 		</prerequisites>
 		<viewerX>4</viewerX>
 		<viewerY>21</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -460,10 +595,16 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_TimeIII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_TimeIII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_TimeIII</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
+			<li>LLAnalyzeWriting</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -480,7 +621,7 @@
 		</prerequisites>
 		<viewerX>4</viewerX>
 		<viewerY>22</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -488,10 +629,22 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_ChaosII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_ChaosII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_ChaosII</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>ChaosMage</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 </Defs>

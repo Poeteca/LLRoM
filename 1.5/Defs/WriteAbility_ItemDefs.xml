@@ -43,7 +43,14 @@
 			<MarketValue>500</MarketValue>
 		</statBases>
 		<comps>
-		<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Experiment with {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>LLRoM.CompUseEffect_TrySelfLearnSpell</compClass>
+			</li>
 		</comps>
 		<costList>
 			<RawMagicyte>40</RawMagicyte>
@@ -78,6 +85,11 @@
 				</requirements>
 				<hardRequirement>true</hardRequirement>
 			</li>
+			<li Class="LLRoM.AbilityAutoLearnExtension">
+				<failChance>50</failChance>
+				<HedifftoApply>LLRoM_Drained</HedifftoApply>
+				<tab>LLROM_Magic</tab>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	
@@ -97,7 +109,14 @@
 			<MarketValue>750</MarketValue>
 		</statBases>
 		<comps>
-		<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Experiment with {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>LLRoM.CompUseEffect_TrySelfLearnSpell</compClass>
+			</li>
 		</comps>
 		<costList>
 			<RawMagicyte>58</RawMagicyte>
@@ -132,6 +151,11 @@
 				</requirements>
 				<hardRequirement>true</hardRequirement>
 			</li>
+			<li Class="LLRoM.AbilityAutoLearnExtension">
+				<failChance>30</failChance>
+				<HedifftoApply>LLRoM_Drained</HedifftoApply>
+				<tab>LLROM_Magic</tab>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	
@@ -151,7 +175,14 @@
 			<MarketValue>750</MarketValue>
 		</statBases>
 		<comps>
-		<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Experiment with {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>LLRoM.CompUseEffect_TrySelfLearnSpell</compClass>
+			</li>
 		</comps>
 		<costList>
 			<RawMagicyte>150</RawMagicyte>
@@ -185,6 +216,11 @@
 					<li>LLRoM_ScribIII</li>
 				</requirements>
 				<hardRequirement>true</hardRequirement>
+			</li>
+			<li Class="LLRoM.AbilityAutoLearnExtension">
+				<failChance>10</failChance>
+				<HedifftoApply>LLRoM_Drained</HedifftoApply>
+				<tab>LLROM_Magic</tab>
 			</li>
 		</modExtensions>
 	</ThingDef>

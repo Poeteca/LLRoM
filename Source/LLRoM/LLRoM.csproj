@@ -63,12 +63,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityAutoLearnExtension.cs" />
     <Compile Include="AbilityXPGainExtension.cs" />
+    <Compile Include="ClassAutoLearnExtension.cs" />
+    <Compile Include="CompProperties_UseEffectLearnClass.cs" />
+    <Compile Include="CompProperties_UseEffectTrySelfLearnSpell.cs" />
+    <Compile Include="CompUseEffect_LearnClass.cs" />
+    <Compile Include="CompUseEffect_TrySelfLearnSkill.cs" />
+    <Compile Include="CompUseEffect_TrySelfLearnSpell.cs" />
     <Compile Include="GemOfInsightProficiencyExtension.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="HideIfCantLearnExtension.cs" />
     <Compile Include="LockoutExtension.cs" />
-    <Compile Include="ProficiencyThingsDefOf.cs" />
+    <Compile Include="ProficiencyTableDefOf.cs" />
     <Compile Include="LLRoM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LLRoMSettings.cs" />

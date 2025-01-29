@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<JobDef>
+		<defName>LLRoMConsultDarkarchotech</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>consulting a dark archotech mind on {proficiency}.</reportString>
+		<neverShowWeapon>true</neverShowWeapon>
+	</JobDef>
+	
+</Defs>

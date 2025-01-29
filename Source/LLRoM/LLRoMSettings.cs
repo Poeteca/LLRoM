@@ -18,6 +18,13 @@ namespace LLRoM
         public bool ClassRequiresProficiencies = true;
         public bool AbilityRequiresProficiencies = true;
         public float XPMultiplier = 100f;
+        public bool CanSelfTeachClasses = true;
+        public bool CanOnlySelfTeachClasses = false;
+        public bool CanFailLearn = true;
+        public bool CanSelfTeachSpells = true;
+        public bool CanOnlySelfSpells = false;
+        public bool CanSelfTeachSkills = true;
+        public bool CanOnlySelfSkills = false;
         public override void ExposeData()
         {
             Scribe_Values.Look(ref StrickMightClassLearning, "StrickMightClassLearning");
@@ -29,6 +36,12 @@ namespace LLRoM
             Scribe_Values.Look(ref ClassRequiresProficiencies, "ClassRequiresProficiencies");
             Scribe_Values.Look(ref AbilityRequiresProficiencies, "AbilityRequiresProficiencies");
             Scribe_Values.Look(ref XPMultiplier, "XPMultiplier", 100f);
+            Scribe_Values.Look(ref CanFailLearn, "CanFailLearn");
+            Scribe_Values.Look(ref CanSelfTeachClasses, "CanSelfTeachClasses");
+            Scribe_Values.Look(ref CanSelfTeachSpells, "CanSelfTeachSpells");
+            Scribe_Values.Look(ref CanOnlySelfSpells, "CanOnlySelfSpells");
+            Scribe_Values.Look(ref CanSelfTeachSkills, "CanSelfTeachSkills");
+            Scribe_Values.Look(ref CanOnlySelfSkills, "CanOnlySelfSkills");
             base.ExposeData();
         }
     }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>LLRoM_practicespot</defName>
+		<label>practice spot</label>
+		<description>temp</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<color>(0, 1, 1, 1)</color>
+			<texPath>Items/magic_circle_north</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+		</statBases>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>false</useHitPoints>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<uiOrder>20000</uiOrder>
+		<passability>Standable</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentUnstandable</li>
+			<li>PlaceWorker_NeverAdjacentSameDef</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Train at {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>LLRoM.CompUseEffect_LearnClass</compClass>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>50</failChance>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

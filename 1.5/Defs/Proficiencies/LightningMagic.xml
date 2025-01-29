@@ -55,6 +55,14 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_LightningII</li>
 			<li>LLRoM_ExamineScroll_LightningII</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>StormBorn</li>
+					<li>Technomancer</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 <!--Rare-->

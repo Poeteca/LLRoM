@@ -14,4 +14,25 @@
 		<reportString>studying {proficiency} at TargetA by reading TargetB.</reportString>
 		<neverShowWeapon>true</neverShowWeapon>
 	</JobDef>
+	
+	<JobDef>
+		<defName>LLRoM_practice_magic</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>practicing magic at TargetA.</reportString>
+		<neverShowWeapon>false</neverShowWeapon>
+	</JobDef>
+	
+	<JobDef>
+		<defName>LLRoM_practice_Ritual_magic</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>practicing ritual magic at TargetA.</reportString>
+		<neverShowWeapon>true</neverShowWeapon>
+	</JobDef>
+	
+	<JobDef>
+		<defName>LLRoMSolarObservation</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>making solar observations at TargetA.</reportString>
+		<neverShowWeapon>true</neverShowWeapon>
+	</JobDef>
 </Defs>

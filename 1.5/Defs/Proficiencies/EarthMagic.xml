@@ -14,7 +14,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>19</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -23,10 +23,14 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_EarthI</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EarthI</li>
 			<li>LLRoM_ExamineScroll_EarthI</li>
+			<li>LLAnalyzeFormation</li>
+			<li>LLAnalyzeMinerals</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -42,19 +46,32 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>19</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_EarthII</li>
+			<li>LLRoM_UseScroll_EarthII</li>		
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EarthII</li>
 			<li>LLRoM_ExamineScroll_EarthII</li>
+			<li>LLAnalyzeFormation</li>
+			<li>LLAnalyzeMinerals</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Geomancer</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -70,18 +87,24 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>20</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_EarthIII</li>
+			<li>LLRoM_UseScroll_EarthIII</li>		
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EarthIII</li>
 			<li>LLRoM_ExamineScroll_EarthIII</li>
+			<li>LLAnalyzeFormation</li>
+			<li>LLAnalyzeMinerals</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->

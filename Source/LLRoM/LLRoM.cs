@@ -31,11 +31,17 @@ namespace LLRoM
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
+            
             listingStandard.CheckboxLabeled("ClassRequiresProficiencies".Translate(), ref settings.ClassRequiresProficiencies);
             if (settings.ClassRequiresProficiencies)
             { 
                 listingStandard.CheckboxLabeled("StrickMightClassLearning".Translate(), ref settings.StrickMightClassLearning);
                 listingStandard.CheckboxLabeled("StrickMagicClassLearning".Translate(), ref settings.StrickMagicClassLearning);
+            }
+            else
+            {
+                listingStandard.Label("");
+                listingStandard.Label("");
             }
             listingStandard.CheckboxLabeled("AbilityRequiresProficiencies".Translate(), ref settings.AbilityRequiresProficiencies);
             if (settings.AbilityRequiresProficiencies)
@@ -43,14 +49,76 @@ namespace LLRoM
                 listingStandard.CheckboxLabeled("StrickSkillLearning".Translate(), ref settings.StrickSkillLearning);
                 listingStandard.CheckboxLabeled("StrickSpellLearning".Translate(), ref settings.StrickSpellLearning);
             }
+            else
+            {
+                listingStandard.Label("");
+                listingStandard.Label("");
+            }
             listingStandard.CheckboxLabeled("ObscureCertianProficiencies".Translate(), ref settings.ObscureCertianProficiencies);
             if (settings.ObscureCertianProficiencies)
             {
                 listingStandard.CheckboxLabeled("ObscureAllProficiencies".Translate(), ref settings.ObscureAllProficiencies);
             }
+            else
+            {
+                listingStandard.Label("");
+            }
             listingStandard.Label("XPMultiplier".Translate());
             listingStandard.Label("ValueXPMultiplier".Translate(settings.XPMultiplier));
             settings.XPMultiplier = listingStandard.Slider(settings.XPMultiplier, 1f, 1000f);
+            if (settings.ClassRequiresProficiencies)
+            {
+                listingStandard.CheckboxLabeled("CanSelfTeachClasses".Translate(), ref settings.CanSelfTeachClasses);
+                if (settings.CanSelfTeachClasses)
+                {
+                    listingStandard.CheckboxLabeled("CanOnlySelfTeachClasses".Translate(), ref settings.CanOnlySelfTeachClasses);
+                }
+                else
+                {
+                    listingStandard.Label("");
+                }
+            }
+            else
+            {
+                listingStandard.Label("");
+                listingStandard.Label("");
+            }
+            if (settings.AbilityRequiresProficiencies)
+            {
+                listingStandard.CheckboxLabeled("CanSelfTeachSpells".Translate(), ref settings.CanSelfTeachSpells);
+                if (settings.CanSelfTeachSpells)
+                {
+                    listingStandard.CheckboxLabeled("CanOnlySelfSpells".Translate(), ref settings.CanOnlySelfSpells);
+                }
+                else
+                {
+                    listingStandard.Label("");
+                }
+                listingStandard.CheckboxLabeled("CanSelfTeachSkills".Translate(), ref settings.CanSelfTeachSkills);
+                if (settings.CanSelfTeachSkills)
+                {
+                    listingStandard.CheckboxLabeled("CanOnlySelfSkills".Translate(), ref settings.CanOnlySelfSkills);
+                }
+                else
+                {
+                    listingStandard.Label("");
+                }
+            }
+            else
+            {
+                listingStandard.Label("");
+                listingStandard.Label("");
+                listingStandard.Label("");
+                listingStandard.Label("");
+            }
+            if (settings.CanSelfTeachSkills || settings.CanSelfTeachSpells || settings.CanSelfTeachClasses)
+            {
+                listingStandard.CheckboxLabeled("CanFailLearn".Translate(), ref settings.CanFailLearn);
+            }
+            else
+            {
+                listingStandard.Label("");
+            }
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }

@@ -20,6 +20,13 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
 		</practicalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>PhysicalProdigy</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -76,6 +83,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</li>
 			<li>LLRoM_ExamineScroll_Equipment_Mastery</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Apothecary</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -104,6 +118,13 @@
 			<li>LLRoM_ExamineScroll_Mental_Conditioning</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Apothecary</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -131,6 +152,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Coordination</li>
 			<li>LLRoM_ExamineScroll_Coordination</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Ranger</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -158,6 +186,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Strength</li>
 			<li>LLRoM_ExamineScroll_Strength</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Bladedancer</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -185,6 +220,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Endurance</li>
 			<li>LLRoM_ExamineScroll_Endurance</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Gladiator</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -213,6 +255,15 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_CQC</li>
 			<li>LLRoM_ExamineScroll_CQC</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Bladedancer</li>
+					<li>DeathKnight</li>
+					<li>TM_Monk</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -241,6 +292,14 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Breath_Control</li>
 			<li>LLRoM_ExamineScroll_Breath_Control</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Sniper</li>
+					<li>TM_Monk</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -269,6 +328,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Ranged</li>
 			<li>LLRoM_ExamineScroll_Ranged</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Ranger</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -296,6 +362,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Tactics</li>
 			<li>LLRoM_ExamineScroll_Tactics</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Commander</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -323,6 +396,14 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Manipulation</li>
 			<li>LLRoM_ExamineScroll_Manipulation</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Faceless</li>
+					<li>DeathKnight</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -350,6 +431,14 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Charisma</li>
 			<li>LLRoM_ExamineScroll_Charisma</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Faceless</li>
+					<li>TM_Commander</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 
@@ -378,6 +467,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</li>
 			<li>LLRoM_ExamineScroll_Extreme_Range</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Sniper</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
@@ -405,6 +501,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</li>
 			<li>LLRoM_ExamineScroll_Defensive_Fighting</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Gladiator</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMightRare">
@@ -432,5 +535,12 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</li>
 			<li>LLRoM_ExamineScroll_Mind_Mastery</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Psionic</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 </Defs>

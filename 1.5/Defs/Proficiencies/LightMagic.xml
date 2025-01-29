@@ -55,6 +55,13 @@
 			<li>LLRoM_ExamineScroll_LightII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_LightII</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Brightmage</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 

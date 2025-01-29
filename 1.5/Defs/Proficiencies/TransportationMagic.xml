@@ -28,6 +28,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_Summon</li>
 			<li>LLRoM_ExamineScroll_Summon</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>TM_Shaman</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -55,6 +62,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_SummonII</li>
 			<li>LLRoM_ExamineScroll_SummonII</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Summoner</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -82,6 +96,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_TeleportationI</li>
 			<li>LLRoM_ExamineScroll_TeleportationI</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Arcanist</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">

@@ -16,14 +16,17 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_FireI</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_FireI</li>
 			<li>LLRoM_ExamineScroll_FireI</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_temperature_thing</li>
 		</theoreticalLearningActivityDefs>
 		<viewerX>1</viewerX>
 		<viewerY>5</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -43,7 +46,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>5</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -51,11 +54,24 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_FireII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_FireII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_FireII</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_temperature_thing</li>
+			<li>LLDocument</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>InnerFire</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 <!--Uncommon-->
@@ -74,7 +90,7 @@
 		</prerequisites>
 		<viewerX>4</viewerX>
 		<viewerY>5</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -82,10 +98,16 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_FireIII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_FireIII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_FireIII</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_temperature_thing</li>
+			<li>LLDocument</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	

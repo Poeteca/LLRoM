@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_Divine_Inspiration</defName>
+		<label>Seek Divine Inspiration</label>
+		<description>Temp</description>
+		<activityJob>LLRoMDivineInspiration</activityJob>
+		<effectWorking>LLRoMDivineInspirationEffect</effectWorking>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Theoretical</experienceType>
+		<xpPerTick>0.003</xpPerTick>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<validWorkstations>
+			<li>Altar_Small</li>
+			<li>Altar_Medium</li>
+			<li>Altar_Large</li>
+			<li>Altar_Grand</li>
+			<li>Ideogram</li>
+			<li>RitualSpot</li>
+		</validWorkstations>
+	</LifeLessons.LearningActivityDef>
+	
+</Defs>

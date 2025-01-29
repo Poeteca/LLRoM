@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_Consult_Dark_archotech</defName>
+		<label>Consult Dark Archotech</label>
+		<description>Temp</description>
+		<activityJob>LLRoMConsultDarkarchotech</activityJob>
+		<effectWorking>PsychicRitual_Sustained</effectWorking>
+		<experienceType>Theoretical</experienceType>
+		<xpPerTick>0.003</xpPerTick>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<activityTargetType>SpecificBuildings</activityTargetType>
+		<specificTargetBuildings>
+			<li>PsychicRitualSpot</li>
+		</specificTargetBuildings>
+	</LifeLessons.LearningActivityDef>
+	
+</Defs>

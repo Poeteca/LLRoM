@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using TorannMagic;
@@ -57,7 +58,7 @@ namespace LLRoM
     public static class HediffLockoutPatch
     {
         [HarmonyPatch(typeof(ProficiencyComp), nameof(ProficiencyComp.CanLearn))]
-        public class HediffLoutoutPrefix
+        public class HediffLockoutPrefix
         {
             public static bool Prefix(ProficiencyDef def, ProficiencyComp __instance)
             {
@@ -285,6 +286,11 @@ namespace LLRoM
         {
             public static bool Prefix(Pawn user, object __instance)
             {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfTeachClasses && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachClasses)
+                {
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    return false;
+                }
                 CompAbilityUserMight compAbilityUserMight = user.GetCompAbilityUserMight();
                 CompAbilityUserMagic compAbilityUserMagic = user.GetCompAbilityUserMagic();
                 ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
@@ -308,6 +314,11 @@ namespace LLRoM
         {
             public static bool Prefix(Pawn user, object __instance)
             {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfTeachClasses && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachClasses)
+                {
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    return false;
+                }
                 BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
                 {
@@ -330,6 +341,11 @@ namespace LLRoM
         {
             public static bool Prefix(Pawn user, object __instance)
             {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfTeachClasses && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachClasses)
+                {
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    return false;
+                }
                 BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
                 {
@@ -352,6 +368,11 @@ namespace LLRoM
         {
             public static bool Prefix(Pawn user, object __instance)
             {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfSpells && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachSpells)
+                {
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    return false;
+                }
                 BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
                 {
@@ -374,6 +395,11 @@ namespace LLRoM
         {
             public static bool Prefix(Pawn user, object __instance)
             {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachSkills && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfSkills)
+                {
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    return false;
+                }
                 BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
                 {

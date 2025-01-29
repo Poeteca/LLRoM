@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<EffecterDef>
+		<defName>LLRoM_CSmallMagicCircle</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<spawnLocType>OnTarget</spawnLocType>
+				<scale>.5~1.5</scale>
+				<ticksBetweenMotes>200</ticksBetweenMotes>
+				<positionLerpFactor>0.6</positionLerpFactor>
+				<positionRadius>0.6</positionRadius>
+				<moteDef>Mote_SmallMagicCircleInner</moteDef>
+			</li>
+		</children>
+	</EffecterDef>
+
+</Defs>

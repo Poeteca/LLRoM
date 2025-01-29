@@ -14,7 +14,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>16</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -23,10 +23,12 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_VitalityI</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_VitalityI</li>
 			<li>LLRoM_ExamineScroll_VitalityI</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -43,7 +45,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>17</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -51,11 +53,26 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_NecroI</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_NecroI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_NecroI</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li>LLDissectCritterCorpse</li>
+			<li>LLDissectHumanCorpse</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Necromancer</li>
+					<li>BloodMage</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -71,7 +88,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>15</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -79,11 +96,25 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_HealingI</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_HealingI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_HealingI</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li>LLDissectCritterCorpse</li>
+			<li>LLDissectHumanCorpse</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Priest</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -99,7 +130,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>18</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -107,11 +138,26 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_PlantI</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLAnalyzePlantBiomatterChemistry</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_PlantI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_PlantI</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li>LLAnalyzePlantBiomatter</li>
+			<li>LLStudyMushrooms</li>
+			<li>LLAnalyzePlant</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li>Druid</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -126,7 +172,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>15</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -134,10 +180,17 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_HealingII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_HealingII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_HealingII</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li>LLDissectCritterCorpse</li>
+			<li>LLDissectHumanCorpse</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -153,7 +206,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>17</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -161,10 +214,17 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_NecroII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_NecroII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_NecroII</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li>LLDissectCritterCorpse</li>
+			<li>LLDissectHumanCorpse</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -180,7 +240,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>18</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -188,10 +248,18 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_PlantII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLAnalyzePlantBiomatterChemistry</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_PlantII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_PlantII</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li>LLAnalyzePlantBiomatter</li>
+			<li>LLStudyMushrooms</li>
+			<li>LLAnalyzePlant</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
@@ -209,7 +277,7 @@
 		</prerequisites>
 		<viewerX>4</viewerX>
 		<viewerY>16</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -217,10 +285,18 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_VitalityII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_VitalityII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_VitalityII</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
+			<li>LLBrainstorm</li>
+			<li>LLDocument</li>
+			<li>LLDissectCritterCorpse</li>
+			<li>LLDissectHumanCorpse</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>
