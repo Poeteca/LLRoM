@@ -13,7 +13,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>8</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -22,10 +22,13 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_WindI</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindI</li>
 			<li>LLRoM_ExamineScroll_WindI</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -41,7 +44,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>8</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -49,10 +52,17 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_WindII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindII</li>
 			<li>LLRoM_ExamineScroll_WindII</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRigorization</li>
+			<li>LLAnalyzeGeyser</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -71,7 +81,7 @@
 		</prerequisites>
 		<viewerX>4</viewerX>
 		<viewerY>8</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -79,10 +89,17 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_WindIII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindIII</li>
 			<li>LLRoM_ExamineScroll_WindIII</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRigorization</li>
+			<li>LLAnalyzeGeyser</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

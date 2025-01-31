@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using TorannMagic;
 using Verse;
-using AbilityDef = AbilityUser.AbilityDef;
 
 namespace LLRoM
 {
@@ -21,6 +20,7 @@ namespace LLRoM
             List<ProficiencyDef> completedProficiencies = usedBy.GetComp<ProficiencyComp>().CompletedProficiencies;
             List<ProficiencyDef> learnableProficiencies = usedBy.GetComp<ProficiencyComp>().AllLearnableProficiencies;
             List<ProficiencyDef> possibleProficiencies = new List<ProficiencyDef>();
+            CompAbilityUserMight compAbilityUserMight = usedBy.GetCompAbilityUserMight();
             if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickSkillLearning)
             {
                 possibleProficiencies = completedProficiencies;
@@ -28,6 +28,10 @@ namespace LLRoM
             else
             {
                 possibleProficiencies = learnableProficiencies;
+                foreach (ProficiencyDef def in completedProficiencies)
+                {
+                    possibleProficiencies.Add(def);
+                }
             }
             List<ThingDef> possibleAbilities = new List<ThingDef>();
             List<ThingDef> AllScrolls = new List<ThingDef>();
@@ -58,14 +62,34 @@ namespace LLRoM
                     BillProficiencyExtension scrollextension = Scroll.GetModExtension<BillProficiencyExtension>();
                     if (scrollextension != null && scrollextension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
                     {
+                        bool canGain = true;
                         List<ProficiencyDef> resolvedRequirements = scrollextension.ResolvedRequirements();
-                        if (Util.Qualification(usedBy, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickSkillLearning).Allowed(false))
+                        foreach (ProficiencyDef def in resolvedRequirements)
+                        {
+                            if (!ValidAbilities.Contains(def)) { canGain = false; }
+                        }
+                        if (canGain && LearnableCheck(usedBy, Scroll))
                         {
                             possibleAbilities.Add(Scroll);
                         }
                     }
                 }
-
+            }
+            for (int i = 0; i < compAbilityUserMight.MightData.AllMightPowers.Count; i++)
+            {
+                TMAbilityDef tMAbilityDef = (TMAbilityDef)(object)compAbilityUserMight.MightData.AllMightPowers[i].abilityDef;
+                if (!possibleAbilities.Contains(tMAbilityDef.learnItem))
+                {
+                    continue;
+                }
+                if (possibleAbilities.Contains(tMAbilityDef.learnItem) && compAbilityUserMight.MightData.AllMightPowers[i].learned == true)
+                {
+                    possibleAbilities.Remove(tMAbilityDef.learnItem);
+                }
+                if (possibleAbilities.Contains(tMAbilityDef.learnItem) && compAbilityUserMight.customClass != null && !compAbilityUserMight.customClass.learnableSkills.Contains(tMAbilityDef.learnItem))
+                {
+                    possibleAbilities.Remove(tMAbilityDef.learnItem);
+                }
             }
             if (possibleAbilities.Count == 0)
             {
@@ -92,7 +116,6 @@ namespace LLRoM
                     {
                         usedBy.health.AddHediff(Parentextension.HedifftoApply);
                     }
-                    CompAbilityUserMight compAbilityUserMight = usedBy.GetCompAbilityUserMight();
                     if (TargetScroll != null && (TM_Calc.IsMightUser(usedBy) || TM_Calc.IsWayfarer(usedBy)))
                     {
                         List<TraitDef> list = null;
@@ -181,7 +204,7 @@ namespace LLRoM
                             {
                                 compAbilityUserMight.skill_Sprint = true;
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_Sprint).learned = true;
-                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityDef)(object)TorannMagicDefOf.TM_Sprint, true, -1f);
+                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_Sprint, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
                                 return;
@@ -199,7 +222,7 @@ namespace LLRoM
                             {
                                 compAbilityUserMight.skill_InnerHealing = true;
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_InnerHealing).learned = true;
-                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityDef)(object)TorannMagicDefOf.TM_InnerHealing, true, -1f);
+                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_InnerHealing, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
                                 return;
@@ -208,7 +231,7 @@ namespace LLRoM
                             {
                                 compAbilityUserMight.skill_StrongBack = true;
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_StrongBack).learned = true;
-                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityDef)(object)TorannMagicDefOf.TM_StrongBack, true, -1f);
+                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_StrongBack, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
                                 return;
@@ -217,7 +240,7 @@ namespace LLRoM
                             {
                                 compAbilityUserMight.skill_HeavyBlow = true;
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_HeavyBlow).learned = true;
-                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityDef)(object)TorannMagicDefOf.TM_HeavyBlow, true, -1f);
+                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_HeavyBlow, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
                                 return;
@@ -226,7 +249,7 @@ namespace LLRoM
                             {
                                 compAbilityUserMight.skill_ThickSkin = true;
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_ThickSkin).learned = true;
-                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityDef)(object)TorannMagicDefOf.TM_ThickSkin, true, -1f);
+                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_ThickSkin, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
                                 return;
@@ -235,7 +258,7 @@ namespace LLRoM
                             {
                                 compAbilityUserMight.skill_FightersFocus = true;
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_FightersFocus).learned = true;
-                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityDef)(object)TorannMagicDefOf.TM_FightersFocus, true, -1f);
+                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_FightersFocus, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
                                 return;
@@ -283,7 +306,7 @@ namespace LLRoM
                             else if (tMAbilityDef2 != null)
                             {
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(tMAbilityDef2).learned = true;
-                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityDef)(object)tMAbilityDef2, true, -1f);
+                                ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)tMAbilityDef2, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
                                 return;
@@ -325,6 +348,41 @@ namespace LLRoM
                 return "LLRoMNotMighty".Translate();
             }
             return base.CanBeUsedBy(p);
+        }
+        private bool LearnableCheck(Pawn p, ThingDef S)
+        {
+            List<Trait> traits = p.story.traits.allTraits;
+            List<TraitDef> traitdefs = new List<TraitDef>();
+            foreach (Trait t in traits)
+            {
+                traitdefs.Add(t.def);
+            }
+            DefModExtension_LearnAbilityRequiredTraits list = S.GetModExtension<DefModExtension_LearnAbilityRequiredTraits>();
+            if (list != null)
+            {
+                bool check = false;
+                foreach (TraitDef T in list.traits)
+                {
+                    if (traitdefs.Contains(T))
+                    {
+                        check = true;
+                    }
+                }
+                if (!check) { return false; }
+            }
+            if ((S.defName == "SkillOf_ThrowingKnife" || S.defName == "SkillOf_PommelStrike" || S.defName == "SkillOf_TempestStrike" || S.defName == "spell_ArcaneBolt") && p.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
+            {
+                return false;
+            }
+            if ((S.defName == "SkillOf_Legion") && (traitdefs.Contains(TorannMagicDefOf.Faceless) || p.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent))
+            {
+                return false;
+            }
+            if ((S.defName == "SkillOf_Sprint") && traitdefs.Contains(TorannMagicDefOf.Gladiator))
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

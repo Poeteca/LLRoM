@@ -25,6 +25,7 @@ namespace LLRoM
         public bool CanOnlySelfSpells = false;
         public bool CanSelfTeachSkills = true;
         public bool CanOnlySelfSkills = false;
+        public bool ClassProLockout = true;
         public override void ExposeData()
         {
             Scribe_Values.Look(ref StrickMightClassLearning, "StrickMightClassLearning");
@@ -42,6 +43,7 @@ namespace LLRoM
             Scribe_Values.Look(ref CanOnlySelfSpells, "CanOnlySelfSpells");
             Scribe_Values.Look(ref CanSelfTeachSkills, "CanSelfTeachSkills");
             Scribe_Values.Look(ref CanOnlySelfSkills, "CanOnlySelfSkills");
+            Scribe_Values.Look(ref ClassProLockout, "ClassProLockout");
             base.ExposeData();
         }
     }

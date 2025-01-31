@@ -8,9 +8,45 @@
 		<value>
 			<comps Class="CompProperties_Usable" Inherit="false">
 				<li Class="CompProperties_Forbiddable" />
+				<li Class="CompProperties_Usable">
+					<useJob>UseArtifact</useJob>
+					<useLabel>Experiment with {0_label}</useLabel>
+				</li>
+				<li Class="CompProperties_UseEffect">
+					<compClass>LLRoM.CompUseEffect_LearnClass</compClass>
+				</li>
 			</comps>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedArcane"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>25</failChance>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedAdvArcane"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>15</failChance>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedMartial"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>25</failChance>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="UnfinishedArcane"]</xpath>
 		<value>

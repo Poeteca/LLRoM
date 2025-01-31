@@ -9,6 +9,20 @@
 	</JobDef>
 	
 	<JobDef>
+		<defName>LLRoM_gear_study</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>analizing TargetB at TargetA.</reportString>
+		<neverShowWeapon>true</neverShowWeapon>
+	</JobDef>
+	
+	<JobDef>
+		<defName>LLRoM_deepmeditation</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>meditating at TargetA.</reportString>
+		<neverShowWeapon>true</neverShowWeapon>
+	</JobDef>
+	
+	<JobDef>
 		<defName>LLRoM_StudyLearnObject</defName>
 		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
 		<reportString>studying {proficiency} at TargetA by reading TargetB.</reportString>
@@ -19,6 +33,20 @@
 		<defName>LLRoM_practice_magic</defName>
 		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
 		<reportString>practicing magic at TargetA.</reportString>
+		<neverShowWeapon>false</neverShowWeapon>
+	</JobDef>
+	
+	<JobDef>
+		<defName>LLRoM_physical_training</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>training at TargetA.</reportString>
+		<neverShowWeapon>false</neverShowWeapon>
+	</JobDef>
+	
+	<JobDef>
+		<defName>LLRoM_mential_training</defName>
+		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
+		<reportString>training at TargetA.</reportString>
 		<neverShowWeapon>false</neverShowWeapon>
 	</JobDef>
 	

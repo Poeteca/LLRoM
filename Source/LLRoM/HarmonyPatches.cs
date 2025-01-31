@@ -62,11 +62,14 @@ namespace LLRoM
         {
             public static bool Prefix(ProficiencyDef def, ProficiencyComp __instance)
             {
-                LockoutExtension extension = def.GetModExtension<LockoutExtension>();
-                Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
-                if (pawn != null && extension != null && !pawn.health.hediffSet.HasHediff(extension.withouHediff) && pawn.health.hediffSet.HasHediff(extension.hasHediff))
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
                 {
-                    return false;
+                    LockoutExtension extension = def.GetModExtension<LockoutExtension>();
+                    Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
+                    if (pawn != null && extension != null && !pawn.health.hediffSet.HasHediff(extension.withouHediff) && pawn.health.hediffSet.HasHediff(extension.hasHediff))
+                    {
+                        return false;
+                    }
                 }
                 return true;
             }

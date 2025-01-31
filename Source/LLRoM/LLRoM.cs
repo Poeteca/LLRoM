@@ -31,7 +31,7 @@ namespace LLRoM
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            
+            listingStandard.CheckboxLabeled("ClassProLockout".Translate(), ref settings.ClassProLockout);
             listingStandard.CheckboxLabeled("ClassRequiresProficiencies".Translate(), ref settings.ClassRequiresProficiencies);
             if (settings.ClassRequiresProficiencies)
             { 

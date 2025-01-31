@@ -18,12 +18,19 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>6</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_temperature_thing</li>
+			<li>LLDocument</li>
+			<li>LLRigorization</li>
+			<li>LLRoM_study_rift</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -39,12 +46,19 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>8</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_temperature_thing</li>
+			<li>LLDocument</li>
+			<li>LLRigorization</li>
+			<li>LLRoM_study_rift</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -60,12 +74,22 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>10</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
+		<theoreticalLearningActivityDefs>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_study_temperature_thing</li>
+			<li>LLDocument</li>
+			<li>LLRoM_study_rift</li>
+			<li>LLRoM_study_light_thing</li>
+			<li>LLRoM_SolarObservation</li>
+			<li>LLRigorization</li>
+			<li>LLRoM_study_electric_thing</li>
+		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
 <!--Rare-->

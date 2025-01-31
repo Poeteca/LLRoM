@@ -227,7 +227,7 @@
 	
 	<ThingDef ParentName="LLRoM_ScrollBase">
 		<defName>LLRoM_ScrollSkill</defName>
-		<label>Basic Blank Skill Scroll</label>
+		<label>Blank Skill Scroll</label>
 		<thingClass>ThingWithComps</thingClass>
 		<description>Used to make basic skill scrolls.</description>
 		<category>Item</category>
@@ -241,7 +241,14 @@
 			<MarketValue>500</MarketValue>
 		</statBases>
 		<comps>
-		<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Experiment with {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>LLRoM.CompUseEffect_TrySelfLearnSkill</compClass>
+			</li>
 		</comps>
 		<costList>
 			<RawMagicyte>60</RawMagicyte>
@@ -275,6 +282,11 @@
 					<li>LLRoM_ScribI</li>
 				</requirements>
 				<hardRequirement>true</hardRequirement>
+			</li>
+			<li Class="LLRoM.AbilityAutoLearnExtension">
+				<failChance>25</failChance>
+				<HedifftoApply>LLRoM_Drained</HedifftoApply>
+				<tab>LLROM_Might</tab>
 			</li>
 		</modExtensions>
 	</ThingDef>

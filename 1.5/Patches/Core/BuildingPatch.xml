@@ -206,6 +206,28 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TableMagicCircle"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>10</failChance>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TableMagicCircle"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Train at {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>LLRoM.CompUseEffect_LearnClass</compClass>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="TableSmallMagicCircle"]</xpath>
 		<value>
 			<li Class="LifeLessons.BuildingProficiencyExtension">
@@ -227,6 +249,28 @@
 					</statModifiers>
 				</unqualifiedPenalty>
 				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TableSmallMagicCircle"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>30</failChance>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TableSmallMagicCircle"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Train at {0_label}</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>LLRoM.CompUseEffect_LearnClass</compClass>
 			</li>
 		</value>
 	</Operation>

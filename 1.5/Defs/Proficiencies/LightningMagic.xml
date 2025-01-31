@@ -14,7 +14,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>9</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -23,10 +23,13 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LightningI</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LightningI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_LightningI</li>
+			<li>LLRoM_study_electric_thing</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -42,7 +45,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>9</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -50,10 +53,16 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_LightningII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LightningII</li>
 			<li>LLRoM_ExamineScroll_LightningII</li>
+			<li>LLDocument</li>
+			<li>LLRoM_study_rift</li>
+			<li>LLRoM_study_electric_thing</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -78,7 +87,7 @@
 		</prerequisites>
 		<viewerX>4</viewerX>
 		<viewerY>9</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -86,10 +95,16 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_LightningIII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LightningIII</li>
 			<li>LLRoM_ExamineScroll_LightningIII</li>
+			<li>LLDocument</li>
+			<li>LLRoM_study_rift</li>
+			<li>LLRoM_study_electric_thing</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>

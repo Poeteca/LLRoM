@@ -11,7 +11,7 @@
 		<costPractical>500</costPractical>
 		<viewerX>0</viewerX>
 		<viewerY>6</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -41,7 +41,7 @@
 		<prerequisites>
 			<li>Physical_Insight</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -54,6 +54,7 @@
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</li>
 			<li>LLRoM_ExamineScroll_Physical_Conditioning</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 
@@ -69,7 +70,7 @@
 		<prerequisites>
 			<li>Physical_Insight</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -78,10 +79,12 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
 			<li>LLRoM_UseScroll_Equipment_Mastery</li>
+			<li>LLRoM_study_gear</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</li>
 			<li>LLRoM_ExamineScroll_Equipment_Mastery</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -104,7 +107,7 @@
 		<prerequisites>
 			<li>Physical_Insight</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -117,6 +120,7 @@
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_Mental_Conditioning</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -139,7 +143,7 @@
 		<prerequisites>
 			<li>LLRoM_Physical_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -147,10 +151,13 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Coordination</li>
+			<li>LLRoM_UseScroll_Physical_Conditioning</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Coordination</li>
 			<li>LLRoM_ExamineScroll_Coordination</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -173,7 +180,7 @@
 		<prerequisites>
 			<li>LLRoM_Physical_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -181,10 +188,13 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Strength</li>
+			<li>LLRoM_UseScroll_Physical_Conditioning</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Strength</li>
 			<li>LLRoM_ExamineScroll_Strength</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -207,7 +217,7 @@
 		<prerequisites>
 			<li>LLRoM_Physical_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -215,10 +225,13 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Endurance</li>
+			<li>LLRoM_UseScroll_Physical_Conditioning</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Endurance</li>
 			<li>LLRoM_ExamineScroll_Endurance</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -242,7 +255,7 @@
 			<li>LLRoM_Equipment_Mastery</li>
 			<li>LLRoM_Physical_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -254,6 +267,8 @@
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_CQC</li>
 			<li>LLRoM_ExamineScroll_CQC</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -279,7 +294,7 @@
 			<li>LLRoM_Mental_Conditioning</li>
 			<li>LLRoM_Physical_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -287,10 +302,13 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Breath_Control</li>
+			<li>LLRoM_deep_meditatoin</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Breath_Control</li>
 			<li>LLRoM_ExamineScroll_Breath_Control</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -315,7 +333,7 @@
 			<li>LLRoM_Mental_Conditioning</li>
 			<li>LLRoM_Equipment_Mastery</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -327,6 +345,8 @@
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Ranged</li>
 			<li>LLRoM_ExamineScroll_Ranged</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -349,7 +369,7 @@
 		<prerequisites>
 			<li>LLRoM_Mental_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -357,10 +377,13 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Tactics</li>
+			<li>LLRoM_general_mental_training</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Tactics</li>
 			<li>LLRoM_ExamineScroll_Tactics</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -383,7 +406,7 @@
 		<prerequisites>
 			<li>LLRoM_Mental_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -391,10 +414,14 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Manipulation</li>
+			<li>LLRoM_general_mental_training</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Manipulation</li>
 			<li>LLRoM_ExamineScroll_Manipulation</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLDraft</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -418,7 +445,7 @@
 		<prerequisites>
 			<li>LLRoM_Mental_Conditioning</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -426,10 +453,13 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Charisma</li>
+			<li>LLRoM_general_mental_training</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Charisma</li>
 			<li>LLRoM_ExamineScroll_Charisma</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -454,7 +484,7 @@
 		<prerequisites>
 			<li>LLRoM_Ranged</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -466,6 +496,9 @@
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</li>
 			<li>LLRoM_ExamineScroll_Extreme_Range</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRigorization</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -488,7 +521,7 @@
 		<prerequisites>
 			<li>LLRoM_CQC</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -500,6 +533,9 @@
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</li>
 			<li>LLRoM_ExamineScroll_Defensive_Fighting</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRigorization</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -522,7 +558,7 @@
 		<prerequisites>
 			<li>LLRoM_Breath_Control</li>
 		</prerequisites>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -530,10 +566,14 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Mind_Mastery</li>
+			<li>LLRoM_deep_meditatoin</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</li>
 			<li>LLRoM_ExamineScroll_Mind_Mastery</li>
+			<li>LLDocument</li>
+			<li>LLBrainstorm</li>
+			<li>LLRigorization</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">

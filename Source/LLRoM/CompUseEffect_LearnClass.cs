@@ -17,9 +17,24 @@ namespace LLRoM
         public CompProperties_UseEffectLearnClass Props => (CompProperties_UseEffectLearnClass)props;
         public override void DoEffect(Pawn usedBy)
         {
+            ClassAutoLearnExtension Parentextension = parent.def.GetModExtension<ClassAutoLearnExtension>();
             List<ProficiencyDef> completedProficiencies = usedBy.GetComp<ProficiencyComp>().CompletedProficiencies;
+            List<ProficiencyDef> learnableProficiencies = usedBy.GetComp<ProficiencyComp>().AllLearnableProficiencies;
             List<TraitDef> possibleclasses = new List<TraitDef>();
-            foreach (ProficiencyDef proficiencyDef in completedProficiencies)
+            List<ProficiencyDef> DefsToChec = new List<ProficiencyDef>();
+            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMagicClassLearning && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMightClassLearning)
+            {
+                DefsToChec = completedProficiencies;
+            }
+            else
+            {
+                DefsToChec = learnableProficiencies;
+                foreach (ProficiencyDef def in completedProficiencies)
+                {
+                    DefsToChec.Add(def);
+                }
+            }
+            foreach (ProficiencyDef proficiencyDef in DefsToChec)
             {
                 ClassAutoLearnExtension proextension = proficiencyDef.GetModExtension<ClassAutoLearnExtension>();
                 if (proextension != null)
@@ -63,11 +78,40 @@ namespace LLRoM
                                 else
                                 {
                                     bool check = false;
-                                    if (traitextension.Strict || (traitextension.Magic && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMagicClassLearning) || (traitextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMightClassLearning))
+                                    bool canGain = true;
+                                    if (traitextension.Magic && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMagicClassLearning)
                                     {
                                         check = true;
                                     }
-                                    if (!Util.Qualification(usedBy, traitextension.RequiredProficiencies, check).Allowed(false))
+                                    if  (traitextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMightClassLearning)
+                                    {
+                                        check = true;
+                                    }
+                                    if (traitextension.Strict)
+                                    {
+                                        check = true;
+                                    }
+                                    if (check)
+                                    {
+                                        foreach(ProficiencyDef p in traitextension.RequiredProficiencies)
+                                        {
+                                            if (!completedProficiencies.Contains(p))
+                                            {
+                                                canGain = false;
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        foreach (ProficiencyDef p in traitextension.RequiredProficiencies)
+                                        {
+                                            if (!learnableProficiencies.Contains(p))
+                                            {
+                                                canGain = false;
+                                            }
+                                        }
+                                    }
+                                    if (!canGain)
                                     {
                                         addTrait = false;
                                     }
@@ -120,6 +164,8 @@ namespace LLRoM
                                 {
                                     foreach (TraitDef T in traitextension.RequiredTrait)
                                     {
+                                        if (Parentextension.Magic && !traitextension.Magic) { break; }
+                                        if (Parentextension.Might && !traitextension.Might) { break; }
                                         if (usedBy.story.traits.HasTrait(T) && !traitextension.AllRequiredTraitsNeeded)
                                         {
                                             hasanyTrait = true;
@@ -155,7 +201,6 @@ namespace LLRoM
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
                 {
                     chance = Rand.RangeInclusive(1, 100);
-                    ClassAutoLearnExtension Parentextension = parent.def.GetModExtension<ClassAutoLearnExtension>();
                     compare = Parentextension.failChance;
                 }
                 if (chance > compare)
@@ -195,10 +240,18 @@ namespace LLRoM
                     usedBy.health.AddHediff(Classextension.appliedHediff);
                     HealthUtility.AdjustSeverity(usedBy, Classextension.appliedHediff, .5f);
                 }
+                if (parent.def.defName.Contains("Unfinished"))
+                {
+                    parent.SplitOff(1).Destroy();
+                }
                 return;
             }
             if (possibleclasses.Count == 0)
             {
+                if (parent.def.defName.Contains("Unfinished"))
+                {
+                    parent.SplitOff(1).Destroy();
+                }
                 Messages.Message("LLRoM_FailAutoLearnedClassNoClasses".Translate(usedBy.LabelShort), MessageTypeDefOf.RejectInput);
                 return;
             }

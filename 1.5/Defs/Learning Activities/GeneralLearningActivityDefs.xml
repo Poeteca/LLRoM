@@ -150,6 +150,92 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_general_physical_training</defName>
+		<label>Physical Training</label>
+		<description>temp</description>
+		<activityJob>LLRoM_physical_training</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.0015</xpPerTick>
+		<baseTickLength>3000</baseTickLength>
+		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
+		<effectWorking>LearnFromLecture</effectWorking>
+		<validWorkstations>
+			<li>LLRoM_practicespot</li>
+		</validWorkstations>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_deep_meditatoin</defName>
+		<label>Deep Meditation</label>
+		<description>temp</description>
+		<activityJob>LLRoM_deepmeditation</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.005</xpPerTick>
+		<baseTickLength>10000</baseTickLength>
+		<dailyRepetitionsUntilExhausted>1</dailyRepetitionsUntilExhausted>
+		<validWorkstations>
+			<li>LLRoM_practicespot</li>
+		</validWorkstations>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_general_mental_training</defName>
+		<label>Mental Training</label>
+		<description>temp</description>
+		<activityJob>LLRoM_physical_training</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.0015</xpPerTick>
+		<baseTickLength>3000</baseTickLength>
+		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
+		<effectWorking>LearnFromLecture</effectWorking>
+		<validWorkstations>
+			<li>Blackboard</li>
+		</validWorkstations>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_study_gear</defName>
+		<label>Analize Equpiment</label>
+		<description>temp</description>
+		<activityJob>LLRoM_gear_study</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.003</xpPerTick>
+		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLAnalyze</effectWorking>
+		<disabledByDefault>true</disabledByDefault>
+		<validWorkstations>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+			<li>TableMachining</li>
+			<li>FabricationBench</li>
+		</validWorkstations>
+		<consumeIngredientTargets>true</consumeIngredientTargets>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Weapons</li>
+				<li>Apparel</li>
+			</categories>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_rift</defName>
 		<label>Study Elemental Rift</label>
 		<description>temp</description>
@@ -221,7 +307,7 @@
 			<li>ChemfuelPoweredGenerator</li>
 			<li>GeothermalGenerator</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-			<li MayRequire="Ludeon.RimWorld.Royalty">DarklightBrazier</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty, Ludeon.RimWorld.Ideology">DarklightBrazier</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Effigy</li>
@@ -250,4 +336,62 @@
 		</validWorkstations>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_study_light_thing</defName>
+		<label>Study Light Sourcse</label>
+		<description>temp</description>
+		<activityJob>LLAnalyzeBuilding</activityJob>
+		<activityTargetType>SpecificBuildings</activityTargetType>
+		<experienceType>Theoretical</experienceType>
+		<xpPerTick>0.003</xpPerTick>
+		<baseTickLength>3000</baseTickLength>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLAnalyze</effectWorking>
+		<targetIconsEnabled>false</targetIconsEnabled>
+		<specificTargetBuildings>
+			<li>Campfire</li>
+			<li>TorchLamp</li>
+			<li>TorchWallLamp</li>
+			<li>StandingLamp</li>
+			<li>SunLamp</li>
+			<li>WallLamp</li>
+			<li>FloodLight</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty, Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+		</specificTargetBuildings>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_study_electric_thing</defName>
+		<label>Study Electric Flow</label>
+		<description>temp</description>
+		<activityJob>LLAnalyzeBuilding</activityJob>
+		<activityTargetType>SpecificBuildings</activityTargetType>
+		<experienceType>Theoretical</experienceType>
+		<xpPerTick>0.003</xpPerTick>
+		<baseTickLength>3000</baseTickLength>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLAnalyze</effectWorking>
+		<targetIconsEnabled>false</targetIconsEnabled>
+		<specificTargetBuildings>
+			<li>PowerConduit</li>
+			<li>HiddenConduit</li>
+			<li>WaterproofConduit</li>
+			<li>PowerSwitch</li>
+			<li>WoodFiredGenerator</li>
+			<li>ChemfuelPoweredGenerator</li>
+			<li>WindTurbine</li>
+			<li>Battery</li>
+			<li>SolarGenerator</li>
+			<li>GeothermalGenerator</li>
+			<li>WatermillGenerator</li>
+			<li>Ship_Reactor</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">UnstablePowerCell</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ToxifierGenerator</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteGenerator</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Electroharvester</li>
+		</specificTargetBuildings>
+	</LifeLessons.LearningActivityDef>
 </Defs>

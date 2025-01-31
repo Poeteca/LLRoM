@@ -14,7 +14,7 @@
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>11</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -23,10 +23,14 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LightI</li>
+			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LightI</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_LightI</li>
+			<li>LLRoM_study_light_thing</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_SolarObservation</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -42,7 +46,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>11</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -50,10 +54,17 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_LightII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LightII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_LightII</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_SolarObservation</li>
+			<li>LLRoM_study_light_thing</li>
+			<li>LLDocument</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -78,7 +89,7 @@
 		</prerequisites>
 		<viewerX>4</viewerX>
 		<viewerY>11</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -86,10 +97,17 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_LightIII</li>
+			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LightIII</li>
 			<li>LLRoM_ReadMagicLearnObjectBase_LightIII</li>
+			<li>LLBrainstorm</li>
+			<li>LLRoM_SolarObservation</li>
+			<li>LLRoM_study_light_thing</li>
+			<li>LLDocument</li>
+			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 </Defs>
