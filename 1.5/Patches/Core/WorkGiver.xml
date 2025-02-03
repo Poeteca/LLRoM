@@ -105,4 +105,37 @@
 			</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Equipment_Mastery</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Equipment_Mastery</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
 </Patch>

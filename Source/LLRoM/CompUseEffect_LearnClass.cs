@@ -22,7 +22,7 @@ namespace LLRoM
             List<ProficiencyDef> learnableProficiencies = usedBy.GetComp<ProficiencyComp>().AllLearnableProficiencies;
             List<TraitDef> possibleclasses = new List<TraitDef>();
             List<ProficiencyDef> DefsToChec = new List<ProficiencyDef>();
-            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMagicClassLearning && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMightClassLearning)
+            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
             {
                 DefsToChec = completedProficiencies;
             }
@@ -61,12 +61,10 @@ namespace LLRoM
                         {
                             if (traitextension.GenderRequirment != Gender.None && usedBy.gender != traitextension.GenderRequirment)
                             {
-                                addTrait = false;
                                 continue;
                             }
                             if (traitextension.GenderRequirment != Gender.None && usedBy.gender == Gender.None && (Rand.Chance(0.5f)))
                             {
-                                addTrait = false;
                                 continue;
                             }
                             if (traitextension.RequiredProficiencies != null)
@@ -79,11 +77,11 @@ namespace LLRoM
                                 {
                                     bool check = false;
                                     bool canGain = true;
-                                    if (traitextension.Magic && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMagicClassLearning)
+                                    if (traitextension.Magic && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning)
                                     {
                                         check = true;
                                     }
-                                    if  (traitextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMightClassLearning)
+                                    if  (traitextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
                                     {
                                         check = true;
                                     }
@@ -215,14 +213,22 @@ namespace LLRoM
                         {
                             foreach (TraitDef T in Classextension.RequiredTrait)
                             {
-                                removerequirements(T, usedBy.story.traits.allTraits);
+                                Removerequirements(T, usedBy.story.traits.allTraits);
                             }
                         }
+                    }
+                    if (Classextension.Magic && !Classextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().UnlearnProOnClassGain && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
+                    {
+                        usedBy.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Physical_Insight, true);
+                    }
+                    if (!Classextension.Magic && Classextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().UnlearnProOnClassGain && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
+                    {
+                        usedBy.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Magic_Insight, true);
                     }
                     if (Classextension.RequiredTrait == null && usedBy.story.traits.allTraits.Count > 7)
                     {
                         int toremove = Rand.RangeInclusive(0, 6);
-                        removecertainTrait(usedBy.story.traits.allTraits, toremove);
+                        RemovecertainTrait(usedBy.story.traits.allTraits, toremove);
                     }
                     usedBy.story.traits.GainTrait(new Trait(Class));
                     Messages.Message("LLRoM_AutoLearnedClass".Translate(usedBy.LabelShort, classname, Classextension.Prefix), MessageTypeDefOf.PositiveEvent);
@@ -272,7 +278,7 @@ namespace LLRoM
             }
             return base.CanBeUsedBy(p);
         }
-        private void removerequirements(TraitDef trait, List<Trait> traitlist)
+        private void Removerequirements(TraitDef trait, List<Trait> traitlist)
         {
             int target = -1;
             foreach (Trait T in traitlist)
@@ -288,7 +294,7 @@ namespace LLRoM
                 traitlist.RemoveAt(target); 
             }
         }
-        private void removecertainTrait(List<Trait> traitlist, int target)
+        private void RemovecertainTrait(List<Trait> traitlist, int target)
         {
             if (target != -1 && target < (traitlist.Count - 1))
             { 

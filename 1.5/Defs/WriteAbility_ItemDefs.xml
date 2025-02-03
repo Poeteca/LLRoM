@@ -83,7 +83,7 @@
 				<requirements>
 					<li>LLRoM_ScribI</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<hardRequirement>false</hardRequirement>
 			</li>
 			<li Class="LLRoM.AbilityAutoLearnExtension">
 				<failChance>50</failChance>
@@ -149,7 +149,7 @@
 				<requirements>
 					<li>LLRoM_ScribII</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<hardRequirement>false</hardRequirement>
 			</li>
 			<li Class="LLRoM.AbilityAutoLearnExtension">
 				<failChance>30</failChance>
@@ -215,7 +215,7 @@
 				<requirements>
 					<li>LLRoM_ScribIII</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<hardRequirement>false</hardRequirement>
 			</li>
 			<li Class="LLRoM.AbilityAutoLearnExtension">
 				<failChance>10</failChance>
@@ -281,7 +281,7 @@
 				<requirements>
 					<li>LLRoM_ScribI</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<hardRequirement>false</hardRequirement>
 			</li>
 			<li Class="LLRoM.AbilityAutoLearnExtension">
 				<failChance>25</failChance>

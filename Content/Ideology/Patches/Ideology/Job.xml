@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="PrisonerEnslave"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="PrisonerReduceWill"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="PrisonerConvert"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="SlaveSuppress"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

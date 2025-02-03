@@ -21,7 +21,7 @@ namespace LLRoM
             List<ProficiencyDef> learnableProficiencies = usedBy.GetComp<ProficiencyComp>().AllLearnableProficiencies;
             List<ProficiencyDef> possibleProficiencies = new List<ProficiencyDef>();
             CompAbilityUserMight compAbilityUserMight = usedBy.GetCompAbilityUserMight();
-            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickSkillLearning)
+            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSkillLearning)
             {
                 possibleProficiencies = completedProficiencies;
             }

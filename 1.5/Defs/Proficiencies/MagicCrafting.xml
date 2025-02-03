@@ -8,13 +8,14 @@
 		<label>LLRoM_ScribI</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
-		<costPractical>500</costPractical>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>400</costPractical>
 		<prerequisites>
 			<li>ReadingWriting</li>
 		</prerequisites>
 		<viewerX>1</viewerX>
 		<viewerY>1</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -27,10 +28,11 @@
 		<label>LLRoM_MagicRefinement</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
-		<costPractical>500</costPractical>
+		<costTheoretical>200</costTheoretical>
+		<costPractical>400</costPractical>
 		<viewerX>1</viewerX>
 		<viewerY>2</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -43,6 +45,7 @@
 		<label>LLRoM_MagicEnchantingI</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
+		<costTheoretical>300</costTheoretical>
 		<costPractical>500</costPractical>
 		<prerequisites>
 			<li>LLRoM_ScribI</li>
@@ -50,7 +53,7 @@
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>2</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -63,13 +66,14 @@
 		<label>LLRoM_MagicConstructsI</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
+		<costTheoretical>300</costTheoretical>
 		<costPractical>500</costPractical>
 		<prerequisites>
 			<li>LLRoM_MagicRefinement</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>3</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -82,13 +86,14 @@
 		<label>LLRoM_MagicMaterials</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
-		<costPractical>500</costPractical>
+		<costTheoretical>500</costTheoretical>
+		<costPractical>600</costPractical>
 		<prerequisites>
 			<li>LLRoM_MagicRefinement</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>4</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -148,13 +153,14 @@
 		<label>LLRoM_ScribII</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
-		<costPractical>500</costPractical>
+		<costTheoretical>400</costTheoretical>
+		<costPractical>600</costPractical>
 		<prerequisites>
 			<li>LLRoM_ScribI</li>
 		</prerequisites>
 		<viewerX>2</viewerX>
 		<viewerY>1</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -167,13 +173,14 @@
 		<label>LLRoM_ScribIII</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
-		<costPractical>500</costPractical>
+		<costTheoretical>1000</costTheoretical>
+		<costPractical>1000</costPractical>
 		<prerequisites>
 			<li>LLRoM_ScribII</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>1</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -186,6 +193,7 @@
 		<label>LLRoM_MagicEnchantingII</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
+		<costTheoretical>600</costTheoretical>
 		<costPractical>500</costPractical>
 		<prerequisites>
 			<li>LLRoM_ScribII</li>
@@ -193,7 +201,7 @@
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>2</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>
@@ -208,14 +216,15 @@
 		<label>LLRoM_MagicConstructsII</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
 		<description>Temp</description>
-		<costPractical>500</costPractical>
+		<costTheoretical>600</costTheoretical>
+		<costPractical>1000</costPractical>
 		<prerequisites>
 			<li>LLRoM_MagicConstructsI</li>
 			<li>LLRoM_MagicEnchantingI</li>
 		</prerequisites>
 		<viewerX>3</viewerX>
 		<viewerY>3</viewerY>
-		<baseLearningEffectiveness>.1</baseLearningEffectiveness>
+		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
 			<li>UI/Buttons/UsePlanetDayNightSystem</li>

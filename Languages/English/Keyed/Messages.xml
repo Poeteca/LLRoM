@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<UnlearnProOnClassGain>If a pawn will unlearn proficiencies that they normally would not use when gaining a class.</UnlearnProOnClassGain>
 	<LLARoM_LearnMagicMissingProficiencies>{0} is not able to understand that tome.</LLARoM_LearnMagicMissingProficiencies>
 	<LLARoM_LearnMightMissingProficiencies>{0} is not able to understand that manual.</LLARoM_LearnMightMissingProficiencies>
 	<LLARoM_LearnSpellMissingProficiencies>{0} is not able to understand that scroll.</LLARoM_LearnSpellMissingProficiencies>
 	<LLAROM_GemOfInsight>{USER_labelShort} used a gem of insight to learn {1}.</LLAROM_GemOfInsight>
-	<StrickMightClassLearning>If a might class requires knowing proficiencies instead of being able to learn proficiencies.</StrickMightClassLearning>
-	<StrickMagicClassLearning>If a magic class requires knowing proficiencies instead of being able to learn proficiencies.</StrickMagicClassLearning>
-	<StrickSkillLearning>If a fighter skill requires knowing proficiencies instead of being able to learn proficiencies.</StrickSkillLearning>
-	<StrickSpellLearning>If a magic spell requires knowing proficiencies instead of being able to learn proficiencies.</StrickSpellLearning>
+	<StrictMightClassLearning>If a might class requires knowing proficiencies instead of being able to learn proficiencies.</StrictMightClassLearning>
+	<StrictMagicClassLearning>If a magic class requires knowing proficiencies instead of being able to learn proficiencies.</StrictMagicClassLearning>
+	<StrictSkillLearning>If a fighter skill requires knowing proficiencies instead of being able to learn proficiencies.</StrictSkillLearning>
+	<StrictSpellLearning>If a magic spell requires knowing proficiencies instead of being able to learn proficiencies.</StrictSpellLearning>
 	<ObscureCertianProficiencies>If magic and magic proficiencies are hidden if a pawn cannot learn them.</ObscureCertianProficiencies>
 	<ObscureAllProficiencies>If all proficiencies are hidden if a pawn cannot learn them.</ObscureAllProficiencies>
 	<LLRoM>Life Lessons and A Rimworld of Magic Intergration</LLRoM>

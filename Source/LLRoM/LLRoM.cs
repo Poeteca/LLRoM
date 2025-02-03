@@ -32,11 +32,19 @@ namespace LLRoM
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("ClassProLockout".Translate(), ref settings.ClassProLockout);
+            if (settings.ClassProLockout)
+            {
+                listingStandard.CheckboxLabeled("UnlearnProOnClassGain".Translate(), ref settings.UnlearnProOnClassGain);
+            }
+            else
+            {
+                listingStandard.Label("");
+            }
             listingStandard.CheckboxLabeled("ClassRequiresProficiencies".Translate(), ref settings.ClassRequiresProficiencies);
             if (settings.ClassRequiresProficiencies)
             { 
-                listingStandard.CheckboxLabeled("StrickMightClassLearning".Translate(), ref settings.StrickMightClassLearning);
-                listingStandard.CheckboxLabeled("StrickMagicClassLearning".Translate(), ref settings.StrickMagicClassLearning);
+                listingStandard.CheckboxLabeled("StrictMightClassLearning".Translate(), ref settings.StrictMightClassLearning);
+                listingStandard.CheckboxLabeled("StrictMagicClassLearning".Translate(), ref settings.StrictMagicClassLearning);
             }
             else
             {
@@ -46,8 +54,8 @@ namespace LLRoM
             listingStandard.CheckboxLabeled("AbilityRequiresProficiencies".Translate(), ref settings.AbilityRequiresProficiencies);
             if (settings.AbilityRequiresProficiencies)
             {
-                listingStandard.CheckboxLabeled("StrickSkillLearning".Translate(), ref settings.StrickSkillLearning);
-                listingStandard.CheckboxLabeled("StrickSpellLearning".Translate(), ref settings.StrickSpellLearning);
+                listingStandard.CheckboxLabeled("StrictSkillLearning".Translate(), ref settings.StrictSkillLearning);
+                listingStandard.CheckboxLabeled("StrictSpellLearning".Translate(), ref settings.StrictSpellLearning);
             }
             else
             {

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="StandAndBeSociallyActive"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Charisma</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Meditate"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Breath_Control</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mind_Mastery</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="SocialRelax"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Charisma</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Play_Horseshoes"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Coordination</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Play_Hoopstone"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Coordination</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Play_GameOfUr"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Tactics</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Play_Chess"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Tactics</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Play_Billiards"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Coordination</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Play_Poker"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>.1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Refuel"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Strength</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="RefuelAtomic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Strength</proficiency>
+            <experienceType>TheoreticalHalfPractical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Reload"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Strength</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Equipment_Mastery</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Insult"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="HaulToCell"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Strength</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="HaulToContainer"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Strength</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Physical_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Capture"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Arrest"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="PrisonerAttemptRecruit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Manipulation</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Mental_Conditioning</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Equip"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Equipment_Mastery</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/JobDef[defName="Wear"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <rewards>
+          <li>
+            <proficiency MayRequire="albinogod.llaromdev">LLRoM_Equipment_Mastery</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

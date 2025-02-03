@@ -9,10 +9,10 @@ namespace LLRoM
 {
     public class LLRoMSettings : ModSettings
     {
-        public bool StrickMightClassLearning = false;
-        public bool StrickMagicClassLearning = false;
-        public bool StrickSpellLearning = false;
-        public bool StrickSkillLearning = false;
+        public bool StrictMightClassLearning = false;
+        public bool StrictMagicClassLearning = false;
+        public bool StrictSpellLearning = false;
+        public bool StrictSkillLearning = false;
         public bool ObscureCertianProficiencies = true;
         public bool ObscureAllProficiencies = false;
         public bool ClassRequiresProficiencies = true;
@@ -26,12 +26,13 @@ namespace LLRoM
         public bool CanSelfTeachSkills = true;
         public bool CanOnlySelfSkills = false;
         public bool ClassProLockout = true;
+        public bool UnlearnProOnClassGain = true;
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref StrickMightClassLearning, "StrickMightClassLearning");
-            Scribe_Values.Look(ref StrickMagicClassLearning, "StrickMagicClassLearning");
-            Scribe_Values.Look(ref StrickSpellLearning, "StrickSpellClassLearning");
-            Scribe_Values.Look(ref StrickSkillLearning, "StrickSkillClassLearning");
+            Scribe_Values.Look(ref StrictMightClassLearning, "StrictMightClassLearning");
+            Scribe_Values.Look(ref StrictMagicClassLearning, "StrictMagicClassLearning");
+            Scribe_Values.Look(ref StrictMightClassLearning, "StrictMightClassLearning");
+            Scribe_Values.Look(ref StrictMightClassLearning, "StrictMightClassLearning");
             Scribe_Values.Look(ref ObscureCertianProficiencies, "ObscureCertianProficiencies");
             Scribe_Values.Look(ref ObscureAllProficiencies, "ObscureAllProficiencies");
             Scribe_Values.Look(ref ClassRequiresProficiencies, "ClassRequiresProficiencies");
@@ -44,6 +45,7 @@ namespace LLRoM
             Scribe_Values.Look(ref CanSelfTeachSkills, "CanSelfTeachSkills");
             Scribe_Values.Look(ref CanOnlySelfSkills, "CanOnlySelfSkills");
             Scribe_Values.Look(ref ClassProLockout, "ClassProLockout");
+            Scribe_Values.Look(ref UnlearnProOnClassGain, "UnlearnProOnClassGain");
             base.ExposeData();
         }
     }

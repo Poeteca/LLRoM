@@ -21,7 +21,7 @@ namespace LLRoM
             List<ProficiencyDef> learnableProficiencies = usedBy.GetComp<ProficiencyComp>().AllLearnableProficiencies;
             List<ProficiencyDef> possibleProficiencies = new List<ProficiencyDef>();
             CompAbilityUserMagic compAbilityUserMagic = usedBy.GetCompAbilityUserMagic();
-            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickSpellLearning)
+            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSpellLearning)
             {
                 possibleProficiencies = completedProficiencies;
             }

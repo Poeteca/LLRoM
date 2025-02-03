@@ -16,6 +16,58 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class XPCombatGainPatch
+    {
+        [HarmonyPatch(typeof(Pawn_SkillTracker), nameof(Pawn_SkillTracker.Learn))]
+        public static class XPCombatGainPatchPostFix
+        {
+            public static void Postfix(SkillDef sDef, float xp, Pawn_SkillTracker __instance)
+            {
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+                if (sDef == SkillDefOf.Shooting && pawn != null)
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    if (pawn != null && comp != null)
+                    {
+                        SkillRecord Shooting =__instance.GetSkill(SkillDefOf.Shooting);
+                        comp.TryGainXp(xp*.001f, ProficiencyDefOf.LLRoM_Ranged, ExperienceType.PracticalHalfTheoretical);
+                        if (Shooting.levelInt >= 7)
+                        {
+                            comp.TryGainXp(xp * .001f, ProficiencyDefOf.LLRoM_Extreme_Range, ExperienceType.PracticalHalfTheoretical);
+                        }
+                    }
+                }
+                if (sDef == SkillDefOf.Melee && pawn != null)
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    SkillRecord Melee = __instance.GetSkill(SkillDefOf.Melee);
+                    if (pawn != null && comp != null)
+                    {
+                        comp.TryGainXp(xp * .001f, ProficiencyDefOf.LLRoM_CQC, ExperienceType.PracticalHalfTheoretical);
+                        if (Melee.levelInt >= 7)
+                        {
+                            comp.TryGainXp(xp * .001f, ProficiencyDefOf.LLRoM_Defensive_Fighting, ExperienceType.PracticalHalfTheoretical);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    public static class PostDamageLearnPatch
+    {
+        [HarmonyPatch(typeof(Pawn), nameof(Pawn.PostApplyDamage))]
+        public static class PostDamageLearnPatchPostFix
+        {
+            public static void Postfix(DamageInfo dinfo, float totalDamageDealt, Pawn __instance)
+            {
+                if (!__instance.Dead && __instance.HasComp<ProficiencyComp>())
+                {
+                    __instance.TryGetComp<ProficiencyComp>().TryGainXp(totalDamageDealt*.1f, ProficiencyDefOf.LLRoM_Physical_Conditioning, ExperienceType.PracticalHalfTheoretical);
+                    __instance.TryGetComp<ProficiencyComp>().TryGainXp(totalDamageDealt*.1f, ProficiencyDefOf.LLRoM_Endurance, ExperienceType.PracticalHalfTheoretical);
+                }
+            }
+        }
+    }
     public static class TraitProficiencGenPatch
     {
         [HarmonyPatch(typeof(ProficiencyResolver), nameof(ProficiencyResolver.ResolveForPawn))]
@@ -62,10 +114,10 @@ namespace LLRoM
         {
             public static bool Prefix(ProficiencyDef def, ProficiencyComp __instance)
             {
-                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
+                Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout && !TM_Calc.IsWanderer(pawn) && !TM_Calc.IsWayfarer(pawn))
                 {
                     LockoutExtension extension = def.GetModExtension<LockoutExtension>();
-                    Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
                     if (pawn != null && extension != null && !pawn.health.hediffSet.HasHediff(extension.withouHediff) && pawn.health.hediffSet.HasHediff(extension.hasHediff))
                     {
                         return false;
@@ -326,7 +378,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMagicClassLearning).Allowed(false))
+                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMagicMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
@@ -353,7 +405,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickMightClassLearning).Allowed(false))
+                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
@@ -380,7 +432,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickSpellLearning).Allowed(false))
+                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSpellLearning).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnSpellMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
@@ -407,7 +459,7 @@ namespace LLRoM
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
-                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrickSkillLearning).Allowed(false))
+                    if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSkillLearning).Allowed(false))
                     {
                         ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
