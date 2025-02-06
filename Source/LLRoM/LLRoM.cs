@@ -1,28 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Verse;
+﻿using Verse;
 using HarmonyLib;
-using TorannMagic;
-using AbilityUser;
 using LifeLessons;
-using TorannMagic.Ideology;
-using TorannMagic.ModOptions;
 using RimWorld;
-using Verse.AI;
-using LifeLessons.Patches;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Reflection;
-using static HarmonyLib.Code;
-using System.Security.Policy;
 using UnityEngine;
 
 namespace LLRoM
 {
     public class LLROM : Mod
     {
-        LLRoMSettings settings;
+        internal LLRoMSettings settings;
         public LLROM(ModContentPack content) : base(content)
         {
             this.settings = GetSettings<LLRoMSettings>();
@@ -31,6 +17,7 @@ namespace LLRoM
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
+            listingStandard.CheckboxLabeled("ProficienciesMasterOffseter".Translate(), ref settings.ProficienciesMasterOffseter);
             listingStandard.CheckboxLabeled("ClassProLockout".Translate(), ref settings.ClassProLockout);
             if (settings.ClassProLockout)
             {

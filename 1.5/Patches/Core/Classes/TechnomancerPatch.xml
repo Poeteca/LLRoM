@@ -128,7 +128,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningI</li>
 					<li>Computers</li>
 				</Proficiencies>
@@ -142,7 +141,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningI</li>
 					<li>Computers</li>
 					<li>LLRoM_Defensive</li>
@@ -157,7 +155,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningI</li>
 					<li>Computers</li>
 					<li>LLRoM_Offensive</li>
@@ -172,10 +169,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningI</li>
 					<li>Computers</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -188,11 +183,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningII</li>
-					<li>LLRoM_LightningI</li>
 					<li>Computers</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 					<li>Programming</li>
 				</Proficiencies>
@@ -206,11 +198,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningII</li>
-					<li>LLRoM_LightningI</li>
 					<li>Computers</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_OffensiveDeBuff</li>
 					<li>Programming</li>
 				</Proficiencies>
@@ -224,9 +213,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningII</li>
-					<li>LLRoM_LightningI</li>
 					<li>Computers</li>
 					<li>Programming</li>
 				</Proficiencies>
@@ -240,7 +227,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_Offensive</li>
 					<li>Computers</li>
 					<li>Programming</li>
@@ -255,8 +241,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 					<li>Computers</li>
 					<li>Programming</li>
@@ -271,8 +255,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 					<li>Computers</li>
 					<li>Programming</li>

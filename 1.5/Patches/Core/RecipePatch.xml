@@ -6,7 +6,7 @@
 		<value>
 			<li Class="LifeLessons.BillProficiencyExtension">
 				<requirements>
-					<li>MedicineCompounding</li>
+					<li>ChemicalSynthesis</li>
 					<li>LLRoM_MagicRefinement</li>
 				</requirements>
 				<unqualifiedPenalty>

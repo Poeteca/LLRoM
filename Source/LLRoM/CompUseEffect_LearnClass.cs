@@ -1,13 +1,7 @@
 ﻿using LifeLessons;
 using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using TorannMagic;
-using TorannMagic.ModOptions;
 using Verse;
 
 namespace LLRoM
@@ -21,15 +15,10 @@ namespace LLRoM
             List<ProficiencyDef> completedProficiencies = usedBy.GetComp<ProficiencyComp>().CompletedProficiencies;
             List<ProficiencyDef> learnableProficiencies = usedBy.GetComp<ProficiencyComp>().AllLearnableProficiencies;
             List<TraitDef> possibleclasses = new List<TraitDef>();
-            List<ProficiencyDef> DefsToChec = new List<ProficiencyDef>();
-            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
+            List<ProficiencyDef> DefsToChec = completedProficiencies;
+            if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning || !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
             {
-                DefsToChec = completedProficiencies;
-            }
-            else
-            {
-                DefsToChec = learnableProficiencies;
-                foreach (ProficiencyDef def in completedProficiencies)
+                foreach (ProficiencyDef def in learnableProficiencies)
                 {
                     DefsToChec.Add(def);
                 }

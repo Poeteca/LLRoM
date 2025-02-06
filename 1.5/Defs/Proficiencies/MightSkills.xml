@@ -165,6 +165,22 @@
 					<li>Ranger</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>ShootingAccuracyPawn</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>MeleeHitChance</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>PawnTrapSpringChance</Stat>
+						<value>.9</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -202,6 +218,18 @@
 					<li>Bladedancer</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>MeleeDamageFactor</Stat>
+						<value>1.05</value>
+					</li>
+					<li>
+						<Stat>CarryingCapacity</Stat>
+						<value>1.2</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -238,6 +266,18 @@
 				<Relatedtraits>
 					<li>Gladiator</li>
 				</Relatedtraits>
+			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>IncomingDamageFactor</Stat>
+						<value>.85</value>
+					</li>
+					<li>
+						<Stat>StaggerDurationFactor</Stat>
+						<value>.75</value>
+					</li>
+				</statModifiers>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -278,6 +318,18 @@
 					<li>TM_Monk</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>MeleeCooldownFactor</Stat>
+						<value>.9</value>
+					</li>
+					<li>
+						<Stat>MeleeHitChance</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -317,6 +369,18 @@
 					<li>TM_Monk</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>AimingDelayFactor</Stat>
+						<value>.9</value>
+					</li>
+					<li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+						<Stat>MeditationFocusGain</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -354,6 +418,22 @@
 					<li>Ranger</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>RangedCooldownFactor</Stat>
+						<value>.9</value>
+					</li>
+					<li>
+						<Stat>ShootingAccuracyFactor_Touch</Stat>
+						<value>1.25</value>
+					</li>
+					<li>
+						<Stat>ShootingAccuracyFactor_Short</Stat>
+						<value>1.25</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -390,6 +470,22 @@
 				<Relatedtraits>
 					<li>TM_Commander</li>
 				</Relatedtraits>
+			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>DrugSynthesisSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>ResearchSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<Stat>HackingSpeed</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -430,6 +526,22 @@
 					<li>DeathKnight</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>ArrestSuccessChance</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>TradePriceImprovement</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<Stat>SuppressionPower</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -467,6 +579,28 @@
 					<li>Faceless</li>
 					<li>TM_Commander</li>
 				</Relatedtraits>
+			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>SocialImpact</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>TameAnimalChance</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>TrainAnimalChance</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>PawnBeauty</Stat>
+						<value>1</value>
+					</li>
+				</statOffseters>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -506,6 +640,22 @@
 					<li>TM_Sniper</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>AimingDelayFactor</Stat>
+						<value>.9</value>
+					</li>
+					<li>
+						<Stat>ShootingAccuracyFactor_Medium</Stat>
+						<value>1.25</value>
+					</li>
+					<li>
+						<Stat>ShootingAccuracyFactor_Long</Stat>
+						<value>1.25</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -542,6 +692,30 @@
 				<Relatedtraits>
 					<li>Gladiator</li>
 				</Relatedtraits>
+			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>MeleeDodgeChance</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>IncomingDamageFactor</Stat>
+						<value>.85</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>ArmorRating_Blunt</Stat>
+						<value>.1</value>
+						<isPercent>true</isPercent>
+					</li>
+					<li>
+						<Stat>ArmorRating_Sharp</Stat>
+						<value>.1</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -580,6 +754,22 @@
 				<Relatedtraits>
 					<li>TM_Psionic</li>
 				</Relatedtraits>
+			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>GlobalLearningFactor</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+						<Stat>MeditationFocusGain</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">
+						<Stat>PsychicEntropyGain</Stat>
+						<value>.9</value>
+					</li>
+				</statModifiers>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>

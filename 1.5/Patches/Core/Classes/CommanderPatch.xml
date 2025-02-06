@@ -44,8 +44,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Mental_Conditioning</li>
 					<li>LLRoM_Manipulation</li>
 					<li>LLRoM_Tactics</li>
 				</Proficiencies>
@@ -71,8 +69,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Mental_Conditioning</li>
 					<li>LLRoM_Charisma</li>
 					<li>LLRoM_Tactics</li>
 				</Proficiencies>

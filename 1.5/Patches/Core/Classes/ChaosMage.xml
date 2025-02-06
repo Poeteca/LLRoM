@@ -79,11 +79,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_ChaosII</li>
-					<li>LLRoM_ChaosI</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_RawII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

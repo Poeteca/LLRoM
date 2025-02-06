@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+﻿using Verse;
 
 namespace LLRoM
 {
@@ -27,6 +22,7 @@ namespace LLRoM
         public bool CanOnlySelfSkills = false;
         public bool ClassProLockout = true;
         public bool UnlearnProOnClassGain = true;
+        public bool ProficienciesMasterOffseter = true;
         public override void ExposeData()
         {
             Scribe_Values.Look(ref StrictMightClassLearning, "StrictMightClassLearning");
@@ -46,6 +42,7 @@ namespace LLRoM
             Scribe_Values.Look(ref CanOnlySelfSkills, "CanOnlySelfSkills");
             Scribe_Values.Look(ref ClassProLockout, "ClassProLockout");
             Scribe_Values.Look(ref UnlearnProOnClassGain, "UnlearnProOnClassGain");
+            Scribe_Values.Look(ref ProficienciesMasterOffseter, "ProficienciesMasterOffseter");
             base.ExposeData();
         }
     }

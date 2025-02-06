@@ -71,6 +71,22 @@
 					<li>Technomancer</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>ConstructionSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>ConstructSuccessChance</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>ArrestSuccessChance</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
@@ -106,5 +122,23 @@
 			<li>LLRoM_study_electric_thing</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>ButcheryMechanoidSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>ButcheryMechanoidEfficiency</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<Stat>ActivitySuppressionRate</Stat>
+						<value>1.25</value>
+					</li>
+				</statModifiers>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 </Defs>

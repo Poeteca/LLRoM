@@ -38,6 +38,22 @@
 					<li>Paladin</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<Stat>ConversionPower</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<Stat>CertaintyLossFactor</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>JoyFallRateFactor</Stat>
+						<value>.9</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -78,6 +94,22 @@
 					<li>Warlock</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<Stat>EntityStudyRate</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<Stat>SuppressionPower</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>SocialImpact</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
@@ -117,6 +149,22 @@
 					<li>Priest</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<Stat>ConversionPower</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<Stat>CertaintyLossFactor</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>RestFallRateFactor</Stat>
+						<value>.9</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -150,6 +198,24 @@
 			<li>LLDocument</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<Stat>EntityStudyRate</Stat>
+						<value>1.1</value>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<Stat>SuppressionPower</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>GlobalLearningFactor</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
 

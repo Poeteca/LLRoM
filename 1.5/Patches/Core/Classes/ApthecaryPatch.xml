@@ -67,7 +67,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
 					<li>LLRoM_Equipment_Mastery</li>
 					<li>LLRoM_Mental_Conditioning</li>
 				</Proficiencies>
@@ -81,7 +80,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
 					<li>LLRoM_Equipment_Mastery</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -94,8 +92,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Mental_Conditioning</li>
 					<li>LLRoM_Manipulation</li>
 					<li>LLRoM_Equipment_Mastery</li>
 				</Proficiencies>

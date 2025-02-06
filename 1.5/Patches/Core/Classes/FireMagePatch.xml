@@ -92,7 +92,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_FireI</li>
 					<li>LLRoM_Defensive</li>
 				</Proficiencies>
@@ -106,7 +105,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_FireI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -120,8 +118,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_FireI</li>
 					<li>LLRoM_FireII</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -135,10 +131,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_FireI</li>
 					<li>LLRoM_FireII</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -151,11 +144,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_FireI</li>
-					<li>LLRoM_FireII</li>
 					<li>LLRoM_FireIII</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -168,11 +157,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_FireI</li>
-					<li>LLRoM_FireII</li>
 					<li>LLRoM_FireIII</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>

@@ -94,7 +94,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_RawI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -107,8 +106,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_HolyI</li>
 					<li>LLRoM_LightI</li>
 					<li>LLRoM_Defensive</li>
@@ -123,11 +120,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_HolyI</li>
 					<li>LLRoM_LightI</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -140,11 +134,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_HolyI</li>
 					<li>LLRoM_LightI</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 					<li>LLRoM_HolyII</li>
 				</Proficiencies>
@@ -159,8 +149,6 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_HealingI</li>
-					<li>LLRoM_VitalityI</li>
-					<li>Magic_Insight</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -173,7 +161,6 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_Defensive</li>
-					<li>Magic_Insight</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -185,9 +172,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBarrier</li>
-					<li>Magic_Insight</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -199,9 +184,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBarrier</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -214,9 +197,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_Offensive</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_HolyI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -229,9 +210,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_Offensive</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_HolyI</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</Proficiencies>
@@ -245,10 +223,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_Offensive</li>
-					<li>Magic_Insight</li>
-					<li>LLRoM_HolyI</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 					<li>LLRoM_HolyII</li>
 				</Proficiencies>

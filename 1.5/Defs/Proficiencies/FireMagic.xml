@@ -71,6 +71,28 @@
 					<li>InnerFire</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statOffseters>
+					<li>
+						<Stat>ComfyTemperatureMin</Stat>
+						<value>-2</value>
+					</li>
+				</statOffseters>
+				<statModifiers>
+					<li>
+						<Stat>Flammability</Stat>
+						<value>.8</value>
+					</li>
+					<li>
+						<Stat>CookSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>SmeltingSpeed</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
@@ -109,6 +131,26 @@
 			<li>LLDocument</li>
 			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statOffseters>
+					<li>
+						<Stat>ComfyTemperatureMin</Stat>
+						<value>-2</value>
+					</li>
+				</statOffseters>
+				<statModifiers>
+					<li>
+						<Stat>Flammability</Stat>
+						<value>.8</value>
+					</li>
+					<li>
+						<Stat>DrugCookingSpeed</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 </Defs>

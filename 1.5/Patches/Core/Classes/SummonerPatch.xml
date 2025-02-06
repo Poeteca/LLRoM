@@ -92,7 +92,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_Summon</li>
 					<li>LLRoM_BindingI</li>
 				</Proficiencies>
@@ -106,8 +105,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_Summon</li>
 					<li>LLRoM_Defensive</li>
 					<li>LLRoM_SummonII</li>
 				</Proficiencies>
@@ -121,7 +118,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_Summon</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -135,12 +131,23 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_Summon</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_SummonII</li>
+					<li>LLRoM_BindingI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_SummonPoppi"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
 					<li>LLRoM_Offensive</li>
 					<li>LLRoM_SummonII</li>
 					<li>LLRoM_BindingII</li>
-					<li>LLRoM_RawI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

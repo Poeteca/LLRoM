@@ -72,6 +72,22 @@
 					<li>BloodMage</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
+						<Stat>HemogenGainFactor</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>MedicalTendQuality</Stat>
+						<value>1.2</value>
+					</li>
+					<li>
+						<Stat>MedicalTendSpeed</Stat>
+						<value>1.2</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -113,6 +129,18 @@
 				<Relatedtraits>
 					<li>Priest</li>
 				</Relatedtraits>
+			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>InjuryHealingFactor</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>ImmunityGainSpeed</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -157,6 +185,18 @@
 					<li>Druid</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>PlantWorkSpeed</Stat>
+						<value>1.25</value>
+					</li>
+					<li>
+						<Stat>ForagedNutritionPerDay</Stat>
+						<value>1.25</value>
+					</li>
+				</statModifiers>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
@@ -192,6 +232,23 @@
 			<li>LLDissectHumanCorpse</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>LifespanFactor</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>ToxicResistance</Stat>
+						<value>.15</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -226,6 +283,20 @@
 			<li>LLDissectCritterCorpse</li>
 			<li>LLDissectHumanCorpse</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>MedicalOperationSpeed</Stat>
+						<value>1.25</value>
+					</li>
+					<li>
+						<Stat>MedicalSurgerySuccessChance</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
@@ -261,6 +332,20 @@
 			<li>LLStudyMushrooms</li>
 			<li>LLAnalyzePlant</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<Stat>PruningSpeed</Stat>
+						<value>1.2</value>
+					</li>
+					<li>
+						<Stat>PlantHarvestYield</Stat>
+						<value>1.25</value>
+					</li>
+				</statModifiers>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
@@ -298,5 +383,34 @@
 			<li>LLDissectCritterCorpse</li>
 			<li>LLDissectHumanCorpse</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>ImmunityGainSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>LifespanFactor</Stat>
+						<value>1.2</value>
+					</li>
+					<li>
+						<Stat>MedicalTendQuality</Stat>
+						<value>1.2</value>
+					</li>
+					<li>
+						<Stat>MedicalOperationSpeed</Stat>
+						<value>1.25</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>ToxicResistance</Stat>
+						<value>.15</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 </Defs>

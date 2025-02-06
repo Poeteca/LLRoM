@@ -92,10 +92,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_BindingI</li>
 					<li>LLRoM_UnholyI</li>
-					<li>LLRoM_RawI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -107,7 +105,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_BindingI</li>
 					<li>LLRoM_Summon</li>
 				</Proficiencies>
@@ -121,9 +118,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_BindingI</li>
-					<li>LLRoM_Summon</li>
 					<li>LLRoM_TeleportationI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -136,7 +131,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_RawI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -149,8 +143,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_UnholyI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -164,9 +156,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_UnholyI</li>
 					<li>LLRoM_Offensive</li>
 					<li>LLRoM_UnholyII</li>
 				</Proficiencies>
@@ -180,8 +169,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_BindingI</li>
 					<li>LLRoM_BindingII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -194,7 +181,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_RawI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -208,9 +194,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_UnholyI</li>
 					<li>LLRoM_OffensiveDeBuff</li>
 				</Proficiencies>
@@ -224,12 +207,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_UnholyII</li>
-					<li>LLRoM_UnholyI</li>
 					<li>LLRoM_BindingII</li>
-					<li>LLRoM_BindingI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

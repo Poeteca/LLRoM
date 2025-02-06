@@ -91,9 +91,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_NecroI</li>
-					<li>LLRoM_VitalityI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -105,9 +103,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_NecroI</li>
-					<li>LLRoM_VitalityI</li>
 					<li>LLRoM_Offensive</li>
 					<li>LLRoM_FireI</li>
 				</Proficiencies>
@@ -121,9 +117,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_NecroI</li>
-					<li>LLRoM_VitalityI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -136,10 +130,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_NecroI</li>
-					<li>LLRoM_VitalityI</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBarrier</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -152,10 +143,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_NecroI</li>
-					<li>LLRoM_VitalityI</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_NecroII</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</Proficiencies>

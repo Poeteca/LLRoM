@@ -1,11 +1,8 @@
 ﻿using AbilityUser;
 using LifeLessons;
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TorannMagic;
 using Verse;
 

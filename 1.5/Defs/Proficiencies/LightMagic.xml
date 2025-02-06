@@ -72,6 +72,19 @@
 					<li>TM_Brightmage</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statOffseters>
+					<li>
+						<Stat>WorkSpeedGlobal</Stat>
+						<value>.05</value>
+						<isPercent>true</isPercent>
+					</li>
+					<li>
+						<Stat>PawnBeauty</Stat>
+						<value>.25</value>
+					</li>
+				</statOffseters>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
@@ -109,5 +122,22 @@
 			<li>LLDocument</li>
 			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>ArrestSuccessChance</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>WorkSpeedGlobal</Stat>
+						<value>.05</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 </Defs>

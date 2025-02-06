@@ -43,9 +43,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Physical_Conditioning</li>
-					<li>LLRoM_Mental_Conditioning</li>
 					<li>LLRoM_Breath_Control</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -58,9 +55,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Physical_Conditioning</li>
-					<li>LLRoM_Mental_Conditioning</li>
 					<li>LLRoM_Breath_Control</li>
 					<li>LLRoM_Endurance</li>
 				</Proficiencies>
@@ -74,8 +68,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Physical_Conditioning</li>
 					<li>LLRoM_CQC</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -88,8 +80,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Physical_Conditioning</li>
 					<li>LLRoM_CQC</li>
 					<li>LLRoM_Coordination</li>
 				</Proficiencies>

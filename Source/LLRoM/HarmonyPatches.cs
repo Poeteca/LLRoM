@@ -1,21 +1,117 @@
 ﻿using HarmonyLib;
 using LifeLessons;
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
-using System.Security.Cryptography;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using TorannMagic;
-using TorannMagic.ModOptions;
+using UnityEngine;
 using Verse;
 
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class DrawnStatOffseterPatch
+    {
+        [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawStatModifiers")]
+        public static class StatOffsetPatchPostFix
+        {
+            public static void Postfix(Rect displayRect, ref float __result, ProficiencyDef ___selectedProficiency)
+            {
+                if (___selectedProficiency.HasModExtension<StatOffsetExtension>() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
+                {
+                    StatOffsetExtension extension = ___selectedProficiency.GetModExtension<StatOffsetExtension>();
+                    if (extension != null)
+                    {
+                        float CurrentY = __result;
+                        if (extension.statOffseters != null && extension.statOffseters.Count > 0)
+                        {
+                            Rect statModLabelRect = new Rect(displayRect.x, displayRect.y + CurrentY, displayRect.width, 0f);
+                            Widgets.LabelCacheHeight(ref statModLabelRect, "StatOffseterLable".Translate());
+                            CurrentY += statModLabelRect.height;
+                            TooltipHandler.TipRegion(statModLabelRect, "StatOffseterLableDesc".Translate());
+                            foreach (StatOffseter Offset in  extension.statOffseters)
+                            {
+                                Rect statModRect = new Rect(statModLabelRect.x, statModLabelRect.y + statModLabelRect.height + (float)extension.statOffseters.IndexOf(Offset) * statModLabelRect.height, displayRect.width, statModLabelRect.height);
+                                Widgets.Label(statModRect, Offset.Stat.LabelForFullStatListCap + " " + Offset.GetString());
+                                CurrentY += statModRect.height;
+                            }
+                            CurrentY += 20f;
+                        }
+                        if (extension.statModifiers != null && extension.statModifiers.Count > 0)
+                        {
+                            Rect statModLabelRect = new Rect(displayRect.x, displayRect.y + CurrentY, displayRect.width, 0f);
+                            Widgets.LabelCacheHeight(ref statModLabelRect, "StatModiferLable".Translate());
+                            CurrentY += statModLabelRect.height;
+                            TooltipHandler.TipRegion(statModLabelRect, "StatModiferLableDesc".Translate());
+                            foreach (StatModifier modifier in extension.statModifiers)
+                            {
+                                Rect statModRect = new Rect(statModLabelRect.x, statModLabelRect.y + statModLabelRect.height + extension.statModifiers.IndexOf(modifier) * statModLabelRect.height, displayRect.width, statModLabelRect.height);
+                                Widgets.Label(statModRect, modifier.Stat.LabelForFullStatListCap + " " + modifier.GetString());
+                                CurrentY += statModRect.height;
+                            }
+                        }
+                        __result = CurrentY;
+                    }
+                }
+            }
+        }
+    }
+    public static class SatModifierPatch
+    {
+        [HarmonyPatch(typeof(StatWorker), nameof(StatWorker.GetValueUnfinalized))]
+        public static class StatModifierPatchPostFix
+        {
+            public static void Postfix(StatRequest req, ref float __result, StatDef ___stat)
+            {
+                if (req.Thing is Pawn pawn && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null)
+                    {
+                        foreach (ProficiencyDef pro in comp.CompletedProficiencies.Where((ProficiencyDef p) => p.HasModExtension<StatOffsetExtension>()))
+                        {
+                            StatOffsetExtension extension = pro.GetModExtension<StatOffsetExtension>();
+                            if (extension != null && extension.statModifiers != null && extension.statModifiers.Count > 0)
+                            {
+                                foreach (StatModifier offseter in extension.statModifiers.Where((StatModifier s) => s.Stat == ___stat))
+                                {
+                                    __result *= offseter.value;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    public static class StatOffseterPatch
+    {
+        [HarmonyPatch(typeof(StatWorker), nameof(StatWorker.GetBaseValueFor))]
+        public static class StatOffseterPatchPostFix
+        {
+            public static void Postfix(StatRequest request, ref float __result, StatDef ___stat)
+            {
+                if (request.Thing is Pawn pawn && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null)
+                    {
+                        foreach (ProficiencyDef pro in comp.CompletedProficiencies.Where((ProficiencyDef p) => p.HasModExtension<StatOffsetExtension>()))
+                        {
+                            StatOffsetExtension extension = pro.GetModExtension<StatOffsetExtension>();
+                            if (extension != null && extension.statOffseters != null && extension.statOffseters.Count > 0)
+                            {
+                                foreach (StatOffseter offseter in extension.statOffseters.Where((StatOffseter s) => s.Stat == ___stat))
+                                {
+                                    __result += offseter.value;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     public static class XPCombatGainPatch
     {
         [HarmonyPatch(typeof(Pawn_SkillTracker), nameof(Pawn_SkillTracker.Learn))]
@@ -58,7 +154,7 @@ namespace LLRoM
         [HarmonyPatch(typeof(Pawn), nameof(Pawn.PostApplyDamage))]
         public static class PostDamageLearnPatchPostFix
         {
-            public static void Postfix(DamageInfo dinfo, float totalDamageDealt, Pawn __instance)
+            public static void Postfix(float totalDamageDealt, Pawn __instance)
             {
                 if (!__instance.Dead && __instance.HasComp<ProficiencyComp>())
                 {
@@ -260,8 +356,7 @@ namespace LLRoM
                 AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null)
                 {
-                    List<ProficiencyDef> proficiencies = new List<ProficiencyDef>();
-                    proficiencies = extension.Proficiencies;
+                    List<ProficiencyDef>  proficiencies = extension.Proficiencies;
                     if (proficiencies != null && proficiencies.Count > 0)
                     {
                         foreach (ProficiencyDef item in proficiencies)
@@ -274,18 +369,44 @@ namespace LLRoM
                                 {
                                     float LearnreateMod = .01f * LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().XPMultiplier;
                                     float xp = LearnreateMod * extension.LearnRate * 10 * (__instance.mightDef.staminaCost + __instance.mightDef.upkeepEnergyCost + __instance.mightDef.upkeepRegenCost);
-                                    if (xp > 0)
+                                    if (comp.AllLearnableProficiencies.Contains(item))
                                     {
-                                        comp.TryGainXp(xp, item, extension.experienceType);
+                                        if (xp > 0)
+                                        {
+                                            comp.TryGainXp(xp, item, extension.experienceType);
+                                        }
+                                        else
+                                        {
+                                            xp = LearnreateMod * extension.LearnRate;
+                                            comp.TryGainXp(xp, item, extension.experienceType);
+                                        }
                                     }
                                     else
                                     {
-                                        xp = LearnreateMod * extension.LearnRate;
-                                        comp.TryGainXp(xp, item, extension.experienceType);
+                                        foreach (ProficiencyDef pro in item.AllPrequisites)
+                                        {
+                                            if (pro.tab != ProficiencyTableDefOf.LLROM_Might)
+                                            {
+                                                continue;
+                                            }
+                                            if (xp > 0)
+                                            {
+                                                comp.TryGainXp(xp, pro, extension.experienceType);
+                                            }
+                                            else
+                                            {
+                                                xp = LearnreateMod * extension.LearnRate;
+                                                comp.TryGainXp(xp, pro, extension.experienceType);
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
+                    }
+                    if (extension != null && proficiencies.Count == 0)
+                    {
+                        Log.Warning(__instance.Def.defName + " missing proficiencies");
                     }
                 }
                 return;
@@ -302,8 +423,7 @@ namespace LLRoM
                 AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null)
                 {
-                    List<ProficiencyDef> proficiencies = new List<ProficiencyDef>();
-                    proficiencies = extension.Proficiencies;
+                    List<ProficiencyDef> proficiencies = extension.Proficiencies;
                     if (proficiencies != null && proficiencies.Count > 0)
                     {
                         foreach (ProficiencyDef item in proficiencies)
@@ -316,18 +436,44 @@ namespace LLRoM
                                 {
                                     float LearnreateMod = .01f * LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().XPMultiplier;
                                     float xp = LearnreateMod * extension.LearnRate * 10 * (__instance.magicDef.manaCost + __instance.magicDef.upkeepEnergyCost + __instance.magicDef.upkeepRegenCost);
-                                    if (xp > 0)
+                                    if (comp.AllLearnableProficiencies.Contains(item))
                                     {
-                                        comp.TryGainXp(xp, item, extension.experienceType);
+                                        if (xp > 0)
+                                        {
+                                            comp.TryGainXp(xp, item, extension.experienceType);
+                                        }
+                                        else
+                                        {
+                                            xp = LearnreateMod * extension.LearnRate;
+                                            comp.TryGainXp(xp, item, extension.experienceType);
+                                        }
                                     }
                                     else
                                     {
-                                        xp = LearnreateMod * extension.LearnRate;
-                                        comp.TryGainXp(xp, item, extension.experienceType);
+                                        foreach (ProficiencyDef pro in item.AllPrequisites)
+                                        {
+                                            if (pro.category == ProficiencyCategoryDefOf.ProficiencyCategory_MixedMagic || pro.tab != ProficiencyTableDefOf.LLROM_Magic)
+                                            {
+                                                continue;
+                                            }
+                                            if (xp > 0)
+                                            {
+                                                comp.TryGainXp(xp, pro, extension.experienceType);
+                                            }
+                                            else
+                                            {
+                                                xp = LearnreateMod * extension.LearnRate;
+                                                comp.TryGainXp(xp, pro, extension.experienceType);
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
+                    }
+                    if (extension != null && proficiencies.Count == 0)
+                    {
+                        Log.Warning(__instance.Def.defName + " missing proficiencies");
                     }
                 }
                 return;
@@ -380,7 +526,6 @@ namespace LLRoM
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
                     if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning).Allowed(false))
                     {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMagicMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                         return false;
                     }
@@ -407,7 +552,6 @@ namespace LLRoM
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
                     if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning).Allowed(false))
                     {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                         return false;
                     }
@@ -434,7 +578,6 @@ namespace LLRoM
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
                     if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSpellLearning).Allowed(false))
                     {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnSpellMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                         return false;
                     }
@@ -461,7 +604,6 @@ namespace LLRoM
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
                     if (!Util.Qualification(user, resolvedRequirements, LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSkillLearning).Allowed(false))
                     {
-                        ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                         Messages.Message("LLARoM_LearnMightMissingProficiencies".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                         return false;
                     }

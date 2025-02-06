@@ -71,6 +71,19 @@
 					<li>HeartOfFrost</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statOffseters>
+					<li>
+						<Stat>ComfyTemperatureMax</Stat>
+						<value>2</value>
+					</li>
+					<li>
+						<Stat>ArmorRating_Heat</Stat>
+						<value>.1</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
@@ -109,5 +122,26 @@
 			<li>LLDocument</li>
 			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statOffseters>
+					<li>
+						<Stat>ComfyTemperatureMax</Stat>
+						<value>2</value>
+					</li>
+					<li>
+						<Stat>ArmorRating_Heat</Stat>
+						<value>.1</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+				<statModifiers>
+					<li>
+						<Stat>PainShockThreshold</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 </Defs>

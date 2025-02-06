@@ -91,9 +91,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_RawII</li>
 					<li>LLRoM_TimeI</li>
 					<li>LLRoM_ChaosI</li>
 				</Proficiencies>
@@ -107,12 +104,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_TimeI</li>
 					<li>LLRoM_OffensiveDeBuff</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -125,10 +118,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_TimeI</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -141,8 +131,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_TimeI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -156,9 +144,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_TimeI</li>
 					<li>LLRoM_Offensive</li>
 					<li>LLRoM_TimeII</li>
 				</Proficiencies>
@@ -172,10 +157,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_TimeI</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_TimeII</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</Proficiencies>
@@ -189,11 +170,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_TimeI</li>
-					<li>LLRoM_Offensive</li>
-					<li>LLRoM_TimeII</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 					<li>LLRoM_TimeIII</li>
 				</Proficiencies>
@@ -207,11 +183,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_TimeI</li>
-					<li>LLRoM_BindingI</li>
-					<li>LLRoM_TimeII</li>
 					<li>LLRoM_BindingII</li>
 					<li>LLRoM_TimeIII</li>
 				</Proficiencies>

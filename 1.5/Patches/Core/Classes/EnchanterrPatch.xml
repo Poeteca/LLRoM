@@ -92,7 +92,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_RawI</li>
 					<li>LLRoM_Defensive</li>
 				</Proficiencies>
@@ -106,7 +105,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_RawI</li>
 					<li>LLRoM_EmotionI</li>
 				</Proficiencies>
@@ -120,9 +118,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_RawII</li>
 					<li>LLRoM_ChaosI</li>
 					<li>LLRoM_MagicEnchantingI</li>
 				</Proficiencies>
@@ -136,8 +131,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_RawII</li>
 					<li>LLRoM_MagicEnchantingI</li>
 				</Proficiencies>
@@ -151,9 +144,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_RawII</li>
 					<li>LLRoM_ChaosI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -166,10 +156,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_RawII</li>
-					<li>LLRoM_ChaosI</li>
 					<li>LLRoM_ChaosII</li>
 					<li>LLRoM_MagicEnchantingI</li>
 				</Proficiencies>
@@ -183,10 +169,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_RawII</li>
-					<li>LLRoM_ChaosI</li>
 					<li>LLRoM_ChaosII</li>
 					<li>LLRoM_MagicEnchantingI</li>
 					<li>LLRoM_MagicEnchantingII</li>
@@ -201,9 +183,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_RawII</li>
 					<li>LLRoM_ChaosI</li>
 					<li>LLRoM_MagicEnchantingI</li>
 					<li>LLRoM_MagicEnchantingII</li>
@@ -218,8 +197,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_RawII</li>
 					<li>LLRoM_Offensive</li>
 					<li>LLRoM_MagicEnchantingI</li>

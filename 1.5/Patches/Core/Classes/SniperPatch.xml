@@ -43,10 +43,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Mental_Conditioning</li>
-					<li>LLRoM_Ranged</li>
-					<li>LLRoM_Equipment_Mastery</li>
 					<li>LLRoM_Extreme_Range</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -59,12 +55,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Mental_Conditioning</li>
-					<li>LLRoM_Ranged</li>
-					<li>LLRoM_Equipment_Mastery</li>
 					<li>LLRoM_Extreme_Range</li>
-					<li>LLRoM_Physical_Conditioning</li>
 					<li>LLRoM_Coordination</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -77,10 +68,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Mental_Conditioning</li>
-					<li>LLRoM_Ranged</li>
-					<li>LLRoM_Equipment_Mastery</li>
 					<li>LLRoM_Extreme_Range</li>
 					<li>LLRoM_Tactics</li>
 				</Proficiencies>
@@ -94,11 +81,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Physical_Insight</li>
-					<li>LLRoM_Mental_Conditioning</li>
 					<li>LLRoM_Equipment_Mastery</li>
 					<li>LLRoM_Breath_Control</li>
-					<li>LLRoM_Physical_Conditioning</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

@@ -141,7 +141,6 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingI</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_MagicConstructsI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -155,7 +154,6 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingI</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_ScribI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -169,7 +167,6 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingI</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_RawI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -183,7 +180,6 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingI</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_VitalityI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -197,7 +193,6 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingI</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EmotionI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -211,9 +206,7 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingI</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_DefensiveBuff</li>
-					<li>LLRoM_Defensive</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -226,9 +219,7 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingII</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_DefensiveBuff</li>
-					<li>LLRoM_Defensive</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -241,8 +232,8 @@
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
 					<li>LLRoM_BindingII</li>
-					<li>Magic_Insight</li>
 					<li>LLRoM_MagicConstructsII</li>
+					<li>LLRoM_MagicConstructsI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

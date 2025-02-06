@@ -30,7 +30,6 @@
 			<li Class="LifeLessons.BillProficiencyExtension">
 				<requirements>
 					<li>LLRoM_IceIII</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
@@ -93,7 +92,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_IceI</li>
 					<li>LLRoM_Defensive</li>
 				</Proficiencies>
@@ -107,10 +105,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_IceI</li>
 					<li>LLRoM_IceII</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -123,11 +118,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_IceI</li>
-					<li>LLRoM_IceII</li>
 					<li>LLRoM_IceIII</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -140,7 +131,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_IceI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -154,8 +144,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_IceI</li>
 					<li>LLRoM_IceII</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -169,9 +157,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_IceI</li>
-					<li>LLRoM_IceII</li>
 					<li>LLRoM_IceIII</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -185,11 +170,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_IceI</li>
-					<li>LLRoM_IceII</li>
 					<li>LLRoM_IceIII</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -202,7 +183,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_IceI</li>
 					<li>LLRoM_WindI</li>
 				</Proficiencies>

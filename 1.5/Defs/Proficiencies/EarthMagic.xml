@@ -71,6 +71,25 @@
 					<li>Geomancer</li>
 				</Relatedtraits>
 			</li>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>MiningSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>SmoothingSpeed</Stat>
+						<value>1.5</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>ArmorRating_Sharp</Stat>
+						<value>.1</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Uncommon-->
@@ -106,6 +125,27 @@
 			<li>LLBrainstorm</li>
 			<li>LLDocument</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>MiningYield</Stat>
+						<value>1.25</value>
+					</li>
+					<li>
+						<Stat>MiningSpeed</Stat>
+						<value>1.25</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>ArmorRating_Sharp</Stat>
+						<value>.1</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 <!--Rare-->
 

@@ -91,9 +91,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EarthI</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_DefensiveBarrier</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -106,7 +104,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EarthI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -119,8 +116,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EarthI</li>
 					<li>LLRoM_Defensive</li>
 					<li>LLRoM_EarthII</li>
 				</Proficiencies>
@@ -134,9 +129,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EarthI</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_EarthII</li>
 					<li>LLRoM_DefensiveBarrier</li>
 				</Proficiencies>
@@ -150,8 +142,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EarthI</li>
 					<li>LLRoM_Offensive</li>
 					<li>LLRoM_EarthII</li>
 				</Proficiencies>
@@ -165,7 +155,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EarthI</li>
 					<li>LLRoM_Defensive</li>
 				</Proficiencies>
@@ -179,11 +168,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EarthI</li>
 					<li>LLRoM_EarthIII</li>
-					<li>LLRoM_Offensive</li>
-					<li>LLRoM_EarthII</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -196,11 +181,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EarthI</li>
 					<li>LLRoM_EarthIII</li>
-					<li>LLRoM_Offensive</li>
-					<li>LLRoM_EarthII</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 					<li>LLRoM_Summon</li>
 				</Proficiencies>
@@ -214,13 +195,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EarthI</li>
 					<li>LLRoM_EarthIII</li>
-					<li>LLRoM_Offensive</li>
-					<li>LLRoM_EarthII</li>
 					<li>LLRoM_OffensiveLargeArea</li>
-					<li>LLRoM_Summon</li>
 					<li>LLRoM_SummonII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>

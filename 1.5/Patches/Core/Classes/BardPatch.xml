@@ -92,7 +92,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_RawI</li>
 				</Proficiencies>
@@ -106,9 +105,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EmotionI</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_RawII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -121,7 +118,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -135,10 +131,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_OffensiveDeBuff</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_EmotionII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -151,12 +144,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_DefensiveBuff</li>
-					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_EmotionII</li>
-					<li>LLRoM_Defensive</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

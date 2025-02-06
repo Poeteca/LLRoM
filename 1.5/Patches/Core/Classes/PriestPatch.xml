@@ -93,11 +93,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_HealingI</li>
 					<li>LLRoM_HolyI</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_VitalityI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -109,10 +106,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_HealingI</li>
 					<li>LLRoM_RawI</li>
-					<li>LLRoM_VitalityI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
@@ -124,10 +119,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_HealingI</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_VitalityI</li>
 					<li>LLRoM_HealingII</li>
 					<li>LLRoM_HolyI</li>
 				</Proficiencies>
@@ -141,8 +132,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_HolyI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -155,8 +144,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
 					<li>LLRoM_HolyI</li>
 					<li>LLRoM_Defensive</li>
 				</Proficiencies>
@@ -170,10 +157,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_HolyI</li>
-					<li>LLRoM_Defensive</li>
 					<li>LLRoM_HolyII</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>
@@ -187,16 +170,8 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_RawI</li>
-					<li>LLRoM_HolyI</li>
 					<li>LLRoM_VitalityII</li>
 					<li>LLRoM_HolyII</li>
-					<li>LLRoM_VitalityI</li>
-					<li>LLRoM_HealingI</li>
-					<li>LLRoM_HealingII</li>
-					<li>LLRoM_NecroII</li>
-					<li>LLRoM_NecroI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>

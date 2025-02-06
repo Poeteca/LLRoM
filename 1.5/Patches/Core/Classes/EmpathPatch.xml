@@ -19,7 +19,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EmotionI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -32,7 +31,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -46,9 +44,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EmotionI</li>
-					<li>LLRoM_Offensive</li>
 					<li>LLRoM_EmotionII</li>
 					<li>LLRoM_OffensiveLargeArea</li>
 				</Proficiencies>
@@ -62,8 +57,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_Offensive</li>
 					<li>LLRoM_EmotionII</li>
 				</Proficiencies>
@@ -77,8 +70,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_EmotionII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -91,10 +82,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
-					<li>LLRoM_EmotionI</li>
 					<li>LLRoM_BindingII</li>
-					<li>LLRoM_BindingI</li>
 					<li>LLRoM_EmotionII</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>

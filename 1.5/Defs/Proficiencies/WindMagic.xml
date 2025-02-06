@@ -64,6 +64,20 @@
 			<li>LLAnalyzeGeyser</li>
 			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>CleaningSpeed</Stat>
+						<value>1.1</value>
+					</li>
+					<li>
+						<Stat>MoveSpeed</Stat>
+						<value>1.05</value>
+					</li>
+				</statModifiers>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 <!--Uncommon-->
@@ -101,5 +115,22 @@
 			<li>LLAnalyzeGeyser</li>
 			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.StatOffsetExtension">
+				<statModifiers>
+					<li>
+						<Stat>CleaningSpeed</Stat>
+						<value>1.1</value>
+					</li>
+				</statModifiers>
+				<statOffseters>
+					<li>
+						<Stat>ToxicEnvironmentResistance</Stat>
+						<value>.15</value>
+						<isPercent>true</isPercent>
+					</li>
+				</statOffseters>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 </Defs>
