@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<FailChance>Self teach fail chance.</FailChance>
+	<FailChanceReport>The chane for an individual to fail to discover a class or spell when using this.</FailChanceReport>
 	<ProficienciesMasterOffseter>If proficiencies enhanced stat modifier behaviour is enabled.</ProficienciesMasterOffseter>
 	<UnlearnProOnClassGain>If a pawn will unlearn proficiencies that they normally would not use when gaining a class.</UnlearnProOnClassGain>
 	<LLARoM_LearnMagicMissingProficiencies>{0} is not able to understand that tome.</LLARoM_LearnMagicMissingProficiencies>

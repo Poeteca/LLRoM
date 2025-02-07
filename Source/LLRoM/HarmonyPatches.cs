@@ -3,6 +3,8 @@ using LifeLessons;
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
 using TorannMagic;
 using UnityEngine;
 using Verse;
@@ -10,6 +12,52 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class DrawThingFailPatch
+    {
+        [HarmonyPatch(typeof(ThingDef), nameof(ThingDef.SpecialDisplayStats))]
+        public static class DrawThingFailPatchPostfix
+        {
+            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, StatRequest req, ThingDef __instance)
+            {
+                ClassAutoLearnExtension extension1 = __instance.GetModExtension<ClassAutoLearnExtension>();
+                AbilityAutoLearnExtension extension2 = __instance.GetModExtension<AbilityAutoLearnExtension>();
+                if (extension1 == null && extension2 == null)
+                {
+                    yield break;
+                }
+                if (extension1 != null && extension1.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
+                {
+                    string failchance = extension1.failChance.ToString() + "%";
+                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"FailChance".Translate(), (string)failchance, (string)"FailChanceReport".Translate(), (int)500);
+                }
+                if (extension2 != null && extension2.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
+                {
+                    string failchance = extension2.failChance.ToString() + "%";
+                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"FailChance".Translate(), (string)failchance, (string)"FailChanceReport".Translate(), (int)500);
+                }
+            }
+        }
+    }
+    public static class DrawFailStatPatch
+    {
+        [HarmonyPatch(typeof(BuildingProperties), nameof(BuildingProperties.SpecialDisplayStats))]
+        public static class DrawFailStatPatchPostfix
+        {
+            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> values, ThingDef parentDef)
+            {
+                ClassAutoLearnExtension extension = parentDef.GetModExtension<ClassAutoLearnExtension>();
+                if (extension == null)
+                {
+                    yield break;
+                }
+                if (extension.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
+                {
+                    string failchance = extension.failChance.ToString() + "%";
+                    yield return new StatDrawEntry((StatCategoryDef) LLStatCategoryDefOf.ProficiencyInfo, (string) "FailChance".Translate(), (string) failchance, (string) "FailChanceReport".Translate(), (int) 500);
+                }
+            }
+        }
+    }
     public static class DrawnStatOffseterPatch
     {
         [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawStatModifiers")]
