@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using static UnityEngine.Random;
 
 namespace LLRoM
 {
@@ -11,9 +12,14 @@ namespace LLRoM
         public string GetString()
         {
             string offseter;
+            string signed = "+";
+            if (value < 0)
+            {
+                signed = "";
+            }
             if (isPercent)
             {
-                offseter = ((value * 100).ToString() + "% offset");
+                offseter = (signed + (value * 100).ToString() + "%");
             }
             else
             {
@@ -21,20 +27,20 @@ namespace LLRoM
                 {
                     if (Prefs.TemperatureMode == TemperatureDisplayMode.Celsius)
                     {
-                        offseter = ((value).ToString() + "C offset");
+                        offseter = (signed +(value).ToString() + "C");
                     }
                     else if (Prefs.TemperatureMode == TemperatureDisplayMode.Fahrenheit)
                     {
-                        offseter = ((value * 1.8f).ToString() + "F offset");
+                        offseter = (signed + (value * 1.8f).ToString() + "F");
                     }
                     else
                     {
-                        offseter = ((value).ToString() + "K offset");
+                        offseter = (signed + (value).ToString() + "K");
                     }
                 }
                 else
                 {
-                    offseter = (value.ToString() + " offset");
+                    offseter = (signed + value.ToString());
                 }
             }
             return offseter;

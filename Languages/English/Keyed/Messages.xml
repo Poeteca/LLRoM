@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<ProStatOffset>Proficiency Modifiers</ProStatOffset>
 	<FailChance>Self teach fail chance.</FailChance>
 	<FailChanceReport>The chane for an individual to fail to discover a class or spell when using this.</FailChanceReport>
 	<ProficienciesMasterOffseter>If proficiencies enhanced stat modifier behaviour is enabled.</ProficienciesMasterOffseter>

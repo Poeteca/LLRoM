@@ -12,6 +12,71 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class DrawStatFacotsPatch
+    {
+        [HarmonyPatch(nameof(StatWorker), "GetExplanationUnfinalized")]
+        public static class DrawStatFacotsPatchPostFix
+        {
+            public static void Postfix(StatRequest req, ref string __result, StatDef ___stat)
+            {
+                StringBuilder statbuilder = new StringBuilder(__result);
+                Pawn pawn = req.Thing as Pawn;
+                bool flag = false;
+                if (pawn != null)
+                {
+                    ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null)
+                    {
+                        List<ProficiencyDef> relevant = new List<ProficiencyDef>();
+                        foreach (ProficiencyDef prof in comp.CompletedProficiencies)
+                        {
+                            if (prof.HasModExtension<StatOffsetExtension>())
+                            {
+                                relevant.Add(prof);
+                            }
+                        }
+                        if (relevant.Count > 0)
+                        {
+                            statbuilder.AppendLine("ProStatOffset".Translate());
+                            foreach (ProficiencyDef pro in relevant)
+                            {
+                                StatOffsetExtension extension = pro.GetModExtension<StatOffsetExtension>();
+                                if (extension != null)
+                                {
+                                    if (extension.statOffseters != null)
+                                    {
+                                        foreach (StatOffseter offset in extension.statOffseters)
+                                        {
+                                            if (offset.Stat == ___stat)
+                                            {
+                                                statbuilder.AppendLine("    " + pro.label + ": " + offset.GetString());
+                                                flag = true;
+                                            }
+                                        }
+                                    }
+                                    if (extension.statModifiers != null)
+                                    {
+                                        foreach (StatModifier modifier in extension.statModifiers)
+                                        {
+                                            if (modifier.Stat == ___stat)
+                                            {
+                                                statbuilder.AppendLine("    " + pro.label + ": " + modifier.GetString());
+                                                flag = true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if(flag && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
+                {
+                    __result = statbuilder.ToString();
+                }
+            }
+        }
+    }
     public static class DrawThingFailPatch
     {
         [HarmonyPatch(typeof(ThingDef), nameof(ThingDef.SpecialDisplayStats))]
@@ -53,7 +118,7 @@ namespace LLRoM
                 if (extension.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
                 {
                     string failchance = extension.failChance.ToString() + "%";
-                    yield return new StatDrawEntry((StatCategoryDef) LLStatCategoryDefOf.ProficiencyInfo, (string) "FailChance".Translate(), (string) failchance, (string) "FailChanceReport".Translate(), (int) 500);
+                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"FailChance".Translate(), (string)failchance, (string)"FailChanceReport".Translate(), (int)500);
                 }
             }
         }
@@ -77,7 +142,7 @@ namespace LLRoM
                             Widgets.LabelCacheHeight(ref statModLabelRect, "StatOffseterLable".Translate());
                             CurrentY += statModLabelRect.height;
                             TooltipHandler.TipRegion(statModLabelRect, "StatOffseterLableDesc".Translate());
-                            foreach (StatOffseter Offset in  extension.statOffseters)
+                            foreach (StatOffseter Offset in extension.statOffseters)
                             {
                                 Rect statModRect = new Rect(statModLabelRect.x, statModLabelRect.y + statModLabelRect.height + (float)extension.statOffseters.IndexOf(Offset) * statModLabelRect.height, displayRect.width, statModLabelRect.height);
                                 Widgets.Label(statModRect, Offset.Stat.LabelForFullStatListCap + " " + Offset.GetString());
@@ -173,8 +238,8 @@ namespace LLRoM
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
                     if (pawn != null && comp != null)
                     {
-                        SkillRecord Shooting =__instance.GetSkill(SkillDefOf.Shooting);
-                        comp.TryGainXp(xp*.001f, ProficiencyDefOf.LLRoM_Ranged, ExperienceType.PracticalHalfTheoretical);
+                        SkillRecord Shooting = __instance.GetSkill(SkillDefOf.Shooting);
+                        comp.TryGainXp(xp * .001f, ProficiencyDefOf.LLRoM_Ranged, ExperienceType.PracticalHalfTheoretical);
                         if (Shooting.levelInt >= 7)
                         {
                             comp.TryGainXp(xp * .001f, ProficiencyDefOf.LLRoM_Extreme_Range, ExperienceType.PracticalHalfTheoretical);
@@ -206,8 +271,8 @@ namespace LLRoM
             {
                 if (!__instance.Dead && __instance.HasComp<ProficiencyComp>())
                 {
-                    __instance.TryGetComp<ProficiencyComp>().TryGainXp(totalDamageDealt*.1f, ProficiencyDefOf.LLRoM_Physical_Conditioning, ExperienceType.PracticalHalfTheoretical);
-                    __instance.TryGetComp<ProficiencyComp>().TryGainXp(totalDamageDealt*.1f, ProficiencyDefOf.LLRoM_Endurance, ExperienceType.PracticalHalfTheoretical);
+                    __instance.TryGetComp<ProficiencyComp>().TryGainXp(totalDamageDealt * .1f, ProficiencyDefOf.LLRoM_Physical_Conditioning, ExperienceType.PracticalHalfTheoretical);
+                    __instance.TryGetComp<ProficiencyComp>().TryGainXp(totalDamageDealt * .1f, ProficiencyDefOf.LLRoM_Endurance, ExperienceType.PracticalHalfTheoretical);
                 }
             }
         }
@@ -270,7 +335,7 @@ namespace LLRoM
                 return true;
             }
         }
-    }      
+    }
     public static class Hide_Proficiency_Patch_DrawRelations
     {
         [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawRelations")]
@@ -404,7 +469,7 @@ namespace LLRoM
                 AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null)
                 {
-                    List<ProficiencyDef>  proficiencies = extension.Proficiencies;
+                    List<ProficiencyDef> proficiencies = extension.Proficiencies;
                     if (proficiencies != null && proficiencies.Count > 0)
                     {
                         foreach (ProficiencyDef item in proficiencies)

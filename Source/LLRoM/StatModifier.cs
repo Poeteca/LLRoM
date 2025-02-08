@@ -1,4 +1,6 @@
 ﻿using RimWorld;
+using static UnityEngine.Random;
+using Verse;
 
 namespace LLRoM
 {
@@ -8,7 +10,7 @@ namespace LLRoM
         public float value = 1;
         public string GetString()
         {
-            return ((value * 100).ToString() + "%");
+            return ("x" + (value * 100).ToString() + "%");
         }
     }
 }
