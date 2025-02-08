@@ -50,12 +50,12 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_Defensive</li>
+			<li>LLRoM_UseScroll_LLRoM_Defensive</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_Defensive</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_Defensive</li>
+			<li>LLRoM_ExamineScroll_LLRoM_Defensive</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_Defensive</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
@@ -87,12 +87,12 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_DefensiveBuff</li>
+			<li>LLRoM_UseScroll_LLRoM_DefensiveBuff</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_DefensiveBuff</li>
-			<li>LLRoM_ExamineScroll_DefensiveBuff</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_DefensiveBuff</li>
+			<li>LLRoM_ExamineScroll_LLRoM_DefensiveBuff</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -116,13 +116,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_DefensiveBarrier</li>
+			<li>LLRoM_UseScroll_LLRoM_DefensiveBarrier</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_DefensiveBarrier</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_DefensiveBarrier</li>
+			<li>LLRoM_ExamineScroll_LLRoM_DefensiveBarrier</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_DefensiveBarrier</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -147,12 +147,12 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_Offensive</li>
+			<li>LLRoM_UseScroll_LLRoM_Offensive</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Offensive</li>
-			<li>LLRoM_ExamineScroll_Offensive</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_Offensive</li>
+			<li>LLRoM_ExamineScroll_LLRoM_Offensive</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
@@ -187,12 +187,12 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_OffensiveLargeArea</li>
+			<li>LLRoM_UseScroll_LLRoM_OffensiveLargeArea</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_OffensiveLargeArea</li>
-			<li>LLRoM_ExamineScroll_OffensiveLargeArea</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_OffensiveLargeArea</li>
+			<li>LLRoM_ExamineScroll_LLRoM_OffensiveLargeArea</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
@@ -223,13 +223,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_OffensiveDeBuff</li>
+			<li>LLRoM_UseScroll_LLRoM_OffensiveDeBuff</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_OffensiveDeBuff</li>
-			<li>LLRoM_ExamineScroll_OffensiveDeBuff</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_OffensiveDeBuff</li>
+			<li>LLRoM_ExamineScroll_LLRoM_OffensiveDeBuff</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -253,13 +253,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_RawI</li>
+			<li>LLRoM_UseScroll_LLRoM_RawI</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_RawI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_RawI</li>
+			<li>LLRoM_ExamineScroll_LLRoM_RawI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_RawI</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
@@ -291,13 +291,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_BindingI</li>
+			<li>LLRoM_UseScroll_LLRoM_BindingI</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_BindingI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_BindingI</li>
+			<li>LLRoM_ExamineScroll_LLRoM_BindingI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_BindingI</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
@@ -330,7 +330,7 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_RawII</li>
+			<li>LLRoM_UseScroll_LLRoM_RawII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
@@ -338,8 +338,8 @@
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>
-			<li>LLRoM_ExamineScroll_RawII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_RawII</li>
+			<li>LLRoM_ExamineScroll_LLRoM_RawII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_RawII</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -384,7 +384,7 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_TimeI</li>
+			<li>LLRoM_UseScroll_LLRoM_TimeI</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
@@ -393,8 +393,8 @@
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_TimeI</li>
-			<li>LLRoM_ExamineScroll_TimeI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_TimeI</li>
+			<li>LLRoM_ExamineScroll_LLRoM_TimeI</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -435,13 +435,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_BindingII</li>
+			<li>LLRoM_UseScroll_LLRoM_BindingII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_BindingII</li>
-			<li>LLRoM_ExamineScroll_BindingII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_BindingII</li>
+			<li>LLRoM_ExamineScroll_LLRoM_BindingII</li>
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>
@@ -492,12 +492,12 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_EmotoinI</li>
+			<li>LLRoM_UseScroll_LLRoM_EmotoinI</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_EmotoinI</li>
-			<li>LLRoM_ExamineScroll_EmotoinI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_EmotoinI</li>
+			<li>LLRoM_ExamineScroll_LLRoM_EmotoinI</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
@@ -521,13 +521,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_EmotoinII</li>
+			<li>LLRoM_UseScroll_LLRoM_EmotoinII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_EmotoinII</li>
-			<li>LLRoM_ExamineScroll_EmotoinI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_EmotoinII</li>
+			<li>LLRoM_ExamineScroll_LLRoM_EmotoinI</li>
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>
@@ -572,13 +572,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_TimeII</li>
+			<li>LLRoM_UseScroll_LLRoM_TimeII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_TimeII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_TimeII</li>
+			<li>LLRoM_ExamineScroll_LLRoM_TimeII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_TimeII</li>
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>
@@ -627,13 +627,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_ChaosI</li>
+			<li>LLRoM_UseScroll_LLRoM_ChaosI</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_ChaosI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_ChaosI</li>
+			<li>LLRoM_ExamineScroll_LLRoM_ChaosI</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_ChaosI</li>
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>
@@ -684,13 +684,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_TimeIII</li>
+			<li>LLRoM_UseScroll_LLRoM_TimeIII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_TimeIII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_TimeIII</li>
+			<li>LLRoM_ExamineScroll_LLRoM_TimeIII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_TimeIII</li>
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>
@@ -735,13 +735,13 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_ChaosII</li>
+			<li>LLRoM_UseScroll_LLRoM_ChaosII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_ChaosII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_ChaosII</li>
+			<li>LLRoM_ExamineScroll_LLRoM_ChaosII</li>
+			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_ChaosII</li>
 			<li>LLDocument</li>
 			<li>LLBrainstorm</li>
 			<li>LLRoM_study_rift</li>

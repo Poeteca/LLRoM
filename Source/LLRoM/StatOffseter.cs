@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using Verse;
-using static UnityEngine.Random;
 
 namespace LLRoM
 {

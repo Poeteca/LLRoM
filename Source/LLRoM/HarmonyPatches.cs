@@ -3,7 +3,6 @@ using LifeLessons;
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using TorannMagic;
 using UnityEngine;
@@ -12,17 +11,16 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
-    public static class DrawStatFacotsPatch
+    public static class DrawStatExplainPatch
     {
         [HarmonyPatch(nameof(StatWorker), "GetExplanationUnfinalized")]
-        public static class DrawStatFacotsPatchPostFix
+        public static class DrawStatExplainPatchPostFix
         {
             public static void Postfix(StatRequest req, ref string __result, StatDef ___stat)
             {
                 StringBuilder statbuilder = new StringBuilder(__result);
-                Pawn pawn = req.Thing as Pawn;
                 bool flag = false;
-                if (pawn != null)
+                if (req.Thing is Pawn pawn)
                 {
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
                     if (comp != null)
@@ -77,12 +75,12 @@ namespace LLRoM
             }
         }
     }
-    public static class DrawThingFailPatch
+    public static class DrawFailPatch
     {
         [HarmonyPatch(typeof(ThingDef), nameof(ThingDef.SpecialDisplayStats))]
         public static class DrawThingFailPatchPostfix
         {
-            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, StatRequest req, ThingDef __instance)
+            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, ThingDef __instance)
             {
                 ClassAutoLearnExtension extension1 = __instance.GetModExtension<ClassAutoLearnExtension>();
                 AbilityAutoLearnExtension extension2 = __instance.GetModExtension<AbilityAutoLearnExtension>();
@@ -102,13 +100,10 @@ namespace LLRoM
                 }
             }
         }
-    }
-    public static class DrawFailStatPatch
-    {
         [HarmonyPatch(typeof(BuildingProperties), nameof(BuildingProperties.SpecialDisplayStats))]
-        public static class DrawFailStatPatchPostfix
+        public static class DrawFailBuildingPatchPostfix
         {
-            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> values, ThingDef parentDef)
+            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, ThingDef parentDef)
             {
                 ClassAutoLearnExtension extension = parentDef.GetModExtension<ClassAutoLearnExtension>();
                 if (extension == null)
@@ -123,7 +118,7 @@ namespace LLRoM
             }
         }
     }
-    public static class DrawnStatOffseterPatch
+    public static class DrawnStatFactorsPatch
     {
         [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawStatModifiers")]
         public static class StatOffsetPatchPostFix
@@ -168,9 +163,6 @@ namespace LLRoM
                 }
             }
         }
-    }
-    public static class SatModifierPatch
-    {
         [HarmonyPatch(typeof(StatWorker), nameof(StatWorker.GetValueUnfinalized))]
         public static class StatModifierPatchPostFix
         {
@@ -228,7 +220,7 @@ namespace LLRoM
     public static class XPCombatGainPatch
     {
         [HarmonyPatch(typeof(Pawn_SkillTracker), nameof(Pawn_SkillTracker.Learn))]
-        public static class XPCombatGainPatchPostFix
+        public static class SkillGainPatchPostFix
         {
             public static void Postfix(SkillDef sDef, float xp, Pawn_SkillTracker __instance)
             {
@@ -261,9 +253,6 @@ namespace LLRoM
                 }
             }
         }
-    }
-    public static class PostDamageLearnPatch
-    {
         [HarmonyPatch(typeof(Pawn), nameof(Pawn.PostApplyDamage))]
         public static class PostDamageLearnPatchPostFix
         {
@@ -336,7 +325,7 @@ namespace LLRoM
             }
         }
     }
-    public static class Hide_Proficiency_Patch_DrawRelations
+    public static class Hide_Proficiency_Patch
     {
         [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawRelations")]
         public class Hide_Proficiency_DrawRelations_PreFix
@@ -364,9 +353,6 @@ namespace LLRoM
                 return true;
             }
         }
-    }
-    public static class Hide_Proficiency_Patch_DrawGhostPrerequisites
-    {
         [HarmonyPatch(typeof(ProficiencyViewerWindow), nameof(ProficiencyViewerWindow.DrawGhostPrerequisites))]
         public class Hide_Proficiency_DrawGhostPrerequisites_PreFix
         {
@@ -429,9 +415,6 @@ namespace LLRoM
                 return true;
             }
         }
-    }
-    public static class Hide_Proficiency_Patch
-    {
         [HarmonyPatch(typeof(ProficiencyViewerWindow), nameof(ProficiencyViewerWindow.DrawProficiencyCard))]
         public class Hide_Proficiency_PreFix
         {
@@ -459,10 +442,10 @@ namespace LLRoM
             }
         }
     }
-    public static class Skill_Proficiency_XP_Patch
+    public static class Ability_Proficiency_XP_Patch
     {
         [HarmonyPatch(typeof(TorannMagic.MightAbility), nameof(TorannMagic.MightAbility.PostAbilityAttempt))]
-        public class PostAbilityAttempt_Postfix
+        public class MightAbility_PostAbilityAttempt_Postfix
         {
             public static void Postfix(MightAbility __instance)
             {
@@ -525,11 +508,8 @@ namespace LLRoM
                 return;
             }
         }
-    }
-    public static class Spell_Proficiency_XP_Patch
-    {
         [HarmonyPatch(typeof(TorannMagic.MagicAbility), nameof(TorannMagic.MagicAbility.PostAbilityAttempt))]
-        public class PostAbilityAttempt_Postfix
+        public class MagicAbility_PostAbilityAttempt_Postfix
         {
             public static void Postfix(MagicAbility __instance)
             {
@@ -621,10 +601,10 @@ namespace LLRoM
             }
         }
     }
-    public static class Can_Larn_Magic_Patch
+    public static class LearnClass_Patch
     {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMagic), nameof(TorannMagic.CompUseEffect_LearnMagic.DoEffect))]
-        public class DoEffectk_Prefix
+        public class CompUseEffect_LearnMagic_DoEffectk_Prefix
         {
             public static bool Prefix(Pawn user, object __instance)
             {
@@ -646,11 +626,8 @@ namespace LLRoM
                 return true;
             }
         }
-    }
-    public static class CompUseEffect_LearnMight_Patch
-    {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMight), nameof(TorannMagic.CompUseEffect_LearnMight.DoEffect))]
-        public class DoEffectk_Prefix
+        public class CompUseEffect_LearnMight_DoEffectk_Prefix
         {
             public static bool Prefix(Pawn user, object __instance)
             {
@@ -673,10 +650,10 @@ namespace LLRoM
             }
         }
     }
-    public static class CompUseEffect_LearnSpell_Patch
+    public static class Learn_Ability_Patch
     {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSpell), nameof(TorannMagic.CompUseEffect_LearnSpell.DoEffect))]
-        public class DoEffectk_Prefix
+        public class CompUseEffect_LearnSpell_DoEffectk_Prefix
         {
             public static bool Prefix(Pawn user, object __instance)
             {
@@ -698,11 +675,8 @@ namespace LLRoM
                 return true;
             }
         }
-    }
-    public static class CompUseEffect_LearnSkill_Patch
-    {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSkill), nameof(TorannMagic.CompUseEffect_LearnSkill.DoEffect))]
-        public class DoEffectk_Prefix
+        public class CompUseEffect_LearnSkill_DoEffectk_Prefix
         {
             public static bool Prefix(Pawn user, object __instance)
             {

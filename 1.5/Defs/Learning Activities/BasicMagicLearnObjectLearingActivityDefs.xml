@@ -5,7 +5,7 @@
 <!--LLRoM_Defensive-->
 
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_Defensive</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_Defensive</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -26,7 +26,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_Defensive</defName>
+		<defName>LLRoM_UseScroll_LLRoM_Defensive</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -49,7 +49,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_Defensive</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_Defensive</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -74,7 +74,7 @@
 <!--LLRoM_DefensiveBuff-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_DefensiveBuff</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_DefensiveBuff</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -91,7 +91,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_DefensiveBuff</defName>
+		<defName>LLRoM_UseScroll_LLRoM_DefensiveBuff</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -110,7 +110,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_DefensiveBuff</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_DefensiveBuff</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -131,7 +131,7 @@
 <!--LLRoM_DefensiveBarrier-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_DefensiveBarrier</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_DefensiveBarrier</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -148,7 +148,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_DefensiveBarrier</defName>
+		<defName>LLRoM_UseScroll_LLRoM_DefensiveBarrier</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -171,7 +171,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_DefensiveBarrier</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_DefensiveBarrier</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -196,7 +196,7 @@
 <!--LLRoM_Offensive-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_Offensive</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_Offensive</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -225,7 +225,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_Offensive</defName>
+		<defName>LLRoM_UseScroll_LLRoM_Offensive</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -250,7 +250,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_Offensive</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_Offensive</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -277,7 +277,7 @@
 <!--LLRoM_OffensiveLargeArea-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_OffensiveLargeArea</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_OffensiveLargeArea</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -296,7 +296,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_OffensiveLargeArea</defName>
+		<defName>LLRoM_UseScroll_LLRoM_OffensiveLargeArea</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -325,7 +325,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_OffensiveLargeArea</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_OffensiveLargeArea</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -356,7 +356,7 @@
 <!--LLRoM_OffensiveDeBuff-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_OffensiveDeBuff</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_OffensiveDeBuff</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -373,7 +373,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_OffensiveDeBuff</defName>
+		<defName>LLRoM_UseScroll_LLRoM_OffensiveDeBuff</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -394,7 +394,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_OffensiveDeBuff</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_OffensiveDeBuff</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -417,7 +417,7 @@
 <!--LLRoM_RawI-->
 
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_RawI</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_RawI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -450,7 +450,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_RawI</defName>
+		<defName>LLRoM_UseScroll_LLRoM_RawI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -475,7 +475,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_RawI</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_RawI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -502,7 +502,7 @@
 <!--LLRoM_RawII-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_RawII</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_RawII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -523,7 +523,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_RawII</defName>
+		<defName>LLRoM_UseScroll_LLRoM_RawII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -552,7 +552,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_RawII</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_RawII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -583,7 +583,7 @@
 <!--LLRoM_BindingI-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_BindingI</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_BindingI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -608,7 +608,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_BindingI</defName>
+		<defName>LLRoM_UseScroll_LLRoM_BindingI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -641,7 +641,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_BindingI</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_BindingI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -676,7 +676,7 @@
 <!--LLRoM_BindingII-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_BindingII</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_BindingII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -695,7 +695,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_BindingII</defName>
+		<defName>LLRoM_UseScroll_LLRoM_BindingII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -724,7 +724,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_BindingII</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_BindingII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -755,7 +755,7 @@
 <!--LLRoM_EmotionI-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_EmotoinI</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_EmotoinI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -776,7 +776,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_EmotoinI</defName>
+		<defName>LLRoM_UseScroll_LLRoM_EmotoinI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -795,7 +795,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_EmotoinI</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_EmotoinI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -816,7 +816,7 @@
 <!--LLRoM_EmotionII-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_EmotoinII</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_EmotoinII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -835,7 +835,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_EmotoinII</defName>
+		<defName>LLRoM_UseScroll_LLRoM_EmotoinII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -858,7 +858,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_EmotoinII</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_EmotoinII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -883,7 +883,7 @@
 <!--LLRoM_TimeI-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_TimeI</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_TimeI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -904,7 +904,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_TimeI</defName>
+		<defName>LLRoM_UseScroll_LLRoM_TimeI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -921,7 +921,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_TimeI</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_TimeI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -940,7 +940,7 @@
 <!--LLRoM_TimeII-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_TimeII</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_TimeII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -959,7 +959,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_TimeII</defName>
+		<defName>LLRoM_UseScroll_LLRoM_TimeII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -976,7 +976,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_TimeII</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_TimeII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -995,7 +995,7 @@
 <!--LLRoM_TimeIII-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_TimeIII</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_TimeIII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1012,7 +1012,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_TimeIII</defName>
+		<defName>LLRoM_UseScroll_LLRoM_TimeIII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1031,7 +1031,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_TimeIII</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_TimeIII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1052,7 +1052,7 @@
 <!--LLRoM_ChaosI-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_ChaosI</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_ChaosI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1075,7 +1075,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_ChaosI</defName>
+		<defName>LLRoM_UseScroll_LLRoM_ChaosI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1092,7 +1092,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_ChaosI</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_ChaosI</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1111,7 +1111,7 @@
 <!--LLRoM_ChaosII-->
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadMagicLearnObjectBase">
-		<defName>LLRoM_ReadMagicLearnObjectBase_ChaosII</defName>
+		<defName>LLRoM_ReadMagicLearnObjectBase_LLRoM_ChaosII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1130,7 +1130,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
-		<defName>LLRoM_UseScroll_ChaosII</defName>
+		<defName>LLRoM_UseScroll_LLRoM_ChaosII</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1149,7 +1149,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
-		<defName>LLRoM_ExamineScroll_ChaosII</defName>
+		<defName>LLRoM_ExamineScroll_LLRoM_ChaosII</defName>
 		<ingredients>
 			<li>
 				<filter>
