@@ -11,6 +11,87 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class CastCostPatch
+    {
+        [HarmonyPatch(typeof(CompAbilityUserMagic), nameof(CompAbilityUserMagic.ActualManaCost))]
+        public static class ManaCostPatchPostFix
+        {
+            public static void Postfix(ref float __result, TMAbilityDef magicDef, CompAbilityUserMagic __instance)
+            {
+                ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
+                AbilityXPGainExtension extension = magicDef.GetModExtension<AbilityXPGainExtension>();
+                if (extension != null && comp != null)
+                {
+                    List<ProficiencyDef> knownAndLearnable = comp.AllLearnableProficiencies;
+                    knownAndLearnable.AddRange(comp.CompletedProficiencies);
+                    bool flag1 = true;
+                    bool flag2 = true;
+                    foreach (ProficiencyDef pro in extension.Proficiencies)
+                    {
+                        if (!comp.CompletedProficiencies.Contains(pro))
+                        {
+                            flag1 = false;
+                        }
+                        if (!knownAndLearnable.Contains(pro))
+                        {
+                            flag2 = false;
+                        }
+                    }
+                    if (flag1)
+                    {
+                        return;
+                    }
+                    else if (flag2)
+                    {
+                        __result *= 1.25f;
+                    }
+                    else
+                    {
+                        __result *= 1.5f;
+                    }
+                }
+            }
+        }
+        [HarmonyPatch(typeof(CompAbilityUserMight), nameof(CompAbilityUserMight.ActualStaminaCost))]
+        public static class StaminaCostPatchPostFix
+        {
+            public static void Postfix(ref float __result, TMAbilityDef mightDef, CompAbilityUserMight __instance)
+            {
+                ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
+                AbilityXPGainExtension extension = mightDef.GetModExtension<AbilityXPGainExtension>();
+                if (extension != null && comp != null)
+                {
+                    List<ProficiencyDef> knownAndLearnable = comp.AllLearnableProficiencies;
+                    knownAndLearnable.AddRange(comp.CompletedProficiencies);
+                    bool flag1 = true;
+                    bool flag2 = true;
+                    foreach (ProficiencyDef pro in extension.Proficiencies)
+                    {
+                        if (!comp.CompletedProficiencies.Contains(pro))
+                        {
+                            flag1 = false;
+                        }
+                        if (!knownAndLearnable.Contains(pro))
+                        {
+                            flag2 = false;
+                        }
+                    }
+                    if (flag1)
+                    {
+                        return;
+                    }
+                    else if (flag2)
+                    {
+                        __result *= 1.25f;
+                    }
+                    else
+                    {
+                        __result *= 1.5f;
+                    }
+                }
+            }
+        }
+    }
     public static class DrawStatExplainPatch
     {
         [HarmonyPatch(nameof(StatWorker), "GetExplanationUnfinalized")]
