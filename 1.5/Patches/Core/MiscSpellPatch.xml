@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!--Arcane Barrier-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ArcaneBarrier"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
 	<!--Magical heater-->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="SpellOf_Heater"]</xpath>
@@ -17,7 +31,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_FireI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -42,7 +55,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_IceI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -67,7 +79,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightningI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
@@ -92,7 +103,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>Magic_Insight</li>
 					<li>LLRoM_LightI</li>
 				</Proficiencies>
 				<experienceType>Practical</experienceType>

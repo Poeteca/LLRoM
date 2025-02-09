@@ -11,6 +11,144 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class CastRequirementsPatch
+    {
+        [HarmonyPatch(typeof(MightAbility), nameof(MightAbility.CanCastPowerCheck))]
+        public static class CastRequirementsMightPatchPostFix
+        {
+            public static void Postfix(ref bool __result, ref string reason, MightAbility __instance)
+            {
+                if (__result && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CastProRequirement)
+                {
+                    ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null)
+                    {
+                        List<ProficiencyDef> pro = comp.CompletedProficiencies;
+                        if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().strictMightCastReuRequirement)
+                        {
+                            pro.AddRange(comp.AllLearnableProficiencies);
+                        }
+                        AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
+                        if (extension != null)
+                        {
+                            List<ProficiencyDef> missingpro = new List<ProficiencyDef>();
+                            foreach (ProficiencyDef def in extension.Proficiencies)
+                            {
+                                if (!pro.Contains(def))
+                                {
+                                    missingpro.Add(def);
+                                    __result = false;
+                                }
+                            }
+                            if (missingpro.Count > 0)
+                            {
+                                StringBuilder Reason = new StringBuilder();
+                                Reason.AppendLine("MissingPro".Translate());
+                                foreach (ProficiencyDef def in missingpro)
+                                {
+                                    Reason.AppendLine(def.defName);
+                                }
+                                reason = Reason.ToString();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        [HarmonyPatch(typeof(MagicAbility), nameof(MagicAbility.CanCastPowerCheck))]
+        public static class CastRequirementsMagicPatchPostFix
+        {
+            public static void Postfix(ref bool __result, ref string reason, MagicAbility __instance)
+            {
+                if (__result && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CastProRequirement)
+                {
+                    ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null)
+                    {
+                        List<ProficiencyDef> pro = comp.CompletedProficiencies;
+                        if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().strictMagicCastReuRequirement)
+                        {
+                            pro.AddRange(comp.AllLearnableProficiencies);
+                        }
+                        AbilityXPGainExtension extension = __instance.Def.GetModExtension<AbilityXPGainExtension>();
+                        if (extension != null)
+                        {
+                            List<ProficiencyDef> missingpro = new List<ProficiencyDef>();
+                            foreach (ProficiencyDef def in extension.Proficiencies)
+                            {
+                                if (!pro.Contains(def))
+                                {
+                                    missingpro.Add(def);
+                                    __result = false;
+                                }
+                            }
+                            if (missingpro.Count > 0)
+                            {
+                                StringBuilder Reason = new StringBuilder();
+                                Reason.AppendLine("MissingPro".Translate());
+                                foreach (ProficiencyDef def in missingpro)
+                                {
+                                    Reason.AppendLine(def.defName);
+                                }
+                                reason = Reason.ToString();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    public static class DrawAbilitiesInWIndowPatch
+    {
+        [HarmonyPatch(nameof(ProficiencyViewerWindow), "DrawUsedBy")]
+        public static class DrawUsedByPostfix
+        {
+            public static void Postfix(ref float __result, Rect displayRect, ProficiencyDef ___selectedProficiency)
+            {
+                if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CastProRequirement && !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().learnBycastingSpells) { return; }
+                float currentY = __result;
+                int iconWidth = 34;
+                int iconHeight = 34;
+                int maxRowIconCount = ((int)displayRect.width - 10) / iconWidth;
+                List<TMAbilityDef> abilities = new List<TMAbilityDef>();
+                foreach (TMAbilityDef ability in DefDatabase<TMAbilityDef>.AllDefs)
+                {
+                    AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
+                    if (extension != null && extension.Proficiencies.Contains(___selectedProficiency))
+                    {
+                        abilities.Add(ability);
+                    }
+                }
+                if (abilities != null && abilities.Count > 0)
+                {
+                    Rect requiredByabilityRect = new Rect(displayRect.x, displayRect.y + currentY, displayRect.width, 0f);
+                    Widgets.LabelCacheHeight(ref requiredByabilityRect, "RelatedSpells".Translate());
+                    currentY += requiredByabilityRect.height;
+                    GenUI.ResetLabelAlign();
+                    int i = 0;
+                    int j = 0;
+                    for (int abilityCounter = 0; abilityCounter < abilities.Count; abilityCounter++)
+                    {
+                        TMAbilityDef ability = abilities[abilityCounter];
+                        if (i != 0 && i % maxRowIconCount == 0)
+                        {
+                            j++;
+                            i = 0;
+                        }
+                        if (i == 0)
+                        {
+                            currentY += (float)iconHeight;
+                        }
+                        Rect abilityRect = new Rect(requiredByabilityRect.x + (float)(i % maxRowIconCount * iconWidth), requiredByabilityRect.y + requiredByabilityRect.height + (float)(j * iconHeight), iconWidth, iconHeight);
+                        TooltipHandler.TipRegion(abilityRect, ability.label);
+                        LLWidgets.HyperlinkWithIcon(abilityRect, new Dialog_InfoCard.Hyperlink(ability), ability.uiIcon);
+                        i++;
+                    }
+                }
+                __result += currentY;
+            }
+        }
+    }
     public static class CastCostPatch
     {
         [HarmonyPatch(typeof(CompAbilityUserMagic), nameof(CompAbilityUserMagic.ActualManaCost))]
@@ -18,6 +156,7 @@ namespace LLRoM
         {
             public static void Postfix(ref float __result, TMAbilityDef magicDef, CompAbilityUserMagic __instance)
             {
+                if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CostScale) { return; }
                 ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
                 AbilityXPGainExtension extension = magicDef.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null && comp != null)
@@ -57,6 +196,7 @@ namespace LLRoM
         {
             public static void Postfix(ref float __result, TMAbilityDef mightDef, CompAbilityUserMight __instance)
             {
+                if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CostScale) { return; }
                 ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
                 AbilityXPGainExtension extension = mightDef.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null && comp != null)
@@ -149,7 +289,7 @@ namespace LLRoM
                         }
                     }
                 }
-                if(flag && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
+                if (flag && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
                 {
                     __result = statbuilder.ToString();
                 }

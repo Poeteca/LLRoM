@@ -23,8 +23,18 @@ namespace LLRoM
         public bool ClassProLockout = true;
         public bool UnlearnProOnClassGain = true;
         public bool ProficienciesMasterOffseter = true;
+        public bool CostScale = true;
+        public bool CastProRequirement = false;
+        public bool strictMightCastReuRequirement = false;
+        public bool strictMagicCastReuRequirement = false;
+        public bool learnBycastingSpells = true;
         public override void ExposeData()
         {
+            Scribe_Values.Look(ref learnBycastingSpells, "learnBycastingSpells");
+            Scribe_Values.Look(ref CostScale, "CostScale");
+            Scribe_Values.Look(ref CastProRequirement, "CastProRequirement");
+            Scribe_Values.Look(ref strictMagicCastReuRequirement, "strictMagicCastReuRequirement");
+            Scribe_Values.Look(ref strictMagicCastReuRequirement, "strictMagicCastReuRequirement");
             Scribe_Values.Look(ref StrictMightClassLearning, "StrictMightClassLearning");
             Scribe_Values.Look(ref StrictMagicClassLearning, "StrictMagicClassLearning");
             Scribe_Values.Look(ref StrictMightClassLearning, "StrictMightClassLearning");

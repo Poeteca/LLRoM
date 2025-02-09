@@ -155,6 +155,18 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Totems"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Summon</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Hex_I"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">

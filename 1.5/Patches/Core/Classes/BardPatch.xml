@@ -88,7 +88,7 @@
 	</Operation>
 	<!--Ability Cast Patch-->
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Entertain"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Entertain" or defName="TM_BardTraining"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>

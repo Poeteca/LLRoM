@@ -39,7 +39,7 @@
 	</Operation>
 	<!--Ability Cast Patch-->
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Shroud" or defName="LLRoM_Manipulation"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Shroud" or defName="TM_WaveOfFear"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>

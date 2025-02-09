@@ -13,11 +13,18 @@ namespace LLRoM
         {
             this.settings = GetSettings<LLRoMSettings>();
         }
+        private static Vector2 scrollPosition = new Vector2(0f, 0f);
+        private static float totalContentHeight = 1000f;
+        private const float ScrollBarWidthMargin = 18f;
         public override void DoSettingsWindowContents(Rect inRect)
         {
+            bool scrollBarVisible = totalContentHeight > inRect.height;
+            var scrollViewTotal = new Rect(0f, 0f, inRect.width - (scrollBarVisible ? ScrollBarWidthMargin : 0), totalContentHeight);
+            Widgets.BeginScrollView(inRect, ref scrollPosition, scrollViewTotal);
             Listing_Standard listingStandard = new Listing_Standard();
-            listingStandard.Begin(inRect);
+            listingStandard.Begin(new Rect(0f, 0f, scrollViewTotal.width, 9999f));
             listingStandard.CheckboxLabeled("ProficienciesMasterOffseter".Translate(), ref settings.ProficienciesMasterOffseter);
+            listingStandard.CheckboxLabeled("CostScale".Translate(), ref settings.CostScale);
             listingStandard.CheckboxLabeled("ClassProLockout".Translate(), ref settings.ClassProLockout);
             if (settings.ClassProLockout)
             {
@@ -32,6 +39,17 @@ namespace LLRoM
             { 
                 listingStandard.CheckboxLabeled("StrictMightClassLearning".Translate(), ref settings.StrictMightClassLearning);
                 listingStandard.CheckboxLabeled("StrictMagicClassLearning".Translate(), ref settings.StrictMagicClassLearning);
+            }
+            else
+            {
+                listingStandard.Label("");
+                listingStandard.Label("");
+            }
+            listingStandard.CheckboxLabeled("CastProRequirement".Translate(), ref settings.CastProRequirement);
+            if (settings.CastProRequirement)
+            {
+                listingStandard.CheckboxLabeled("strictMightCastReuRequirement".Translate(), ref settings.strictMightCastReuRequirement);
+                listingStandard.CheckboxLabeled("strictMagicCastReuRequirement".Translate(), ref settings.strictMagicCastReuRequirement);
             }
             else
             {
@@ -58,9 +76,19 @@ namespace LLRoM
             {
                 listingStandard.Label("");
             }
-            listingStandard.Label("XPMultiplier".Translate());
-            listingStandard.Label("ValueXPMultiplier".Translate(settings.XPMultiplier));
-            settings.XPMultiplier = listingStandard.Slider(settings.XPMultiplier, 1f, 1000f);
+            listingStandard.CheckboxLabeled("learnBycastingSpells".Translate(), ref settings.learnBycastingSpells);
+            if (settings.learnBycastingSpells)
+            {
+                listingStandard.Label("XPMultiplier".Translate());
+                listingStandard.Label("ValueXPMultiplier".Translate(settings.XPMultiplier));
+                settings.XPMultiplier = listingStandard.Slider(settings.XPMultiplier, 1f, 1000f);
+            }
+            else
+            {
+                listingStandard.Label("");
+                listingStandard.Label("");
+                listingStandard.Label("");
+            }
             if (settings.ClassRequiresProficiencies)
             {
                 listingStandard.CheckboxLabeled("CanSelfTeachClasses".Translate(), ref settings.CanSelfTeachClasses);
@@ -115,6 +143,7 @@ namespace LLRoM
                 listingStandard.Label("");
             }
             listingStandard.End();
+            Widgets.EndScrollView();
             base.DoSettingsWindowContents(inRect);
         }
         public override string SettingsCategory()

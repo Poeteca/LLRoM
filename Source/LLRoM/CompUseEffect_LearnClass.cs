@@ -182,11 +182,7 @@ namespace LLRoM
             {
                 TraitDef Class = possibleclasses.RandomElement();
                 ClassAutoLearnExtension Classextension = Class.GetModExtension<ClassAutoLearnExtension>();
-                string classname = Class.DataAtDegree(4).label;
-                if (Class.DataAtDegree(0).label != null)
-                {
-                    classname = Class.DataAtDegree(0).label;
-                }
+                string classname = Class.DataAtDegree(Classextension.degreeData).label;
                 int chance = 100;
                 int compare = 1;
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)

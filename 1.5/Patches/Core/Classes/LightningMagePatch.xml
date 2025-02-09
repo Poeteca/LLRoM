@@ -154,7 +154,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_LightningStorm"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_EyeOfTheStorm"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>

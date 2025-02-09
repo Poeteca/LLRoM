@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<learnBycastingSpells>If using abilities give proficiency experiance.</learnBycastingSpells>
+	<CastProRequirement>If abilities have a proficiency requirement to cast.</CastProRequirement>
+	<strictMightCastReuRequirement>If might skills requires knowing proficiencies instead of being able to learn proficiencies.</strictMightCastReuRequirement>
+	<strictMagicCastReuRequirement>If magic spells requires knowing proficiencies instead of being able to learn proficiencies.</strictMagicCastReuRequirement>
+	<CostScale>If ability costs scaled based on known proficiencies.</CostScale>
+	<RelatedSpells>Related Spells</RelatedSpells>
+	<MissingPro>Missing proficiencies:</MissingPro>
 	<ProStatOffset>Proficiency Modifiers</ProStatOffset>
 	<FailChance>Self teach fail chance.</FailChance>
 	<FailChanceReport>The chane for an individual to fail to discover a class or spell when using this.</FailChanceReport>

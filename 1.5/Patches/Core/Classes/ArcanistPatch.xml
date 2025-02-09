@@ -160,7 +160,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Blink_I" or defName="TM_Blink_II" or defName="TM_Summon_II"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Blink_I" or defName="TM_Blink_II" or defName="TM_Summon_II" or defName="TM_Teleport"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
