@@ -64,7 +64,7 @@ namespace LLRoM
                         {
                             if (!ValidAbilities.Contains(def)) { canGain = false; }
                         }
-                        if (canGain && LearnableCheck(usedBy, Scroll))
+                        if (canGain && Utility.LearnableSpellCheck(usedBy, Scroll))
                         {
                             possibleAbilities.Add(Scroll);
                         }
@@ -693,7 +693,7 @@ namespace LLRoM
             }
             return base.CanBeUsedBy(p);
         }
-        public static bool LearnableCheck(Pawn p, ThingDef S)
+        private bool LearnableCheck(Pawn p, ThingDef S)
         {
             List<Trait> traits = p.story.traits.allTraits;
             List<TraitDef> traitdefs = new List<TraitDef>();

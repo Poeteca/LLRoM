@@ -87,6 +87,7 @@
     <Compile Include="StatModifier.cs" />
     <Compile Include="StatOffseter.cs" />
     <Compile Include="StatOffsetExtension.cs" />
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

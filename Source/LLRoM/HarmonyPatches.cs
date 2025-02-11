@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TorannMagic;
+using TorannMagic.TMDefs;
 using UnityEngine;
 using Verse;
 
@@ -102,22 +103,47 @@ namespace LLRoM
     {
         public static bool ShouldShw(Pawn p, TMAbilityDef ability)
         {
-            if (DebugSettings.godMode || Current.Game.InitData == null) { return true; }
-            if (ability.learnItem != null)
+            CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
+            CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
+            TM_CustomClass customclass = new TM_CustomClass();
+            if (pMagic != null) { customclass = pMagic.customClass; }
+            if (pMight != null) { customclass = pMight.customClass; }
+            if (ability.learnItem != null && customclass != null)
             {
-                return CompUseEffect_TrySelfLearnSkill.LearnableCheck(p, ability.learnItem) || CompUseEffect_TrySelfLearnSpell.LearnableCheck(p, ability.learnItem);
-            }
-            if (ability.learnItem == null)
-            {
-                CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
-                CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
-                if (pMagic.customClass != null && pMagic.customClass.classMageAbilities != null && pMagic.customClass.classMageAbilities.Contains(ability))
+                if (ability.learnItem.defName.Contains("SpellOf") && customclass.isMage && Utility.LearnableSpellCheck(p, ability.learnItem))
                 {
                     return true;
                 }
-                else if (pMight.customClass != null && pMight.customClass.classFighterAbilities != null && pMight.customClass.classFighterAbilities.Contains(ability))
+                else if (ability.learnItem.defName.Contains("SkillOf") && customclass.isFighter && Utility.LearnableSkillCheck(p, ability.learnItem))
                 {
                     return true;
+                }
+                else { return false; }
+            }
+            else if (ability.learnItem != null)
+            {
+                 if(pMagic != null && pMagic.IsMagicUser && Utility.LearnableSpellCheck(p, ability.learnItem))
+                 {
+                    return true;
+                 }
+                 if(pMight != null && pMight.IsMightUser && Utility.LearnableSkillCheck(p, ability.learnItem))
+                 {
+                    return true;
+                 }
+                return false;
+            }
+            else
+            {
+                if (customclass != null)
+                {
+                    if (customclass.classFighterAbilities.Contains(ability) || customclass.classMageAbilities.Contains(ability))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
                 else
                 {
@@ -135,14 +161,13 @@ namespace LLRoM
                     return false;
                 }
             }
-            return true;
         }
         [HarmonyPatch(nameof(ProficiencyViewerWindow), "DrawUsedBy")]
         public static class DrawUsedByPostfix
         {
             public static void Postfix(ref float __result, Rect displayRect, ProficiencyDef ___selectedProficiency, ProficiencyViewerWindow __instance)
             {
-                if (___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Might || ___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Magic) { return; }
+                if (___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Might && ___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Magic) { return; }
                 if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CastProRequirement && !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().learnBycastingSpells) { return; }
                 float currentY = __result;
                 Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
