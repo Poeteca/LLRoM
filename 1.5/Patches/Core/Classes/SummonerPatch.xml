@@ -97,6 +97,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Summoner</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -110,6 +113,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Summoner</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -123,6 +129,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Summoner</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -137,6 +146,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Summoner</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -151,6 +163,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Summoner</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>

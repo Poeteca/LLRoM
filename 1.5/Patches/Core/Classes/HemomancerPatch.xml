@@ -95,6 +95,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>BloodMage</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -109,6 +112,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>BloodMage</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -122,6 +128,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>BloodMage</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -135,6 +144,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>BloodMage</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -148,6 +160,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>BloodMage</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>

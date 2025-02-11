@@ -82,10 +82,6 @@ namespace LLRoM
                 {
                     possibleAbilities.Remove(tMAbilityDef.learnItem);
                 }
-                if (possibleAbilities.Contains(tMAbilityDef.learnItem) && compAbilityUserMagic.customClass != null && !compAbilityUserMagic.customClass.learnableSpells.Contains(tMAbilityDef.learnItem))
-                {
-                    possibleAbilities.Remove(tMAbilityDef.learnItem);
-                }
             }
             if (possibleAbilities.Count == 0)
             {
@@ -697,7 +693,7 @@ namespace LLRoM
             }
             return base.CanBeUsedBy(p);
         }
-        private bool LearnableCheck(Pawn p, ThingDef S)
+        public static bool LearnableCheck(Pawn p, ThingDef S)
         {
             List<Trait> traits = p.story.traits.allTraits;
             List<TraitDef> traitdefs = new List<TraitDef>();

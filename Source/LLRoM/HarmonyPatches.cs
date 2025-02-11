@@ -100,13 +100,54 @@ namespace LLRoM
     }
     public static class DrawAbilitiesInWIndowPatch
     {
+        public static bool ShouldShw(Pawn p, TMAbilityDef ability)
+        {
+            if (DebugSettings.godMode || Current.Game.InitData == null) { return true; }
+            if (ability.learnItem != null)
+            {
+                return CompUseEffect_TrySelfLearnSkill.LearnableCheck(p, ability.learnItem) || CompUseEffect_TrySelfLearnSpell.LearnableCheck(p, ability.learnItem);
+            }
+            if (ability.learnItem == null)
+            {
+                CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
+                CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
+                if (pMagic.customClass != null && pMagic.customClass.classMageAbilities != null && pMagic.customClass.classMageAbilities.Contains(ability))
+                {
+                    return true;
+                }
+                else if (pMight.customClass != null && pMight.customClass.classFighterAbilities != null && pMight.customClass.classFighterAbilities.Contains(ability))
+                {
+                    return true;
+                }
+                else
+                {
+                    AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
+                    if (extension != null && extension.Classes != null && extension.Classes.Count > 0)
+                    {
+                        foreach (TraitDef Class in extension.Classes)
+                        {
+                            if (p.story.traits.HasTrait(Class))
+                            {
+                                return true;
+                            }
+                        }
+                    }
+                    return false;
+                }
+            }
+            return true;
+        }
         [HarmonyPatch(nameof(ProficiencyViewerWindow), "DrawUsedBy")]
         public static class DrawUsedByPostfix
         {
-            public static void Postfix(ref float __result, Rect displayRect, ProficiencyDef ___selectedProficiency)
+            public static void Postfix(ref float __result, Rect displayRect, ProficiencyDef ___selectedProficiency, ProficiencyViewerWindow __instance)
             {
+                if (___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Might || ___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Magic) { return; }
                 if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CastProRequirement && !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().learnBycastingSpells) { return; }
                 float currentY = __result;
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+                if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Magic && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MagicUserHD) && (!DebugSettings.godMode || Current.Game.InitData != null)) { return; }
+                if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Might && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MightUserHD) && (!DebugSettings.godMode || Current.Game.InitData != null)) { return; }
                 int iconWidth = 34;
                 int iconHeight = 34;
                 int maxRowIconCount = ((int)displayRect.width - 10) / iconWidth;
@@ -114,7 +155,7 @@ namespace LLRoM
                 foreach (TMAbilityDef ability in DefDatabase<TMAbilityDef>.AllDefs)
                 {
                     AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
-                    if (extension != null && extension.Proficiencies.Contains(___selectedProficiency))
+                    if (extension != null && extension.Proficiencies.Contains(___selectedProficiency) && ShouldShw(pawn, ability))
                     {
                         abilities.Add(ability);
                     }
@@ -822,7 +863,7 @@ namespace LLRoM
             }
         }
     }
-    public static class LearnClass_Patch
+    public static class CompUseEffect_LearnMagic_DoEffectk
     {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMagic), nameof(TorannMagic.CompUseEffect_LearnMagic.DoEffect))]
         public class CompUseEffect_LearnMagic_DoEffectk_Prefix
@@ -847,6 +888,9 @@ namespace LLRoM
                 return true;
             }
         }
+    }
+    public static class CompUseEffect_LearnMight_DoEffectk
+    {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMight), nameof(TorannMagic.CompUseEffect_LearnMight.DoEffect))]
         public class CompUseEffect_LearnMight_DoEffectk_Prefix
         {
@@ -871,19 +915,19 @@ namespace LLRoM
             }
         }
     }
-    public static class Learn_Ability_Patch
+    public static class CompUseEffect_LearnSpell_DoEffectk
     {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSpell), nameof(TorannMagic.CompUseEffect_LearnSpell.DoEffect))]
         public class CompUseEffect_LearnSpell_DoEffectk_Prefix
         {
-            public static bool Prefix(Pawn user, object __instance)
+            public static bool Prefix(Pawn user, ThingComp __instance)
             {
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfSpells && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachSpells)
                 {
                     Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
                     return false;
                 }
-                BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
+                BillProficiencyExtension extension = __instance.parent.def.GetModExtension<BillProficiencyExtension>();
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
@@ -896,17 +940,20 @@ namespace LLRoM
                 return true;
             }
         }
+    }
+    public static class CompUseEffect_LearnSkill_DoEffectk
+    {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSkill), nameof(TorannMagic.CompUseEffect_LearnSkill.DoEffect))]
         public class CompUseEffect_LearnSkill_DoEffectk_Prefix
         {
-            public static bool Prefix(Pawn user, object __instance)
+            public static bool Prefix(Pawn user, ThingComp __instance)
             {
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachSkills && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfSkills)
                 {
                     Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
                     return false;
                 }
-                BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
+                BillProficiencyExtension extension = __instance.parent.def.GetModExtension<BillProficiencyExtension>();
                 if (extension != null && extension.AnyRequirements() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
                 {
                     List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();

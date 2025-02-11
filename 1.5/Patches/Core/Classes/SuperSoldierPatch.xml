@@ -24,11 +24,14 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>TM_SuperSoldier</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_FirstAid"]</xpath>
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_FirstAid" or defName="TM_PistolSpec" or defName="TM_RifleSpec" or defName="TM_ShotgunSpec"]</xpath>
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
@@ -36,6 +39,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>TM_SuperSoldier</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -48,6 +54,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>TM_SuperSoldier</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>

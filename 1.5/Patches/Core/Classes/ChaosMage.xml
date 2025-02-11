@@ -83,6 +83,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>ChaosMage</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>

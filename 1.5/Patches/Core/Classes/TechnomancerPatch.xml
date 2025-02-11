@@ -133,6 +133,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -147,6 +150,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -161,6 +167,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -175,6 +184,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -190,6 +202,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -205,6 +220,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -219,6 +237,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -233,6 +254,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -247,6 +271,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
@@ -262,6 +289,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>Technomancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>
