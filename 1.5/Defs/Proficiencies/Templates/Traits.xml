@@ -596,6 +596,9 @@
 		<defName>LLROM_RandomElemental</defName>
 		<applyToUnpatchedStory>false</applyToUnpatchedStory>
 		<package>
+			<proficiencies>
+				<li>Magic_Insight</li>
+			</proficiencies>
 			<conditionalTemplates>
 				<li>
 					<options>

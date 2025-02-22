@@ -12,6 +12,73 @@ using Verse;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class PowerUpgradeCheckPatch
+    {
+        [HarmonyPatch(typeof(CompAbilityUserMight), nameof(CompAbilityUserMight.LevelUpPower))]
+        public static class MightPowerLevelUpPrefixPatch
+        {
+            public static bool Prefix(MightPower power, CompAbilityUserMight __instance)
+            {
+                int indexToCheck = power.level + 1;
+                AbilityUser.AbilityDef abilityToCheck = power.GetAbilityDef(indexToCheck);
+                AbilityXPGainExtension extension = abilityToCheck.GetModExtension<AbilityXPGainExtension>();
+                if (extension != null && __instance.Pawn != null && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
+                {
+                    ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null)
+                    {
+                        List<ProficiencyDef> proficienciesToCompare = comp.CompletedProficiencies;
+                        if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSkillLearning)
+                        {
+                            proficienciesToCompare.AddRange(comp.AllLearnableProficiencies);
+                        }
+                        foreach (ProficiencyDef pro in extension.Proficiencies)
+                        {
+                            if (!proficienciesToCompare.Contains(pro))
+                            {
+                                Messages.Message("CantLevelPower".Translate(__instance.Pawn.LabelShort), MessageTypeDefOf.RejectInput);
+                                __instance.MightData.MightAbilityPoints += power.costToLevel;
+                                return false;
+                            }
+                        }
+                    }
+                }
+                return true;
+            }
+        }
+        [HarmonyPatch(typeof(CompAbilityUserMagic), nameof(CompAbilityUserMagic.LevelUpPower))]
+        public static class MagicPowerLevelUpPrefixPatch
+        {
+            public static bool Prefix(MagicPower power, CompAbilityUserMagic __instance)
+            {
+                int indexToCheck = power.level + 1;
+                AbilityUser.AbilityDef abilityToCheck = power.GetAbilityDef(indexToCheck);
+                AbilityXPGainExtension extension = abilityToCheck.GetModExtension<AbilityXPGainExtension>();
+                if (extension != null && __instance.Pawn != null && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().AbilityRequiresProficiencies)
+                {
+                    ProficiencyComp comp = __instance.Pawn.TryGetComp<ProficiencyComp>();
+                    if (comp != null)
+                    {
+                        List<ProficiencyDef> proficienciesToCompare = comp.CompletedProficiencies;
+                        if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictSpellLearning)
+                        {
+                            proficienciesToCompare.AddRange(comp.AllLearnableProficiencies);
+                        }
+                        foreach (ProficiencyDef pro in extension.Proficiencies)
+                        {
+                            if (!proficienciesToCompare.Contains(pro))
+                            {
+                                Messages.Message("CantLevelPower".Translate(__instance.Pawn.LabelShort), MessageTypeDefOf.RejectInput);
+                                __instance.MagicData.MagicAbilityPoints += power.costToLevel;
+                                return false;
+                            }
+                        }
+                    }
+                }
+                return true;
+            }
+        }
+    }
     public static class CastRequirementsPatch
     {
         [HarmonyPatch(typeof(MightAbility), nameof(MightAbility.CanCastPowerCheck))]
@@ -105,62 +172,52 @@ namespace LLRoM
         {
             CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
             CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
-            TM_CustomClass customclass = new TM_CustomClass();
-            if (pMagic != null) { customclass = pMagic.customClass; }
-            if (pMight != null) { customclass = pMight.customClass; }
+            CompAbilityUserTMBase data = p.GetComp<CompAbilityUserTMBase>();
+            TM_CustomClass customclass = data.customClass;
             if (ability.learnItem != null && customclass != null)
             {
-                if (ability.learnItem.defName.Contains("SpellOf") && customclass.isMage && Utility.LearnableSpellCheck(p, ability.learnItem))
+                if (ability.learnItem.defName.Contains("SpellOf") && customclass.isMage && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
                 {
                     return true;
                 }
-                else if (ability.learnItem.defName.Contains("SkillOf") && customclass.isFighter && Utility.LearnableSkillCheck(p, ability.learnItem))
+                else if (ability.learnItem.defName.Contains("SkillOf") && customclass.isFighter && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
                 {
                     return true;
                 }
-                else { return false; }
             }
             else if (ability.learnItem != null)
             {
-                 if(pMagic != null && pMagic.IsMagicUser && Utility.LearnableSpellCheck(p, ability.learnItem))
-                 {
+                if (pMagic != null && pMagic.IsMagicUser && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
+                {
                     return true;
-                 }
-                 if(pMight != null && pMight.IsMightUser && Utility.LearnableSkillCheck(p, ability.learnItem))
-                 {
+                }
+                if (pMight != null && pMight.IsMightUser && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
+                {
                     return true;
-                 }
-                return false;
+                }
             }
             else
             {
                 if (customclass != null)
                 {
-                    if (customclass.classFighterAbilities.Contains(ability) || customclass.classMageAbilities.Contains(ability))
+                    if (customclass.classAbilities.Contains(ability))
                     {
                         return true;
                     }
-                    else
-                    {
-                        return false;
-                    }
                 }
-                else
+                AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
+                if (extension != null && extension.Classes != null && extension.Classes.Count > 0)
                 {
-                    AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
-                    if (extension != null && extension.Classes != null && extension.Classes.Count > 0)
+                    foreach (TraitDef Class in extension.Classes)
                     {
-                        foreach (TraitDef Class in extension.Classes)
+                        if (p.story.traits.HasTrait(Class))
                         {
-                            if (p.story.traits.HasTrait(Class))
-                            {
-                                return true;
-                            }
+                            return true;
                         }
                     }
-                    return false;
                 }
             }
+            return false;
         }
         [HarmonyPatch(nameof(ProficiencyViewerWindow), "DrawUsedBy")]
         public static class DrawUsedByPostfix
@@ -227,33 +284,17 @@ namespace LLRoM
                 AbilityXPGainExtension extension = magicDef.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null && comp != null)
                 {
-                    List<ProficiencyDef> knownAndLearnable = comp.AllLearnableProficiencies;
-                    knownAndLearnable.AddRange(comp.CompletedProficiencies);
-                    bool flag1 = true;
-                    bool flag2 = true;
-                    foreach (ProficiencyDef pro in extension.Proficiencies)
+                    List<ProficiencyDef> relatedproficiencies = extension.Relatedproficiencies;
+                    float count = relatedproficiencies.Count;
+                    foreach (ProficiencyDef pro in relatedproficiencies)
                     {
-                        if (!comp.CompletedProficiencies.Contains(pro))
+                        if (comp.CompletedProficiencies.Contains(pro))
                         {
-                            flag1 = false;
-                        }
-                        if (!knownAndLearnable.Contains(pro))
-                        {
-                            flag2 = false;
+                            count -= 1;
                         }
                     }
-                    if (flag1)
-                    {
-                        return;
-                    }
-                    else if (flag2)
-                    {
-                        __result *= 1.25f;
-                    }
-                    else
-                    {
-                        __result *= 1.5f;
-                    }
+                    float ratio = (count / relatedproficiencies.Count);
+                    __result *= 1 + (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().MaxCostScaleFactor * ratio);
                 }
             }
         }
@@ -267,33 +308,17 @@ namespace LLRoM
                 AbilityXPGainExtension extension = mightDef.GetModExtension<AbilityXPGainExtension>();
                 if (extension != null && comp != null)
                 {
-                    List<ProficiencyDef> knownAndLearnable = comp.AllLearnableProficiencies;
-                    knownAndLearnable.AddRange(comp.CompletedProficiencies);
-                    bool flag1 = true;
-                    bool flag2 = true;
-                    foreach (ProficiencyDef pro in extension.Proficiencies)
+                    List<ProficiencyDef> relatedproficiencies = extension.Relatedproficiencies;
+                    float count = relatedproficiencies.Count;
+                    foreach (ProficiencyDef pro in relatedproficiencies)
                     {
-                        if (!comp.CompletedProficiencies.Contains(pro))
+                        if (comp.CompletedProficiencies.Contains(pro))
                         {
-                            flag1 = false;
-                        }
-                        if (!knownAndLearnable.Contains(pro))
-                        {
-                            flag2 = false;
+                            count -= 1;
                         }
                     }
-                    if (flag1)
-                    {
-                        return;
-                    }
-                    else if (flag2)
-                    {
-                        __result *= 1.25f;
-                    }
-                    else
-                    {
-                        __result *= 1.5f;
-                    }
+                    float ratio = (count / relatedproficiencies.Count);
+                    __result *= 1 + (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().MaxCostScaleFactor * ratio);
                 }
             }
         }

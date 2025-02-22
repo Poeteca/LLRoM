@@ -17,11 +17,8 @@ namespace LLRoM
         {
             List<Trait> traits = p.story.traits.allTraits;
             List<TraitDef> traitdefs = new List<TraitDef>();
-            CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
-            CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
-            TM_CustomClass customclass = new TM_CustomClass();
-            if (pMagic != null) { customclass = pMagic.customClass; }
-            if (pMight != null) { customclass = pMight.customClass; }
+            CompAbilityUserTMBase data = p.GetComp<CompAbilityUserTMBase>();
+            TM_CustomClass customclass = data.customClass;
             foreach (Trait t in traits)
             {
                 traitdefs.Add(t.def);
@@ -65,11 +62,8 @@ namespace LLRoM
         {
             List<Trait> traits = p.story.traits.allTraits;
             List<TraitDef> traitdefs = new List<TraitDef>();
-            CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
-            CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
-            TM_CustomClass customclass = new TM_CustomClass();
-            if (pMagic != null) { customclass = pMagic.customClass; }
-            if (pMight != null) { customclass = pMight.customClass; }
+            CompAbilityUserTMBase data = p.GetComp<CompAbilityUserTMBase>();
+            TM_CustomClass customclass = data.customClass;
             foreach (Trait t in traits)
             {
                 traitdefs.Add(t.def);
@@ -91,6 +85,10 @@ namespace LLRoM
                     }
                 }
                 if (!check) { return false; }
+            }
+            if (S == TorannMagicDefOf.SpellOf_LivingWall && !customclass.classAbilities.Contains(TorannMagicDefOf.TM_LivingWall))
+            {
+                return false;
             }
             if ((S == TorannMagicDefOf.SpellOf_DryGround || S == TorannMagicDefOf.SpellOf_Firestorm || S == TorannMagicDefOf.SpellOf_HeatShield || S == TorannMagicDefOf.SpellOf_CauterizeWound) && traitdefs.Contains(TorannMagicDefOf.InnerFire))
             {

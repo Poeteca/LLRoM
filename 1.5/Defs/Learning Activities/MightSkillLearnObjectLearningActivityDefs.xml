@@ -15,6 +15,9 @@
 						<li>BookOfGladiator</li>
 						<li>BookOfDeathKnight</li>
 						<li>BookOfMonk</li>
+						<li MayRequire="kure.arom">BookOfRedMage</li>
+						<li MayRequire="kure.arom">BookOfNinja</li>
+						<li MayRequire="kure.arom">BookOfDuskbringer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -27,6 +30,9 @@
 				<li>BookOfGladiator</li>
 				<li>BookOfDeathKnight</li>
 				<li>BookOfMonk</li>
+				<li MayRequire="kure.arom">BookOfRedMage</li>
+				<li MayRequire="kure.arom">BookOfNinja</li>
+				<li MayRequire="kure.arom">BookOfDuskbringer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -78,6 +84,9 @@
 						<li>BookOfBladedancer</li>
 						<li>BookOfMonk</li>
 						<li>BookOfRanger</li>
+						<li MayRequire="kure.arom">BookOfNinja</li>
+						<li MayRequire="kure.arom">BookOfElementalGunner</li>
+						<li MayRequire="kure.arom">BookOfPridestalker</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -90,6 +99,9 @@
 				<li>BookOfBladedancer</li>
 				<li>BookOfMonk</li>
 				<li>BookOfRanger</li>
+				<li MayRequire="kure.arom">BookOfNinja</li>
+				<li MayRequire="kure.arom">BookOfElementalGunner</li>
+				<li MayRequire="kure.arom">BookOfPridestalker</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -152,6 +164,11 @@
 						<li>BookOfCommander</li>
 						<li>BookOfDeathKnight</li>
 						<li>BookOfApothecary</li>
+						<li MayRequire="kure.arom">BookOfElementalGunner</li>
+						<li MayRequire="kure.arom">BookOfReaper</li>
+						<li MayRequire="kure.arom">BookOfPridestalker</li>
+						<li MayRequire="kure.arom">BookOfDuskbringer</li>
+						<li MayRequire="kure.arom">BookOfSpellthief</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -163,6 +180,11 @@
 				<li>BookOfCommander</li>
 				<li>BookOfDeathKnight</li>
 				<li>BookOfApothecary</li>
+				<li MayRequire="kure.arom">BookOfElementalGunner</li>
+				<li MayRequire="kure.arom">BookOfReaper</li>
+				<li MayRequire="kure.arom">BookOfPridestalker</li>
+				<li MayRequire="kure.arom">BookOfDuskbringer</li>
+				<li MayRequire="kure.arom">BookOfSpellthief</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -210,6 +232,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfRanger</li>
+						<li MayRequire="kure.arom">BookOfRedMage</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -218,6 +241,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfRanger</li>
+				<li MayRequire="kure.arom">BookOfRedMage</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -410,6 +434,7 @@
 						<li>BookOfDeathKnight</li>
 						<li>BookOfMonk</li>
 						<li>BookOfGladiator</li>
+						<li MayRequire="kure.arom">BookOfNinja</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -421,6 +446,7 @@
 				<li>BookOfDeathKnight</li>
 				<li>BookOfMonk</li>
 				<li>BookOfGladiator</li>
+				<li MayRequire="kure.arom">BookOfNinja</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -470,6 +496,7 @@
 						<li>BookOfSniper</li>
 						<li>BookOfMonk</li>
 						<li>BookOfPsionic</li>
+						<li MayRequire="kure.arom">BookOfDuskbringer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -480,6 +507,7 @@
 				<li>BookOfSniper</li>
 				<li>BookOfMonk</li>
 				<li>BookOfPsionic</li>
+				<li MayRequire="kure.arom">BookOfDuskbringer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -536,6 +564,9 @@
 					<thingDefs>
 						<li>BookOfRanger</li>
 						<li>BookOfSniper</li>
+						<li MayRequire="kure.arom">BookOfElementalGunner</li>
+						<li MayRequire="kure.arom">BookOfPridestalker</li>
+						<li MayRequire="kure.arom">BookOfDeadeye</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -545,6 +576,9 @@
 			<thingDefs>
 				<li>BookOfRanger</li>
 				<li>BookOfSniper</li>
+				<li MayRequire="kure.arom">BookOfElementalGunner</li>
+				<li MayRequire="kure.arom">BookOfPridestalker</li>
+				<li MayRequire="kure.arom">BookOfDeadeye</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -652,6 +686,8 @@
 					<thingDefs>
 						<li>BookOfDeathKnight</li>
 						<li>BookOfFaceless</li>
+						<li MayRequire="kure.arom">BookOfReaper</li>
+						<li MayRequire="kure.arom">BookOfSpellthief</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -661,6 +697,8 @@
 			<thingDefs>
 				<li>BookOfDeathKnight</li>
 				<li>BookOfFaceless</li>
+				<li MayRequire="kure.arom">BookOfReaper</li>
+				<li MayRequire="kure.arom">BookOfSpellthief</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -777,6 +815,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfSniper</li>
+						<li MayRequire="kure.arom">BookOfDeadeye</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -785,6 +824,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfSniper</li>
+				<li MayRequire="kure.arom">BookOfDeadeye</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

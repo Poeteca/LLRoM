@@ -28,8 +28,38 @@ namespace LLRoM
         public bool strictMightCastReuRequirement = false;
         public bool strictMagicCastReuRequirement = false;
         public bool learnBycastingSpells = true;
+        public float MaxCostScaleFactor = .5f;
+        public void RestoreDefaults()
+        {
+            StrictMightClassLearning = false;
+            StrictMagicClassLearning = false;
+            StrictSpellLearning = false;
+            StrictSkillLearning = false;
+            ObscureCertianProficiencies = true;
+            ObscureAllProficiencies = false;
+            ClassRequiresProficiencies = true;
+            AbilityRequiresProficiencies = true;
+            XPMultiplier = 100f;
+            CanSelfTeachClasses = true;
+            CanOnlySelfTeachClasses = false;
+            CanFailLearn = true;
+            CanSelfTeachSpells = true;
+            CanOnlySelfSpells = false;
+            CanSelfTeachSkills = true;
+            CanOnlySelfSkills = false;
+            ClassProLockout = true;
+            UnlearnProOnClassGain = true;
+            ProficienciesMasterOffseter = true;
+            CostScale = true;
+            CastProRequirement = false;
+            strictMightCastReuRequirement = false;
+            strictMagicCastReuRequirement = false;
+            learnBycastingSpells = true;
+            MaxCostScaleFactor = .5f;
+        }
         public override void ExposeData()
         {
+            Scribe_Values.Look(ref MaxCostScaleFactor, "MaxCostScaleFactor", .5f);
             Scribe_Values.Look(ref learnBycastingSpells, "learnBycastingSpells");
             Scribe_Values.Look(ref CostScale, "CostScale");
             Scribe_Values.Look(ref CastProRequirement, "CastProRequirement");

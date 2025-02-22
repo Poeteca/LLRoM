@@ -3,6 +3,7 @@ using HarmonyLib;
 using LifeLessons;
 using RimWorld;
 using UnityEngine;
+using System;
 
 namespace LLRoM
 {
@@ -25,6 +26,17 @@ namespace LLRoM
             listingStandard.Begin(new Rect(0f, 0f, scrollViewTotal.width, 9999f));
             listingStandard.CheckboxLabeled("ProficienciesMasterOffseter".Translate(), ref settings.ProficienciesMasterOffseter);
             listingStandard.CheckboxLabeled("CostScale".Translate(), ref settings.CostScale);
+            if (settings.CostScale)
+            {
+                string MaxCostScaleFactortext = (settings.MaxCostScaleFactor + 1).ToString("0.00");
+                listingStandard.Label("MaxCostScaleFactor".Translate(MaxCostScaleFactortext));
+                settings.MaxCostScaleFactor = listingStandard.Slider(settings.MaxCostScaleFactor, .01f, 3f);
+            }
+            else
+            {
+                listingStandard.Label("");
+                listingStandard.Label("");
+            }
             listingStandard.CheckboxLabeled("ClassProLockout".Translate(), ref settings.ClassProLockout);
             if (settings.ClassProLockout)
             {
@@ -79,13 +91,11 @@ namespace LLRoM
             listingStandard.CheckboxLabeled("learnBycastingSpells".Translate(), ref settings.learnBycastingSpells);
             if (settings.learnBycastingSpells)
             {
-                listingStandard.Label("XPMultiplier".Translate());
-                listingStandard.Label("ValueXPMultiplier".Translate(settings.XPMultiplier));
+                listingStandard.Label("XPMultiplier".Translate(settings.XPMultiplier));
                 settings.XPMultiplier = listingStandard.Slider(settings.XPMultiplier, 1f, 1000f);
             }
             else
             {
-                listingStandard.Label("");
                 listingStandard.Label("");
                 listingStandard.Label("");
             }
@@ -141,6 +151,10 @@ namespace LLRoM
             else
             {
                 listingStandard.Label("");
+            }
+            if (listingStandard.ButtonText("LLRoM_RestoreDefaults".Translate()))
+            {
+                settings.RestoreDefaults();
             }
             listingStandard.End();
             Widgets.EndScrollView();

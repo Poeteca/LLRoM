@@ -70,6 +70,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Brightmage</li>
+					<li MayRequire="kure.arom">TM_Duskbringer</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

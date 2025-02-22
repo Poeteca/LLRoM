@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<MaxCostScaleFactor>Maximum cost multiplier: x{0}</MaxCostScaleFactor>
 	<learnBycastingSpells>If using abilities give proficiency experiance.</learnBycastingSpells>
 	<CastProRequirement>If abilities have a proficiency requirement to cast.</CastProRequirement>
 	<strictMightCastReuRequirement>If might skills requires knowing proficiencies instead of being able to learn proficiencies.</strictMightCastReuRequirement>
@@ -25,8 +26,7 @@
 	<LLRoM>Life Lessons and A Rimworld of Magic Intergration</LLRoM>
 	<ClassRequiresProficiencies>If classes have learning requirements</ClassRequiresProficiencies>
 	<AbilityRequiresProficiencies>If abilities have learning requirements</AbilityRequiresProficiencies>
-	<XPMultiplier>Experiance from ability use multiplier.</XPMultiplier>
-	<ValueXPMultiplier>{0}% of normal learn rate.</ValueXPMultiplier>
+	<XPMultiplier>Experiance from ability use multiplier: {0}% of normal learn rate.</XPMultiplier>
 	<CanFailLearn>If there is a chance to fail an attempt to learn a class or an ability when self teaching, fail chace is determined by the object used.</CanFailLearn>
 	<LLRoM_AutoLearnedClass>{0} made a breakthrough becoming {2} {1}.</LLRoM_AutoLearnedClass>
 	<LLRoM_AutoLearnClassFail>{0} failed to make a breakthrough, cause: random chance.</LLRoM_AutoLearnClassFail>
@@ -51,4 +51,6 @@
 	<StatModiferLable>Advance stat modifier behaviours.</StatModiferLable>
 	<StatModiferLableDesc>These will apply once master, and will multiply by the listed percents.</StatModiferLableDesc>
 	<ClassProLockout>If gaining a class will block learning proficiencies not normally useable by the class (detection based on Hediffs).</ClassProLockout>
+	<LLRoMNothingToLearn>Must not already have a class.</LLRoMNothingToLearn>
+	<CantLevelPower>{0} lacks the understanding needed to develop that power further.</CantLevelPower>
 </LanguageData>

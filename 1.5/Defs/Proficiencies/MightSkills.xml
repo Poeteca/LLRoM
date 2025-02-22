@@ -163,6 +163,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Ranger</li>
+					<li MayRequire="kure.arom">TM_RedMage</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -316,6 +317,7 @@
 					<li>Bladedancer</li>
 					<li>DeathKnight</li>
 					<li>TM_Monk</li>
+					<li MayRequire="kure.arom">TM_Ninja</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -367,6 +369,7 @@
 				<Relatedtraits>
 					<li>TM_Sniper</li>
 					<li>TM_Monk</li>
+					<li MayRequire="kure.arom">TM_Duskbringer</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -416,6 +419,8 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Ranger</li>
+					<li MayRequire="kure.arom">TM_ElementalGunner</li>
+					<li MayRequire="kure.arom">TM_Pridestalker</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -524,6 +529,8 @@
 				<Relatedtraits>
 					<li>Faceless</li>
 					<li>DeathKnight</li>
+					<li MayRequire="kure.arom">TM_Reaper</li>
+					<li MayRequire="kure.arom">TM_Spellthief</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -638,6 +645,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Sniper</li>
+					<li MayRequire="kure.arom">TM_Deadeye</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

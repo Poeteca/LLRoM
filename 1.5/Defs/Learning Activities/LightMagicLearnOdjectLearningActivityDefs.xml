@@ -76,6 +76,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfTheSun</li>
+						<li MayRequire="kure.arom">BookOfDuskbringer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -84,6 +85,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfTheSun</li>
+				<li MayRequire="kure.arom">BookOfDuskbringer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

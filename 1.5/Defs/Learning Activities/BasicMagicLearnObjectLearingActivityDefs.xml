@@ -207,6 +207,8 @@
 						<li>BookOfHeartOfFrost</li>
 						<li>BookOfValiant</li>
 						<li>BookOfTheSun</li>
+						<li MayRequire="kure.arom">BookOfNinja</li>
+						<li MayRequire="kure.arom">BookOfElementalGunner</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -220,6 +222,8 @@
 				<li>BookOfHeartOfFrost</li>
 				<li>BookOfValiant</li>
 				<li>BookOfTheSun</li>
+				<li MayRequire="kure.arom">BookOfNinja</li>
+				<li MayRequire="kure.arom">BookOfElementalGunner</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -430,6 +434,7 @@
 						<li>BookOfShamanism</li>
 						<li>BookOfShadow</li>
 						<li>BookOfBard</li>
+						<li MayRequire="kure.arom">BookOfDeadeye</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -445,6 +450,7 @@
 				<li>BookOfShamanism</li>
 				<li>BookOfShadow</li>
 				<li>BookOfBard</li>
+				<li MayRequire="kure.arom">BookOfDeadeye</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -509,6 +515,8 @@
 					<thingDefs>
 						<li>BookOfEnchanter</li>
 						<li>BookOfShamanism</li>
+						<li MayRequire="kure.arom">BookOfRedMage</li>
+						<li MayRequire="kure.arom">BookOfSpellthief</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -518,6 +526,8 @@
 			<thingDefs>
 				<li>BookOfEnchanter</li>
 				<li>BookOfShamanism</li>
+				<li MayRequire="kure.arom">BookOfRedMage</li>
+				<li MayRequire="kure.arom">BookOfSpellthief</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -682,6 +692,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfGolemancy</li>
+						<li MayRequire="kure.arom">BookOfPridestalker</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -690,6 +701,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfGolemancy</li>
+				<li MayRequire="kure.arom">BookOfPridestalker</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -822,6 +834,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfBard</li>
+						<li MayRequire="kure.arom">BookOfReaper</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -830,6 +843,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfBard</li>
+				<li MayRequire="kure.arom">BookOfReaper</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

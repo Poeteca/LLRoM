@@ -248,8 +248,8 @@
 			<li Class="LifeLessons.BackstoryProficiencyExtension">
 				<patchStatusOverride>False</patchStatusOverride>       
 				<templates>
-					<li>LLROM_Physical</li>
-					<li>LLROM_Melee</li>
+					<li>LLROM_Holy</li>
+					<li>LLROM_Offensive</li>
 				</templates>
 				<package>
 					<conditionalTemplates>

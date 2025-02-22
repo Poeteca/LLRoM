@@ -162,6 +162,8 @@
 					<li>HeartOfFrost</li>
 					<li>Paladin</li>
 					<li>TM_Brightmage</li>
+					<li MayRequire="kure.arom">TM_Ninja</li>
+					<li MayRequire="kure.arom">TM_ElementalGunner</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -267,6 +269,7 @@
 				<Relatedtraits>
 					<li>TM_Bard</li>
 					<li>TM_TheShadow</li>
+					<li MayRequire="kure.arom">TM_Deadeye</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -346,6 +349,8 @@
 				<Relatedtraits>
 					<li>Enchanter</li>
 					<li>TM_Shaman</li>
+					<li MayRequire="kure.arom">TM_RedMage</li>
+					<li MayRequire="kure.arom">TM_Spellthief</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -450,6 +455,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Golemancer</li>
+					<li MayRequire="kure.arom">TM_Pridestalker</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -536,6 +542,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Bard</li>
+					<li MayRequire="kure.arom">TM_Reaper</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
