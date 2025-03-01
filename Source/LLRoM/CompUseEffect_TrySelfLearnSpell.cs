@@ -153,6 +153,7 @@ namespace LLRoM
                                 }
                                 compAbilityUserMagic.InitializeSpell();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 break;
                             }
                             if ((TM_Data.RestrictedAbilities.Contains(TargetScroll) || flag) && !compAbilityUserMagic.MagicData.AllMagicPowers[i].learned)
@@ -168,6 +169,7 @@ namespace LLRoM
                                     }
                                     compAbilityUserMagic.InitializeSpell();
                                     parent.SplitOff(1).Destroy();
+                                    Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 }
                                 else
                                 {
@@ -212,6 +214,7 @@ namespace LLRoM
                             magicPower.learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Blink" && !compAbilityUserMagic.spell_Blink)
@@ -225,6 +228,7 @@ namespace LLRoM
                             }
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Teleport" && !compAbilityUserMagic.spell_Teleport)
@@ -238,6 +242,7 @@ namespace LLRoM
                             }
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Heal" && !compAbilityUserMagic.spell_Heal)
@@ -251,6 +256,7 @@ namespace LLRoM
                             }
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Heater" && !compAbilityUserMagic.spell_Heater)
@@ -259,6 +265,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Heater).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Cooler" && !compAbilityUserMagic.spell_Cooler)
@@ -267,6 +274,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Cooler).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_PowerNode" && !compAbilityUserMagic.spell_PowerNode)
@@ -275,6 +283,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_PowerNode).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Sunlight" && !compAbilityUserMagic.spell_Sunlight)
@@ -283,6 +292,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_PowerNode).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_DryGround" && !compAbilityUserMagic.spell_DryGround && usedBy.story.traits.HasTrait(TorannMagicDefOf.InnerFire))
@@ -291,6 +301,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_DryGround).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Firestorm" && !compAbilityUserMagic.spell_Firestorm && usedBy.story.traits.HasTrait(TorannMagicDefOf.InnerFire))
@@ -299,6 +310,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Firestorm).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_WetGround" && !compAbilityUserMagic.spell_WetGround && usedBy.story.traits.HasTrait(TorannMagicDefOf.HeartOfFrost))
@@ -307,6 +319,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_WetGround).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Blizzard" && !compAbilityUserMagic.spell_Blizzard && usedBy.story.traits.HasTrait(TorannMagicDefOf.HeartOfFrost))
@@ -315,6 +328,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Blizzard).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_ChargeBattery" && !compAbilityUserMagic.spell_ChargeBattery && usedBy.story.traits.HasTrait(TorannMagicDefOf.StormBorn))
@@ -323,6 +337,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_ChargeBattery).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_SmokeCloud" && !compAbilityUserMagic.spell_SmokeCloud)
@@ -331,6 +346,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_SmokeCloud).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Extinguish" && !compAbilityUserMagic.spell_Extinguish)
@@ -338,6 +354,7 @@ namespace LLRoM
                             compAbilityUserMagic.spell_Extinguish = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_EMP" && !compAbilityUserMagic.spell_EMP)
@@ -346,6 +363,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_EMP).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_SummonMinion" && !compAbilityUserMagic.spell_SummonMinion)
@@ -359,6 +377,7 @@ namespace LLRoM
                             }
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_TransferMana" && !compAbilityUserMagic.spell_TransferMana)
@@ -367,6 +386,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_TransferMana).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_SiphonMana" && !compAbilityUserMagic.spell_SiphonMana)
@@ -375,6 +395,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_SiphonMana).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_RegrowLimb" && !compAbilityUserMagic.spell_RegrowLimb && usedBy.story.traits.HasTrait(TorannMagicDefOf.Druid))
@@ -384,6 +405,7 @@ namespace LLRoM
                             MagicPower magicPower = compAbilityUserMagic.MagicData.MagicPowersD.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_RegrowLimb);
                             magicPower.learned = true;
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_EyeOfTheStorm" && !compAbilityUserMagic.spell_EyeOfTheStorm && usedBy.story.traits.HasTrait(TorannMagicDefOf.StormBorn))
@@ -393,6 +415,7 @@ namespace LLRoM
                             magicPower.learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_ManaShield" && !compAbilityUserMagic.spell_ManaShield)
@@ -401,6 +424,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_ManaShield).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_FoldReality" && !compAbilityUserMagic.spell_FoldReality && usedBy.story.traits.HasTrait(TorannMagicDefOf.Arcanist))
@@ -409,6 +433,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_FoldReality).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Resurrection" && !compAbilityUserMagic.spell_Resurrection && usedBy.story.traits.HasTrait(TorannMagicDefOf.Priest))
@@ -417,6 +442,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Resurrection).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_BattleHymn" && !compAbilityUserMagic.spell_BattleHymn && usedBy.story.traits.HasTrait(TorannMagicDefOf.TM_Bard))
@@ -425,6 +451,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_BattleHymn).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_HolyWrath" && !compAbilityUserMagic.spell_HolyWrath && usedBy.story.traits.HasTrait(TorannMagicDefOf.Paladin))
@@ -433,6 +460,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_HolyWrath).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_LichForm" && !compAbilityUserMagic.spell_LichForm && usedBy.story.traits.HasTrait(TorannMagicDefOf.Necromancer))
@@ -441,6 +469,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_LichForm).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_SummonPoppi" && !compAbilityUserMagic.spell_SummonPoppi && usedBy.story.traits.HasTrait(TorannMagicDefOf.Summoner))
@@ -449,6 +478,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_SummonPoppi).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Scorn" && !compAbilityUserMagic.spell_Scorn && usedBy.story.traits.HasTrait(TorannMagicDefOf.Succubus))
@@ -457,6 +487,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Scorn).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_PsychicShock" && !compAbilityUserMagic.spell_PsychicShock && usedBy.story.traits.HasTrait(TorannMagicDefOf.Warlock))
@@ -465,6 +496,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_PsychicShock).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Meteor" && !compAbilityUserMagic.spell_Meteor && usedBy.story.traits.HasTrait(TorannMagicDefOf.Geomancer))
@@ -473,6 +505,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Meteor).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_OrbitalStrike" && !compAbilityUserMagic.spell_OrbitalStrike && usedBy.story.traits.HasTrait(TorannMagicDefOf.Technomancer))
@@ -481,6 +514,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_OrbitalStrike).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_CauterizeWound" && !compAbilityUserMagic.spell_CauterizeWound && usedBy.story.traits.HasTrait(TorannMagicDefOf.InnerFire))
@@ -489,6 +523,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_CauterizeWound).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_FertileLands" && !compAbilityUserMagic.spell_FertileLands && usedBy.story.traits.HasTrait(TorannMagicDefOf.Druid))
@@ -497,6 +532,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_FertileLands).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_SpellMending" && !compAbilityUserMagic.spell_SpellMending)
@@ -505,6 +541,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_SpellMending).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_TechnoShield" && !compAbilityUserMagic.MagicData.MagicPowersT.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_TechnoShield).learned && usedBy.story.traits.HasTrait(TorannMagicDefOf.Technomancer))
@@ -512,6 +549,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.MagicPowersT.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_TechnoShield).learned = true;
                             ((CompAbilityUser)compAbilityUserMagic).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_TechnoShield, true, -1f);
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Sabotage" && !compAbilityUserMagic.MagicData.MagicPowersT.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_Sabotage).learned && usedBy.story.traits.HasTrait(TorannMagicDefOf.Technomancer))
@@ -519,6 +557,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.MagicPowersT.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_Sabotage).learned = true;
                             ((CompAbilityUser)compAbilityUserMagic).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_Sabotage, true, -1f);
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_Overdrive" && !compAbilityUserMagic.MagicData.MagicPowersT.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_Overdrive).learned && usedBy.story.traits.HasTrait(TorannMagicDefOf.Technomancer))
@@ -526,6 +565,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.MagicPowersT.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_Overdrive).learned = true;
                             ((CompAbilityUser)compAbilityUserMagic).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_Overdrive, true, -1f);
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll.defName == "SpellOf_BloodMoon" && !compAbilityUserMagic.spell_BloodMoon && usedBy.story.traits.HasTrait(TorannMagicDefOf.BloodMage))
@@ -534,6 +574,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_BloodMoon).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_Shapeshift && !compAbilityUserMagic.spell_Shapeshift && usedBy.story.traits.HasTrait(TorannMagicDefOf.Enchanter))
@@ -542,6 +583,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Shapeshift).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_Blur && !compAbilityUserMagic.spell_Blur)
@@ -550,6 +592,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Blur).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_BlankMind && !compAbilityUserMagic.spell_BlankMind && usedBy.story.traits.HasTrait(TorannMagicDefOf.Enchanter))
@@ -558,6 +601,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_BlankMind).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_DirtDevil && !compAbilityUserMagic.spell_DirtDevil)
@@ -566,6 +610,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_DirtDevil).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_MechaniteReprogramming && !compAbilityUserMagic.spell_MechaniteReprogramming && usedBy.story.traits.HasTrait(TorannMagicDefOf.Technomancer))
@@ -574,6 +619,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_MechaniteReprogramming).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_ArcaneBolt && !compAbilityUserMagic.spell_ArcaneBolt && ((CompAbilityUser)compAbilityUserMagic).Pawn.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
@@ -582,6 +628,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_ArcaneBolt).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_LightningTrap && !compAbilityUserMagic.spell_LightningTrap && ((CompAbilityUser)compAbilityUserMagic).Pawn.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
@@ -590,6 +637,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_LightningTrap).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_Invisibility && !compAbilityUserMagic.spell_Invisibility)
@@ -598,6 +646,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Invisibility).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_BriarPatch && !compAbilityUserMagic.spell_BriarPatch && usedBy.story.traits.HasTrait(TorannMagicDefOf.Druid))
@@ -606,6 +655,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_BriarPatch).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_Recall && !compAbilityUserMagic.spell_Recall && usedBy.story.traits.HasTrait(TorannMagicDefOf.Chronomancer))
@@ -615,6 +665,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.MagicPowersStandalone.FirstOrDefault((MagicPower x) => x.abilityDef == TorannMagicDefOf.TM_TimeMark).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_HeatShield && !compAbilityUserMagic.spell_HeatShield && usedBy.story.traits.HasTrait(TorannMagicDefOf.InnerFire))
@@ -623,6 +674,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_HeatShield).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_MageLight && !compAbilityUserMagic.spell_MageLight)
@@ -631,6 +683,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_MageLight).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_Ignite && !compAbilityUserMagic.spell_Ignite)
@@ -639,6 +692,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_Ignite).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (TargetScroll == TorannMagicDefOf.SpellOf_SnapFreeze && !compAbilityUserMagic.spell_SnapFreeze)
@@ -647,6 +701,7 @@ namespace LLRoM
                             compAbilityUserMagic.MagicData.ReturnMatchingMagicPower(TorannMagicDefOf.TM_SnapFreeze).learned = true;
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else if (tMAbilityDef2 != null)
@@ -655,6 +710,7 @@ namespace LLRoM
                             ((CompAbilityUser)compAbilityUserMagic).AddPawnAbility((AbilityUser.AbilityDef)(object)tMAbilityDef2, true, -1f);
                             compAbilityUserMagic.InitializeSpell();
                             parent.SplitOff(1).Destroy();
+                            Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap,TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                             return;
                         }
                         else

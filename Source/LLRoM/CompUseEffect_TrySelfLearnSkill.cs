@@ -150,6 +150,7 @@ namespace LLRoM
                                     compAbilityUserMight.MightData.AllMightPowers[i].learned = true;
                                     compAbilityUserMight.InitializeSkill();
                                     parent.SplitOff(1).Destroy();
+                                    Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                     continue;
                                 }
                                 if ((TM_Data.RestrictedAbilities.Contains(TargetScroll) || flag) && !compAbilityUserMight.MightData.AllMightPowers[i].learned)
@@ -160,6 +161,7 @@ namespace LLRoM
                                         compAbilityUserMight.MightData.AllMightPowers[i].learned = true;
                                         compAbilityUserMight.InitializeSkill();
                                         parent.SplitOff(1).Destroy();
+                                        Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                         continue;
                                     }
                                     Messages.Message("CannotLearnSkill".Translate(), MessageTypeDefOf.RejectInput);
@@ -200,6 +202,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_Sprint, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll.defName == "SkillOf_GearRepair" && !compAbilityUserMight.skill_GearRepair)
@@ -209,6 +212,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_GearRepair, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll.defName == "SkillOf_InnerHealing" && !compAbilityUserMight.skill_InnerHealing)
@@ -218,6 +222,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_InnerHealing, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll.defName == "SkillOf_StrongBack" && !compAbilityUserMight.skill_StrongBack)
@@ -227,6 +232,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_StrongBack, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll.defName == "SkillOf_HeavyBlow" && !compAbilityUserMight.skill_HeavyBlow)
@@ -236,6 +242,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_HeavyBlow, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll.defName == "SkillOf_ThickSkin" && !compAbilityUserMight.skill_ThickSkin)
@@ -245,6 +252,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_ThickSkin, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll.defName == "SkillOf_FightersFocus" && !compAbilityUserMight.skill_FightersFocus)
@@ -254,6 +262,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)TorannMagicDefOf.TM_FightersFocus, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll == TorannMagicDefOf.SkillOf_ThrowingKnife && !compAbilityUserMight.skill_ThrowingKnife && ((CompAbilityUser)compAbilityUserMight).Pawn.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
@@ -262,6 +271,7 @@ namespace LLRoM
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_ThrowingKnife).learned = true;
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll == TorannMagicDefOf.SkillOf_BurningFury && !compAbilityUserMight.skill_BurningFury && ((CompAbilityUser)compAbilityUserMight).Pawn.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
@@ -270,6 +280,7 @@ namespace LLRoM
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_BurningFury).learned = true;
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll == TorannMagicDefOf.SkillOf_PommelStrike && !compAbilityUserMight.skill_PommelStrike && ((CompAbilityUser)compAbilityUserMight).Pawn.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
@@ -278,6 +289,7 @@ namespace LLRoM
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_PommelStrike).learned = true;
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll == TorannMagicDefOf.SkillOf_Legion && !compAbilityUserMight.skill_Legion && !usedBy.story.traits.HasTrait(TorannMagicDefOf.Faceless) && ((CompAbilityUser)compAbilityUserMight).Pawn.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
@@ -286,6 +298,7 @@ namespace LLRoM
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_Legion).learned = true;
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (TargetScroll == TorannMagicDefOf.SkillOf_TempestStrike && !compAbilityUserMight.skill_TempestStrike && ((CompAbilityUser)compAbilityUserMight).Pawn.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
@@ -294,6 +307,7 @@ namespace LLRoM
                                 compAbilityUserMight.MightData.ReturnMatchingMightPower(TorannMagicDefOf.TM_TempestStrike).learned = true;
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else if (tMAbilityDef2 != null)
@@ -302,6 +316,7 @@ namespace LLRoM
                                 ((CompAbilityUser)compAbilityUserMight).AddPawnAbility((AbilityUser.AbilityDef)(object)tMAbilityDef2, true, -1f);
                                 compAbilityUserMight.InitializeSkill();
                                 parent.SplitOff(1).Destroy();
+                                Messages.Message("LearnedAbility".Translate(usedBy.LabelShortCap, TargetScroll.label), MessageTypeDefOf.PositiveEvent);
                                 return;
                             }
                             else
