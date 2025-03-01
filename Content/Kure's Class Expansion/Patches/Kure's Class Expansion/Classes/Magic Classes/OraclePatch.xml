@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Learning Objects Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Torn_BookOfOracle"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_LightI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BookOfOracle"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Torn_BookOfOracle"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedArcane>1</UnfinishedArcane>
+			</costList>
+			<recipeMaker>		    
+				<workAmount>2500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfOracle"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>100</RawMagicyte>
+				<UnfinishedAdvArcane>1</UnfinishedAdvArcane>
+			</costList>
+			<recipeMaker>
+				<workAmount>3500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>6</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+				<researchPrerequisite>
+					<li>TM_AdvancedScribing</li>
+				</researchPrerequisite>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<!--Trait Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Oracle"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>       
+				<templates>
+					<li>LLROM_Light</li>
+					<li>LLROM_Defensive</li>
+				</templates>
+				<package>
+					<conditionalTemplates>
+						<li>
+							<options>
+								<li>LLROM_Scribe</li>
+							</options>
+							<rolls>1</rolls>
+							<chancePerRoll>.5</chancePerRoll>
+						</li>
+					</conditionalTemplates>
+				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Oracle"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>an </Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	<!--Ability Cast Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_AstralFlames"
+											or defName="TM_BlackStar"
+											or defName="TM_HeavenlySeal"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightI</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_AstralFlames_I"
+											or defName="TM_AstralFlames_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_FireI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_AstralFlames_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightIII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
+					<li>LLRoM_FireII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlackStar_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_EmotionI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlackStar_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_OffensiveDeBuff</li>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_EmotionI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlackStar_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_OffensiveDeBuff</li>
+					<li>LLRoM_LightIII</li>
+					<li>LLRoM_EmotionII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_HeavenlySeal_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_HeavenlySeal_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_OffensiveDeBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_HeavenlySeal_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightII</li>
+					<li>LLRoM_OffensiveDeBuff</li>
+					<li>LLRoM_OffensiveLargeArea</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Horoscope"
+											or defName="TM_Divination"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Horoscope_I"
+											or defName="TM_Divination_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_Defensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Horoscope_II"
+											or defName="TM_Divination_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_ChaosI</li>
+					<li>LLRoM_Defensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Horoscope_III"
+											or defName="TM_Divination_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_ChaosII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_CelestialGuidance"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightIII</li>
+					<li>LLRoM_HealingII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

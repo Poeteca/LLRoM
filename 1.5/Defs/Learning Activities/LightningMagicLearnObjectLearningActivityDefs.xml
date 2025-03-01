@@ -107,6 +107,8 @@
 						<li>SpellOf_OrbitalStrike</li>
 						<li>SpellOf_LightningTrap</li>
 						<li>SpellOf_MechaniteReprogramming</li>
+						<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+						<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -117,6 +119,8 @@
 				<li>SpellOf_OrbitalStrike</li>
 				<li>SpellOf_LightningTrap</li>
 				<li>SpellOf_MechaniteReprogramming</li>
+				<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+				<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -130,6 +134,8 @@
 						<li>SpellOf_OrbitalStrike</li>
 						<li>SpellOf_LightningTrap</li>
 						<li>SpellOf_MechaniteReprogramming</li>
+						<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+						<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -140,6 +146,8 @@
 				<li>SpellOf_OrbitalStrike</li>
 				<li>SpellOf_LightningTrap</li>
 				<li>SpellOf_MechaniteReprogramming</li>
+				<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+				<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

@@ -69,6 +69,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Geomancer</li>
+					<li MayRequire="kure.arom">TM_Warden</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

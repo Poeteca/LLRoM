@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Learning Objects Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BookOfThunderblessed"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_Manipulation</li>
+					<li>FoundationPhysics</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfThunderblessed"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedMartial>1</UnfinishedMartial>
+			</costList>
+			<recipeMaker>		    
+				<workAmount>2500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<!--Trait Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Thunderblessed"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>       
+				<templates>
+					<li>LLROM_Mental</li>
+				</templates>
+				<package>
+					<conditionalTemplates>
+						<li>
+							<options>
+								<li>LLROM_Scribe</li>
+							</options>
+							<rolls>1</rolls>
+							<chancePerRoll>.5</chancePerRoll>
+						</li>
+					</conditionalTemplates>
+				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Thunderblessed"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Manipulation</li>
+					<li>FoundationPhysics</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a </Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	<!--Ability Cast Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Discharge"
+											or defName="TM_Levinflight"
+											or defName="TM_ThunderCall"
+											or defName="TM_Fulmination"
+											or defName="TM_ThunderAegis"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Mental_Conditioning</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Discharge_I"
+											or defName="TM_ThunderCall_I"
+											or defName="TM_Fulmination_I"
+											or defName="TM_ThunderAegis_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>FoundationPhysics</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Discharge_II"
+											or defName="TM_ThunderCall_II"
+											or defName="TM_Fulmination_II"
+											or defName="TM_ThunderAegis_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Manipulation</li>
+					<li>MaterialsPhysics</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Discharge_III"
+											or defName="TM_ThunderCall_III"
+											or defName="TM_Fulmination_III"
+											or defName="TM_ThunderAegis_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Manipulation</li>
+					<li>Electrodynamics</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Levinflight_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>FoundationPhysics</li>
+					<li>LLRoM_Physical_Conditioning</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Levinflight_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Manipulation</li>
+					<li>MaterialsPhysics</li>
+					<li>LLRoM_Physical_Conditioning</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Levinflight_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Manipulation</li>
+					<li>Electrodynamics</li>
+					<li>LLRoM_Coordination</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

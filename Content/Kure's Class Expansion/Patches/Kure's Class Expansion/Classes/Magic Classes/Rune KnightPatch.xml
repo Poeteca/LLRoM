@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Learning Objects Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Torn_BookOfRuneKnight"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+					<li>LLRoM_ScribI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BookOfRuneKnight"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+					<li>LLRoM_ScribII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Torn_BookOfRuneKnight"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedArcane>1</UnfinishedArcane>
+			</costList>
+			<recipeMaker>		    
+				<workAmount>2500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfRuneKnight"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>100</RawMagicyte>
+				<UnfinishedAdvArcane>1</UnfinishedAdvArcane>
+			</costList>
+			<recipeMaker>
+				<workAmount>3500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>6</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+				<researchPrerequisite>
+					<li>TM_AdvancedScribing</li>
+				</researchPrerequisite>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<!--Trait Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_RuneKnight"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>       
+				<templates>
+					<li>LLROM_Binding</li>
+					<li>LLROM_Raw</li>
+				</templates>
+				<package>
+					<conditionalTemplates>
+						<li>
+							<options>
+								<li>LLROM_Scribe</li>
+							</options>
+							<rolls>1</rolls>
+							<chancePerRoll>.5</chancePerRoll>
+						</li>
+					</conditionalTemplates>
+				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_RuneKnight"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_BindingI</li>
+					<li>LLRoM_ScribII</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a </Prefix>
+				<Magic>true</Magic>
+			</li>
+		</value>
+	</Operation>
+	<!--Ability Cast Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_CreateRune"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_BindingI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_CreateRune_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_BindingI</li>
+					<li>LLRoM_ScribI</li>
+					<li>LLRoM_RawI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_CreateRune_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_BindingII</li>
+					<li>LLRoM_ScribII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_CreateRune_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_BindingII</li>
+					<li>LLRoM_ScribIII</li>
+					<li>LLRoM_RawII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Blinkstep"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Summon</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Blinkstep_I"
+											or defName="TM_Blinkstep_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_TeleportationI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Blinkstep_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_TeleportationII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ChainsOfLight"
+											or defName="TM_ChainsOfLight_I"
+											or defName="TM_Drain"
+											or defName="TM_Drain_I"
+											or defName="TM_OrbOfLight"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ChainsOfLight_II"
+											or defName="TM_ChainsOfLight_III"
+											or defName="TM_Drain_II"
+											or defName="TM_Drain_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_OffensiveDeBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Bestow"
+											or defName="TM_Bestow_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_Summon</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Bestow_II"
+											or defName="TM_Bestow_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_SummonII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlessingOfFury"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlessingOfFury_I"
+											or defName="TM_BlessingOfCourage"
+											or defName="TM_BlessingOfCourage_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_Defensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlessingOfFury_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_Defensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlessingOfFury_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlessingOfLight"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_HealingI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BlessingOfCourage_II"
+											or defName="TM_BlessingOfCourage_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_OrbOfLight_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_Offensive</li>
+					<li>LLRoM_LightI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_OrbOfLight_II"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
+					<li>LLRoM_LightI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_OrbOfLight_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_OffensiveLargeArea</li>
+					<li>LLRoM_LightII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

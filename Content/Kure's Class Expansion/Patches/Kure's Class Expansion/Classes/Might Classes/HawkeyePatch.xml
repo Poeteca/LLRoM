@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Learning Objects Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BookOfHawkeye"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_Ranged</li>
+					<li>LLRoM_Coordination</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfHawkeye"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedMartial>1</UnfinishedMartial>
+			</costList>
+			<recipeMaker>		    
+				<workAmount>2500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<!--Trait Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Hawkeye"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>       
+				<templates>
+					<li>LLROM_Ranged</li>
+					<li>LLROM_Physical</li>
+				</templates>
+				<package>
+					<conditionalTemplates>
+						<li>
+							<options>
+								<li>LLROM_Scribe</li>
+							</options>
+							<rolls>1</rolls>
+							<chancePerRoll>.5</chancePerRoll>
+						</li>
+					</conditionalTemplates>
+				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Hawkeye"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Ranged</li>
+					<li>LLRoM_Coordination</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a </Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	<!--Ability Cast Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_PoisonArrow"
+											or defName="TM_FireArrow"
+											or defName="TM_ArcingArrow"
+											or defName="TM_ChokingGas"
+											or defName="TM_NeedlingShot"
+											or defName="TM_CalledShot"
+											or defName="TM_Multishot"
+											or defName="TM_Barrage"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>LLRoM_Physical_Conditioning</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_PoisonArrow_I"
+											or defName="TM_FireArrow_I"
+											or defName="TM_ArcingArrow_I"
+											or defName="TM_ChokingGas_I"
+											or defName="TM_NeedlingShot_I"
+											or defName="TM_CalledShot_I"
+											or defName="TM_Multishot_I"
+											or defName="TM_Barrage_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Mental_Conditioning</li>
+					<li>LLRoM_Physical_Conditioning</li>
+					<li>LLRoM_Physical_Conditioning</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_PoisonArrow_II"
+											or defName="TM_PoisonArrow_III"
+											or defName="TM_FireArrow_II"
+											or defName="TM_FireArrow_III"
+											or defName="TM_ArcingArrow_II"
+											or defName="TM_ArcingArrow_III"
+											or defName="TM_NeedlingShot_II"
+											or defName="TM_NeedlingShot_III"
+											or defName="TM_CalledShot_II"
+											or defName="TM_CalledShot_III"
+											or defName="TM_Multishot_II"
+											or defName="TM_Multishot_III"
+											or defName="TM_Barrage_II"
+											or defName="TM_Barrage_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Ranged</li>
+					<li>LLRoM_Coordination</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ChokingGas_II"
+											or defName="TM_ChokingGas_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Ranged</li>
+					<li>LLRoM_Coordination</li>
+					<li>LLRoM_Tactics</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

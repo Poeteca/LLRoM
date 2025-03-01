@@ -21,6 +21,5 @@ namespace LLRoM
         public bool Magic = false;
         public bool Might = false;
         public int failChance = 0;
-        public int degreeData = 0;
     }
 }

@@ -12,6 +12,8 @@
 					<thingDefs>
 						<li>Torn_BookOfTheSun</li>
 						<li>BookOfTheSun</li>
+						<li MayRequire="kure.arom">Torn_BookOfOracle</li>
+						<li MayRequire="kure.arom">BookOfOracle</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -21,6 +23,8 @@
 			<thingDefs>
 				<li>Torn_BookOfTheSun</li>
 				<li>BookOfTheSun</li>
+				<li MayRequire="kure.arom">Torn_BookOfOracle</li>
+				<li MayRequire="kure.arom">BookOfOracle</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -77,6 +81,7 @@
 					<thingDefs>
 						<li>BookOfTheSun</li>
 						<li MayRequire="kure.arom">BookOfDuskbringer</li>
+						<li MayRequire="kure.arom">BookOfOracle</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -86,6 +91,7 @@
 			<thingDefs>
 				<li>BookOfTheSun</li>
 				<li MayRequire="kure.arom">BookOfDuskbringer</li>
+				<li MayRequire="kure.arom">BookOfOracle</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -96,6 +102,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_PlanetaryForce</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -103,6 +110,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_PlanetaryForce</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -113,6 +121,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_PlanetaryForce</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -120,6 +129,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_PlanetaryForce</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -150,6 +160,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_SpiritOfLight</li>
+						<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -158,6 +169,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_SpiritOfLight</li>
+				<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -169,6 +181,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_SpiritOfLight</li>
+						<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -177,6 +190,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_SpiritOfLight</li>
+				<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

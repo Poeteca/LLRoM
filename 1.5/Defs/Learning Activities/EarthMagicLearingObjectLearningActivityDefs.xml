@@ -12,6 +12,8 @@
 					<thingDefs>
 						<li>Torn_BookOfGolemancy</li>
 						<li>BookOfGolemancy</li>
+						<li MayRequire="kure.arom">BookOfArbormancer</li>
+						<li MayRequire="kure.arom">Torn_BookOfArbormancer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -21,6 +23,8 @@
 			<thingDefs>
 				<li>Torn_BookOfGolemancy</li>
 				<li>BookOfGolemancy</li>
+				<li MayRequire="kure.arom">BookOfArbormancer</li>
+				<li MayRequire="kure.arom">Torn_BookOfArbormancer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -34,6 +38,7 @@
 						<li>SpellOf_DryGround</li>
 						<li>SpellOf_WetGround</li>
 						<li>SpellOf_DirtDevil</li>
+						<li MayRequire="kure.arom">SpellOf_Eruption</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -44,6 +49,7 @@
 				<li>SpellOf_DryGround</li>
 				<li>SpellOf_WetGround</li>
 				<li>SpellOf_DirtDevil</li>
+				<li MayRequire="kure.arom">SpellOf_Eruption</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -57,6 +63,7 @@
 						<li>SpellOf_DryGround</li>
 						<li>SpellOf_WetGround</li>
 						<li>SpellOf_DirtDevil</li>
+						<li MayRequire="kure.arom">SpellOf_Eruption</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -67,6 +74,7 @@
 				<li>SpellOf_DryGround</li>
 				<li>SpellOf_WetGround</li>
 				<li>SpellOf_DirtDevil</li>
+				<li MayRequire="kure.arom">SpellOf_Eruption</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -80,6 +88,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfGolemancy</li>
+						<li MayRequire="kure.arom">BookOfWarden</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -88,6 +97,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfGolemancy</li>
+				<li MayRequire="kure.arom">BookOfWarden</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -99,6 +109,8 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_FertileLands</li>
+						<li MayRequire="kure.arom">SpellOf_Doton</li>
+						<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -107,6 +119,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_FertileLands</li>
+				<li MayRequire="kure.arom">SpellOf_Doton</li>
+				<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -118,6 +132,8 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_FertileLands</li>
+						<li MayRequire="kure.arom">SpellOf_Doton</li>
+						<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -126,6 +142,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_FertileLands</li>
+				<li MayRequire="kure.arom">SpellOf_Doton</li>
+				<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

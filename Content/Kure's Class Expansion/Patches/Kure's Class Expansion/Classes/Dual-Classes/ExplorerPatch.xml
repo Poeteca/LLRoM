@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Learning Objects Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BookOfExplorer"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Magic_Insight</li>
+					<li>LLRoM_ScribI</li>
+					<li>Physical_Insight</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfExplorer"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedAdvArcane>1</UnfinishedAdvArcane>
+			</costList>
+			<recipeMaker>
+				<workAmount>3500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>6</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+				<researchPrerequisite>
+					<li>TM_AdvancedScribing</li>
+				</researchPrerequisite>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<!--Trait Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Explorer"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>       
+				<templates>
+					<li>Magic_Base</li>
+					<li>Might_Base</li>
+				</templates>
+				<package>
+					<conditionalTemplates>
+						<li>
+							<options>
+								<li>LLROM_Scribe</li>
+							</options>
+							<rolls>1</rolls>
+							<chancePerRoll>.5</chancePerRoll>
+						</li>
+					</conditionalTemplates>
+				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Explorer"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>Magic_Insight</li>
+					<li>LLRoM_ScribI</li>
+					<li>Physical_Insight</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>TM_Gifted</li>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>an </Prefix>
+				<Magic>true</Magic>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+</Patch>

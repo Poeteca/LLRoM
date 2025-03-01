@@ -12,6 +12,8 @@
 					<thingDefs>
 						<li>Torn_BookOfHeartOfFrost</li>
 						<li>BookOfHeartOfFrost</li>
+						<li MayRequire="kure.arom">Torn_BookOfBlackMage</li>
+						<li MayRequire="kure.arom">BookOfBlackMage</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -21,6 +23,8 @@
 			<thingDefs>
 				<li>Torn_BookOfHeartOfFrost</li>
 				<li>BookOfHeartOfFrost</li>
+				<li MayRequire="kure.arom">Torn_BookOfBlackMage</li>
+				<li MayRequire="kure.arom">BookOfBlackMage</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -88,6 +92,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfHeartOfFrost</li>
+						<li MayRequire="kure.arom">BookOfBlackMage</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -96,6 +101,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfHeartOfFrost</li>
+				<li MayRequire="kure.arom">BookOfBlackMage</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -106,6 +112,8 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_FrostArmor</li>
+						<li MayRequire="kure.arom">SpellOf_HyoshoRanryu</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -113,6 +121,8 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_FrostArmor</li>
+				<li MayRequire="kure.arom">SpellOf_HyoshoRanryu</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -123,6 +133,8 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_FrostArmor</li>
+						<li MayRequire="kure.arom">SpellOf_HyoshoRanryu</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -130,6 +142,8 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_FrostArmor</li>
+				<li MayRequire="kure.arom">SpellOf_HyoshoRanryu</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

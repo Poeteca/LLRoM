@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Learning Objects Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BookOfMystic"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_Manipulation</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfMystic"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedMartial>1</UnfinishedMartial>
+			</costList>
+			<recipeMaker>		    
+				<workAmount>2500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<!--Trait Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Mystic"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>       
+				<templates>
+					<li>LLROM_Mental</li>
+				</templates>
+				<package>
+					<conditionalTemplates>
+						<li>
+							<options>
+								<li>LLROM_Scribe</li>
+							</options>
+							<rolls>1</rolls>
+							<chancePerRoll>.5</chancePerRoll>
+						</li>
+					</conditionalTemplates>
+				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Mystic"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_Manipulation</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a </Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	<!--Ability Cast Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Ohajiki"
+											or defName="TM_Ohajiki_I"
+											or defName="TM_Shizukesa"
+											or defName="TM_Shizukesa_I"
+											or defName="TM_Exorcise"
+											or defName="TM_Exorcise_I"
+											or defName="TM_SmellingSalts"
+											or defName="TM_SmellingSalts_I"
+											or defName="TM_WardAgainstEvil"
+											or defName="TM_WardAgainstEvil_I"
+											or defName="TM_SealOfPurging"
+											or defName="TM_SealOfPurging_I"
+											or defName="TM_ExplosiveSeal"
+											or defName="TM_ExplosiveSeal_I"
+											or defName="TM_Absolution"
+											or defName="TM_Absolution_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Mental_Conditioning</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Ohajiki_II"
+											or defName="TM_Ohajiki_III"
+											or defName="TM_ExplosiveSeal_II"
+											or defName="TM_ExplosiveSeal_III"
+											or defName="TM_SealOfPurging_II"
+											or defName="TM_SealOfPurging_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Ranged</li>
+					<li>LLRoM_Manipulation</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Shizukesa_II"
+											or defName="TM_Shizukesa_III"
+											or defName="TM_Exorcise_II"
+											or defName="TM_Exorcise_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Manipulation</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_SmellingSalts_II"
+											or defName="TM_SmellingSalts_III"
+											or defName="TM_WardAgainstEvil_II"
+											or defName="TM_WardAgainstEvil_III"
+											or defName="TM_Absolution_II"
+											or defName="TM_Absolution_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Manipulation</li>
+					<li>LLRoM_Tactics</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

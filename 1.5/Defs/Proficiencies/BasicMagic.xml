@@ -25,6 +25,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Gifted</li>
+					<li MayRequire="kure.arom">TM_Explorer</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -62,6 +63,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Paladin</li>
+					<li MayRequire="kure.arom">TM_Cleric</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -95,6 +97,16 @@
 			<li>LLRoM_ExamineScroll_LLRoM_DefensiveBuff</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li MayRequire="kure.arom">TM_Guardian</li>
+					<li MayRequire="kure.arom">TM_Troubadour</li>
+					<li MayRequire="kure.arom">TM_Gambler</li>
+					<li MayRequire="kure.arom">TM_Oracle</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -125,6 +137,13 @@
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_DefensiveBarrier</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li MayRequire="kure.arom">TM_Scholar</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -164,6 +183,7 @@
 					<li>TM_Brightmage</li>
 					<li MayRequire="kure.arom">TM_Ninja</li>
 					<li MayRequire="kure.arom">TM_ElementalGunner</li>
+					<li MayRequire="kure.arom">TM_BlackMage</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -234,6 +254,14 @@
 			<li>LLRoM_ExamineScroll_LLRoM_OffensiveDeBuff</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li MayRequire="kure.arom">TM_Harbinger</li>
+					<li MayRequire="kure.arom">TM_WindMage</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
@@ -270,6 +298,7 @@
 					<li>TM_Bard</li>
 					<li>TM_TheShadow</li>
 					<li MayRequire="kure.arom">TM_Deadeye</li>
+					<li MayRequire="kure.arom">TM_Keeper</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -309,6 +338,7 @@
 					<li>Summoner</li>
 					<li>Succubus</li>
 					<li>Warlock</li>
+					<li MayRequire="kure.arom">TM_RuneKnight</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -543,6 +573,7 @@
 				<Relatedtraits>
 					<li>TM_Bard</li>
 					<li MayRequire="kure.arom">TM_Reaper</li>
+					<li MayRequire="kure.arom">TM_Troubadour</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -649,6 +680,8 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Chronomancer</li>
+					<li MayRequire="kure.arom">TM_Gambler</li>
+					<li MayRequire="kure.arom">TM_ChromaMage</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

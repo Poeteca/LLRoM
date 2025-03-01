@@ -112,4 +112,36 @@
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>81</priority>
 	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_Physical</defName>
+		<label>Physicality Training</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>82</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_Mential</defName>
+		<label>Mential Training</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>83</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_Equipment</defName>
+		<label>Equipment Training</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>84</priority>
+	</LifeLessons.ProficiencyCategoryDef>
+	
+	<LifeLessons.ProficiencyCategoryDef>
+		<defName>ProficiencyCategory_Control</defName>
+		<label>Meditation Training</label>
+		<description>Temp</description>
+		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
+		<priority>85</priority>
+	</LifeLessons.ProficiencyCategoryDef>
 </Defs>

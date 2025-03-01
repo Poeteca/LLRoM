@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Learning Objects Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BookOfScrapper"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_CQC</li>
+					<li>LLRoM_Strength</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<!--Learning object recipe patch-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BookOfScrapper"]</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>50</RawMagicyte>
+				<UnfinishedMartial>1</UnfinishedMartial>
+			</costList>
+			<recipeMaker>		    
+				<workAmount>2500</workAmount>
+				<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+				<workSkill>Intellectual</workSkill>
+				<recipeUsers>
+					<li>TableMagicPrinter</li>
+				</recipeUsers>
+				<effectWorking>Smelt</effectWorking>
+				<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+					<Intellectual>8</Intellectual>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+	<!--Trait Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Scrapper"]</xpath>
+		<value>
+			<li Class="LifeLessons.BackstoryProficiencyExtension">
+				<patchStatusOverride>False</patchStatusOverride>       
+				<templates>
+					<li>LLROM_Melee</li>
+					<li>LLROM_Physical</li>
+				</templates>
+				<package>
+					<conditionalTemplates>
+						<li>
+							<options>
+								<li>LLROM_Scribe</li>
+							</options>
+							<rolls>1</rolls>
+							<chancePerRoll>.5</chancePerRoll>
+						</li>
+					</conditionalTemplates>
+				</package>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TraitDef[defName="TM_Scrapper"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<RequiredProficiencies>
+					<li>LLRoM_CQC</li>
+					<li>LLRoM_Strength</li>
+				</RequiredProficiencies>
+				<RequiredTrait>
+					<li>PhysicalProdigy</li>
+				</RequiredTrait>
+				<appliedHediff>LLRoM_Drained</appliedHediff>
+				<Prefix>a </Prefix>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	<!--Ability Cast Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BrawlingBlock"
+											or defName="TM_Jab"
+											or defName="TM_LeftHook"
+											or defName="TM_Uppercut"
+											or defName="TM_BodySlam"
+											or defName="TM_Headbutt"
+											or defName="TM_Haymaker"
+											or defName="TM_CrushingBlow"
+											or defName="TM_RockThrow"
+											or defName="TM_SuckerPunch"
+											or defName="TM_Takedown"
+											or defName="TM_FalkenPunch"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Physical_Conditioning</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BrawlingBlock_I"
+											or defName="TM_Jab_I"
+											or defName="TM_LeftHook_I"
+											or defName="TM_Uppercut_I"
+											or defName="TM_BodySlam_I"
+											or defName="TM_Headbutt_I"
+											or defName="TM_Haymaker_I"
+											or defName="TM_CrushingBlow_I"
+											or defName="TM_RockThrow_I"
+											or defName="TM_SuckerPunch_I"
+											or defName="TM_Takedown_I"
+											or defName="TM_FalkenPunch_I"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_CQC</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BrawlingBlock_II"
+											or defName="TM_BodySlam_II"
+											or defName="TM_BodySlam_III"
+											or defName="TM_Headbutt_II"
+											or defName="TM_Headbutt_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_CQC</li>
+					<li>LLRoM_Endurance</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BrawlingBlock_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_Defensive_Fighting</li>
+					<li>LLRoM_Endurance</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Jab_II"
+											or defName="TM_Jab_III"
+											or defName="TM_Uppercut_II"
+											or defName="TM_Uppercut_III"
+											or defName="TM_RockThrow_II"
+											or defName="TM_RockThrow_III"
+											or defName="TM_SuckerPunch_II"
+											or defName="TM_SuckerPunch_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_CQC</li>
+					<li>LLRoM_Coordination</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_LeftHook_II"
+											or defName="TM_LeftHook_III"
+											or defName="TM_Haymaker_II"
+											or defName="TM_Haymaker_III"
+											or defName="TM_CrushingBlow_II"
+											or defName="TM_CrushingBlow_III"
+											or defName="TM_Takedown_II"
+											or defName="TM_Takedown_III"
+											or defName="TM_FalkenPunch_II"
+											or defName="TM_FalkenPunch_III"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_CQC</li>
+					<li>LLRoM_Strength</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

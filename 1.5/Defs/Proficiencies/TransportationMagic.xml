@@ -75,6 +75,9 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Summoner</li>
+					<li MayRequire="kure.arom">TM_Keeper</li>
+					<li MayRequire="kure.arom">TM_Scholar</li>
+					<li MayRequire="kure.arom">TM_Architect</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

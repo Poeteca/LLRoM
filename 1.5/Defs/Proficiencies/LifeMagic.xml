@@ -70,6 +70,7 @@
 				<Relatedtraits>
 					<li>Necromancer</li>
 					<li>BloodMage</li>
+					<li MayRequire="kure.arom">TM_Shadowbringer</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -128,6 +129,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Priest</li>
+					<li MayRequire="kure.arom">TM_Cleric</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -183,6 +185,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Druid</li>
+					<li MayRequire="kure.arom">TM_Arbormancer</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

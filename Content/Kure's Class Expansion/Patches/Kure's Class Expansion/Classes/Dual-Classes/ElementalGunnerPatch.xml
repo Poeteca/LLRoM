@@ -78,10 +78,9 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>an</Prefix>
+				<Prefix>an </Prefix>
 				<Magic>true</Magic>
 				<Might>true</Might>
-				<degreeData>4</degreeData>
 			</li>
 		</value>
 	</Operation>

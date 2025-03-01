@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Impromptu-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_Impromptu"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EmotionII</li>
+					<li>LLRoM_ChaosI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Impromptu"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Impromptu"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_EmotionII</li>
+					<li>LLRoM_ChaosI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Chromatic Flash-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_ChromaticFlash"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ChaosI</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ChromaticFlash"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>22</RawMagicyte>
+				<DevilstrandCloth>10</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ChromaticFlash"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_ChaosI</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Warden's Paean-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_WardensPaean"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EmotionII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_WardensPaean"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_WardensPaean"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_EmotionII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Frost Armor-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_FrostArmor"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_IceII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_FrostArmor"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>122</RawMagicyte>
+				<DevilstrandCloth>30</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_FrostArmor"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_IceII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Manaward-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_Manaward"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Manaward"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>22</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Manaward"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBarrier</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Overcharge-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_Overcharge"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_LightningII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Overcharge"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>242</RawMagicyte>
+				<DevilstrandCloth>70</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Overcharge"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_LightningII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Reflect-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_Reflect"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Reflect"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>62</RawMagicyte>
+				<DevilstrandCloth>30</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Reflect"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Tailwind-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_TailwindC"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_WindI</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_TailwindC"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_TailwindC"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_WindI</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Call of Darkness-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_CallOfDarkness"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroII</li>
+					<li>LLRoM_EmotionI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_CallOfDarkness"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>22</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_CallOfDarkness"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_NecroII</li>
+					<li>LLRoM_EmotionI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Retribution-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_RetributionC"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_DefensiveBarrier</li>
+					<li>LLRoM_HolyII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_RetributionC"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_RetributionC"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_DefensiveBarrier</li>
+					<li>LLRoM_HolyII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Magnetic Aura-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_MagneticAura"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_DefensiveBarrier</li>
+					<li>LLRoM_LightningII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_MagneticAura"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_MagneticAura"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_DefensiveBarrier</li>
+					<li>LLRoM_LightningII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Dark Mind-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_DarkMind"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_DefensiveBarrier</li>
+					<li>LLRoM_NecroI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_DarkMind"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>22</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_DarkMind"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_DefensiveBarrier</li>
+					<li>LLRoM_NecroI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Incinerate-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_Incinerate"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Incinerate"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>62</RawMagicyte>
+				<DevilstrandCloth>10</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Incinerate"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_FireII</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Eldritch Barrage-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_EldritchBarrage"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_EldritchBarrage"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>62</RawMagicyte>
+				<DevilstrandCloth>30</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_EldritchBarrage"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Despair-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_Despair"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Despair"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Despair"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Force Missile-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_ForceMissile"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ForceMissile"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ForceMissile"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_Offensive</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Bramble Patch-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_BramblePatch"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_OffensiveDeBuff</li>
+					<li>LLRoM_PlantI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BramblePatch"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<DevilstrandCloth>70</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_BramblePatch"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_OffensiveDeBuff</li>
+					<li>LLRoM_PlantI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Fey Blessing-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_FeyBlessing"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_HealingI</li>
+					<li>LLRoM_Summon</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_FeyBlessing"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>22</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_FeyBlessing"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_HealingI</li>
+					<li>LLRoM_Summon</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Destiny-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_Destiny"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ChaosI</li>
+					<li>LLRoM_TeleportationI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Destiny"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>22</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_Destiny"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_ChaosI</li>
+					<li>LLRoM_TeleportationI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Clear Mind-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_ClearMindC"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EmotionI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ClearMindC"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_ClearMindC"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_EmotionI</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Flash Heal-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_FlashHeal"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_HealingII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_FlashHeal"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>42</RawMagicyte>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_FlashHeal"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_HealingII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+	<!--Elemental Creation-->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SpellOf_AspectChanneling"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_SummonII</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_AspectChanneling"]/costList</xpath>
+		<value>
+			<costList>
+				<RawMagicyte>122</RawMagicyte>
+				<DevilstrandCloth>35</DevilstrandCloth>
+				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.TMAbilityDef[defName="TM_AspectChanneling"]</xpath>
+		<value>
+			<li Class="LLRoM.AbilityXPGainExtension">
+				<Proficiencies>
+					<li>LLRoM_SummonII</li>
+				</Proficiencies>
+				<experienceType>Practical</experienceType>
+				<LearnRate>1</LearnRate>
+			</li>
+		</value>
+	</Operation>
+</Patch>

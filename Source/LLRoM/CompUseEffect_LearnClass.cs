@@ -30,7 +30,6 @@ namespace LLRoM
                 {
                     if (proextension.Relatedtraits.Count == 0)
                     {
-                        Log.Error("Config error: " + proficiencyDef.defName + " has mod extension LLRoM.CompUseEffect_LearnClass, but is missing related traits.");
                         continue;
                     }
                     foreach (TraitDef trait in proextension.Relatedtraits)
@@ -65,12 +64,11 @@ namespace LLRoM
                                 else
                                 {
                                     bool check = false;
-                                    bool canGain = true;
                                     if (traitextension.Magic && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning)
                                     {
                                         check = true;
                                     }
-                                    if  (traitextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
+                                    if (traitextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
                                     {
                                         check = true;
                                     }
@@ -78,27 +76,7 @@ namespace LLRoM
                                     {
                                         check = true;
                                     }
-                                    if (check)
-                                    {
-                                        foreach(ProficiencyDef p in traitextension.RequiredProficiencies)
-                                        {
-                                            if (!completedProficiencies.Contains(p))
-                                            {
-                                                canGain = false;
-                                            }
-                                        }
-                                    }
-                                    else
-                                    {
-                                        foreach (ProficiencyDef p in traitextension.RequiredProficiencies)
-                                        {
-                                            if (!learnableProficiencies.Contains(p))
-                                            {
-                                                canGain = false;
-                                            }
-                                        }
-                                    }
-                                    if (!canGain)
+                                    if (!Util.Qualification(usedBy, traitextension.RequiredProficiencies, check).Allowed(check))
                                     {
                                         addTrait = false;
                                     }
@@ -182,7 +160,17 @@ namespace LLRoM
             {
                 TraitDef Class = possibleclasses.RandomElement();
                 ClassAutoLearnExtension Classextension = Class.GetModExtension<ClassAutoLearnExtension>();
-                string classname = Class.DataAtDegree(Classextension.degreeData).label;
+                string classname = null;
+                foreach (TraitDegreeData data in Class.degreeDatas)
+                {
+                    classname = data.label;
+                    break;
+                }
+                if (classname == null)
+                {
+                    Log.Warning("Could not find Class name");
+                    classname = "";
+                }
                 int chance = 100;
                 int compare = 1;
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
@@ -205,14 +193,6 @@ namespace LLRoM
                                 Removerequirements(T, usedBy.story.traits.allTraits);
                             }
                         }
-                    }
-                    if (Classextension.Magic && !Classextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().UnlearnProOnClassGain && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
-                    {
-                        usedBy.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Physical_Insight, true);
-                    }
-                    if (!Classextension.Magic && Classextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().UnlearnProOnClassGain && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
-                    {
-                        usedBy.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Magic_Insight, true);
                     }
                     if (Classextension.RequiredTrait == null && usedBy.story.traits.allTraits.Count > 7)
                     {

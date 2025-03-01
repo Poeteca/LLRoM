@@ -184,7 +184,7 @@
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
 		<researchPrerequisite>
-			<li>TM_AdvancedScribing</li>
+			<li>TM_MagicScribing</li>
 		</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -352,7 +352,7 @@
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
 		<researchPrerequisite>
-			<li>TM_AdvancedScribing</li>
+			<li>TM_MagicScribing</li>
 		</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -408,7 +408,7 @@
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
 		<researchPrerequisite>
-			<li>TM_AdvancedScribing</li>
+			<li>TM_MagicScribing</li>
 		</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -442,6 +442,343 @@
 				<requirements>
 					<li>LLRoM_RawII</li>
 					<li>LLRoM_Manipulation</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_BookOfGuardian_Alt</defName>
+		<label>make Arcane Tome: Guardian</label>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>TableMagicPrinter</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>TM_AdvancedScribing</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawMagicyte</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnfinishedMartial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawMagicyte</li>
+				<li>UnfinishedMartial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BookOfGuardian>1</BookOfGuardian>
+		</products>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_DefensiveBuff</li>
+					<li>LLRoM_CQC</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Torn_BookOfTroubadour_Alt</defName>
+		<label>make Torn Script: Troubadour</label>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>TableMagicPrinter</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>TM_MagicScribing</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawMagicyte</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnfinishedMartial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawMagicyte</li>
+				<li>UnfinishedMartial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Torn_BookOfTroubadour>1</Torn_BookOfTroubadour>
+		</products>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EmotionI</li>
+					<li>LLRoM_Defensive</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_BookOfGambler_Alt</defName>
+		<label>make Box of Dice: Gambler</label>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>TableMagicPrinter</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>TM_MagicScribing</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawMagicyte</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnfinishedArcane</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawMagicyte</li>
+				<li>UnfinishedArcane</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BookOfGambler>1</BookOfGambler>
+		</products>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_DefensiveBuff</li>
+					<li>LLRoM_ChaosI</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_BookOfShadowbringer_Alt</defName>
+		<label>make Arcane Tome: Shadowbringer</label>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>TableMagicPrinter</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>TM_AdvancedScribing</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawMagicyte</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnfinishedMartial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawMagicyte</li>
+				<li>UnfinishedMartial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BookOfShadowbringer>1</BookOfShadowbringer>
+		</products>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroI</li>
+					<li>LLRoM_CQC</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_BookOfWarden_Alt</defName>
+		<label>make Arcane Tome: Warden</label>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>TableMagicPrinter</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>TM_AdvancedScribing</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawMagicyte</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnfinishedMartial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawMagicyte</li>
+				<li>UnfinishedMartial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BookOfWarden>1</BookOfWarden>
+		</products>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EarthII</li>
+					<li>LLRoM_CQC</li>
+				</requirements>
+				<hardRequirement>True</hardRequirement>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_BookOfExplorer_Alt</defName>
+		<label>make Tome of Insight: Explorer</label>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>TableMagicPrinter</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>TM_AdvancedScribing</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawMagicyte</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnfinishedMartial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawMagicyte</li>
+				<li>UnfinishedMartial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BookOfExplorer>1</BookOfExplorer>
+		</products>
+		<modExtensions>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>Magic_Insight</li>
+					<li>LLRoM_ScribI</li>
+					<li>Physical_Insight</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
 			</li>

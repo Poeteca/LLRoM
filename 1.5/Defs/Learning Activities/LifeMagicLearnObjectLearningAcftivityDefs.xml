@@ -18,6 +18,8 @@
 						<li>Torn_BookOfPriest</li>
 						<li>BookOfHemomancy</li>
 						<li>Torn_BookOfHemomancy</li>
+						<li MayRequire="kure.arom">BookOfArbormancer</li>
+						<li MayRequire="kure.arom">Torn_BookOfArbormancer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -33,6 +35,8 @@
 				<li>Torn_BookOfPriest</li>
 				<li>BookOfHemomancy</li>
 				<li>Torn_BookOfHemomancy</li>
+				<li MayRequire="kure.arom">BookOfArbormancer</li>
+				<li MayRequire="kure.arom">Torn_BookOfArbormancer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -115,6 +119,9 @@
 						<li>SpellOf_Resurrection</li>
 						<li>SpellOf_LichForm</li>
 						<li>SpellOf_RegrowLimb</li>
+						<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
+						<li MayRequire="kure.arom">SpellOf_GuidingLight</li>
+						<li MayRequire="kure.arom">SpellOf_SacrificialPact</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -125,6 +132,9 @@
 				<li>SpellOf_Resurrection</li>
 				<li>SpellOf_LichForm</li>
 				<li>SpellOf_RegrowLimb</li>
+				<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
+				<li MayRequire="kure.arom">SpellOf_GuidingLight</li>
+				<li MayRequire="kure.arom">SpellOf_SacrificialPact</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -138,6 +148,9 @@
 						<li>SpellOf_Resurrection</li>
 						<li>SpellOf_LichForm</li>
 						<li>SpellOf_RegrowLimb</li>
+						<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
+						<li MayRequire="kure.arom">SpellOf_GuidingLight</li>
+						<li MayRequire="kure.arom">SpellOf_SacrificialPact</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -148,6 +161,9 @@
 				<li>SpellOf_Resurrection</li>
 				<li>SpellOf_LichForm</li>
 				<li>SpellOf_RegrowLimb</li>
+				<li MayRequire="kure.arom">SpellOf_GrandExpanse</li>
+				<li MayRequire="kure.arom">SpellOf_GuidingLight</li>
+				<li MayRequire="kure.arom">SpellOf_SacrificialPact</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -161,6 +177,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfPriest</li>
+						<li MayRequire="kure.arom">BookOfCleric</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -169,6 +186,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfPriest</li>
+				<li MayRequire="kure.arom">BookOfCleric</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -180,6 +198,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_Heal</li>
+						<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -188,6 +207,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_Heal</li>
+				<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -199,6 +219,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_Heal</li>
+						<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -207,6 +228,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_Heal</li>
+				<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -236,6 +258,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_FlashHeal</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -243,6 +266,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_FlashHeal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -253,6 +277,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_FlashHeal</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -260,6 +285,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_FlashHeal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -274,6 +300,7 @@
 					<thingDefs>
 						<li>BookOfHemomancy</li>
 						<li>BookOfNecromancer</li>
+						<li MayRequire="kure.arom">BookOfShadowbringer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -283,6 +310,7 @@
 			<thingDefs>
 				<li>BookOfHemomancy</li>
 				<li>BookOfNecromancer</li>
+				<li MayRequire="kure.arom">BookOfShadowbringer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -293,6 +321,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_DarkMind</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -300,6 +329,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_DarkMind</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -310,6 +340,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_DarkMind</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -317,6 +348,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_DarkMind</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -348,6 +380,8 @@
 					<thingDefs>
 						<li>SpellOf_ConsumeCorpse_Mass</li>
 						<li>SpellOf_BloodMoon</li>
+						<li MayRequire="kure.arom">SpellOf_CallOfDarkness</li>
+						<li MayRequire="kure.arom">SpellOf_Oblation</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -357,6 +391,8 @@
 			<thingDefs>
 				<li>SpellOf_ConsumeCorpse_Mass</li>
 				<li>SpellOf_BloodMoon</li>
+				<li MayRequire="kure.arom">SpellOf_CallOfDarkness</li>
+				<li MayRequire="kure.arom">SpellOf_Oblation</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -369,6 +405,8 @@
 					<thingDefs>
 						<li>SpellOf_ConsumeCorpse_Mass</li>
 						<li>SpellOf_BloodMoon</li>
+						<li MayRequire="kure.arom">SpellOf_CallOfDarkness</li>
+						<li MayRequire="kure.arom">SpellOf_Oblation</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -378,6 +416,8 @@
 			<thingDefs>
 				<li>SpellOf_ConsumeCorpse_Mass</li>
 				<li>SpellOf_BloodMoon</li>
+				<li MayRequire="kure.arom">SpellOf_CallOfDarkness</li>
+				<li MayRequire="kure.arom">SpellOf_Oblation</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -391,6 +431,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfDruid</li>
+						<li MayRequire="kure.arom">BookOfArbormancer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -399,6 +440,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfDruid</li>
+				<li MayRequire="kure.arom">BookOfArbormancer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -410,6 +452,8 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_FertileLands</li>
+						<li MayRequire="kure.arom">SpellOf_BarkskinC</li>
+						<li MayRequire="kure.arom">SpellOf_BramblePatch</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -418,6 +462,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_FertileLands</li>
+				<li MayRequire="kure.arom">SpellOf_BarkskinC</li>
+				<li MayRequire="kure.arom">SpellOf_BramblePatch</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -429,6 +475,8 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_FertileLands</li>
+						<li MayRequire="kure.arom">SpellOf_BarkskinC</li>
+						<li MayRequire="kure.arom">SpellOf_BramblePatch</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -437,6 +485,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_FertileLands</li>
+				<li MayRequire="kure.arom">SpellOf_BarkskinC</li>
+				<li MayRequire="kure.arom">SpellOf_BramblePatch</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -468,6 +518,7 @@
 					<thingDefs>
 						<li>SpellOf_BriarPatch</li>
 						<li>SpellOf_RegrowLimb</li>
+						<li MayRequire="kure.arom">SpellOf_MiracleOfNature</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -477,6 +528,7 @@
 			<thingDefs>
 				<li>SpellOf_BriarPatch</li>
 				<li>SpellOf_RegrowLimb</li>
+				<li MayRequire="kure.arom">SpellOf_MiracleOfNature</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -489,6 +541,7 @@
 					<thingDefs>
 						<li>SpellOf_BriarPatch</li>
 						<li>SpellOf_RegrowLimb</li>
+						<li MayRequire="kure.arom">SpellOf_MiracleOfNature</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -498,6 +551,7 @@
 			<thingDefs>
 				<li>SpellOf_BriarPatch</li>
 				<li>SpellOf_RegrowLimb</li>
+				<li MayRequire="kure.arom">SpellOf_MiracleOfNature</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

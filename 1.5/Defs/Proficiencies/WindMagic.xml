@@ -65,6 +65,11 @@
 			<li>LLRoM_study_rift</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li MayRequire="kure.arom">TM_WindMage</li>
+				</Relatedtraits>
+			</li>
 			<li Class="LLRoM.StatOffsetExtension">
 				<statModifiers>
 					<li>

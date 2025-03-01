@@ -12,6 +12,8 @@
 					<thingDefs>
 						<li>Torn_BookOfInnerFire</li>
 						<li>BookOfInnerFire</li>
+						<li MayRequire="kure.arom">Torn_BookOfBlackMage</li>
+						<li MayRequire="kure.arom">BookOfBlackMage</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -21,6 +23,8 @@
 			<thingDefs>
 				<li>Torn_BookOfInnerFire</li>
 				<li>BookOfInnerFire</li>
+				<li MayRequire="kure.arom">Torn_BookOfBlackMage</li>
+				<li MayRequire="kure.arom">BookOfBlackMage</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -84,6 +88,7 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfInnerFire</li>
+						<li MayRequire="kure.arom">BookOfBlackMage</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -92,6 +97,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfInnerFire</li>
+				<li MayRequire="kure.arom">BookOfBlackMage</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -103,6 +109,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_HeatShield</li>
+						<li MayRequire="kure.arom">SpellOf_Incinerate</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -111,6 +118,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_HeatShield</li>
+				<li MayRequire="kure.arom">SpellOf_Incinerate</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -122,6 +130,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_HeatShield</li>
+						<li MayRequire="kure.arom">SpellOf_Incinerate</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -130,6 +139,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_HeatShield</li>
+				<li MayRequire="kure.arom">SpellOf_Incinerate</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

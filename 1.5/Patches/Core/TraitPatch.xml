@@ -68,7 +68,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>an</Prefix>
+				<Prefix>an </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -110,7 +110,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>an</Prefix>
+				<Prefix>an </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -152,7 +152,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>an</Prefix>
+				<Prefix>an </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -194,7 +194,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -236,7 +236,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -279,7 +279,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -354,7 +354,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -396,7 +396,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -438,7 +438,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -479,7 +479,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -521,7 +521,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -561,7 +561,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -602,7 +602,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -644,7 +644,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -709,7 +709,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -750,7 +750,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -832,7 +832,7 @@
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
 				<GenderRequirment>Female</GenderRequirment>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -875,7 +875,7 @@
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
 				<GenderRequirment>Male</GenderRequirment>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -916,7 +916,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -958,7 +958,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1000,7 +1000,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -1042,7 +1042,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>an</Prefix>
+				<Prefix>an </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1083,7 +1083,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1125,7 +1125,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1167,7 +1167,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -1251,7 +1251,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1316,7 +1316,7 @@
 					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Might>true</Might>
 			</li>
 		</value>
@@ -1356,7 +1356,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1398,7 +1398,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1440,7 +1440,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>
@@ -1483,7 +1483,7 @@
 					<li>TM_Gifted</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
-				<Prefix>a</Prefix>
+				<Prefix>a </Prefix>
 				<Magic>true</Magic>
 			</li>
 		</value>

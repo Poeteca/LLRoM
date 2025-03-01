@@ -15,6 +15,10 @@
 						<li>Torn_BookOfSummoner</li>
 						<li>BookOfSummoner</li>
 						<li>BookOfShamanism</li>
+						<li MayRequire="kure.arom">Torn_BookOfKeeper</li>
+						<li MayRequire="kure.arom">BookOfKeeper</li>
+						<li MayRequire="kure.arom">Torn_BookOfArchitect</li>
+						<li MayRequire="kure.arom">BookOfArchitect</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -27,6 +31,10 @@
 				<li>Torn_BookOfSummoner</li>
 				<li>BookOfSummoner</li>
 				<li>BookOfShamanism</li>
+				<li MayRequire="kure.arom">Torn_BookOfKeeper</li>
+				<li MayRequire="kure.arom">BookOfKeeper</li>
+				<li MayRequire="kure.arom">Torn_BookOfArchitect</li>
+				<li MayRequire="kure.arom">BookOfArchitect</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -39,6 +47,10 @@
 					<thingDefs>
 						<li>SpellOf_Blink</li>
 						<li>SpellOf_SummonMinion</li>
+						<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+						<li MayRequire="kure.arom">SpellOf_Disarm</li>
+						<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+						<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -48,6 +60,10 @@
 			<thingDefs>
 				<li>SpellOf_Blink</li>
 				<li>SpellOf_SummonMinion</li>
+				<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+				<li MayRequire="kure.arom">SpellOf_Disarm</li>
+				<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+				<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -60,6 +76,10 @@
 					<thingDefs>
 						<li>SpellOf_Blink</li>
 						<li>SpellOf_SummonMinion</li>
+						<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+						<li MayRequire="kure.arom">SpellOf_Disarm</li>
+						<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+						<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -69,6 +89,10 @@
 			<thingDefs>
 				<li>SpellOf_Blink</li>
 				<li>SpellOf_SummonMinion</li>
+				<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+				<li MayRequire="kure.arom">SpellOf_Disarm</li>
+				<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+				<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -82,6 +106,9 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfSummoner</li>
+						<li MayRequire="kure.arom">BookOfKeeper</li>
+						<li MayRequire="kure.arom">BookOfScholar</li>
+						<li MayRequire="kure.arom">BookOfArchitect</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -90,6 +117,9 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfSummoner</li>
+				<li MayRequire="kure.arom">BookOfKeeper</li>
+				<li MayRequire="kure.arom">BookOfScholar</li>
+				<li MayRequire="kure.arom">BookOfArchitect</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -103,6 +133,8 @@
 						<li>SpellOf_MagicWardrobe</li>
 						<li>SpellOf_SummonPoppi</li>
 						<li>SpellOf_GuardianSpirit</li>
+						<li MayRequire="kure.arom">SpellOf_AspectChanneling</li>
+						<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -113,6 +145,8 @@
 				<li>SpellOf_MagicWardrobe</li>
 				<li>SpellOf_SummonPoppi</li>
 				<li>SpellOf_GuardianSpirit</li>
+				<li MayRequire="kure.arom">SpellOf_AspectChanneling</li>
+				<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -126,6 +160,8 @@
 						<li>SpellOf_MagicWardrobe</li>
 						<li>SpellOf_SummonPoppi</li>
 						<li>SpellOf_GuardianSpirit</li>
+						<li MayRequire="kure.arom">SpellOf_AspectChanneling</li>
+						<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -136,6 +172,8 @@
 				<li>SpellOf_MagicWardrobe</li>
 				<li>SpellOf_SummonPoppi</li>
 				<li>SpellOf_GuardianSpirit</li>
+				<li MayRequire="kure.arom">SpellOf_AspectChanneling</li>
+				<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -168,6 +206,8 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_Teleport</li>
+						<li MayRequire="kure.arom">SpellOf_Destiny</li>
+						<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -176,6 +216,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_Teleport</li>
+				<li MayRequire="kure.arom">SpellOf_Destiny</li>
+				<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -187,6 +229,8 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_Teleport</li>
+						<li MayRequire="kure.arom">SpellOf_Destiny</li>
+						<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -195,6 +239,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_Teleport</li>
+				<li MayRequire="kure.arom">SpellOf_Destiny</li>
+				<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

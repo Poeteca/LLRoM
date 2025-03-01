@@ -6,7 +6,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>Physical_Insight</defName>
 		<label>Physical Insight</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costPractical>500</costPractical>
 		<viewerX>0</viewerX>
@@ -24,6 +24,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>PhysicalProdigy</li>
+					<li MayRequire="kure.arom">TM_Explorer</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -32,7 +33,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Physical_Conditioning</defName>
 		<label>LLRoM_Physical_Conditioning</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>1000</costPractical>
@@ -56,12 +57,19 @@
 			<li>LLRoM_ExamineScroll_Physical_Conditioning</li>
 			<li>LLBrainstorm</li>
 		</theoreticalLearningActivityDefs>
+		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li MayRequire="kure.arom">TM_Spellbreaker</li>
+				</Relatedtraits>
+			</li>
+		</modExtensions>
 	</LifeLessons.ProficiencyDef>
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Equipment_Mastery</defName>
 		<label>LLRoM_Equipment_Mastery</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>600</costTheoretical>
 		<costPractical>900</costPractical>
@@ -90,6 +98,11 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Apothecary</li>
+					<li MayRequire="kure.arom">TM_Plaguedoctor</li>
+					<li MayRequire="kure.arom">TM_Gadgeteer</li>
+					<li MayRequire="kure.arom">TM_Gunbreaker</li>
+					<li MayRequire="kure.arom">TM_Holosmith</li>
+					<li MayRequire="kure.arom">TM_Miner</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -98,7 +111,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Mental_Conditioning</defName>
 		<label>LLRoM_Mental_Conditioning</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>400</costPractical>
@@ -126,6 +139,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Apothecary</li>
+					<li MayRequire="kure.arom">TM_Spellbreaker</li>
 				</Relatedtraits>
 			</li>
 		</modExtensions>
@@ -134,7 +148,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Coordination</defName>
 		<label>LLRoM_Coordination</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
@@ -164,6 +178,11 @@
 				<Relatedtraits>
 					<li>Ranger</li>
 					<li MayRequire="kure.arom">TM_RedMage</li>
+					<li MayRequire="kure.arom">TM_Chainwarden</li>
+					<li MayRequire="kure.arom">TM_Hawkeye</li>
+					<li MayRequire="kure.arom">TM_Dragoon</li>
+					<li MayRequire="kure.arom">TM_BlossomBlader</li>
+					<li MayRequire="kure.arom">TM_Gunslinger</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -188,7 +207,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Strength</defName>
 		<label>LLRoM_Strength</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
@@ -217,6 +236,11 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Bladedancer</li>
+					<li MayRequire="kure.arom">TM_Scrapper</li>
+					<li MayRequire="kure.arom">TM_Gunbreaker</li>
+					<li MayRequire="kure.arom">TM_Warrior</li>
+					<li MayRequire="kure.arom">TM_Miner</li>
+					<li MayRequire="kure.arom">TM_Striker</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -237,7 +261,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Endurance</defName>
 		<label>LLRoM_Endurance</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
@@ -266,6 +290,8 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>Gladiator</li>
+					<li MayRequire="kure.arom">TM_Railbreaker</li>
+					<li MayRequire="kure.arom">TM_Berserker</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -286,7 +312,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_CQC</defName>
 		<label>LLRoM_CQC</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
@@ -318,6 +344,19 @@
 					<li>DeathKnight</li>
 					<li>TM_Monk</li>
 					<li MayRequire="kure.arom">TM_Ninja</li>
+					<li MayRequire="kure.arom">TM_Guardian</li>
+					<li MayRequire="kure.arom">TM_Shadowbringer</li>
+					<li MayRequire="kure.arom">TM_Warden</li>
+					<li MayRequire="kure.arom">TM_Railbreaker</li>
+					<li MayRequire="kure.arom">TM_Samurai</li>
+					<li MayRequire="kure.arom">TM_Berserker</li>
+					<li MayRequire="kure.arom">TM_Scion</li>
+					<li MayRequire="kure.arom">TM_Scrapper</li>
+					<li MayRequire="kure.arom">TM_Dragoon</li>
+					<li MayRequire="kure.arom">TM_Warrior</li>
+					<li MayRequire="kure.arom">TM_Nomad</li>
+					<li MayRequire="kure.arom">TM_Striker</li>
+					<li MayRequire="kure.arom">TM_BlossomBlader</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -338,7 +377,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Breath_Control</defName>
 		<label>LLRoM_Breath_Control</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Control</category>
 		<description>Temp</description>
 		<costTheoretical>500</costTheoretical>
 		<costPractical>500</costPractical>
@@ -370,6 +409,8 @@
 					<li>TM_Sniper</li>
 					<li>TM_Monk</li>
 					<li MayRequire="kure.arom">TM_Duskbringer</li>
+					<li MayRequire="kure.arom">TM_Samurai</li>
+					<li MayRequire="kure.arom">TM_Scion</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -390,7 +431,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Ranged</defName>
 		<label>LLRoM_Ranged</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
@@ -421,6 +462,14 @@
 					<li>Ranger</li>
 					<li MayRequire="kure.arom">TM_ElementalGunner</li>
 					<li MayRequire="kure.arom">TM_Pridestalker</li>
+					<li MayRequire="kure.arom">TM_Bombardier</li>
+					<li MayRequire="kure.arom">TM_Chainwarden</li>
+					<li MayRequire="kure.arom">TM_Hawkeye</li>
+					<li MayRequire="kure.arom">TM_SupportSpecialist</li>
+					<li MayRequire="kure.arom">TM_Gunner</li>
+					<li MayRequire="kure.arom">TM_Nomad</li>
+					<li MayRequire="kure.arom">TM_MechHunter</li>
+					<li MayRequire="kure.arom">TM_Gunslinger</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -445,7 +494,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Tactics</defName>
 		<label>LLRoM_Tactics</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
@@ -474,6 +523,13 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Commander</li>
+					<li MayRequire="kure.arom">TM_Plaguedoctor</li>
+					<li MayRequire="kure.arom">TM_Gadgeteer</li>
+					<li MayRequire="kure.arom">TM_Medic</li>
+					<li MayRequire="kure.arom">TM_SupportSpecialist</li>
+					<li MayRequire="kure.arom">TM_Gunner</li>
+					<li MayRequire="kure.arom">TM_MechHunter</li>
+					<li MayRequire="kure.arom">TM_Chempunk</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -498,7 +554,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Manipulation</defName>
 		<label>LLRoM_Manipulation</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
@@ -531,6 +587,10 @@
 					<li>DeathKnight</li>
 					<li MayRequire="kure.arom">TM_Reaper</li>
 					<li MayRequire="kure.arom">TM_Spellthief</li>
+					<li MayRequire="kure.arom">TM_Ambusher</li>
+					<li MayRequire="kure.arom">TM_Saboteur</li>
+					<li MayRequire="kure.arom">TM_Mystic</li>
+					<li MayRequire="kure.arom">TM_Thunderblessed</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -555,7 +615,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Charisma</defName>
 		<label>LLRoM_Charisma</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
@@ -585,6 +645,8 @@
 				<Relatedtraits>
 					<li>Faceless</li>
 					<li>TM_Commander</li>
+					<li MayRequire="kure.arom">TM_Saboteur</li>
+					<li MayRequire="kure.arom">TM_Chef</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -616,7 +678,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Extreme_Range</defName>
 		<label>LLRoM_Extreme_Range</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>1500</costPractical>
@@ -670,7 +732,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Defensive_Fighting</defName>
 		<label>LLRoM_Defensive_Fighting</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>500</costTheoretical>
 		<costPractical>2000</costPractical>
@@ -731,7 +793,7 @@
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMightRare">
 		<defName>LLRoM_Mind_Mastery</defName>
 		<label>LLRoM_Mind_Mastery</label>
-		<category>ProficiencyCategory_MightSkills</category>
+		<category>ProficiencyCategory_Control</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>
 		<costPractical>1500</costPractical>

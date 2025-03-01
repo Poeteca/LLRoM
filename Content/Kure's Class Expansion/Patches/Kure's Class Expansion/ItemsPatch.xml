@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RFS_StaminaPotion"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>ChemicalSynthesis</li>
+					<li>LLRoM_MagicRefinement</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_AmuletOfPerception"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_AmuletOfTranquility"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_AmuletOfForce"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TM_AmuletOfClarity"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<templateDef>E2_ApparelMetalArmorC1</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>

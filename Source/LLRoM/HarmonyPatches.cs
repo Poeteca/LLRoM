@@ -1,17 +1,72 @@
-﻿using HarmonyLib;
+﻿using AbilityUser;
+using HarmonyLib;
 using LifeLessons;
 using RimWorld;
+using RimWorld.BaseGen;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
+using System.Security.Cryptography;
 using System.Text;
 using TorannMagic;
+using TorannMagic.ModOptions;
 using TorannMagic.TMDefs;
+using TorannMagic.Utils;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
+using static HarmonyLib.Code;
+using static UnityEngine.Scripting.GarbageCollector;
 
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class RemoveClassPatch
+    {
+        [HarmonyPatch(typeof(TM_DebugTools), nameof(TM_DebugTools.RemoveClass))]
+        public static class RemoveProficienciesPatch
+        {
+            public static void Postfix(Pawn pawn)
+            {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
+                {
+                    pawn.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Physical_Insight, true);
+                    pawn.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Magic_Insight, true);
+                }
+            }
+        }
+    }
+    public static class RandomClassPatch
+    {
+        [HarmonyPatch(typeof(TM_Calc), nameof(TM_Calc.GetRandomAcceptableMagicClassIndex))]
+        public static class RandomClassPatchPostFix
+        {
+            public static void Postfix(Pawn p, ref int __result)
+            {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies && !Utility.CanLearnClass(p, TM_Data.EnabledMagicTraits[__result]))
+                {
+                    int newNum = -1;
+                    int Loopcount = 0;
+                    while (newNum < 0 || Loopcount < 30)
+                    {
+                        int num2 = Rand.RangeInclusive(0, TM_Data.EnabledMagicTraits.Count - 1);
+                        TraitDef td = TM_Data.EnabledMagicTraits[num2];
+                        if (td != TorannMagicDefOf.TM_Wanderer && !TM_ClassUtility.CustomAdvancedClasses.Any((TM_CustomClass x) => x.classTrait == td) && td != TorannMagicDefOf.TM_Possessor && td != TorannMagicDefOf.Lich && (td != TorannMagicDefOf.Warlock || p.gender != Gender.Female) && (td != TorannMagicDefOf.Succubus || p.gender != Gender.Male) && Utility.CanLearnClass(p, td))
+                        {
+                            newNum = num2;
+                        }
+                        Loopcount++;
+                    }
+                    if (Loopcount >= 30)
+                    {
+                        Log.Warning("Failed to find valid class in 30 loops, aborting validation check");
+                    }
+                    else { __result = newNum; }
+                }
+            }
+        }
+    }
     public static class PowerUpgradeCheckPatch
     {
         [HarmonyPatch(typeof(CompAbilityUserMight), nameof(CompAbilityUserMight.LevelUpPower))]
@@ -224,12 +279,13 @@ namespace LLRoM
         {
             public static void Postfix(ref float __result, Rect displayRect, ProficiencyDef ___selectedProficiency, ProficiencyViewerWindow __instance)
             {
-                if (___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Might && ___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Magic) { return; }
-                if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CastProRequirement && !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().learnBycastingSpells) { return; }
+                bool flag = true;
+                if (___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Might && ___selectedProficiency.tab != ProficiencyTableDefOf.LLROM_Magic) { flag = false; }
+                if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CastProRequirement && !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().learnBycastingSpells) { flag = false; }
                 float currentY = __result;
                 Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
-                if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Magic && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MagicUserHD) && (!DebugSettings.godMode || Current.Game.InitData != null)) { return; }
-                if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Might && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MightUserHD) && (!DebugSettings.godMode || Current.Game.InitData != null)) { return; }
+                if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Magic && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MagicUserHD) && (!DebugSettings.godMode || Current.Game.InitData != null)) { flag = false; }
+                if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Might && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MightUserHD) && (!DebugSettings.godMode || Current.Game.InitData != null)) { flag = false; }
                 int iconWidth = 34;
                 int iconHeight = 34;
                 int maxRowIconCount = ((int)displayRect.width - 10) / iconWidth;
@@ -237,12 +293,12 @@ namespace LLRoM
                 foreach (TMAbilityDef ability in DefDatabase<TMAbilityDef>.AllDefs)
                 {
                     AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
-                    if (extension != null && extension.Proficiencies.Contains(___selectedProficiency) && ShouldShw(pawn, ability))
+                    if (extension != null && extension.Proficiencies.Contains(___selectedProficiency) && ShouldShw(pawn, ability) && extension.LearnRate != 0)
                     {
                         abilities.Add(ability);
                     }
                 }
-                if (abilities != null && abilities.Count > 0)
+                if (flag && abilities != null && abilities.Count > 0)
                 {
                     Rect requiredByabilityRect = new Rect(displayRect.x, displayRect.y + currentY, displayRect.width, 0f);
                     Widgets.LabelCacheHeight(ref requiredByabilityRect, "RelatedSpells".Translate());
@@ -263,9 +319,141 @@ namespace LLRoM
                             currentY += (float)iconHeight;
                         }
                         Rect abilityRect = new Rect(requiredByabilityRect.x + (float)(i % maxRowIconCount * iconWidth), requiredByabilityRect.y + requiredByabilityRect.height + (float)(j * iconHeight), iconWidth, iconHeight);
-                        TooltipHandler.TipRegion(abilityRect, ability.label);
-                        LLWidgets.HyperlinkWithIcon(abilityRect, new Dialog_InfoCard.Hyperlink(ability), ability.uiIcon);
+                        string label = ability.LabelCap;
+                        List<ProficiencyCategoryDef> missingTypes = Utility.GetMissingAbilityRequirements(ability, pawn);
+                        if (missingTypes.Count > 0)
+                        {
+                            label += "MissingCat".Translate();
+                            int total = missingTypes.Count;
+                            for (int smallCount = 0; smallCount < total; smallCount++)
+                            {
+                                ProficiencyCategoryDef type = missingTypes[smallCount];
+                                if (smallCount + 1 == total)
+                                {
+                                    label += type.LabelCap;
+                                }
+                                else
+                                {
+                                    label += type.LabelCap + ", ";
+                                }
+                            }
+                        }
+                        TooltipHandler.TipRegion(abilityRect, label);
+                        Widgets.DrawTextureFitted(abilityRect, ability.uiIcon, 1);
                         i++;
+                    }
+                }
+                ClassAutoLearnExtension extension2 = ___selectedProficiency.GetModExtension<ClassAutoLearnExtension>();
+                List<TraitDef> Classes = new List<TraitDef>();
+                bool flag2 = true;
+                if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachClasses || !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
+                {
+                    flag2 = false;
+                }
+                if (extension2 != null && flag2)
+                {
+                    foreach (TraitDef possibleClass in extension2.Relatedtraits)
+                    {
+                        if (possibleClass == TorannMagicDefOf.TM_Gifted || possibleClass == TorannMagicDefOf.PhysicalProdigy)
+                        {
+                            continue;
+                        }
+                        ClassAutoLearnExtension extension3 = possibleClass.GetModExtension<ClassAutoLearnExtension>();
+                        if (extension3 != null)
+                        {
+                            if (pawn.story.traits.HasTrait(TorannMagicDefOf.TM_Gifted) && extension3.Magic == true)
+                            {
+                                if (extension3.GenderRequirment != Gender.None)
+                                {
+                                    if (pawn.gender == extension3.GenderRequirment)
+                                    {
+                                        Classes.Add(possibleClass);
+                                    }
+                                    if (pawn.gender == Gender.None)
+                                    {
+                                        Classes.Add(possibleClass);
+                                    }
+                                }
+                                if (extension3.GenderRequirment == Gender.None)
+                                {
+                                    Classes.Add(possibleClass);
+                                }
+                            }
+                            if (pawn.story.traits.HasTrait(TorannMagicDefOf.PhysicalProdigy) && extension3.Might == true)
+                            {
+                                if (extension3.GenderRequirment != Gender.None)
+                                {
+                                    if (pawn.gender == extension3.GenderRequirment)
+                                    {
+                                        Classes.Add(possibleClass);
+                                    }
+                                    if (pawn.gender == Gender.None)
+                                    {
+                                        Classes.Add(possibleClass);
+                                    }
+                                }
+                                if (extension3.GenderRequirment == Gender.None)
+                                {
+                                    Classes.Add(possibleClass);
+                                }
+                            }
+                        }
+                    }
+                    if (Classes.Count > 0)
+                    {
+                        Rect requiredByclassRect = new Rect(displayRect.x, displayRect.y + currentY, displayRect.width, 0f);
+                        Widgets.LabelCacheHeight(ref requiredByclassRect, "RelatedClasses".Translate());
+                        currentY += requiredByclassRect.height;
+                        GenUI.ResetLabelAlign();
+                        int i = 0;
+                        int j = 0;
+                        for (int classCounter = 0; classCounter < Classes.Count; classCounter++)
+                        {
+                            TraitDef Class = Classes[classCounter];
+                            if (i != 0 && i % maxRowIconCount == 0)
+                            {
+                                j++;
+                                i = 0;
+                            }
+                            if (i == 0)
+                            {
+                                currentY += (float)iconHeight;
+                            }
+                            TraitIconMap.TraitIconValue orCreate = TraitIconMap.Get(Class);
+                            if ((Texture2D)(object)orCreate.IconTexture == null)
+                            {
+                                i++;
+                                continue;
+                            }
+                            Rect classRect = new Rect(requiredByclassRect.x + (float)(i % maxRowIconCount * iconWidth), requiredByclassRect.y + requiredByclassRect.height + (float)(j * iconHeight), iconWidth, iconHeight);
+                            string label = null;
+                            foreach (TraitDegreeData data in Class.degreeDatas)
+                            {
+                                label = data.label;
+                                break;
+                            }
+                            List<ProficiencyCategoryDef> missingTypes = Utility.GetMissingClassRequirements(Class, pawn);
+                            if (missingTypes.Count > 0)
+                            {
+                                label += "MissingCat".Translate();
+                                int total = missingTypes.Count;
+                                for (int smallCount = 0; smallCount < total; smallCount++)
+                                {
+                                    ProficiencyCategoryDef type = missingTypes[smallCount];
+                                    if (smallCount + 1 == total)
+                                    {
+                                        label += type.LabelCap;
+                                    }
+                                    else
+                                    {
+                                        label += type.LabelCap + ", ";
+                                    }
+                                }
+                            }
+                            TooltipHandler.TipRegion(classRect, label);
+                            Widgets.DrawTextureFitted(classRect, (Texture2D)(object)orCreate.IconTexture, 1);
+                            i++;
+                        }
                     }
                 }
                 __result += currentY;
@@ -430,17 +618,27 @@ namespace LLRoM
             }
         }
     }
-    public static class DrawnStatFactorsPatch
+    public static class StatFactorsPatch
     {
         [HarmonyPatch(typeof(ProficiencyViewerWindow), "DrawStatModifiers")]
         public static class StatOffsetPatchPostFix
         {
-            public static void Postfix(Rect displayRect, ref float __result, ProficiencyDef ___selectedProficiency)
+            public static void Postfix(Rect displayRect, ref float __result, ProficiencyDef ___selectedProficiency, ProficiencyViewerWindow __instance)
             {
                 if (___selectedProficiency.HasModExtension<StatOffsetExtension>() && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
                 {
                     StatOffsetExtension extension = ___selectedProficiency.GetModExtension<StatOffsetExtension>();
-                    if (extension != null)
+                    bool flag = true;
+                    Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+                    if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Magic && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MagicUserHD))
+                    {
+                        flag = false;
+                    }
+                    if (___selectedProficiency.tab == ProficiencyTableDefOf.LLROM_Might && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MightUserHD))
+                    {
+                        flag = false;
+                    }
+                    if (extension != null && flag)
                     {
                         float CurrentY = __result;
                         if (extension.statOffseters != null && extension.statOffseters.Count > 0)
@@ -500,9 +698,6 @@ namespace LLRoM
                 }
             }
         }
-    }
-    public static class StatOffseterPatch
-    {
         [HarmonyPatch(typeof(StatWorker), nameof(StatWorker.GetBaseValueFor))]
         public static class StatOffseterPatchPostFix
         {
@@ -516,6 +711,14 @@ namespace LLRoM
                         foreach (ProficiencyDef pro in comp.CompletedProficiencies.Where((ProficiencyDef p) => p.HasModExtension<StatOffsetExtension>()))
                         {
                             StatOffsetExtension extension = pro.GetModExtension<StatOffsetExtension>();
+                            if (pro.tab == ProficiencyTableDefOf.LLROM_Magic && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MagicUserHD))
+                            {
+                                continue;
+                            }
+                            if (pro.tab == ProficiencyTableDefOf.LLROM_Might && !pawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_MightUserHD))
+                            {
+                                continue;
+                            }
                             if (extension != null && extension.statOffseters != null && extension.statOffseters.Count > 0)
                             {
                                 foreach (StatOffseter offseter in extension.statOffseters.Where((StatOffseter s) => s.Stat == ___stat))
@@ -903,7 +1106,7 @@ namespace LLRoM
                 if (!compAbilityUserMagic.IsMagicUser && !compAbilityUserMight.IsMightUser && !user.story.traits.HasTrait(TorannMagicDefOf.TM_Gifted) && !user.story.traits.HasTrait(TorannMagicDefOf.PhysicalProdigy) && !user.story.traits.HasTrait(TorannMagicDefOf.Undead) && !user.IsShambler && !user.IsGhoul)
                 {
                     GemOfInsightProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<GemOfInsightProficiencyExtension>();
-                    if (extension != null)
+                    if (extension != null && !comp.CompletedProficiencies.Contains(extension.Proficiency))
                     {
                         comp.TryGainProficiency(extension.Proficiency, true);
                         Messages.Message("LLAROM_GemOfInsight".Translate(user.LabelShort, extension.Proficiency.label, user.Named("USER")), user, MessageTypeDefOf.PositiveEvent);
@@ -913,8 +1116,28 @@ namespace LLRoM
             }
         }
     }
-    public static class CompUseEffect_LearnMagic_DoEffectk
+    public static class CompUseEffect_ClassPatch
     {
+        [HarmonyPatch(typeof(TraitSet), nameof(TraitSet.GainTrait))]
+        public class CompUseEffect_LearnMagic_DoEffectk_Postfix
+        {
+            public static void Postfix(Trait trait, TraitSet __instance)
+            {
+                Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
+                ClassAutoLearnExtension extension = trait.def.GetModExtension<ClassAutoLearnExtension>();
+                if (extension != null)
+                {
+                    if (extension.Magic && !extension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().UnlearnProOnClassGain && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
+                    {
+                        pawn.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Physical_Insight, true);
+                    }
+                    if (!extension.Magic && extension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().UnlearnProOnClassGain && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout)
+                    {
+                        pawn.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Magic_Insight, true);
+                    }
+                }
+            }
+        }
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMagic), nameof(TorannMagic.CompUseEffect_LearnMagic.DoEffect))]
         public class CompUseEffect_LearnMagic_DoEffectk_Prefix
         {
@@ -938,9 +1161,6 @@ namespace LLRoM
                 return true;
             }
         }
-    }
-    public static class CompUseEffect_LearnMight_DoEffectk
-    {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMight), nameof(TorannMagic.CompUseEffect_LearnMight.DoEffect))]
         public class CompUseEffect_LearnMight_DoEffectk_Prefix
         {
@@ -965,7 +1185,7 @@ namespace LLRoM
             }
         }
     }
-    public static class CompUseEffect_LearnSpell_DoEffectk
+    public static class CompUseEffect_LearnAbilityPatch
     {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSpell), nameof(TorannMagic.CompUseEffect_LearnSpell.DoEffect))]
         public class CompUseEffect_LearnSpell_DoEffectk_Prefix
@@ -990,9 +1210,6 @@ namespace LLRoM
                 return true;
             }
         }
-    }
-    public static class CompUseEffect_LearnSkill_DoEffectk
-    {
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnSkill), nameof(TorannMagic.CompUseEffect_LearnSkill.DoEffect))]
         public class CompUseEffect_LearnSkill_DoEffectk_Prefix
         {

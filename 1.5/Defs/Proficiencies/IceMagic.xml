@@ -69,6 +69,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>HeartOfFrost</li>
+					<li MayRequire="kure.arom">TM_BlackMage</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

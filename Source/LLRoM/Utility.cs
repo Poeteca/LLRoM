@@ -1,7 +1,10 @@
-﻿using RimWorld;
+﻿using HarmonyLib;
+using LifeLessons;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using TorannMagic;
@@ -13,6 +16,172 @@ namespace LLRoM
 {
     public class Utility
     {
+        public static bool CanLearnClass(Pawn p, TraitDef Class)
+        {
+            bool validClass = true;
+            ClassAutoLearnExtension traitextension = Class.GetModExtension<ClassAutoLearnExtension>();
+            if (traitextension != null)
+            {
+                if (traitextension.GenderRequirment != Gender.None && p.gender != traitextension.GenderRequirment)
+                {
+                    validClass = false;
+                }
+                if (traitextension.GenderRequirment != Gender.None && p.gender == Gender.None && (Rand.Chance(0.5f)))
+                {
+                    validClass = false;
+                }
+                if (traitextension.RequiredProficiencies != null)
+                {
+                    if (traitextension.RequiredProficiencies.Count == 0)
+                    {
+                        Log.Warning("Config error: " + Class.defName + " has RequiredProficiencies with none listed.");
+                    }
+                    else
+                    {
+                        bool check = false;
+                        if (traitextension.Magic && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning)
+                        {
+                            check = true;
+                        }
+                        if (traitextension.Might && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
+                        {
+                            check = true;
+                        }
+                        if (traitextension.Strict)
+                        {
+                            check = true;
+                        }
+                        if (!Util.Qualification(p, traitextension.RequiredProficiencies, check).Allowed(check))
+                        {
+                            validClass = false;
+                        }
+                    }
+                }
+                if (traitextension.BlockingTraits != null)
+                {
+                    if (traitextension.BlockingTraits.Count == 0)
+                    {
+                        Log.Warning("Config error: " + Class.defName + " has BlockingTraits with none listed.");
+                    }
+                    else
+                    {
+                        foreach (TraitDef t in traitextension.BlockingTraits)
+                        {
+                            if (p.story.traits.HasTrait(t))
+                            {
+                                validClass = false;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (traitextension.BlockingHediffs != null)
+                {
+                    if (traitextension.BlockingHediffs.Count == 0)
+                    {
+                        Log.Warning("Config error: " + Class.defName + " has BlockingHediffs with none listed.");
+                    }
+                    else
+                    {
+                        foreach (HediffDef hediff in traitextension.BlockingHediffs)
+                        {
+                            if (p.health.hediffSet.HasHediff(hediff))
+                            {
+                                validClass = false;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (traitextension.RequiredTrait != null)
+                {
+                    bool hasanyTrait = traitextension.AllRequiredTraitsNeeded;
+                    if (traitextension.RequiredTrait.Count == 0)
+                    {
+                        Log.Warning("Config error: " + Class.defName + " has RequiredTrait with none listed.");
+                    }
+                    else
+                    {
+                        foreach (TraitDef T in traitextension.RequiredTrait)
+                        {
+                            if (p.story.traits.HasTrait(T) && !traitextension.AllRequiredTraitsNeeded)
+                            {
+                                hasanyTrait = true;
+                                break;
+                            }
+                            if (p.story.traits.HasTrait(T) && traitextension.AllRequiredTraitsNeeded)
+                            {
+                                hasanyTrait = false;
+                                break;
+                            }
+                        }
+                    }
+                    if (validClass)
+                    {
+                        validClass = hasanyTrait;
+                    }
+                }
+            }
+            return validClass;
+        }
+        public static List<ProficiencyCategoryDef> GetMissingAbilityRequirements(TMAbilityDef ability, Pawn p)
+        {
+            List<ProficiencyCategoryDef> temp = new List<ProficiencyCategoryDef>();
+            AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
+            ProficiencyComp comp = p.TryGetComp<ProficiencyComp>();
+            List<ProficiencyDef> needed = extension.Relatedproficiencies;
+            if (extension != null && comp != null)
+            {
+                List<ProficiencyDef> compareTo = comp.CompletedProficiencies;
+                bool notStrict = true;
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning || LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
+                {
+                    notStrict = false;
+                }
+                if (notStrict)
+                {
+                    compareTo.AddRange(comp.AllLearnableProficiencies);
+                }
+                foreach (ProficiencyDef pro in needed)
+                {
+                    if (!compareTo.Contains(pro))
+                    {
+                        temp.Add(pro.category);
+                    }
+                }
+            }
+            List<ProficiencyCategoryDef> outList = temp.Distinct().ToList();
+            return outList;
+        }
+        public static List<ProficiencyCategoryDef> GetMissingClassRequirements(TraitDef Class, Pawn p)
+        {
+            List<ProficiencyCategoryDef> temp = new List<ProficiencyCategoryDef>();
+            ClassAutoLearnExtension extension = Class.GetModExtension<ClassAutoLearnExtension>();
+            ProficiencyComp comp = p.TryGetComp<ProficiencyComp>();
+            List<ProficiencyDef> needed = extension.RequiredProficiencies;
+            if (extension != null && comp != null)
+            {
+                List<ProficiencyDef> compareTo = comp.CompletedProficiencies;
+                bool notStrict = true;
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning || LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning)
+                {
+                    notStrict = false;
+                }
+                if (notStrict)
+                {
+                    compareTo.AddRange(comp.AllLearnableProficiencies);
+                }
+                foreach (ProficiencyDef pro in needed)
+                {
+                    if (!compareTo.Contains(pro))
+                    {
+                        temp.Add(pro.category);
+                    }
+                }
+            }
+            List<ProficiencyCategoryDef> outList = temp.Distinct().ToList();
+            return outList;
+        }
         public static bool LearnableSkillCheck(Pawn p, ThingDef S)
         {
             List<Trait> traits = p.story.traits.allTraits;

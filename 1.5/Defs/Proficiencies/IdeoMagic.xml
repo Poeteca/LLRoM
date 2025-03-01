@@ -199,6 +199,11 @@
 			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<Relatedtraits>
+					<li MayRequire="kure.arom">TM_Harbinger</li>
+				</Relatedtraits>
+			</li>
 			<li Class="LLRoM.StatOffsetExtension">
 				<statModifiers>
 					<li MayRequire="Ludeon.RimWorld.Anomaly">

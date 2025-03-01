@@ -18,6 +18,24 @@
 						<li MayRequire="kure.arom">BookOfRedMage</li>
 						<li MayRequire="kure.arom">BookOfNinja</li>
 						<li MayRequire="kure.arom">BookOfDuskbringer</li>
+						<li MayRequire="kure.arom">BookOfGuardian</li>
+						<li MayRequire="kure.arom">BookOfShadowbringer</li>
+						<li MayRequire="kure.arom">BookOfWarden</li>
+						<li MayRequire="kure.arom">BookOfSamurai</li>
+						<li MayRequire="kure.arom">BookOfBerserker</li>
+						<li MayRequire="kure.arom">BookOfScion</li>
+						<li MayRequire="kure.arom">BookOfChainwarden</li>
+						<li MayRequire="kure.arom">BookOfHawkeye</li>
+						<li MayRequire="kure.arom">BookOfScrapper</li>
+						<li MayRequire="kure.arom">BookOfSpellbreaker</li>
+						<li MayRequire="kure.arom">BookOfDragoon</li>
+						<li MayRequire="kure.arom">BookOfGunbreaker</li>
+						<li MayRequire="kure.arom">BookOfWarrior</li>
+						<li MayRequire="kure.arom">BookOfNomad</li>
+						<li MayRequire="kure.arom">BookOfMiner</li>
+						<li MayRequire="kure.arom">BookOfStriker</li>
+						<li MayRequire="kure.arom">BookOfBlossomBlader</li>
+						<li MayRequire="kure.arom">BookOfGunslinger</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -33,6 +51,24 @@
 				<li MayRequire="kure.arom">BookOfRedMage</li>
 				<li MayRequire="kure.arom">BookOfNinja</li>
 				<li MayRequire="kure.arom">BookOfDuskbringer</li>
+				<li MayRequire="kure.arom">BookOfGuardian</li>
+				<li MayRequire="kure.arom">BookOfShadowbringer</li>
+				<li MayRequire="kure.arom">BookOfWarden</li>
+				<li MayRequire="kure.arom">BookOfSamurai</li>
+				<li MayRequire="kure.arom">BookOfBerserker</li>
+				<li MayRequire="kure.arom">BookOfScion</li>
+				<li MayRequire="kure.arom">BookOfChainwarden</li>
+				<li MayRequire="kure.arom">BookOfHawkeye</li>
+				<li MayRequire="kure.arom">BookOfScrapper</li>
+				<li MayRequire="kure.arom">BookOfSpellbreaker</li>
+				<li MayRequire="kure.arom">BookOfDragoon</li>
+				<li MayRequire="kure.arom">BookOfGunbreaker</li>
+				<li MayRequire="kure.arom">BookOfWarrior</li>
+				<li MayRequire="kure.arom">BookOfNomad</li>
+				<li MayRequire="kure.arom">BookOfMiner</li>
+				<li MayRequire="kure.arom">BookOfStriker</li>
+				<li MayRequire="kure.arom">BookOfBlossomBlader</li>
+				<li MayRequire="kure.arom">BookOfGunslinger</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -43,6 +79,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_SecondStomach</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -50,6 +87,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_SecondStomach</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -60,6 +98,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_SecondStomach</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -67,6 +106,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_SecondStomach</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -87,6 +127,30 @@
 						<li MayRequire="kure.arom">BookOfNinja</li>
 						<li MayRequire="kure.arom">BookOfElementalGunner</li>
 						<li MayRequire="kure.arom">BookOfPridestalker</li>
+						<li MayRequire="kure.arom">BookOfGuardian</li>
+						<li MayRequire="kure.arom">BookOfShadowbringer</li>
+						<li MayRequire="kure.arom">BookOfWarden</li>
+						<li MayRequire="kure.arom">BookOfBombardier</li>
+						<li MayRequire="kure.arom">BookOfSamurai</li>
+						<li MayRequire="kure.arom">BookOfBerserker</li>
+						<li MayRequire="kure.arom">BookOfScion</li>
+						<li MayRequire="kure.arom">BookOfPlaguedoctor</li>
+						<li MayRequire="kure.arom">BookOfGadgeteer</li>
+						<li MayRequire="kure.arom">BookOfChainwarden</li>
+						<li MayRequire="kure.arom">BookOfHawkeye</li>
+						<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+						<li MayRequire="kure.arom">BookOfScrapper</li>
+						<li MayRequire="kure.arom">BookOfDragoon</li>
+						<li MayRequire="kure.arom">BookOfGunbreaker</li>
+						<li MayRequire="kure.arom">BookOfGunner</li>
+						<li MayRequire="kure.arom">BookOfWarrior</li>
+						<li MayRequire="kure.arom">BookOfNomad</li>
+						<li MayRequire="kure.arom">BookOfHolosmith</li>
+						<li MayRequire="kure.arom">BookOfMiner</li>
+						<li MayRequire="kure.arom">BookOfStriker</li>
+						<li MayRequire="kure.arom">BookOfBlossomBlader</li>
+						<li MayRequire="kure.arom">BookOfMechHunter</li>
+						<li MayRequire="kure.arom">BookOfGunslinger</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -102,6 +166,30 @@
 				<li MayRequire="kure.arom">BookOfNinja</li>
 				<li MayRequire="kure.arom">BookOfElementalGunner</li>
 				<li MayRequire="kure.arom">BookOfPridestalker</li>
+				<li MayRequire="kure.arom">BookOfGuardian</li>
+				<li MayRequire="kure.arom">BookOfShadowbringer</li>
+				<li MayRequire="kure.arom">BookOfWarden</li>
+				<li MayRequire="kure.arom">BookOfBombardier</li>
+				<li MayRequire="kure.arom">BookOfSamurai</li>
+				<li MayRequire="kure.arom">BookOfBerserker</li>
+				<li MayRequire="kure.arom">BookOfScion</li>
+				<li MayRequire="kure.arom">BookOfPlaguedoctor</li>
+				<li MayRequire="kure.arom">BookOfGadgeteer</li>
+				<li MayRequire="kure.arom">BookOfChainwarden</li>
+				<li MayRequire="kure.arom">BookOfHawkeye</li>
+				<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+				<li MayRequire="kure.arom">BookOfScrapper</li>
+				<li MayRequire="kure.arom">BookOfDragoon</li>
+				<li MayRequire="kure.arom">BookOfGunbreaker</li>
+				<li MayRequire="kure.arom">BookOfGunner</li>
+				<li MayRequire="kure.arom">BookOfWarrior</li>
+				<li MayRequire="kure.arom">BookOfNomad</li>
+				<li MayRequire="kure.arom">BookOfHolosmith</li>
+				<li MayRequire="kure.arom">BookOfMiner</li>
+				<li MayRequire="kure.arom">BookOfStriker</li>
+				<li MayRequire="kure.arom">BookOfBlossomBlader</li>
+				<li MayRequire="kure.arom">BookOfMechHunter</li>
+				<li MayRequire="kure.arom">BookOfGunslinger</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -115,6 +203,30 @@
 						<li>SkillOf_GearRepair</li>
 						<li>SkillOf_HerbalClarity</li>
 						<li>SkillOf_HerbalBliss</li>
+						<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+						<li MayRequire="kure.arom">SkillOf_BarrelStabilizer</li>
+						<li MayRequire="kure.arom">SkillOf_BeltPouch</li>
+						<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+						<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+						<li MayRequire="kure.arom">SkillOf_ColdOpen</li>
+						<li MayRequire="kure.arom">SkillOf_CollapsingColumn</li>
+						<li MayRequire="kure.arom">SkillOf_CoolantBlast</li>
+						<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+						<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+						<li MayRequire="kure.arom">SkillOf_FlameSplitter</li>
+						<li MayRequire="kure.arom">SkillOf_HandheldRocket</li>
+						<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+						<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+						<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+						<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+						<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+						<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+						<li MayRequire="kure.arom">SkillOf_RoyalRoad</li>
+						<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+						<li MayRequire="kure.arom">SkillOf_SerumOverload</li>
+						<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+						<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+						<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -125,6 +237,30 @@
 				<li>SkillOf_GearRepair</li>
 				<li>SkillOf_HerbalClarity</li>
 				<li>SkillOf_HerbalBliss</li>
+				<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+				<li MayRequire="kure.arom">SkillOf_BarrelStabilizer</li>
+				<li MayRequire="kure.arom">SkillOf_BeltPouch</li>
+				<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+				<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+				<li MayRequire="kure.arom">SkillOf_ColdOpen</li>
+				<li MayRequire="kure.arom">SkillOf_CollapsingColumn</li>
+				<li MayRequire="kure.arom">SkillOf_CoolantBlast</li>
+				<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+				<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+				<li MayRequire="kure.arom">SkillOf_FlameSplitter</li>
+				<li MayRequire="kure.arom">SkillOf_HandheldRocket</li>
+				<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+				<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+				<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+				<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+				<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+				<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+				<li MayRequire="kure.arom">SkillOf_RoyalRoad</li>
+				<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+				<li MayRequire="kure.arom">SkillOf_SerumOverload</li>
+				<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+				<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+				<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -138,6 +274,30 @@
 						<li>SkillOf_GearRepair</li>
 						<li>SkillOf_HerbalClarity</li>
 						<li>SkillOf_HerbalBliss</li>
+						<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+						<li MayRequire="kure.arom">SkillOf_BarrelStabilizer</li>
+						<li MayRequire="kure.arom">SkillOf_BeltPouch</li>
+						<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+						<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+						<li MayRequire="kure.arom">SkillOf_ColdOpen</li>
+						<li MayRequire="kure.arom">SkillOf_CollapsingColumn</li>
+						<li MayRequire="kure.arom">SkillOf_CoolantBlast</li>
+						<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+						<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+						<li MayRequire="kure.arom">SkillOf_FlameSplitter</li>
+						<li MayRequire="kure.arom">SkillOf_HandheldRocket</li>
+						<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+						<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+						<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+						<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+						<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+						<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+						<li MayRequire="kure.arom">SkillOf_RoyalRoad</li>
+						<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+						<li MayRequire="kure.arom">SkillOf_SerumOverload</li>
+						<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+						<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+						<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -148,6 +308,30 @@
 				<li>SkillOf_GearRepair</li>
 				<li>SkillOf_HerbalClarity</li>
 				<li>SkillOf_HerbalBliss</li>
+				<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+				<li MayRequire="kure.arom">SkillOf_BarrelStabilizer</li>
+				<li MayRequire="kure.arom">SkillOf_BeltPouch</li>
+				<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+				<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+				<li MayRequire="kure.arom">SkillOf_ColdOpen</li>
+				<li MayRequire="kure.arom">SkillOf_CollapsingColumn</li>
+				<li MayRequire="kure.arom">SkillOf_CoolantBlast</li>
+				<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+				<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+				<li MayRequire="kure.arom">SkillOf_FlameSplitter</li>
+				<li MayRequire="kure.arom">SkillOf_HandheldRocket</li>
+				<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+				<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+				<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+				<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+				<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+				<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+				<li MayRequire="kure.arom">SkillOf_RoyalRoad</li>
+				<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+				<li MayRequire="kure.arom">SkillOf_SerumOverload</li>
+				<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+				<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+				<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -169,6 +353,26 @@
 						<li MayRequire="kure.arom">BookOfPridestalker</li>
 						<li MayRequire="kure.arom">BookOfDuskbringer</li>
 						<li MayRequire="kure.arom">BookOfSpellthief</li>
+						<li MayRequire="kure.arom">BookOfBombardier</li>
+						<li MayRequire="kure.arom">BookOfSamurai</li>
+						<li MayRequire="kure.arom">BookOfScion</li>
+						<li MayRequire="kure.arom">BookOfPlaguedoctor</li>
+						<li MayRequire="kure.arom">BookOfGadgeteer</li>
+						<li MayRequire="kure.arom">BookOfMedic</li>
+						<li MayRequire="kure.arom">BookOfChainwarden</li>
+						<li MayRequire="kure.arom">BookOfAmbusher</li>
+						<li MayRequire="kure.arom">BookOfSaboteur</li>
+						<li MayRequire="kure.arom">BookOfHawkeye</li>
+						<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+						<li MayRequire="kure.arom">BookOfMystic</li>
+						<li MayRequire="kure.arom">BookOfSpellbreaker</li>
+						<li MayRequire="kure.arom">BookOfThunderblessed</li>
+						<li MayRequire="kure.arom">BookOfGunner</li>
+						<li MayRequire="kure.arom">BookOfNomad</li>
+						<li MayRequire="kure.arom">BookOfChef</li>
+						<li MayRequire="kure.arom">BookOfMechHunter</li>
+						<li MayRequire="kure.arom">BookOfGunslinger</li>
+						<li MayRequire="kure.arom">BookOfChempunk</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -185,6 +389,26 @@
 				<li MayRequire="kure.arom">BookOfPridestalker</li>
 				<li MayRequire="kure.arom">BookOfDuskbringer</li>
 				<li MayRequire="kure.arom">BookOfSpellthief</li>
+				<li MayRequire="kure.arom">BookOfBombardier</li>
+				<li MayRequire="kure.arom">BookOfSamurai</li>
+				<li MayRequire="kure.arom">BookOfScion</li>
+				<li MayRequire="kure.arom">BookOfPlaguedoctor</li>
+				<li MayRequire="kure.arom">BookOfGadgeteer</li>
+				<li MayRequire="kure.arom">BookOfMedic</li>
+				<li MayRequire="kure.arom">BookOfChainwarden</li>
+				<li MayRequire="kure.arom">BookOfAmbusher</li>
+				<li MayRequire="kure.arom">BookOfSaboteur</li>
+				<li MayRequire="kure.arom">BookOfHawkeye</li>
+				<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+				<li MayRequire="kure.arom">BookOfMystic</li>
+				<li MayRequire="kure.arom">BookOfSpellbreaker</li>
+				<li MayRequire="kure.arom">BookOfThunderblessed</li>
+				<li MayRequire="kure.arom">BookOfGunner</li>
+				<li MayRequire="kure.arom">BookOfNomad</li>
+				<li MayRequire="kure.arom">BookOfChef</li>
+				<li MayRequire="kure.arom">BookOfMechHunter</li>
+				<li MayRequire="kure.arom">BookOfGunslinger</li>
+				<li MayRequire="kure.arom">BookOfChempunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -233,6 +457,11 @@
 					<thingDefs>
 						<li>BookOfRanger</li>
 						<li MayRequire="kure.arom">BookOfRedMage</li>
+						<li MayRequire="kure.arom">BookOfChainwarden</li>
+						<li MayRequire="kure.arom">BookOfHawkeye</li>
+						<li MayRequire="kure.arom">BookOfDragoon</li>
+						<li MayRequire="kure.arom">BookOfBlossomBlader</li>
+						<li MayRequire="kure.arom">BookOfGunslinger</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -242,6 +471,11 @@
 			<thingDefs>
 				<li>BookOfRanger</li>
 				<li MayRequire="kure.arom">BookOfRedMage</li>
+				<li MayRequire="kure.arom">BookOfChainwarden</li>
+				<li MayRequire="kure.arom">BookOfHawkeye</li>
+				<li MayRequire="kure.arom">BookOfDragoon</li>
+				<li MayRequire="kure.arom">BookOfBlossomBlader</li>
+				<li MayRequire="kure.arom">BookOfGunslinger</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -253,6 +487,25 @@
 				<filter>
 					<thingDefs>
 						<li>SkillOf_ThrowingKnife</li>
+						<li MayRequire="kure.arom">SkillOf_Breakstep</li>
+						<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+						<li MayRequire="kure.arom">SkillOf_EvasiveLeap</li>
+						<li MayRequire="kure.arom">SkillOf_HasteC</li>
+						<li MayRequire="kure.arom">SkillOf_Equilibrium</li>
+						<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+						<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+						<li MayRequire="kure.arom">SkillOf_QuickVent</li>
+						<li MayRequire="kure.arom">SkillOf_WhistlingWind</li>
+						<li MayRequire="kure.arom">SkillOf_Continuation</li>
+						<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+						<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+						<li MayRequire="kure.arom">SkillOf_Plunge</li>
+						<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+						<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+						<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+						<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+						<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+						<li MayRequire="kure.arom">SkillOf_CleanReload</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -261,6 +514,25 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SkillOf_ThrowingKnife</li>
+				<li MayRequire="kure.arom">SkillOf_Breakstep</li>
+				<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+				<li MayRequire="kure.arom">SkillOf_EvasiveLeap</li>
+				<li MayRequire="kure.arom">SkillOf_HasteC</li>
+				<li MayRequire="kure.arom">SkillOf_Equilibrium</li>
+				<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+				<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+				<li MayRequire="kure.arom">SkillOf_QuickVent</li>
+				<li MayRequire="kure.arom">SkillOf_WhistlingWind</li>
+				<li MayRequire="kure.arom">SkillOf_Continuation</li>
+				<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+				<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+				<li MayRequire="kure.arom">SkillOf_Plunge</li>
+				<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+				<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+				<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+				<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+				<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+				<li MayRequire="kure.arom">SkillOf_CleanReload</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -272,6 +544,25 @@
 				<filter>
 					<thingDefs>
 						<li>SkillOf_ThrowingKnife</li>
+						<li MayRequire="kure.arom">SkillOf_Breakstep</li>
+						<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+						<li MayRequire="kure.arom">SkillOf_EvasiveLeap</li>
+						<li MayRequire="kure.arom">SkillOf_HasteC</li>
+						<li MayRequire="kure.arom">SkillOf_Equilibrium</li>
+						<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+						<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+						<li MayRequire="kure.arom">SkillOf_QuickVent</li>
+						<li MayRequire="kure.arom">SkillOf_WhistlingWind</li>
+						<li MayRequire="kure.arom">SkillOf_Continuation</li>
+						<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+						<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+						<li MayRequire="kure.arom">SkillOf_Plunge</li>
+						<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+						<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+						<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+						<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+						<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+						<li MayRequire="kure.arom">SkillOf_CleanReload</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -280,6 +571,25 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SkillOf_ThrowingKnife</li>
+				<li MayRequire="kure.arom">SkillOf_Breakstep</li>
+				<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+				<li MayRequire="kure.arom">SkillOf_EvasiveLeap</li>
+				<li MayRequire="kure.arom">SkillOf_HasteC</li>
+				<li MayRequire="kure.arom">SkillOf_Equilibrium</li>
+				<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+				<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+				<li MayRequire="kure.arom">SkillOf_QuickVent</li>
+				<li MayRequire="kure.arom">SkillOf_WhistlingWind</li>
+				<li MayRequire="kure.arom">SkillOf_Continuation</li>
+				<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+				<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+				<li MayRequire="kure.arom">SkillOf_Plunge</li>
+				<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+				<li MayRequire="kure.arom">SkillOf_BackupGrenade</li>
+				<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+				<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+				<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+				<li MayRequire="kure.arom">SkillOf_CleanReload</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -293,6 +603,11 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfBladedancer</li>
+						<li MayRequire="kure.arom">BookOfScrapper</li>
+						<li MayRequire="kure.arom">BookOfGunbreaker</li>
+						<li MayRequire="kure.arom">BookOfWarrior</li>
+						<li MayRequire="kure.arom">BookOfMiner</li>
+						<li MayRequire="kure.arom">BookOfStriker</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -301,6 +616,11 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfBladedancer</li>
+				<li MayRequire="kure.arom">BookOfScrapper</li>
+				<li MayRequire="kure.arom">BookOfGunbreaker</li>
+				<li MayRequire="kure.arom">BookOfWarrior</li>
+				<li MayRequire="kure.arom">BookOfMiner</li>
+				<li MayRequire="kure.arom">BookOfStriker</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -314,6 +634,12 @@
 						<li>SkillOf_HeavyBlow</li>
 						<li>SkillOf_PommelStrike</li>
 						<li>SkillOf_TempestStrike</li>
+						<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+						<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+						<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+						<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+						<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+						<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -324,6 +650,12 @@
 				<li>SkillOf_HeavyBlow</li>
 				<li>SkillOf_PommelStrike</li>
 				<li>SkillOf_TempestStrike</li>
+				<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+				<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+				<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+				<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+				<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+				<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -337,6 +669,12 @@
 						<li>SkillOf_HeavyBlow</li>
 						<li>SkillOf_PommelStrike</li>
 						<li>SkillOf_TempestStrike</li>
+						<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+						<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+						<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+						<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+						<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+						<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -347,6 +685,12 @@
 				<li>SkillOf_HeavyBlow</li>
 				<li>SkillOf_PommelStrike</li>
 				<li>SkillOf_TempestStrike</li>
+				<li MayRequire="kure.arom">SkillOf_ElusiveJump</li>
+				<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+				<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+				<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+				<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+				<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -360,6 +704,8 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfGladiator</li>
+						<li MayRequire="kure.arom">BookOfRailbreaker</li>
+						<li MayRequire="kure.arom">BookOfBerserker</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -368,6 +714,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfGladiator</li>
+				<li MayRequire="kure.arom">BookOfRailbreaker</li>
+				<li MayRequire="kure.arom">BookOfBerserker</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -382,6 +730,16 @@
 						<li>SkillOf_StrongBack</li>
 						<li>SkillOf_ThickSkin</li>
 						<li>SkillOf_Sprint</li>
+						<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+						<li MayRequire="kure.arom">SkillOf_LivingDead</li>
+						<li MayRequire="kure.arom">SkillOf_Regulator</li>
+						<li MayRequire="kure.arom">SkillOf_ShakeItOff</li>
+						<li MayRequire="kure.arom">SkillOf_Superbolide</li>
+						<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+						<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+						<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+						<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+						<li MayRequire="kure.arom">SkillOf_Vengeance</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -393,6 +751,16 @@
 				<li>SkillOf_StrongBack</li>
 				<li>SkillOf_ThickSkin</li>
 				<li>SkillOf_Sprint</li>
+				<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+				<li MayRequire="kure.arom">SkillOf_LivingDead</li>
+				<li MayRequire="kure.arom">SkillOf_Regulator</li>
+				<li MayRequire="kure.arom">SkillOf_ShakeItOff</li>
+				<li MayRequire="kure.arom">SkillOf_Superbolide</li>
+				<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+				<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+				<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+				<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+				<li MayRequire="kure.arom">SkillOf_Vengeance</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -407,6 +775,16 @@
 						<li>SkillOf_StrongBack</li>
 						<li>SkillOf_ThickSkin</li>
 						<li>SkillOf_Sprint</li>
+						<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+						<li MayRequire="kure.arom">SkillOf_LivingDead</li>
+						<li MayRequire="kure.arom">SkillOf_Regulator</li>
+						<li MayRequire="kure.arom">SkillOf_ShakeItOff</li>
+						<li MayRequire="kure.arom">SkillOf_Superbolide</li>
+						<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+						<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+						<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+						<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+						<li MayRequire="kure.arom">SkillOf_Vengeance</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -418,6 +796,16 @@
 				<li>SkillOf_StrongBack</li>
 				<li>SkillOf_ThickSkin</li>
 				<li>SkillOf_Sprint</li>
+				<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+				<li MayRequire="kure.arom">SkillOf_LivingDead</li>
+				<li MayRequire="kure.arom">SkillOf_Regulator</li>
+				<li MayRequire="kure.arom">SkillOf_ShakeItOff</li>
+				<li MayRequire="kure.arom">SkillOf_Superbolide</li>
+				<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+				<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+				<li MayRequire="kure.arom">SkillOf_FinalSalvo</li>
+				<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+				<li MayRequire="kure.arom">SkillOf_Vengeance</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -435,6 +823,18 @@
 						<li>BookOfMonk</li>
 						<li>BookOfGladiator</li>
 						<li MayRequire="kure.arom">BookOfNinja</li>
+						<li MayRequire="kure.arom">BookOfGuardian</li>
+						<li MayRequire="kure.arom">BookOfShadowbringer</li>
+						<li MayRequire="kure.arom">BookOfWarden</li>
+						<li MayRequire="kure.arom">BookOfRailbreaker</li>
+						<li MayRequire="kure.arom">BookOfSamurai</li>
+						<li MayRequire="kure.arom">BookOfBerserker</li>
+						<li MayRequire="kure.arom">BookOfScion</li>
+						<li MayRequire="kure.arom">BookOfScrapper</li>
+						<li MayRequire="kure.arom">BookOfDragoon</li>
+						<li MayRequire="kure.arom">BookOfNomad</li>
+						<li MayRequire="kure.arom">BookOfStriker</li>
+						<li MayRequire="kure.arom">BookOfBlossomBlader</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -447,6 +847,18 @@
 				<li>BookOfMonk</li>
 				<li>BookOfGladiator</li>
 				<li MayRequire="kure.arom">BookOfNinja</li>
+				<li MayRequire="kure.arom">BookOfGuardian</li>
+				<li MayRequire="kure.arom">BookOfShadowbringer</li>
+				<li MayRequire="kure.arom">BookOfWarden</li>
+				<li MayRequire="kure.arom">BookOfRailbreaker</li>
+				<li MayRequire="kure.arom">BookOfSamurai</li>
+				<li MayRequire="kure.arom">BookOfBerserker</li>
+				<li MayRequire="kure.arom">BookOfScion</li>
+				<li MayRequire="kure.arom">BookOfScrapper</li>
+				<li MayRequire="kure.arom">BookOfDragoon</li>
+				<li MayRequire="kure.arom">BookOfNomad</li>
+				<li MayRequire="kure.arom">BookOfStriker</li>
+				<li MayRequire="kure.arom">BookOfBlossomBlader</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -457,6 +869,26 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+						<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+						<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+						<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+						<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+						<li MayRequire="kure.arom">SkillOf_Continuation</li>
+						<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+						<li MayRequire="kure.arom">SkillOf_FallenLeaf</li>
+						<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+						<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+						<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+						<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+						<li MayRequire="kure.arom">SkillOf_Plunge</li>
+						<li MayRequire="kure.arom">SkillOf_Quietus</li>
+						<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+						<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+						<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+						<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+						<li MayRequire="kure.arom">SkillOf_TemperedWill</li>
+						<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -464,6 +896,26 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+				<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+				<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+				<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+				<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+				<li MayRequire="kure.arom">SkillOf_Continuation</li>
+				<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+				<li MayRequire="kure.arom">SkillOf_FallenLeaf</li>
+				<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+				<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+				<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+				<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+				<li MayRequire="kure.arom">SkillOf_Plunge</li>
+				<li MayRequire="kure.arom">SkillOf_Quietus</li>
+				<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+				<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+				<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+				<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+				<li MayRequire="kure.arom">SkillOf_TemperedWill</li>
+				<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -474,6 +926,26 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+						<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+						<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+						<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+						<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+						<li MayRequire="kure.arom">SkillOf_Continuation</li>
+						<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+						<li MayRequire="kure.arom">SkillOf_FallenLeaf</li>
+						<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+						<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+						<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+						<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+						<li MayRequire="kure.arom">SkillOf_Plunge</li>
+						<li MayRequire="kure.arom">SkillOf_Quietus</li>
+						<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+						<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+						<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+						<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+						<li MayRequire="kure.arom">SkillOf_TemperedWill</li>
+						<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -481,6 +953,26 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_RoughDivide</li>
+				<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+				<li MayRequire="kure.arom">SkillOf_BloodOfTheDragon</li>
+				<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+				<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+				<li MayRequire="kure.arom">SkillOf_Continuation</li>
+				<li MayRequire="kure.arom">SkillOf_DoubleDown</li>
+				<li MayRequire="kure.arom">SkillOf_FallenLeaf</li>
+				<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+				<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+				<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+				<li MayRequire="kure.arom">SkillOf_Onslaught</li>
+				<li MayRequire="kure.arom">SkillOf_Plunge</li>
+				<li MayRequire="kure.arom">SkillOf_Quietus</li>
+				<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+				<li MayRequire="kure.arom">SkillOf_Rockbreaker</li>
+				<li MayRequire="kure.arom">SkillOf_Stardiver</li>
+				<li MayRequire="kure.arom">SkillOf_SyphonStrike</li>
+				<li MayRequire="kure.arom">SkillOf_TemperedWill</li>
+				<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -497,6 +989,8 @@
 						<li>BookOfMonk</li>
 						<li>BookOfPsionic</li>
 						<li MayRequire="kure.arom">BookOfDuskbringer</li>
+						<li MayRequire="kure.arom">BookOfSamurai</li>
+						<li MayRequire="kure.arom">BookOfScion</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -508,6 +1002,8 @@
 				<li>BookOfMonk</li>
 				<li>BookOfPsionic</li>
 				<li MayRequire="kure.arom">BookOfDuskbringer</li>
+				<li MayRequire="kure.arom">BookOfSamurai</li>
+				<li MayRequire="kure.arom">BookOfScion</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -520,6 +1016,16 @@
 					<thingDefs>
 						<li>SkillOf_BurningFury</li>
 						<li>SkillOf_FightersFocus</li>
+						<li MayRequire="kure.arom">SkillOf_MarksmansVow</li>
+						<li MayRequire="kure.arom">SkillOf_OneInTheChamber</li>
+						<li MayRequire="kure.arom">SkillOf_Requiescat</li>
+						<li MayRequire="kure.arom">SkillOf_Temperance</li>
+						<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+						<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+						<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+						<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+						<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+						<li MayRequire="kure.arom">SkillOf_LightArrow</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -529,6 +1035,16 @@
 			<thingDefs>
 				<li>SkillOf_BurningFury</li>
 				<li>SkillOf_FightersFocus</li>
+				<li MayRequire="kure.arom">SkillOf_MarksmansVow</li>
+				<li MayRequire="kure.arom">SkillOf_OneInTheChamber</li>
+				<li MayRequire="kure.arom">SkillOf_Requiescat</li>
+				<li MayRequire="kure.arom">SkillOf_Temperance</li>
+				<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+				<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+				<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+				<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+				<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+				<li MayRequire="kure.arom">SkillOf_LightArrow</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -541,6 +1057,16 @@
 					<thingDefs>
 						<li>SkillOf_BurningFury</li>
 						<li>SkillOf_FightersFocus</li>
+						<li MayRequire="kure.arom">SkillOf_MarksmansVow</li>
+						<li MayRequire="kure.arom">SkillOf_OneInTheChamber</li>
+						<li MayRequire="kure.arom">SkillOf_Requiescat</li>
+						<li MayRequire="kure.arom">SkillOf_Temperance</li>
+						<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+						<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+						<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+						<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+						<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+						<li MayRequire="kure.arom">SkillOf_LightArrow</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -550,6 +1076,16 @@
 			<thingDefs>
 				<li>SkillOf_BurningFury</li>
 				<li>SkillOf_FightersFocus</li>
+				<li MayRequire="kure.arom">SkillOf_MarksmansVow</li>
+				<li MayRequire="kure.arom">SkillOf_OneInTheChamber</li>
+				<li MayRequire="kure.arom">SkillOf_Requiescat</li>
+				<li MayRequire="kure.arom">SkillOf_Temperance</li>
+				<li MayRequire="kure.arom">SkillOf_InnerChaos</li>
+				<li MayRequire="kure.arom">SkillOf_RiddleOfFlame</li>
+				<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+				<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+				<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+				<li MayRequire="kure.arom">SkillOf_LightArrow</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -567,6 +1103,14 @@
 						<li MayRequire="kure.arom">BookOfElementalGunner</li>
 						<li MayRequire="kure.arom">BookOfPridestalker</li>
 						<li MayRequire="kure.arom">BookOfDeadeye</li>
+						<li MayRequire="kure.arom">BookOfBombardier</li>
+						<li MayRequire="kure.arom">BookOfChainwarden</li>
+						<li MayRequire="kure.arom">BookOfHawkeye</li>
+						<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+						<li MayRequire="kure.arom">BookOfGunner</li>
+						<li MayRequire="kure.arom">BookOfNomad</li>
+						<li MayRequire="kure.arom">BookOfMechHunter</li>
+						<li MayRequire="kure.arom">BookOfGunslinger</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -579,6 +1123,14 @@
 				<li MayRequire="kure.arom">BookOfElementalGunner</li>
 				<li MayRequire="kure.arom">BookOfPridestalker</li>
 				<li MayRequire="kure.arom">BookOfDeadeye</li>
+				<li MayRequire="kure.arom">BookOfBombardier</li>
+				<li MayRequire="kure.arom">BookOfChainwarden</li>
+				<li MayRequire="kure.arom">BookOfHawkeye</li>
+				<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+				<li MayRequire="kure.arom">BookOfGunner</li>
+				<li MayRequire="kure.arom">BookOfNomad</li>
+				<li MayRequire="kure.arom">BookOfMechHunter</li>
+				<li MayRequire="kure.arom">BookOfGunslinger</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -589,6 +1141,30 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+						<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+						<li MayRequire="kure.arom">SkillOf_Breachfire</li>
+						<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+						<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+						<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+						<li MayRequire="kure.arom">SkillOf_DeckBlast</li>
+						<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+						<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+						<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+						<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
+						<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+						<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+						<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
+						<li MayRequire="kure.arom">SkillOf_Hypervelocity</li>
+						<li MayRequire="kure.arom">SkillOf_LightArrow</li>
+						<li MayRequire="kure.arom">SkillOf_MiserysEnd</li>
+						<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+						<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+						<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+						<li MayRequire="kure.arom">SkillOf_PrimeLightCannon</li>
+						<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+						<li MayRequire="kure.arom">SkillOf_SkirmishersShot</li>
+						<li MayRequire="kure.arom">SkillOf_StimShot</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -596,6 +1172,30 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+				<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+				<li MayRequire="kure.arom">SkillOf_Breachfire</li>
+				<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+				<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+				<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+				<li MayRequire="kure.arom">SkillOf_DeckBlast</li>
+				<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+				<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+				<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+				<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
+				<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+				<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+				<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
+				<li MayRequire="kure.arom">SkillOf_Hypervelocity</li>
+				<li MayRequire="kure.arom">SkillOf_LightArrow</li>
+				<li MayRequire="kure.arom">SkillOf_MiserysEnd</li>
+				<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+				<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+				<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+				<li MayRequire="kure.arom">SkillOf_PrimeLightCannon</li>
+				<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+				<li MayRequire="kure.arom">SkillOf_SkirmishersShot</li>
+				<li MayRequire="kure.arom">SkillOf_StimShot</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -606,6 +1206,30 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+						<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+						<li MayRequire="kure.arom">SkillOf_Breachfire</li>
+						<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+						<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+						<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+						<li MayRequire="kure.arom">SkillOf_DeckBlast</li>
+						<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+						<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+						<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+						<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
+						<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+						<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+						<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
+						<li MayRequire="kure.arom">SkillOf_Hypervelocity</li>
+						<li MayRequire="kure.arom">SkillOf_LightArrow</li>
+						<li MayRequire="kure.arom">SkillOf_MiserysEnd</li>
+						<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+						<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+						<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+						<li MayRequire="kure.arom">SkillOf_PrimeLightCannon</li>
+						<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+						<li MayRequire="kure.arom">SkillOf_SkirmishersShot</li>
+						<li MayRequire="kure.arom">SkillOf_StimShot</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -613,6 +1237,30 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+				<li MayRequire="kure.arom">SkillOf_Bladestorm</li>
+				<li MayRequire="kure.arom">SkillOf_Breachfire</li>
+				<li MayRequire="kure.arom">SkillOf_BurstShot</li>
+				<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+				<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+				<li MayRequire="kure.arom">SkillOf_DeckBlast</li>
+				<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+				<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+				<li MayRequire="kure.arom">SkillOf_GrappleArrow</li>
+				<li MayRequire="kure.arom">SkillOf_GrapplingHookD</li>
+				<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+				<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+				<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
+				<li MayRequire="kure.arom">SkillOf_Hypervelocity</li>
+				<li MayRequire="kure.arom">SkillOf_LightArrow</li>
+				<li MayRequire="kure.arom">SkillOf_MiserysEnd</li>
+				<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+				<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+				<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+				<li MayRequire="kure.arom">SkillOf_PrimeLightCannon</li>
+				<li MayRequire="kure.arom">SkillOf_QuickShot</li>
+				<li MayRequire="kure.arom">SkillOf_SkirmishersShot</li>
+				<li MayRequire="kure.arom">SkillOf_StimShot</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -626,6 +1274,13 @@
 				<filter>
 					<thingDefs>
 						<li>BookOfCommander</li>
+						<li MayRequire="kure.arom">BookOfPlaguedoctor</li>
+						<li MayRequire="kure.arom">BookOfGadgeteer</li>
+						<li MayRequire="kure.arom">BookOfMedic</li>
+						<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+						<li MayRequire="kure.arom">BookOfGunner</li>
+						<li MayRequire="kure.arom">BookOfMechHunter</li>
+						<li MayRequire="kure.arom">BookOfChempunk</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -634,6 +1289,13 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>BookOfCommander</li>
+				<li MayRequire="kure.arom">BookOfPlaguedoctor</li>
+				<li MayRequire="kure.arom">BookOfGadgeteer</li>
+				<li MayRequire="kure.arom">BookOfMedic</li>
+				<li MayRequire="kure.arom">BookOfSupportSpecialist</li>
+				<li MayRequire="kure.arom">BookOfGunner</li>
+				<li MayRequire="kure.arom">BookOfMechHunter</li>
+				<li MayRequire="kure.arom">BookOfChempunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -645,6 +1307,37 @@
 				<filter>
 					<thingDefs>
 						<li>SkillOf_Legion</li>
+						<li MayRequire="kure.arom">SkillOf_CleanReload</li>
+						<li MayRequire="kure.arom">SkillOf_MedigelC</li>
+						<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+						<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+						<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+						<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+						<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+						<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+						<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+						<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+						<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+						<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+						<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+						<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+						<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+						<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+						<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+						<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+						<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+						<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
+						<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+						<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+						<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+						<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+						<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+						<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+						<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+						<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+						<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+						<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+						<li MayRequire="kure.arom">SkillOf_StimShot</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -653,6 +1346,37 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SkillOf_Legion</li>
+				<li MayRequire="kure.arom">SkillOf_CleanReload</li>
+				<li MayRequire="kure.arom">SkillOf_MedigelC</li>
+				<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+				<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+				<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+				<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+				<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+				<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+				<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+				<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+				<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+				<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+				<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+				<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+				<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+				<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+				<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+				<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+				<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+				<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
+				<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+				<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+				<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+				<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+				<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+				<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+				<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+				<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+				<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+				<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+				<li MayRequire="kure.arom">SkillOf_StimShot</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -664,6 +1388,37 @@
 				<filter>
 					<thingDefs>
 						<li>SkillOf_Legion</li>
+						<li MayRequire="kure.arom">SkillOf_CleanReload</li>
+						<li MayRequire="kure.arom">SkillOf_MedigelC</li>
+						<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+						<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+						<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+						<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+						<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+						<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+						<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+						<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+						<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+						<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+						<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+						<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+						<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+						<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+						<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+						<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+						<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+						<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
+						<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+						<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+						<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+						<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+						<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+						<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+						<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+						<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+						<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+						<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+						<li MayRequire="kure.arom">SkillOf_StimShot</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -672,6 +1427,37 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SkillOf_Legion</li>
+				<li MayRequire="kure.arom">SkillOf_CleanReload</li>
+				<li MayRequire="kure.arom">SkillOf_MedigelC</li>
+				<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+				<li MayRequire="kure.arom">SkillOf_Nanoseeker</li>
+				<li MayRequire="kure.arom">SkillOf_NoxiousBlast</li>
+				<li MayRequire="kure.arom">SkillOf_BladesEdge</li>
+				<li MayRequire="kure.arom">SkillOf_HowlingFist</li>
+				<li MayRequire="kure.arom">SkillOf_Juggernaut</li>
+				<li MayRequire="kure.arom">SkillOf_SmokeSatchel</li>
+				<li MayRequire="kure.arom">SkillOf_Blackpowder</li>
+				<li MayRequire="kure.arom">SkillOf_Caltrops</li>
+				<li MayRequire="kure.arom">SkillOf_EMPBomb</li>
+				<li MayRequire="kure.arom">SkillOf_OldHeadlight</li>
+				<li MayRequire="kure.arom">SkillOf_PhotonWall</li>
+				<li MayRequire="kure.arom">SkillOf_AmbusherPoisonTrap</li>
+				<li MayRequire="kure.arom">SkillOf_RefinedManaPotion</li>
+				<li MayRequire="kure.arom">SkillOf_RuneOfLightning</li>
+				<li MayRequire="kure.arom">SkillOf_TheBigOne</li>
+				<li MayRequire="kure.arom">SkillOf_TrollUnguent</li>
+				<li MayRequire="kure.arom">SkillOf_TruthOfMountains</li>
+				<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+				<li MayRequire="kure.arom">SkillOf_ApexArrow</li>
+				<li MayRequire="kure.arom">SkillOf_CoverFire</li>
+				<li MayRequire="kure.arom">SkillOf_CripplingShot</li>
+				<li MayRequire="kure.arom">SkillOf_DisarmingShot</li>
+				<li MayRequire="kure.arom">SkillOf_Gunflame</li>
+				<li MayRequire="kure.arom">SkillOf_HeadGraze</li>
+				<li MayRequire="kure.arom">SkillOf_NaniteShot</li>
+				<li MayRequire="kure.arom">SkillOf_OfudaStorm</li>
+				<li MayRequire="kure.arom">SkillOf_PoisonVolley</li>
+				<li MayRequire="kure.arom">SkillOf_StimShot</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -688,6 +1474,10 @@
 						<li>BookOfFaceless</li>
 						<li MayRequire="kure.arom">BookOfReaper</li>
 						<li MayRequire="kure.arom">BookOfSpellthief</li>
+						<li MayRequire="kure.arom">BookOfAmbusher</li>
+						<li MayRequire="kure.arom">BookOfSaboteur</li>
+						<li MayRequire="kure.arom">BookOfMystic</li>
+						<li MayRequire="kure.arom">BookOfThunderblessed</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -699,6 +1489,10 @@
 				<li>BookOfFaceless</li>
 				<li MayRequire="kure.arom">BookOfReaper</li>
 				<li MayRequire="kure.arom">BookOfSpellthief</li>
+				<li MayRequire="kure.arom">BookOfAmbusher</li>
+				<li MayRequire="kure.arom">BookOfSaboteur</li>
+				<li MayRequire="kure.arom">BookOfMystic</li>
+				<li MayRequire="kure.arom">BookOfThunderblessed</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -712,6 +1506,24 @@
 						<li>SkillOf_Taunt</li>
 						<li>SkillOf_HerbalClarity</li>
 						<li>SkillOf_HerbalBliss</li>
+						<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+						<li MayRequire="kure.arom">SkillOf_Ambush</li>
+						<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+						<li MayRequire="kure.arom">SkillOf_Glare</li>
+						<li MayRequire="kure.arom">SkillOf_GrandChallenge</li>
+						<li MayRequire="kure.arom">SkillOf_OpeningRitual</li>
+						<li MayRequire="kure.arom">SkillOf_Pickpocket</li>
+						<li MayRequire="kure.arom">SkillOf_ProvokeC</li>
+						<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+						<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
+						<li MayRequire="kure.arom">SkillOf_Vengeance</li>
+						<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+						<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+						<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+						<li MayRequire="kure.arom">SkillOf_Quietus</li>
+						<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+						<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+						<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -722,6 +1534,24 @@
 				<li>SkillOf_Taunt</li>
 				<li>SkillOf_HerbalClarity</li>
 				<li>SkillOf_HerbalBliss</li>
+				<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+				<li MayRequire="kure.arom">SkillOf_Ambush</li>
+				<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+				<li MayRequire="kure.arom">SkillOf_Glare</li>
+				<li MayRequire="kure.arom">SkillOf_GrandChallenge</li>
+				<li MayRequire="kure.arom">SkillOf_OpeningRitual</li>
+				<li MayRequire="kure.arom">SkillOf_Pickpocket</li>
+				<li MayRequire="kure.arom">SkillOf_ProvokeC</li>
+				<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+				<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
+				<li MayRequire="kure.arom">SkillOf_Vengeance</li>
+				<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+				<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+				<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+				<li MayRequire="kure.arom">SkillOf_Quietus</li>
+				<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+				<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+				<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -735,6 +1565,24 @@
 						<li>SkillOf_Taunt</li>
 						<li>SkillOf_HerbalClarity</li>
 						<li>SkillOf_HerbalBliss</li>
+						<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+						<li MayRequire="kure.arom">SkillOf_Ambush</li>
+						<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+						<li MayRequire="kure.arom">SkillOf_Glare</li>
+						<li MayRequire="kure.arom">SkillOf_GrandChallenge</li>
+						<li MayRequire="kure.arom">SkillOf_OpeningRitual</li>
+						<li MayRequire="kure.arom">SkillOf_Pickpocket</li>
+						<li MayRequire="kure.arom">SkillOf_ProvokeC</li>
+						<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+						<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
+						<li MayRequire="kure.arom">SkillOf_Vengeance</li>
+						<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+						<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+						<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+						<li MayRequire="kure.arom">SkillOf_Quietus</li>
+						<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+						<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+						<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -745,6 +1593,24 @@
 				<li>SkillOf_Taunt</li>
 				<li>SkillOf_HerbalClarity</li>
 				<li>SkillOf_HerbalBliss</li>
+				<li MayRequire="kure.arom">SkillOf_AbyssalDrain</li>
+				<li MayRequire="kure.arom">SkillOf_Ambush</li>
+				<li MayRequire="kure.arom">SkillOf_DarkGrasp</li>
+				<li MayRequire="kure.arom">SkillOf_Glare</li>
+				<li MayRequire="kure.arom">SkillOf_GrandChallenge</li>
+				<li MayRequire="kure.arom">SkillOf_OpeningRitual</li>
+				<li MayRequire="kure.arom">SkillOf_Pickpocket</li>
+				<li MayRequire="kure.arom">SkillOf_ProvokeC</li>
+				<li MayRequire="kure.arom">SkillOf_StiflingWinds</li>
+				<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
+				<li MayRequire="kure.arom">SkillOf_Vengeance</li>
+				<li MayRequire="kure.arom">SkillOf_BloodWeapon</li>
+				<li MayRequire="kure.arom">SkillOf_Confiteor</li>
+				<li MayRequire="kure.arom">SkillOf_InfuriateW</li>
+				<li MayRequire="kure.arom">SkillOf_Quietus</li>
+				<li MayRequire="kure.arom">SkillOf_ProximityCharge</li>
+				<li MayRequire="kure.arom">SkillOf_EmpyrealArrow</li>
+				<li MayRequire="kure.arom">SkillOf_HuntersShot</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -759,6 +1625,8 @@
 					<thingDefs>
 						<li>BookOfCommander</li>
 						<li>BookOfFaceless</li>
+						<li MayRequire="kure.arom">BookOfSaboteur</li>
+						<li MayRequire="kure.arom">BookOfChef</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -768,6 +1636,8 @@
 			<thingDefs>
 				<li>BookOfCommander</li>
 				<li>BookOfFaceless</li>
+				<li MayRequire="kure.arom">BookOfSaboteur</li>
+				<li MayRequire="kure.arom">BookOfChef</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -778,6 +1648,10 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_DiplomaticNegotiationsC</li>
+						<li MayRequire="kure.arom">SkillOf_FireAtWillC</li>
+						<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+						<li MayRequire="kure.arom">SkillOf_Swiftsong</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -785,6 +1659,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_DiplomaticNegotiationsC</li>
+				<li MayRequire="kure.arom">SkillOf_FireAtWillC</li>
+				<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+				<li MayRequire="kure.arom">SkillOf_Swiftsong</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -795,6 +1673,10 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_DiplomaticNegotiationsC</li>
+						<li MayRequire="kure.arom">SkillOf_FireAtWillC</li>
+						<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+						<li MayRequire="kure.arom">SkillOf_Swiftsong</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -802,6 +1684,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_DiplomaticNegotiationsC</li>
+				<li MayRequire="kure.arom">SkillOf_FireAtWillC</li>
+				<li MayRequire="kure.arom">SkillOf_OrbitalEMP</li>
+				<li MayRequire="kure.arom">SkillOf_Swiftsong</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -835,6 +1721,9 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+						<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+						<li MayRequire="kure.arom">SkillOf_LivingArtillery</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -842,6 +1731,9 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+				<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+				<li MayRequire="kure.arom">SkillOf_LivingArtillery</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -852,6 +1744,9 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+						<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+						<li MayRequire="kure.arom">SkillOf_LivingArtillery</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -859,6 +1754,9 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_DeathsJudgment</li>
+				<li MayRequire="kure.arom">SkillOf_Heartpiercer</li>
+				<li MayRequire="kure.arom">SkillOf_LivingArtillery</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -890,6 +1788,10 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_BladeParry</li>
+						<li MayRequire="kure.arom">SkillOf_Sheltron</li>
+						<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+						<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -897,6 +1799,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_BladeParry</li>
+				<li MayRequire="kure.arom">SkillOf_Sheltron</li>
+				<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+				<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -907,6 +1813,10 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_BladeParry</li>
+						<li MayRequire="kure.arom">SkillOf_Sheltron</li>
+						<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+						<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -914,6 +1824,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_BladeParry</li>
+				<li MayRequire="kure.arom">SkillOf_Sheltron</li>
+				<li MayRequire="kure.arom">SkillOf_ShieldStance</li>
+				<li MayRequire="kure.arom">SkillOf_TheBlackestNight</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -945,6 +1859,10 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_ApproachingStorm</li>
+						<li MayRequire="kure.arom">SkillOf_SerenityC</li>
+						<li MayRequire="kure.arom">SkillOf_ThroneOfGluttony</li>
+						<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -952,6 +1870,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_ApproachingStorm</li>
+				<li MayRequire="kure.arom">SkillOf_SerenityC</li>
+				<li MayRequire="kure.arom">SkillOf_ThroneOfGluttony</li>
+				<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -962,6 +1884,10 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SkillOf_ApproachingStorm</li>
+						<li MayRequire="kure.arom">SkillOf_SerenityC</li>
+						<li MayRequire="kure.arom">SkillOf_ThroneOfGluttony</li>
+						<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -969,6 +1895,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SkillOf_ApproachingStorm</li>
+				<li MayRequire="kure.arom">SkillOf_SerenityC</li>
+				<li MayRequire="kure.arom">SkillOf_ThroneOfGluttony</li>
+				<li MayRequire="kure.arom">SkillOf_TouchOfDeathC</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>

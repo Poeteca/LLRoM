@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<LLRoM_RestoreDefaults>Restore Defaults</LLRoM_RestoreDefaults>
+	<MissingCat>
+Missing developments in: </MissingCat>
+	<RelatedClasses>Related Classes:</RelatedClasses>
 	<MaxCostScaleFactor>Maximum cost multiplier: x{0}</MaxCostScaleFactor>
 	<learnBycastingSpells>If using abilities give proficiency experiance.</learnBycastingSpells>
 	<CastProRequirement>If abilities have a proficiency requirement to cast.</CastProRequirement>
@@ -28,7 +32,7 @@
 	<AbilityRequiresProficiencies>If abilities have learning requirements</AbilityRequiresProficiencies>
 	<XPMultiplier>Experiance from ability use multiplier: {0}% of normal learn rate.</XPMultiplier>
 	<CanFailLearn>If there is a chance to fail an attempt to learn a class or an ability when self teaching, fail chace is determined by the object used.</CanFailLearn>
-	<LLRoM_AutoLearnedClass>{0} made a breakthrough becoming {2} {1}.</LLRoM_AutoLearnedClass>
+	<LLRoM_AutoLearnedClass>{0} made a breakthrough becoming {2}{1}.</LLRoM_AutoLearnedClass>
 	<LLRoM_AutoLearnClassFail>{0} failed to make a breakthrough, cause: random chance.</LLRoM_AutoLearnClassFail>
 	<LLRoM_FailAutoLearnedClassNoClasses>{0} failed to make a breakthrough, cause: no possible breakthroughs.</LLRoM_FailAutoLearnedClassNoClasses>
 	<LLRoM_FailAutoLearnedClassUnknownError>{0} failed to make a breakthrough, cause: unknown.</LLRoM_FailAutoLearnedClassUnknownError>

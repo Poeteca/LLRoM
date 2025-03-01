@@ -71,6 +71,7 @@
 				<Relatedtraits>
 					<li>TM_Brightmage</li>
 					<li MayRequire="kure.arom">TM_Duskbringer</li>
+					<li MayRequire="kure.arom">TM_Oracle</li>
 				</Relatedtraits>
 			</li>
 			<li Class="LLRoM.StatOffsetExtension">

@@ -9,6 +9,8 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">Torn_BookOfWindMage</li>
+						<li MayRequire="kure.arom">BookOfWindMage</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -16,6 +18,8 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">Torn_BookOfWindMage</li>
+				<li MayRequire="kure.arom">BookOfWindMage</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -29,6 +33,7 @@
 						<li>SpellOf_SmokeCloud</li>
 						<li>SpellOf_DirtDevil</li>
 						<li>SpellOf_Rain</li>
+						<li MayRequire="kure.arom">SpellOf_TailwindC</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -39,6 +44,7 @@
 				<li>SpellOf_SmokeCloud</li>
 				<li>SpellOf_DirtDevil</li>
 				<li>SpellOf_Rain</li>
+				<li MayRequire="kure.arom">SpellOf_TailwindC</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -52,6 +58,7 @@
 						<li>SpellOf_SmokeCloud</li>
 						<li>SpellOf_DirtDevil</li>
 						<li>SpellOf_Rain</li>
+						<li MayRequire="kure.arom">SpellOf_TailwindC</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -62,6 +69,7 @@
 				<li>SpellOf_SmokeCloud</li>
 				<li>SpellOf_DirtDevil</li>
 				<li>SpellOf_Rain</li>
+				<li MayRequire="kure.arom">SpellOf_TailwindC</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -74,6 +82,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">BookOfWindMage</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -81,6 +90,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">BookOfWindMage</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -91,6 +101,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_FlightW</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -98,6 +109,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_FlightW</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -108,6 +120,7 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_FlightW</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -115,6 +128,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_FlightW</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -145,6 +159,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_AlterStorm</li>
+						<li MayRequire="kure.arom">SpellOf_FeyWindsLearnable</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -153,6 +168,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_AlterStorm</li>
+				<li MayRequire="kure.arom">SpellOf_FeyWindsLearnable</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -164,6 +180,7 @@
 				<filter>
 					<thingDefs>
 						<li>SpellOf_AlterStorm</li>
+						<li MayRequire="kure.arom">SpellOf_FeyWindsLearnable</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -172,6 +189,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>SpellOf_AlterStorm</li>
+				<li MayRequire="kure.arom">SpellOf_FeyWindsLearnable</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
