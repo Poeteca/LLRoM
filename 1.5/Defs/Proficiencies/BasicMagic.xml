@@ -33,7 +33,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_Defensive</defName>
-		<label>LLRoM_Defensive</label>
+		<label>Defensum Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>100</costTheoretical>
@@ -71,7 +71,7 @@
 		
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_DefensiveBuff</defName>
-		<label>LLRoM_DefensiveBuff</label>
+		<label>Prowe Defensa Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -111,7 +111,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_DefensiveBarrier</defName>
-		<label>LLRoM_DefensiveBarrier</label>
+		<label>Scildan Defensa Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -148,7 +148,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_Offensive</defName>
-		<label>LLRoM_Offensive</label>
+		<label>Offensivus Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>100</costTheoretical>
@@ -191,7 +191,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_OffensiveLargeArea</defName>
-		<label>LLRoM_OffensiveLargeArea</label>
+		<label>Offensivus Regere Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -228,7 +228,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_OffensiveDeBuff</defName>
-		<label>LLRoM_OffensiveDeBuff</label>
+		<label>Offensivus Vac Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -266,7 +266,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_RawI</defName>
-		<label>LLRoM_RawI</label>
+		<label>Kravis Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -306,7 +306,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_BindingI</defName>
-		<label>LLRoM_BindingI</label>
+		<label>Bendras Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -346,7 +346,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_RawII</defName>
-		<label>LLRoM_RawII</label>
+		<label>Smeate Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>600</costTheoretical>
@@ -402,7 +402,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_TimeI</defName>
-		<label>LLRoM_TimeI</label>
+		<label>Tima Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -452,7 +452,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_BindingII</defName>
-		<label>LLRoM_BindingII</label>
+		<label>Adgratum Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -509,7 +509,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EmotionI</defName>
-		<label>LLRoM_EmotionI</label>
+		<label>Emovere Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -540,7 +540,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EmotionII</defName>
-		<label>LLRoM_EmotionII</label>
+		<label>Mentalis Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -593,7 +593,7 @@
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_TimeII</defName>
-		<label>LLRoM_TimeII</label>
+		<label>Klokkos Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -648,7 +648,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_ChaosI</defName>
-		<label>LLRoM_ChaosI</label>
+		<label>Khaos Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -707,7 +707,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_TimeIII</defName>
-		<label>LLRoM_TimeIII</label>
+		<label>Khronos Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>
@@ -757,7 +757,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_ChaosII</defName>
-		<label>LLRoM_ChaosII</label>
+		<label>Preakaan Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>

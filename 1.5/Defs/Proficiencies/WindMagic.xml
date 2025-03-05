@@ -3,7 +3,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_WindI</defName>
-		<label>LLRoM_WindI</label>
+		<label>Lyft Arcanus</label>
 		<category>ProficiencyCategory_WindMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -34,7 +34,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_WindII</defName>
-		<label>LLRoM_WindII</label>
+		<label>Drahtuz Arcanus</label>
 		<category>ProficiencyCategory_WindMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -90,7 +90,7 @@
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_WindIII</defName>
-		<label>LLRoM_WindIII</label>
+		<label>Tempestas Arcanus</label>
 		<category>ProficiencyCategory_WindMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>

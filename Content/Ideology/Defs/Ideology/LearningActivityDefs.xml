@@ -4,7 +4,7 @@
 
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_Divine_Inspiration</defName>
-		<label>Seek Divine Inspiration</label>
+		<label>Seek Ideological Inspiration</label>
 		<description>Temp</description>
 		<activityJob>LLRoMDivineInspiration</activityJob>
 		<effectWorking>LLRoMDivineInspirationEffect</effectWorking>

@@ -7,7 +7,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_MixFireIce</defName>
-		<label>LLRoM_MixFireIce</label>
+		<label>Special Thermal Dynamics</label>
 		<category>ProficiencyCategory_MixedMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>
@@ -35,7 +35,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_MixWindFireIce</defName>
-		<label>LLRoM_MixWindFireIce</label>
+		<label>Arcane Weather Theory</label>
 		<category>ProficiencyCategory_MixedMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>
@@ -63,7 +63,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_MixLightLightning</defName>
-		<label>LLRoM_MixLightLightning</label>
+		<label>Arcane Electro Magnetic Theory</label>
 		<category>ProficiencyCategory_MixedMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>

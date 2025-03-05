@@ -6,17 +6,17 @@
 Missing developments in: </MissingCat>
 	<RelatedClasses>Related Classes:</RelatedClasses>
 	<MaxCostScaleFactor>Maximum cost multiplier: x{0}</MaxCostScaleFactor>
-	<learnBycastingSpells>If using abilities give proficiency experiance.</learnBycastingSpells>
+	<learnBycastingSpells>If using abilities give proficiency experience.</learnBycastingSpells>
 	<CastProRequirement>If abilities have a proficiency requirement to cast.</CastProRequirement>
 	<strictMightCastReuRequirement>If might skills requires knowing proficiencies instead of being able to learn proficiencies.</strictMightCastReuRequirement>
 	<strictMagicCastReuRequirement>If magic spells requires knowing proficiencies instead of being able to learn proficiencies.</strictMagicCastReuRequirement>
 	<CostScale>If ability costs scaled based on known proficiencies.</CostScale>
-	<RelatedSpells>Related Spells</RelatedSpells>
+	<RelatedSpells>Related Abilities:</RelatedSpells>
 	<MissingPro>Missing proficiencies:</MissingPro>
-	<ProStatOffset>Proficiency Modifiers</ProStatOffset>
+	<ProStatOffset>Proficiency Modifiers:</ProStatOffset>
 	<FailChance>Self teach fail chance.</FailChance>
-	<FailChanceReport>The chane for an individual to fail to discover a class or spell when using this.</FailChanceReport>
-	<ProficienciesMasterOffseter>If proficiencies enhanced stat modifier behaviour is enabled.</ProficienciesMasterOffseter>
+	<FailChanceReport>The chance for an individual to fail to discover a class or spell when using this.</FailChanceReport>
+	<ProficienciesMasterOffseter>If proficiencies enhanced stat modifier behavior is enabled.</ProficienciesMasterOffseter>
 	<UnlearnProOnClassGain>If a pawn will unlearn proficiencies that they normally would not use when gaining a class.</UnlearnProOnClassGain>
 	<LLARoM_LearnMagicMissingProficiencies>{0} is not able to understand that tome.</LLARoM_LearnMagicMissingProficiencies>
 	<LLARoM_LearnMightMissingProficiencies>{0} is not able to understand that manual.</LLARoM_LearnMightMissingProficiencies>
@@ -28,17 +28,17 @@ Missing developments in: </MissingCat>
 	<StrictSpellLearning>If a magic spell requires knowing proficiencies instead of being able to learn proficiencies.</StrictSpellLearning>
 	<ObscureCertianProficiencies>If magic and magic proficiencies are hidden if a pawn cannot learn them.</ObscureCertianProficiencies>
 	<ObscureAllProficiencies>If all proficiencies are hidden if a pawn cannot learn them.</ObscureAllProficiencies>
-	<LLRoM>Life Lessons and A Rimworld of Magic Intergration</LLRoM>
-	<ClassRequiresProficiencies>If classes have learning requirements</ClassRequiresProficiencies>
-	<AbilityRequiresProficiencies>If abilities have learning requirements</AbilityRequiresProficiencies>
-	<XPMultiplier>Experiance from ability use multiplier: {0}% of normal learn rate.</XPMultiplier>
-	<CanFailLearn>If there is a chance to fail an attempt to learn a class or an ability when self teaching, fail chace is determined by the object used.</CanFailLearn>
+	<LLRoM>Life Lessons and A Rimworld of Magic Integration</LLRoM>
+	<ClassRequiresProficiencies>If classes have learning requirements.</ClassRequiresProficiencies>
+	<AbilityRequiresProficiencies>If abilities have learning requirements.</AbilityRequiresProficiencies>
+	<XPMultiplier>Experience from ability use multiplier: {0}% of normal learn rate.</XPMultiplier>
+	<CanFailLearn>If there is a chance to fail an attempt to learn a class or an ability when self-teaching, fail chance is determined by the object used.</CanFailLearn>
 	<LLRoM_AutoLearnedClass>{0} made a breakthrough becoming {2}{1}.</LLRoM_AutoLearnedClass>
 	<LLRoM_AutoLearnClassFail>{0} failed to make a breakthrough, cause: random chance.</LLRoM_AutoLearnClassFail>
 	<LLRoM_FailAutoLearnedClassNoClasses>{0} failed to make a breakthrough, cause: no possible breakthroughs.</LLRoM_FailAutoLearnedClassNoClasses>
 	<LLRoM_FailAutoLearnedClassUnknownError>{0} failed to make a breakthrough, cause: unknown.</LLRoM_FailAutoLearnedClassUnknownError>
-	<CanSelfTeachClasses>If a pawn can learn attempt to learn a class at certain spots.</CanSelfTeachClasses>
-	<CanOnlySelfTeachClasses>If classes can only be learned by interacting at certian spots.</CanOnlySelfTeachClasses>
+	<CanSelfTeachClasses>If a pawn can attempt to learn a class at certain spots.</CanSelfTeachClasses>
+	<CanOnlySelfTeachClasses>If classes can only be learned by interacting at certain  spots.</CanOnlySelfTeachClasses>
 	<CanSelfTeachSpells>If a pawn can attempt to learn a spell using a blank scroll.</CanSelfTeachSpells>
 	<CanOnlySelfSpells>If spells can only be learned by using a blank scroll.</CanOnlySelfSpells>
 	<CanSelfTeachSkills>If a pawn can attempt to learn a skill using a blank scroll.</CanSelfTeachSkills>
@@ -51,11 +51,11 @@ Missing developments in: </MissingCat>
 	<LLRoMNotMighty>Must be mighty</LLRoMNotMighty>
 	<LLROMNoFailedtoLearnSkill>{0} failed to teach themself a skill.</LLROMNoFailedtoLearnSkill>
 	<LLROMNoPossibleSkill>{0} already knows all the skills that they can learn.</LLROMNoPossibleSkill>
-	<StatOffseterLable>Advance stat offset behaviours.</StatOffseterLable>
+	<StatOffseterLable>Advance stat offset behaviors.</StatOffseterLable>
 	<StatOffseterLableDesc>These will apply once mastered, and will increase the base value by the listed offsets.</StatOffseterLableDesc>
-	<StatModiferLable>Advance stat modifier behaviours.</StatModiferLable>
+	<StatModiferLable>Advance stat modifier behaviors.</StatModiferLable>
 	<StatModiferLableDesc>These will apply once master, and will multiply by the listed percents.</StatModiferLableDesc>
-	<ClassProLockout>If gaining a class will block learning proficiencies not normally useable by the class (detection based on Hediffs).</ClassProLockout>
+	<ClassProLockout>If gaining a class will block learning proficiencies not normally usable  by the class (detection based on Hediffs).</ClassProLockout>
 	<LLRoMNothingToLearn>Must not already have a class.</LLRoMNothingToLearn>
 	<CantLevelPower>{0} lacks the understanding needed to develop that power further.</CantLevelPower>
 </LanguageData>

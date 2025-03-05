@@ -4,7 +4,7 @@
 <!--Common-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_Summon</defName>
-		<label>LLRoM_Summon</label>
+		<label>Wyrcan Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
 		<description>Temp</description>
 		<costTheoretical>100</costTheoretical>
@@ -42,7 +42,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_SummonII</defName>
-		<label>LLRoM_SummonII</label>
+		<label>Vuide Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -93,7 +93,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_TeleportationI</defName>
-		<label>LLRoM_TeleportationI</label>
+		<label>Faran Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -145,7 +145,7 @@
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_TeleportationII</defName>
-		<label>LLRoM_TeleportationII</label>
+		<label>Leas Werb Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>

@@ -4,7 +4,7 @@
 <!--Common-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_LightI</defName>
-		<label>LLRoM_LightI</label>
+		<label>Leuht Arcanus</label>
 		<category>ProficiencyCategory_LightMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -36,7 +36,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_LightII</defName>
-		<label>LLRoM_LightII</label>
+		<label>Berhtaz Arcanus</label>
 		<category>ProficiencyCategory_LightMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -94,7 +94,7 @@
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_LightIII</defName>
-		<label>LLRoM_LightIII</label>
+		<label>Shwen Arcanus</label>
 		<category>ProficiencyCategory_LightMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>

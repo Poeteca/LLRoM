@@ -32,7 +32,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Physical_Conditioning</defName>
-		<label>LLRoM_Physical_Conditioning</label>
+		<label>Physical Conditioning</label>
 		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -68,7 +68,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Equipment_Mastery</defName>
-		<label>LLRoM_Equipment_Mastery</label>
+		<label>Equipment Study</label>
 		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>600</costTheoretical>
@@ -110,7 +110,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Mental_Conditioning</defName>
-		<label>LLRoM_Mental_Conditioning</label>
+		<label>Mental Conditioning</label>
 		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -147,7 +147,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Coordination</defName>
-		<label>LLRoM_Coordination</label>
+		<label>Coordination Training</label>
 		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -206,7 +206,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Strength</defName>
-		<label>LLRoM_Strength</label>
+		<label>Strength Training</label>
 		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -260,7 +260,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Endurance</defName>
-		<label>LLRoM_Endurance</label>
+		<label>Endurance Training</label>
 		<category>ProficiencyCategory_Physical</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -311,7 +311,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_CQC</defName>
-		<label>LLRoM_CQC</label>
+		<label>Close Quarters Combat Training</label>
 		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -376,7 +376,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Breath_Control</defName>
-		<label>LLRoM_Breath_Control</label>
+		<label>Breath Control</label>
 		<category>ProficiencyCategory_Control</category>
 		<description>Temp</description>
 		<costTheoretical>500</costTheoretical>
@@ -430,7 +430,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Ranged</defName>
-		<label>LLRoM_Ranged</label>
+		<label>Range Combat Training</label>
 		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -493,7 +493,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Tactics</defName>
-		<label>LLRoM_Tactics</label>
+		<label>Tactic Oriented Education</label>
 		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -553,7 +553,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Manipulation</defName>
-		<label>LLRoM_Manipulation</label>
+		<label>Improved Awareness</label>
 		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -614,7 +614,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Charisma</defName>
-		<label>LLRoM_Charisma</label>
+		<label>Improved Speaking Skills</label>
 		<category>ProficiencyCategory_Mential</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -677,7 +677,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Extreme_Range</defName>
-		<label>LLRoM_Extreme_Range</label>
+		<label>Extreme Range Training</label>
 		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -731,7 +731,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMight">
 		<defName>LLRoM_Defensive_Fighting</defName>
-		<label>LLRoM_Defensive_Fighting</label>
+		<label>Defensive Fighting Training</label>
 		<category>ProficiencyCategory_Equipment</category>
 		<description>Temp</description>
 		<costTheoretical>500</costTheoretical>
@@ -792,7 +792,7 @@
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMightRare">
 		<defName>LLRoM_Mind_Mastery</defName>
-		<label>LLRoM_Mind_Mastery</label>
+		<label>Mind Mastery</label>
 		<category>ProficiencyCategory_Control</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>

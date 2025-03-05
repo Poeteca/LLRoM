@@ -4,7 +4,7 @@
 <!--Common-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_LightningI</defName>
-		<label>LLRoM_LightningI</label>
+		<label>Glaer Carrico Arcanus</label>
 		<category>ProficiencyCategory_LightningMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -35,7 +35,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_LightningII</defName>
-		<label>LLRoM_LightningII</label>
+		<label>Glaer Currere Arcanus</label>
 		<category>ProficiencyCategory_LightningMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -93,7 +93,7 @@
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_LightningIII</defName>
-		<label>LLRoM_LightningIII</label>
+		<label>Thrunza Arcanus</label>
 		<category>ProficiencyCategory_LightningMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>

@@ -4,7 +4,7 @@
 <!--Common-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_VitalityI</defName>
-		<label>LLRoM_VitalityI</label>
+		<label>Libban Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -34,7 +34,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_NecroI</defName>
-		<label>LLRoM_NecroI</label>
+		<label>Decaeir Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -94,7 +94,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_HealingI</defName>
-		<label>LLRoM_HealingI</label>
+		<label>Sele Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -149,7 +149,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_PlantI</defName>
-		<label>LLRoM_PlantI</label>
+		<label>Plantu Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -205,7 +205,7 @@
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_HealingII</defName>
-		<label>LLRoM_HealingII</label>
+		<label>Koyl Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -256,7 +256,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_NecroII</defName>
-		<label>LLRoM_NecroII</label>
+		<label>Dauthu Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -304,7 +304,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_PlantII</defName>
-		<label>LLRoM_PlantII</label>
+		<label>Furhisti Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>
@@ -353,7 +353,7 @@
 <!--Rare-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_VitalityII</defName>
-		<label>LLRoM_VitalityII</label>
+		<label>Saiwalu Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1500</costTheoretical>

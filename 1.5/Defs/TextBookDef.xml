@@ -324,7 +324,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_TeleportationMagic</defName>
-		<label>Textbook (teleportation magic)</label>
+		<label>Textbook (skip magic)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -392,7 +392,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_NecroMagic</defName>
-		<label>Textbook (necro magic)</label>
+		<label>Textbook (death magic)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -569,7 +569,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_RawMagic</defName>
-		<label>Textbook (raw magic)</label>
+		<label>Textbook (pure magic)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -678,7 +678,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_HolyMagic</defName>
-		<label>Textbook (holy magic)</label>
+		<label>Textbook (ideological magic)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -712,7 +712,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_UnholyMagic</defName>
-		<label>Textbook (unholy magic)</label>
+		<label>Textbook (anathema magic)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -780,7 +780,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_MixFireIceMagic</defName>
-		<label>Textbook (MixFireIce magic)</label>
+		<label>Textbook (special thermal dynamics)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -807,7 +807,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_MixWindFireIceMagic</defName>
-		<label>Textbook (MixWindFireIce magic)</label>
+		<label>Textbook (arcane weather theory)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -834,7 +834,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_MixLightLightningMagic</defName>
-		<label>Textbook (MixLightLightning magic)</label>
+		<label>Textbook (arcane electro magnetic theory)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -1039,7 +1039,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_Breath</defName>
-		<label>Textbook (self control)</label>
+		<label>Textbook (self-control)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -1148,7 +1148,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_MagicCrafting</defName>
-		<label>Textbook (magical crafting)</label>
+		<label>Textbook (arcane crafting)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -1223,7 +1223,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_MagicConstructs</defName>
-		<label>Textbook (magic constructs)</label>
+		<label>Textbook (arcane constructs)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>
@@ -1257,7 +1257,7 @@
 	
 	<ThingDef ParentName="LLTextbook_Base">
 		<defName>LLRoMTextbook_MagicMaterials</defName>
-		<label>Textbook (magic materials)</label>
+		<label>Textbook (arcane materials)</label>
 		<tradeTags>
 			<li>LLTextbooksRare</li>
 		</tradeTags>

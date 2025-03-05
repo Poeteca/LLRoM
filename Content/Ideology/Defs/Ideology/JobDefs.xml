@@ -5,7 +5,7 @@
 	<JobDef>
 		<defName>LLRoMDivineInspiration</defName>
 		<driverClass>LifeLessons.JobDriver_StudyAt</driverClass>
-		<reportString>seeking divine inspiration on {proficiency} at TargetA.</reportString>
+		<reportString>seeking ideological inspiration on {proficiency} at TargetA.</reportString>
 		<neverShowWeapon>true</neverShowWeapon>
 	</JobDef>
 	

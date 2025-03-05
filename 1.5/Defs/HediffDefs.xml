@@ -11,7 +11,7 @@
 		<maxSeverity>1</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.5</severityPerDay>
+				<severityPerDay>-0.4</severityPerDay>
 			</li>
 		</comps>
 		<stages>

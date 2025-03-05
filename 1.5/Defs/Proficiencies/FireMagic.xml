@@ -5,7 +5,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_FireI</defName>
-		<label>LLRoM_FireI</label>
+		<label>Kehy Arcanus</label>
 		<category>ProficiencyCategory_FireMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -36,7 +36,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_FireII</defName>
-		<label>LLRoM_FireII</label>
+		<label>Birnan Arcanus</label>
 		<category>ProficiencyCategory_FireMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -103,7 +103,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_FireIII</defName>
-		<label>LLRoM_FireIII</label>
+		<label>Ignis Arcanus</label>
 		<category>ProficiencyCategory_FireMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>

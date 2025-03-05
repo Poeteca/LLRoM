@@ -5,7 +5,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_IceI</defName>
-		<label>LLRoM_IceI</label>
+		<label>Kalana Arcanus</label>
 		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -36,7 +36,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_IceII</defName>
-		<label>LLRoM_IceII</label>
+		<label>Snoygos Arcanus</label>
 		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -94,7 +94,7 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicRare">
 		<defName>LLRoM_IceIII</defName>
-		<label>LLRoM_IceIII</label>
+		<label>Freusana Arcanus</label>
 		<category>ProficiencyCategory_IceMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>

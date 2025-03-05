@@ -4,7 +4,7 @@
 <!--Common-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_HolyI</defName>
-		<label>LLRoM_HolyI</label>
+		<label>Ged Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
 		<description>Temp</description>
 		<costTheoretical>800</costTheoretical>
@@ -59,7 +59,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_UnholyI</defName>
-		<label>LLRoM_UnholyI</label>
+		<label>Deorc Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
 		<description>Temp</description>
 		<costTheoretical>800</costTheoretical>
@@ -115,7 +115,7 @@
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_HolyII</defName>
-		<label>LLRoM_HolyII</label>
+		<label>Haleg Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>
@@ -170,7 +170,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_UnholyII</defName>
-		<label>LLRoM_UnholyII</label>
+		<label>Furi Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
 		<description>Temp</description>
 		<costTheoretical>2000</costTheoretical>

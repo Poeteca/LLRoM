@@ -4,7 +4,7 @@
 <!--Common-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EarthI</defName>
-		<label>LLRoM_EarthI</label>
+		<label>Steyh Arcanus</label>
 		<category>ProficiencyCategory_EarthMagic</category>
 		<description>Temp</description>
 		<costTheoretical>200</costTheoretical>
@@ -36,7 +36,7 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagic">
 		<defName>LLRoM_EarthII</defName>
-		<label>LLRoM_EarthII</label>
+		<label>Era Arcanus</label>
 		<category>ProficiencyCategory_EarthMagic</category>
 		<description>Temp</description>
 		<costTheoretical>400</costTheoretical>
@@ -96,7 +96,7 @@
 <!--Uncommon-->
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_EarthIII</defName>
-		<label>LLRoM_EarthIII</label>
+		<label>Meteoros Arcanus</label>
 		<category>ProficiencyCategory_EarthMagic</category>
 		<description>Temp</description>
 		<costTheoretical>1000</costTheoretical>

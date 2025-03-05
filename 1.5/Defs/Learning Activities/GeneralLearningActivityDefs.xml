@@ -20,7 +20,7 @@
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadLearnObjectBase" Name="LLRoM_ReadMightLearnObjectBase" Abstract="True">
-		<label>Study Martia Manuel.</label>
+		<label>Study Martial  Manual.</label>
 		<description>temp</description>
 	</LifeLessons.LearningActivityDef>
 	
@@ -55,7 +55,7 @@
 	
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_MagicPonder</defName>
-		<label>Ponder Gem of Insight</label>
+		<label>Ponder Magic Gem of Insight</label>
 		<description>temp</description>
 		<activityJob>LLRoM_Ponder</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
@@ -87,7 +87,7 @@
 	
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_MightPonder</defName>
-		<label>Ponder Gem of Might</label>
+		<label>Ponder Might Gem of Insight</label>
 		<description>temp</description>
 		<activityJob>LLRoM_Ponder</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
@@ -198,7 +198,7 @@
 	
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_gear</defName>
-		<label>Analize Equpiment</label>
+		<label>Analyze Equipment</label>
 		<description>temp</description>
 		<activityJob>LLRoM_gear_study</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
@@ -338,7 +338,7 @@
 	
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_light_thing</defName>
-		<label>Study Light Sourcse</label>
+		<label>Study Light Sources</label>
 		<description>temp</description>
 		<activityJob>LLAnalyzeBuilding</activityJob>
 		<activityTargetType>SpecificBuildings</activityTargetType>

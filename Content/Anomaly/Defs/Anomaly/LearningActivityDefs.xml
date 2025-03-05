@@ -4,7 +4,7 @@
 
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_Consult_Dark_archotech</defName>
-		<label>Consult Dark Archotech</label>
+		<label>Preform Dark Ritual</label>
 		<description>Temp</description>
 		<activityJob>LLRoMConsultDarkarchotech</activityJob>
 		<effectWorking>PsychicRitual_Sustained</effectWorking>

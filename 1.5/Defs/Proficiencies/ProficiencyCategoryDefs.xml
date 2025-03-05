@@ -3,7 +3,7 @@
 <Defs>
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_BasicMagic</defName>
-		<label>Basic Magic</label>
+		<label>Arcanus Mundanus</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>70</priority>
@@ -11,7 +11,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MagicCrafting</defName>
-		<label>Magic Crafting</label>
+		<label>Arcane Crafting</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>71</priority>
@@ -19,7 +19,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MightSkills</defName>
-		<label>Might Skills</label>
+		<label>General Skills</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>72</priority>
@@ -27,7 +27,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MixedMagic</defName>
-		<label>Mixed Magic</label>
+		<label>Arcanus Miscian</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>73</priority>
@@ -35,7 +35,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_FireMagic</defName>
-		<label>Fire Magic</label>
+		<label>Arcanus Agni</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>74</priority>
@@ -51,7 +51,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_IceMagic</defName>
-		<label>Ice Magic</label>
+		<label>Arcanus Isa</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>75</priority>
@@ -59,7 +59,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_WindMagic</defName>
-		<label>Wind Magic</label>
+		<label>Arcanus Gala</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>75</priority>
@@ -67,7 +67,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_LightningMagic</defName>
-		<label>Lightning Magic</label>
+		<label>Arcanus Glaerc</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>76</priority>
@@ -75,7 +75,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_TransportationMagic</defName>
-		<label>Transportation Magic</label>
+		<label>Arcanus Styrian</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>77</priority>
@@ -83,7 +83,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_LightMagic</defName>
-		<label>Light Magic</label>
+		<label>Arcanus Gloana</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>78</priority>
@@ -91,7 +91,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_EarthMagic</defName>
-		<label>Earth Magic</label>
+		<label>Arcanus Sula</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>79</priority>
@@ -99,7 +99,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_LifeMagic</defName>
-		<label>Life Magic</label>
+		<label>Arcanus Lifian</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>80</priority>
@@ -107,7 +107,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_IdeoMagic</defName>
-		<label>Ideo Magic</label>
+		<label>Arcanus Laubu</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>81</priority>
@@ -123,7 +123,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_Mential</defName>
-		<label>Mential Training</label>
+		<label>Mental Training</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>83</priority>
@@ -139,7 +139,7 @@
 	
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_Control</defName>
-		<label>Meditation Training</label>
+		<label>Self-Control Training</label>
 		<description>Temp</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>85</priority>
