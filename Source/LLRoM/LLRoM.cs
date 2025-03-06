@@ -15,7 +15,7 @@ namespace LLRoM
             this.settings = GetSettings<LLRoMSettings>();
         }
         private static Vector2 scrollPosition = new Vector2(0f, 0f);
-        private static float totalContentHeight = 1000f;
+        private const float totalContentHeight = 680f;
         private const float ScrollBarWidthMargin = 18f;
         public override void DoSettingsWindowContents(Rect inRect)
         {

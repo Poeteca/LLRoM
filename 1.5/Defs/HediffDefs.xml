@@ -5,7 +5,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defName>LLRoM_Drained</defName>
 		<label>drained</label>
-		<description>temp</description>
+		<description>An extreme form of exhaustion caused by excess training. It causes reduced mental capacity and reduced energy.</description>
 		<isBad>false</isBad>
 		<initialSeverity>.2</initialSeverity>
 		<maxSeverity>1</maxSeverity>

@@ -5,7 +5,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_Divine_Inspiration</defName>
 		<label>Seek Ideological Inspiration</label>
-		<description>Temp</description>
+		<description>Reflect on ideological teaching in hopes of gaining a new understanding on relevant topics.</description>
 		<activityJob>LLRoMDivineInspiration</activityJob>
 		<effectWorking>LLRoMDivineInspirationEffect</effectWorking>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>

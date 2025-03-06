@@ -9,7 +9,7 @@
 		<defName>LLRoM_MixFireIce</defName>
 		<label>Special Thermal Dynamics</label>
 		<category>ProficiencyCategory_MixedMagic</category>
-		<description>Temp</description>
+		<description>The study of how high concentrations of mana impacts entropy.</description>
 		<costTheoretical>2000</costTheoretical>
 		<prerequisites>
 			<li>LLRoM_FireII</li>
@@ -37,7 +37,7 @@
 		<defName>LLRoM_MixWindFireIce</defName>
 		<label>Arcane Weather Theory</label>
 		<category>ProficiencyCategory_MixedMagic</category>
-		<description>Temp</description>
+		<description>The study of the interplay between weather and mana.</description>
 		<costTheoretical>2000</costTheoretical>
 		<prerequisites>
 			<li>LLRoM_FireII</li>
@@ -63,9 +63,9 @@
 	
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyMagicUncommon">
 		<defName>LLRoM_MixLightLightning</defName>
-		<label>Arcane Electro Magnetic Theory</label>
+		<label>Arcane Electrodynamics</label>
 		<category>ProficiencyCategory_MixedMagic</category>
-		<description>Temp</description>
+		<description>The expansion of Maxwell’s Equations to account for the implications of mana.</description>
 		<costTheoretical>2000</costTheoretical>
 		<prerequisites>
 			<li>Electrodynamics</li>

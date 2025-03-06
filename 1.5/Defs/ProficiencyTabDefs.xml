@@ -4,18 +4,18 @@
 	<LifeLessons.ProficiencyTabDef>
 		<defName>LLROM_Magic</defName>
 		<label>Magic</label>
-		<description>Temp</description>
+		<description>Covers all topics involving the study and usage of magic</description>
 	</LifeLessons.ProficiencyTabDef>
 	
 	<LifeLessons.ProficiencyTabDef>
 		<defName>LLROM_Might</defName>
 		<label>Might</label>
-		<description>Temp</description>
+		<description>Covers all topics about pushing a person beyond normal physical limits via training.</description>
 	</LifeLessons.ProficiencyTabDef>
 	
 	<LifeLessons.ProficiencyTabDef>
 		<defName>LLROM_Arcane</defName>
 		<label>Arcane</label>
-		<description>Temp</description>
+		<description>Covers all topics involving esoteric and magical crafting.</description>
 	</LifeLessons.ProficiencyTabDef>
 </Defs>

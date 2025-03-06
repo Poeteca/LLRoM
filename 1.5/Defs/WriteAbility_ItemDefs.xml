@@ -97,7 +97,7 @@
 		<defName>LLRoM_ScrollAdvance</defName>
 		<label>Advance Blank Scroll</label>
 		<thingClass>ThingWithComps</thingClass>
-		<description>Used to make advance spell scrolls.</description>
+		<description>Used to make advanced spell scrolls.</description>
 		<category>Item</category>
 		<selectable>true</selectable>
 		<altitudeLayer>Item</altitudeLayer>

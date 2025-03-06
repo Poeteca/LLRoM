@@ -7,7 +7,7 @@
 		<defName>LLRoM_FireI</defName>
 		<label>Kehy Arcanus</label>
 		<category>ProficiencyCategory_FireMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to directly produce heat.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -38,7 +38,7 @@
 		<defName>LLRoM_FireII</defName>
 		<label>Birnan Arcanus</label>
 		<category>ProficiencyCategory_FireMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to produce and control flames.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -105,7 +105,7 @@
 		<defName>LLRoM_FireIII</defName>
 		<label>Ignis Arcanus</label>
 		<category>ProficiencyCategory_FireMagic</category>
-		<description>Temp</description>
+		<description>The application of Special Thermal Dynamics to produce extremely hot temperatures.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>

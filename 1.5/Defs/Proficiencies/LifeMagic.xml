@@ -6,7 +6,7 @@
 		<defName>LLRoM_VitalityI</defName>
 		<label>Libban Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to directly impact the health of a creature.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -36,7 +36,7 @@
 		<defName>LLRoM_NecroI</defName>
 		<label>Decaeir Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to disrupt natural body functions and manipulate dead flesh.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -96,7 +96,7 @@
 		<defName>LLRoM_HealingI</defName>
 		<label>Sele Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to aid the natural healing process.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -151,7 +151,7 @@
 		<defName>LLRoM_PlantI</defName>
 		<label>Plantu Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to manipulate plant life.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -207,7 +207,7 @@
 		<defName>LLRoM_HealingII</defName>
 		<label>Koyl Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to heal injuries in place of the natural process.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -258,7 +258,7 @@
 		<defName>LLRoM_NecroII</defName>
 		<label>Dauthu Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to directly kill flesh and control already dead flesh.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -306,7 +306,7 @@
 		<defName>LLRoM_PlantII</defName>
 		<label>Furhisti Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to create and control new plant life.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -355,7 +355,7 @@
 		<defName>LLRoM_VitalityII</defName>
 		<label>Saiwalu Arcanus</label>
 		<category>ProficiencyCategory_LifeMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to manipulate souls.</description>
 		<costTheoretical>1500</costTheoretical>
 		<costPractical>900</costPractical>
 		<prerequisites>

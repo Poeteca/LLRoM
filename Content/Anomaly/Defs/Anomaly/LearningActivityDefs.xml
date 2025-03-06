@@ -5,7 +5,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_Consult_Dark_archotech</defName>
 		<label>Preform Dark Ritual</label>
-		<description>Temp</description>
+		<description>Perform a dark ritual to contact a thing of dark hatred in an attempt to gain useful information from its angry screaming.</description>
 		<activityJob>LLRoMConsultDarkarchotech</activityJob>
 		<effectWorking>PsychicRitual_Sustained</effectWorking>
 		<experienceType>Theoretical</experienceType>

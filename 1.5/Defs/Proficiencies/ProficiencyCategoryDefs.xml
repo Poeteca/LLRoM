@@ -4,7 +4,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_BasicMagic</defName>
 		<label>Arcanus Mundanus</label>
-		<description>Temp</description>
+		<description>The study of magic that does not fall into its own field of study.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>70</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -12,7 +12,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MagicCrafting</defName>
 		<label>Arcane Crafting</label>
-		<description>Temp</description>
+		<description>The use of magic and other esoteric methods in crafting.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>71</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -20,7 +20,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MightSkills</defName>
 		<label>General Skills</label>
-		<description>Temp</description>
+		<description>General physicality skills needed for any advance training.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>72</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -28,7 +28,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MixedMagic</defName>
 		<label>Arcanus Miscian</label>
-		<description>Temp</description>
+		<description>The study of how different types of elemental magic interact.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>73</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -36,7 +36,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_FireMagic</defName>
 		<label>Arcanus Agni</label>
-		<description>Temp</description>
+		<description>The study of magic that is capable of producing fire and heat.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>74</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -44,7 +44,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_MightandMagic</defName>
 		<label>Might and Magic</label>
-		<description>Temp</description>
+		<description>Should not show</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>69</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -52,7 +52,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_IceMagic</defName>
 		<label>Arcanus Isa</label>
-		<description>Temp</description>
+		<description>The study of magic that is capable of reducing temperatures and freezing objects.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>75</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -60,7 +60,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_WindMagic</defName>
 		<label>Arcanus Gala</label>
-		<description>Temp</description>
+		<description>The study of magic that is capable of manipulating wind.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>75</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -68,7 +68,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_LightningMagic</defName>
 		<label>Arcanus Glaerc</label>
-		<description>Temp</description>
+		<description>The study of magic capable of inducing an electric current.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>76</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -76,7 +76,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_TransportationMagic</defName>
 		<label>Arcanus Styrian</label>
-		<description>Temp</description>
+		<description>The study of magic capable of directly moving or creating objects.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>77</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -84,7 +84,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_LightMagic</defName>
 		<label>Arcanus Gloana</label>
-		<description>Temp</description>
+		<description>The study of magic capable of creating light.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>78</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -92,7 +92,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_EarthMagic</defName>
 		<label>Arcanus Sula</label>
-		<description>Temp</description>
+		<description>description>The study of magic capable of creating and manipulating earth.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>79</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -100,7 +100,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_LifeMagic</defName>
 		<label>Arcanus Lifian</label>
-		<description>Temp</description>
+		<description>The study of magic capable of manipulating the living, the dead, and what lies between.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>80</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -108,7 +108,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_IdeoMagic</defName>
 		<label>Arcanus Laubu</label>
-		<description>Temp</description>
+		<description>The study of magic created by beliefs.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>81</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -116,7 +116,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_Physical</defName>
 		<label>Physicality Training</label>
-		<description>Temp</description>
+		<description>Covers skills based on one’s physical condition.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>82</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -124,7 +124,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_Mential</defName>
 		<label>Mental Training</label>
-		<description>Temp</description>
+		<description>Covers skills based on one’s mental and social ability.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>83</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -132,7 +132,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_Equipment</defName>
 		<label>Equipment Training</label>
-		<description>Temp</description>
+		<description>Covers skills based off of one’s ability to make the most of one’s chosen equipment.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>84</priority>
 	</LifeLessons.ProficiencyCategoryDef>
@@ -140,7 +140,7 @@
 	<LifeLessons.ProficiencyCategoryDef>
 		<defName>ProficiencyCategory_Control</defName>
 		<label>Self-Control Training</label>
-		<description>Temp</description>
+		<description>Covers skills based off of one’s ability to control one’s self.</description>
 		<color>RGBA(0.822, 0.822, 0.822, 1.0)</color>
 		<priority>85</priority>
 	</LifeLessons.ProficiencyCategoryDef>

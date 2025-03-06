@@ -7,7 +7,7 @@
 		<defName>Physical_Insight</defName>
 		<label>Physical Insight</label>
 		<category>ProficiencyCategory_Physical</category>
-		<description>Temp</description>
+		<description>The awareness and understanding of one’s own martial potential, and how to tap into it.</description>
 		<costPractical>500</costPractical>
 		<viewerX>0</viewerX>
 		<viewerY>6</viewerY>
@@ -20,6 +20,9 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
 		</practicalLearningActivityDefs>
+		<customAcquisitionDescriptions>
+			<li>Can be learned by pioneering, being taught in class, or by using a Gem of Physical Insight.</li>
+		</customAcquisitionDescriptions>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
@@ -34,7 +37,7 @@
 		<defName>LLRoM_Physical_Conditioning</defName>
 		<label>Physical Conditioning</label>
 		<category>ProficiencyCategory_Physical</category>
-		<description>Temp</description>
+		<description>Generic physical training to improve overall fitness.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>1000</costPractical>
 		<viewerX>1</viewerX>
@@ -70,7 +73,7 @@
 		<defName>LLRoM_Equipment_Mastery</defName>
 		<label>Equipment Study</label>
 		<category>ProficiencyCategory_Equipment</category>
-		<description>Temp</description>
+		<description>The understanding of various types of arms and armor, and how to properly use them.</description>
 		<costTheoretical>600</costTheoretical>
 		<costPractical>900</costPractical>
 		<viewerX>1</viewerX>
@@ -112,7 +115,7 @@
 		<defName>LLRoM_Mental_Conditioning</defName>
 		<label>Mental Conditioning</label>
 		<category>ProficiencyCategory_Mential</category>
-		<description>Temp</description>
+		<description>Generic training to improve one’s general intelligence and social awareness.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>400</costPractical>
 		<viewerX>1</viewerX>
@@ -149,7 +152,7 @@
 		<defName>LLRoM_Coordination</defName>
 		<label>Coordination Training</label>
 		<category>ProficiencyCategory_Physical</category>
-		<description>Temp</description>
+		<description>Specialized training to improve hand-eye coordination and flexibility.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
 		<viewerX>2</viewerX>
@@ -208,7 +211,7 @@
 		<defName>LLRoM_Strength</defName>
 		<label>Strength Training</label>
 		<category>ProficiencyCategory_Physical</category>
-		<description>Temp</description>
+		<description>Specialized training to improve physical strength and the proper application of it.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
 		<viewerX>2</viewerX>
@@ -262,7 +265,7 @@
 		<defName>LLRoM_Endurance</defName>
 		<label>Endurance Training</label>
 		<category>ProficiencyCategory_Physical</category>
-		<description>Temp</description>
+		<description>Specialized training to improve one’s ability to withstand injuries and harsh conditions.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
 		<viewerX>2</viewerX>
@@ -313,7 +316,7 @@
 		<defName>LLRoM_CQC</defName>
 		<label>Close Quarters Combat Training</label>
 		<category>ProficiencyCategory_Equipment</category>
-		<description>Temp</description>
+		<description>General training to improve one’s ability to fight in melee.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>800</costPractical>
 		<viewerX>2</viewerX>
@@ -322,6 +325,9 @@
 			<li>LLRoM_Equipment_Mastery</li>
 			<li>LLRoM_Physical_Conditioning</li>
 		</prerequisites>
+		<customAcquisitionDescriptions>
+			<li>Any individual with the proper training will develop their own style and methods over time as they fight in melee.</li>
+		</customAcquisitionDescriptions>
 		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -378,7 +384,7 @@
 		<defName>LLRoM_Breath_Control</defName>
 		<label>Breath Control</label>
 		<category>ProficiencyCategory_Control</category>
-		<description>Temp</description>
+		<description>Specialized training to allow the partial control over many automatic body functions.</description>
 		<costTheoretical>500</costTheoretical>
 		<costPractical>500</costPractical>
 		<viewerX>2</viewerX>
@@ -432,7 +438,7 @@
 		<defName>LLRoM_Ranged</defName>
 		<label>Range Combat Training</label>
 		<category>ProficiencyCategory_Equipment</category>
-		<description>Temp</description>
+		<description>General training to improve one’s ability to fight at range.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<viewerX>2</viewerX>
@@ -441,6 +447,9 @@
 			<li>LLRoM_Mental_Conditioning</li>
 			<li>LLRoM_Equipment_Mastery</li>
 		</prerequisites>
+		<customAcquisitionDescriptions>
+			<li>Any individual with the proper training will develop their own style and methods over time as they fight at range.</li>
+		</customAcquisitionDescriptions>
 		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -495,7 +504,7 @@
 		<defName>LLRoM_Tactics</defName>
 		<label>Tactic Oriented Education</label>
 		<category>ProficiencyCategory_Mential</category>
-		<description>Temp</description>
+		<description>Specialized education to improve one’s ability to create and execute complex plans.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<viewerX>2</viewerX>
@@ -555,7 +564,7 @@
 		<defName>LLRoM_Manipulation</defName>
 		<label>Improved Awareness</label>
 		<category>ProficiencyCategory_Mential</category>
-		<description>Temp</description>
+		<description>Specialized education to improve one’s and manipulate others spatial, social, and emotional awareness.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<viewerX>2</viewerX>
@@ -616,7 +625,7 @@
 		<defName>LLRoM_Charisma</defName>
 		<label>Improved Speaking Skills</label>
 		<category>ProficiencyCategory_Mential</category>
-		<description>Temp</description>
+		<description>Specialized training to improve one’s general ability to communicate, and convince other people.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<viewerX>2</viewerX>
@@ -679,7 +688,7 @@
 		<defName>LLRoM_Extreme_Range</defName>
 		<label>Extreme Range Training</label>
 		<category>ProficiencyCategory_Equipment</category>
-		<description>Temp</description>
+		<description>Specialized training to improve one’s ability to fight at the edge of what one’s weapon can reach.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>1500</costPractical>
 		<viewerX>3</viewerX>
@@ -687,6 +696,9 @@
 		<prerequisites>
 			<li>LLRoM_Ranged</li>
 		</prerequisites>
+		<customAcquisitionDescriptions>
+			<li>Skilled enough individuals with the proper training will develop their own style and methods as they fight at range.</li>
+		</customAcquisitionDescriptions>
 		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -733,7 +745,7 @@
 		<defName>LLRoM_Defensive_Fighting</defName>
 		<label>Defensive Fighting Training</label>
 		<category>ProficiencyCategory_Equipment</category>
-		<description>Temp</description>
+		<description>Specialized training to make the most of the defensive capabilities of their chosen arms and armor.</description>
 		<costTheoretical>500</costTheoretical>
 		<costPractical>2000</costPractical>
 		<viewerX>3</viewerX>
@@ -741,6 +753,9 @@
 		<prerequisites>
 			<li>LLRoM_CQC</li>
 		</prerequisites>
+		<customAcquisitionDescriptions>
+			<li>Skilled enough individuals with the proper training will develop their own style and methods as they fight in melee.</li>
+		</customAcquisitionDescriptions>
 		<baseLearningEffectiveness>1</baseLearningEffectiveness>
 		<color>RGBA(0.412, 0.412, 0.412, 1.000)</color>
 		<thoughtIcons>
@@ -794,7 +809,7 @@
 		<defName>LLRoM_Mind_Mastery</defName>
 		<label>Mind Mastery</label>
 		<category>ProficiencyCategory_Control</category>
-		<description>Temp</description>
+		<description>Specialized training to teach an individual how to control their own thoughts and become in tune with the local environment.</description>
 		<costTheoretical>1500</costTheoretical>
 		<costPractical>1500</costPractical>
 		<viewerX>3</viewerX>

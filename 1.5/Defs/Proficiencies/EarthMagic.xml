@@ -6,7 +6,7 @@
 		<defName>LLRoM_EarthI</defName>
 		<label>Steyh Arcanus</label>
 		<category>ProficiencyCategory_EarthMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to create and manipulate loose piles of dirt and soil.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -38,7 +38,7 @@
 		<defName>LLRoM_EarthII</defName>
 		<label>Era Arcanus</label>
 		<category>ProficiencyCategory_EarthMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to manipulate the local terrain.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -98,7 +98,7 @@
 		<defName>LLRoM_EarthIII</defName>
 		<label>Meteoros Arcanus</label>
 		<category>ProficiencyCategory_EarthMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to create and manipulate large quantities of rock within the local region.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>

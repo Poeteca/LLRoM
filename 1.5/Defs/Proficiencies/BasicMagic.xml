@@ -7,7 +7,7 @@
 		<defName>Magic_Insight</defName>
 		<label>Magic Insight</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The awareness and understanding of one’s own potential to wield magic.</description>
 		<costPractical>500</costPractical>
 		<viewerX>0</viewerX>
 		<viewerY>13</viewerY>
@@ -21,6 +21,9 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
 		</practicalLearningActivityDefs>
+		<customAcquisitionDescriptions>
+			<li>Can be learned by pioneering, being taught in class, or by using a Gem of Arcane Insight.</li>
+		</customAcquisitionDescriptions>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
@@ -35,7 +38,7 @@
 		<defName>LLRoM_Defensive</defName>
 		<label>Defensum Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of defensive magic.</description>
 		<costTheoretical>100</costTheoretical>
 		<costPractical>50</costPractical>
 		<prerequisites>
@@ -73,7 +76,7 @@
 		<defName>LLRoM_DefensiveBuff</defName>
 		<label>Prowe Defensa Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of defensive magic to improve a target's capabilities.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -113,7 +116,7 @@
 		<defName>LLRoM_DefensiveBarrier</defName>
 		<label>Scildan Defensa Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of defensive magic to produce magical barriers.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -150,7 +153,7 @@
 		<defName>LLRoM_Offensive</defName>
 		<label>Offensivus Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of magic to cause harm.</description>
 		<costTheoretical>100</costTheoretical>
 		<costPractical>50</costPractical>
 		<prerequisites>
@@ -193,7 +196,7 @@
 		<defName>LLRoM_OffensiveLargeArea</defName>
 		<label>Offensivus Regere Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of offensive magic to cause harm in a large area.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -230,7 +233,7 @@
 		<defName>LLRoM_OffensiveDeBuff</defName>
 		<label>Offensivus Vac Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of offensive magic to weaken a target.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -268,7 +271,7 @@
 		<defName>LLRoM_RawI</defName>
 		<label>Kravis Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of raw magic to produce basic effects</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -308,7 +311,7 @@
 		<defName>LLRoM_BindingI</defName>
 		<label>Bendras Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The use of magic to create a weak bond between the caster and either a willing target or a target of weak will.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -348,7 +351,7 @@
 		<defName>LLRoM_RawII</defName>
 		<label>Smeate Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of raw magic to produce powerful effects.</description>
 		<costTheoretical>600</costTheoretical>
 		<costPractical>400</costPractical>
 		<prerequisites>
@@ -404,7 +407,7 @@
 		<defName>LLRoM_TimeI</defName>
 		<label>Tima Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study of how the flow of time interacts with concentrated mana.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -454,7 +457,7 @@
 		<defName>LLRoM_BindingII</defName>
 		<label>Adgratum Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The use of magic to create a strong magic bond between the caster and a target.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -511,7 +514,7 @@
 		<defName>LLRoM_EmotionI</defName>
 		<label>Emovere Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of magic to manipulate a target’s emotions and surface-level thoughts.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -542,7 +545,7 @@
 		<defName>LLRoM_EmotionII</defName>
 		<label>Mentalis Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and use of magic to manipulate a target’s memories and subconscious.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -595,7 +598,7 @@
 		<defName>LLRoM_TimeII</defName>
 		<label>Klokkos Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study of the manipulation of the flow of time with mana.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -650,7 +653,7 @@
 		<defName>LLRoM_ChaosI</defName>
 		<label>Khaos Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and manipulation of the innate randomness to magic</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -709,7 +712,7 @@
 		<defName>LLRoM_TimeIII</defName>
 		<label>Khronos Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The study and application of magic to gain near complete control over the local flow of time.</description>
 		<costTheoretical>1500</costTheoretical>
 		<costPractical>1000</costPractical>
 		<prerequisites>
@@ -759,7 +762,7 @@
 		<defName>LLRoM_ChaosII</defName>
 		<label>Preakaan Arcanus</label>
 		<category>ProficiencyCategory_BasicMagic</category>
-		<description>Temp</description>
+		<description>The unification of quantum field theory and contemporary magic study to gain increased control over the randomness that underpins both the magical and mundane.</description>
 		<costTheoretical>1500</costTheoretical>
 		<costPractical>1000</costPractical>
 		<prerequisites>

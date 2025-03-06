@@ -7,7 +7,7 @@
 		<defName>LLRoM_IceI</defName>
 		<label>Kalana Arcanus</label>
 		<category>ProficiencyCategory_IceMagic</category>
-		<description>Temp</description>
+		<description>The use of magic to reduce temperature.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -38,7 +38,7 @@
 		<defName>LLRoM_IceII</defName>
 		<label>Snoygos Arcanus</label>
 		<category>ProficiencyCategory_IceMagic</category>
-		<description>Temp</description>
+		<description>The use of magic to freeze objects.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -96,7 +96,7 @@
 		<defName>LLRoM_IceIII</defName>
 		<label>Freusana Arcanus</label>
 		<category>ProficiencyCategory_IceMagic</category>
-		<description>Temp</description>
+		<description>The application of Special Thermal Dynamics to produce extremely cold temperatures.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>

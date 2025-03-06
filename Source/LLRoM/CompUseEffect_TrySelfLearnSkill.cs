@@ -357,40 +357,5 @@ namespace LLRoM
             }
             return base.CanBeUsedBy(p);
         }
-        private bool LearnableCheck(Pawn p, ThingDef S)
-        {
-            List<Trait> traits = p.story.traits.allTraits;
-            List<TraitDef> traitdefs = new List<TraitDef>();
-            foreach (Trait t in traits)
-            {
-                traitdefs.Add(t.def);
-            }
-            DefModExtension_LearnAbilityRequiredTraits list = S.GetModExtension<DefModExtension_LearnAbilityRequiredTraits>();
-            if (list != null)
-            {
-                bool check = false;
-                foreach (TraitDef T in list.traits)
-                {
-                    if (traitdefs.Contains(T))
-                    {
-                        check = true;
-                    }
-                }
-                if (!check) { return false; }
-            }
-            if ((S.defName == "SkillOf_ThrowingKnife" || S.defName == "SkillOf_PommelStrike" || S.defName == "SkillOf_TempestStrike" || S.defName == "spell_ArcaneBolt") && p.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent)
-            {
-                return false;
-            }
-            if ((S.defName == "SkillOf_Legion") && (traitdefs.Contains(TorannMagicDefOf.Faceless) || p.story.DisabledWorkTagsBackstoryAndTraits != WorkTags.Violent))
-            {
-                return false;
-            }
-            if ((S.defName == "SkillOf_Sprint") && traitdefs.Contains(TorannMagicDefOf.Gladiator))
-            {
-                return false;
-            }
-            return true;
-        }
     }
 }

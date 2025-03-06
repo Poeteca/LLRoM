@@ -6,7 +6,7 @@
 		<defName>LLRoM_Summon</defName>
 		<label>Wyrcan Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to create simple constructs and move objects.</description>
 		<costTheoretical>100</costTheoretical>
 		<costPractical>50</costPractical>
 		<prerequisites>
@@ -44,7 +44,7 @@
 		<defName>LLRoM_SummonII</defName>
 		<label>Vuide Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to create complex constructs and spaces to pass objects through.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -95,7 +95,7 @@
 		<defName>LLRoM_TeleportationI</defName>
 		<label>Faran Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to mimic the psycast commonly called “skip.”</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -147,7 +147,7 @@
 		<defName>LLRoM_TeleportationII</defName>
 		<label>Leas Werb Arcanus</label>
 		<category>ProficiencyCategory_TransportationMagic</category>
-		<description>Temp</description>
+		<description>The application of the underlying principles that psycasters use to “skip” to create spells that, for all practical distances, appear to be true teleportation.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>

@@ -7,7 +7,7 @@
 		<defName>LLRoM_ScribI</defName>
 		<label>Arcane Script</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The ability to read and write in a mana infused script to convey more information than normally possible with conventional writing systems.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>400</costPractical>
 		<prerequisites>
@@ -27,7 +27,7 @@
 		<defName>LLRoM_MagicRefinement</defName>
 		<label>Magicyte Refinement</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>A set of techniques used in the creation and manipulation of raw magicyte.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>400</costPractical>
 		<viewerX>1</viewerX>
@@ -44,7 +44,7 @@
 		<defName>LLRoM_MagicEnchantingI</defName>
 		<label>Basic Enchanting</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The use of magicyte and arcane script to empower items.</description>
 		<costTheoretical>300</costTheoretical>
 		<costPractical>500</costPractical>
 		<prerequisites>
@@ -65,7 +65,7 @@
 		<defName>LLRoM_MagicConstructsI</defName>
 		<label>Magical Constructs</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The use of mundane structures to contain and manipulate mana.</description>
 		<costTheoretical>300</costTheoretical>
 		<costPractical>500</costPractical>
 		<prerequisites>
@@ -85,7 +85,7 @@
 		<defName>LLRoM_MagicMaterials</defName>
 		<label>Arcane Materials</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The techniques need for the production of magic materials such as arcalleum.</description>
 		<costTheoretical>500</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -150,9 +150,9 @@
 
 	<LifeLessons.ProficiencyDef ParentName="ProficiencyArcaneUncommon">
 		<defName>LLRoM_ScribII</defName>
-		<label>Arcane Cyphers</label>
+		<label>Arcane Ciphers</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The use of novel ciphers that rely on the unique properties of arcane scripts, allowing for sensitive and potentially dangerous information.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -172,7 +172,7 @@
 		<defName>LLRoM_ScribIII</defName>
 		<label>Arcane Cryptography</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The application of novel arcane encryption methods to drastically increase the amount of information that can be stored within arcane scripts.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>1000</costPractical>
 		<prerequisites>
@@ -192,7 +192,7 @@
 		<defName>LLRoM_MagicEnchantingII</defName>
 		<label>Complex Enchanting</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The layering of basic enchants to produce more complex and potent effects.</description>
 		<costTheoretical>600</costTheoretical>
 		<costPractical>500</costPractical>
 		<prerequisites>
@@ -215,7 +215,7 @@
 		<defName>LLRoM_MagicConstructsII</defName>
 		<label>Arcane Structures</label>
 		<category>ProficiencyCategory_MagicCrafting</category>
-		<description>Temp</description>
+		<description>The use of basic enchants to empower mundane materials and allow for the construction of complex structures.</description>
 		<costTheoretical>600</costTheoretical>
 		<costPractical>1000</costPractical>
 		<prerequisites>

@@ -5,7 +5,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>LLRoM_practicespot</defName>
 		<label>practice spot</label>
-		<description>temp</description>
+		<description>A place for training physical and magical skills. Requires ample space around it for the safety of observers.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<rotatable>false</rotatable>
 		<graphicData>

@@ -6,7 +6,7 @@
 		<defName>LLRoM_HolyI</defName>
 		<label>Ged Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
-		<description>Temp</description>
+		<description>The study and use of magic that comes from following an ideological belief system.</description>
 		<costTheoretical>800</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -61,7 +61,7 @@
 		<defName>LLRoM_UnholyI</defName>
 		<label>Deorc Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
-		<description>Temp</description>
+		<description>The study and use of magic that comes from intentionally going against social norms.</description>
 		<costTheoretical>800</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -117,7 +117,7 @@
 		<defName>LLRoM_HolyII</defName>
 		<label>Haleg Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
-		<description>Temp</description>
+		<description>The study and use of magic that comes from fervent belief in an ideological system.</description>
 		<costTheoretical>2000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -172,7 +172,7 @@
 		<defName>LLRoM_UnholyII</defName>
 		<label>Furi Arcanus</label>
 		<category>ProficiencyCategory_IdeoMagic</category>
-		<description>Temp</description>
+		<description>The study and use of magic that comes from intentionally going against an ideological belief system.</description>
 		<costTheoretical>2000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>

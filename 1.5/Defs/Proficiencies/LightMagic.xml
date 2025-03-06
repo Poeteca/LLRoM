@@ -6,7 +6,7 @@
 		<defName>LLRoM_LightI</defName>
 		<label>Leuht Arcanus</label>
 		<category>ProficiencyCategory_LightMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to produce arcane light sources.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -38,7 +38,7 @@
 		<defName>LLRoM_LightII</defName>
 		<label>Berhtaz Arcanus</label>
 		<category>ProficiencyCategory_LightMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to produce intense beams of light.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -96,7 +96,7 @@
 		<defName>LLRoM_LightIII</defName>
 		<label>Shwen Arcanus</label>
 		<category>ProficiencyCategory_LightMagic</category>
-		<description>Temp</description>
+		<description>The use of mana to produce beams of light intense enough to surpass the brightness of the local star.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>

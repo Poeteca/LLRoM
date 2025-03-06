@@ -16,17 +16,18 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadLearnObjectBase" Name="LLRoM_ReadMagicLearnObjectBase" Abstract="True">
 		<label>Study Arcane Tome</label>
-		<description>temp</description>
+		<description>Study arcane theories described in an arcane tome for relevant information.</description>
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ReadLearnObjectBase" Name="LLRoM_ReadMightLearnObjectBase" Abstract="True">
 		<label>Study Martial  Manual.</label>
-		<description>temp</description>
+		<description>Study fighting techniques described in a combat manual for relevant information.</description>
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef Name="LLRoM_UseScroll" Abstract="True">
 		<activityJob>LLRoM_StudyLearnObject</activityJob>
 		<label>Use Scroll</label>
+		<description>Destructively examine a scroll in hopes of gaining a particle understanding of the principles used in its creation.</description>
 		<disabledByDefault>true</disabledByDefault>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -42,6 +43,7 @@
 	<LifeLessons.LearningActivityDef Name="LLRoM_ExamineScroll" Abstract="True">
 		<activityJob>LLRoM_StudyLearnObject</activityJob>
 		<label>Study Scroll</label>
+		<description>Carefully examine a scroll in hopes of gaining an understanding of the underlying principles used in its creation.</description>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Theoretical</experienceType>
 		<xpPerTick>0.0025</xpPerTick>
@@ -56,7 +58,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_MagicPonder</defName>
 		<label>Ponder Magic Gem of Insight</label>
-		<description>temp</description>
+		<description>Absorb fragments of basic fighting techniques from a gem of insight.</description>
 		<activityJob>LLRoM_Ponder</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -88,7 +90,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_MightPonder</defName>
 		<label>Ponder Might Gem of Insight</label>
-		<description>temp</description>
+		<description>Absorb fragments of basic magics from a gem of insight.</description>
 		<activityJob>LLRoM_Ponder</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -120,7 +122,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_practice_magic</defName>
 		<label>Practice Magic</label>
-		<description>temp</description>
+		<description>Practice different kinds of magic using raw magicyte instead of personal stores of mana.</description>
 		<activityJob>LLRoM_practice_magic</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -152,7 +154,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_general_physical_training</defName>
 		<label>Physical Training</label>
-		<description>temp</description>
+		<description>Perform a series of basic exercises to improve general physical capabilities.</description>
 		<activityJob>LLRoM_physical_training</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -168,7 +170,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_deep_meditatoin</defName>
 		<label>Deep Meditation</label>
-		<description>temp</description>
+		<description>Enter a deep meditative state to improve control over one’s own mind.</description>
 		<activityJob>LLRoM_deepmeditation</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -183,7 +185,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_general_mental_training</defName>
 		<label>Mental Training</label>
-		<description>temp</description>
+		<description>Produce a collection of plans, calculations, and arguments as an exercise to improve general intelligence.</description>
 		<activityJob>LLRoM_physical_training</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -199,7 +201,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_gear</defName>
 		<label>Analyze Equipment</label>
-		<description>temp</description>
+		<description>Disassemble old and worn out equipment to gain an understanding of how it is used.</description>
 		<activityJob>LLRoM_gear_study</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -238,7 +240,9 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_rift</defName>
 		<label>Study Elemental Rift</label>
-		<description>temp</description>
+		<description><![CDATA[Study an elemental rift to gain an understanding of the energies that formed it.
+		
+<color=#B63136>WARNING: studying the rift does not stop entities from crossing through it.</color>]]></description>
 		<activityJob>LLAnalyzeBuilding</activityJob>
 		<disabledByDefault>true</disabledByDefault>
 		<activityTargetType>SpecificBuildings</activityTargetType>
@@ -254,7 +258,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_practice_Ritual_magic</defName>
 		<label>Practice Magic Rituals</label>
-		<description>temp</description>
+		<description>Practice complex magic rituals using raw magicyte as a catalyst.</description>
 		<activityJob>LLRoM_practice_Ritual_magic</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -287,7 +291,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_temperature_thing</defName>
 		<label>Study Temperature Manipulation</label>
-		<description>temp</description>
+		<description>Study mundane methods of temperature manipulation for any application in spell casting.</description>
 		<activityJob>LLAnalyzeBuilding</activityJob>
 		<activityTargetType>SpecificBuildings</activityTargetType>
 		<experienceType>Theoretical</experienceType>
@@ -321,7 +325,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_SolarObservation</defName>
 		<label>Solar Observation</label>
-		<description>Temp</description>
+		<description>Study the local star and the light it produces for any anomalies that would not be present in artificial light sources.</description>
 		<activityJob>LLRoMSolarObservation</activityJob>
 		<experienceType>Theoretical</experienceType>
 		<baseTickLength>7500</baseTickLength>
@@ -339,7 +343,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_light_thing</defName>
 		<label>Study Light Sources</label>
-		<description>temp</description>
+		<description>Study artificial light sources for anything that can be applied to spell casting.</description>
 		<activityJob>LLAnalyzeBuilding</activityJob>
 		<activityTargetType>SpecificBuildings</activityTargetType>
 		<experienceType>Theoretical</experienceType>
@@ -366,7 +370,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_study_electric_thing</defName>
 		<label>Study Electric Flow</label>
-		<description>temp</description>
+		<description>Study how electricity naturally flows through different materials, and how it is used by mundane machines.</description>
 		<activityJob>LLAnalyzeBuilding</activityJob>
 		<activityTargetType>SpecificBuildings</activityTargetType>
 		<experienceType>Theoretical</experienceType>

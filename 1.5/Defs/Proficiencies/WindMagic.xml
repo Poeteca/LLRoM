@@ -5,7 +5,7 @@
 		<defName>LLRoM_WindI</defName>
 		<label>Lyft Arcanus</label>
 		<category>ProficiencyCategory_WindMagic</category>
-		<description>Temp</description>
+		<description>The use of magic to manipulate air and other gases.</description>
 		<costTheoretical>200</costTheoretical>
 		<costPractical>200</costPractical>
 		<prerequisites>
@@ -36,7 +36,7 @@
 		<defName>LLRoM_WindII</defName>
 		<label>Drahtuz Arcanus</label>
 		<category>ProficiencyCategory_WindMagic</category>
-		<description>Temp</description>
+		<description>The use of magic to create and control wind.</description>
 		<costTheoretical>400</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
@@ -92,7 +92,7 @@
 		<defName>LLRoM_WindIII</defName>
 		<label>Tempestas Arcanus</label>
 		<category>ProficiencyCategory_WindMagic</category>
-		<description>Temp</description>
+		<description>The use of magic to directly manipulate the weather.</description>
 		<costTheoretical>1000</costTheoretical>
 		<costPractical>600</costPractical>
 		<prerequisites>
