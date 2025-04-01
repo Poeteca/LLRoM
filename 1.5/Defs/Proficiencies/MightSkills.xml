@@ -19,6 +19,9 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
+			<li>LLRoM_general_physical_training</li>
+			<li>LLRoM_general_mental_training</li>
+			<li>LLRoM_deep_meditatoin</li>
 		</practicalLearningActivityDefs>
 		<customAcquisitionDescriptions>
 			<li>Can be learned by pioneering, being taught in class, or by using a Gem of Physical Insight.</li>

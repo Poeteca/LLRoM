@@ -37,36 +37,6 @@ namespace LLRoM
             }
         }
     }
-    public static class RandomClassPatch
-    {
-        [HarmonyPatch(typeof(TM_Calc), nameof(TM_Calc.GetRandomAcceptableMagicClassIndex))]
-        public static class RandomClassPatchPostFix
-        {
-            public static void Postfix(Pawn p, ref int __result)
-            {
-                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies && !Utility.CanLearnClass(p, TM_Data.EnabledMagicTraits[__result]))
-                {
-                    int newNum = -1;
-                    int Loopcount = 0;
-                    while (newNum < 0 || Loopcount < 30)
-                    {
-                        int num2 = Rand.RangeInclusive(0, TM_Data.EnabledMagicTraits.Count - 1);
-                        TraitDef td = TM_Data.EnabledMagicTraits[num2];
-                        if (td != TorannMagicDefOf.TM_Wanderer && !TM_ClassUtility.CustomAdvancedClasses.Any((TM_CustomClass x) => x.classTrait == td) && td != TorannMagicDefOf.TM_Possessor && td != TorannMagicDefOf.Lich && (td != TorannMagicDefOf.Warlock || p.gender != Gender.Female) && (td != TorannMagicDefOf.Succubus || p.gender != Gender.Male) && Utility.CanLearnClass(p, td))
-                        {
-                            newNum = num2;
-                        }
-                        Loopcount++;
-                    }
-                    if (Loopcount >= 30)
-                    {
-                        Log.Warning("Failed to find valid class in 30 loops, aborting validation check");
-                    }
-                    else { __result = newNum; }
-                }
-            }
-        }
-    }
     public static class PowerUpgradeCheckPatch
     {
         [HarmonyPatch(typeof(CompAbilityUserMight), nameof(CompAbilityUserMight.LevelUpPower))]
@@ -584,10 +554,6 @@ namespace LLRoM
             {
                 ClassAutoLearnExtension extension1 = __instance.GetModExtension<ClassAutoLearnExtension>();
                 AbilityAutoLearnExtension extension2 = __instance.GetModExtension<AbilityAutoLearnExtension>();
-                if (extension1 == null && extension2 == null)
-                {
-                    yield break;
-                }
                 if (extension1 != null && extension1.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
                 {
                     string failchance = extension1.failChance.ToString() + "%";
@@ -606,10 +572,6 @@ namespace LLRoM
             public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, ThingDef parentDef)
             {
                 ClassAutoLearnExtension extension = parentDef.GetModExtension<ClassAutoLearnExtension>();
-                if (extension == null)
-                {
-                    yield break;
-                }
                 if (extension.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
                 {
                     string failchance = extension.failChance.ToString() + "%";
@@ -740,7 +702,7 @@ namespace LLRoM
             public static void Postfix(SkillDef sDef, float xp, Pawn_SkillTracker __instance)
             {
                 Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue() as Pawn;
-                if (sDef == SkillDefOf.Shooting && pawn != null)
+                if (sDef == SkillDefOf.Shooting && pawn != null && xp > 0)
                 {
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
                     if (pawn != null && comp != null)
@@ -753,7 +715,7 @@ namespace LLRoM
                         }
                     }
                 }
-                if (sDef == SkillDefOf.Melee && pawn != null)
+                if (sDef == SkillDefOf.Melee && pawn != null && xp > 0)
                 {
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
                     SkillRecord Melee = __instance.GetSkill(SkillDefOf.Melee);
@@ -1048,11 +1010,19 @@ namespace LLRoM
                                     {
                                         if (xp > 0)
                                         {
+                                            if (item == ProficiencyDefOf.Physical_Insight || item == ProficiencyDefOf.Magic_Insight)
+                                            {
+                                                xp *= 10;
+                                            }
                                             comp.TryGainXp(xp, item, extension.experienceType);
                                         }
                                         else
                                         {
                                             xp = LearnreateMod * extension.LearnRate;
+                                            if (item == ProficiencyDefOf.Physical_Insight || item == ProficiencyDefOf.Magic_Insight)
+                                            {
+                                                xp *= 10;
+                                            }
                                             comp.TryGainXp(xp, item, extension.experienceType);
                                         }
                                     }
@@ -1066,11 +1036,19 @@ namespace LLRoM
                                             }
                                             if (xp > 0)
                                             {
+                                                if (item == ProficiencyDefOf.Physical_Insight || item == ProficiencyDefOf.Magic_Insight)
+                                                {
+                                                    xp *= 10;
+                                                }
                                                 comp.TryGainXp(xp, pro, extension.experienceType);
                                             }
                                             else
                                             {
                                                 xp = LearnreateMod * extension.LearnRate;
+                                                if (item == ProficiencyDefOf.Physical_Insight || item == ProficiencyDefOf.Magic_Insight)
+                                                {
+                                                    xp *= 10;
+                                                }
                                                 comp.TryGainXp(xp, pro, extension.experienceType);
                                             }
                                         }

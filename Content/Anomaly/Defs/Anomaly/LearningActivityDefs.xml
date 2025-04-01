@@ -9,6 +9,7 @@
 		<activityJob>LLRoMConsultDarkarchotech</activityJob>
 		<effectWorking>PsychicRitual_Sustained</effectWorking>
 		<experienceType>Theoretical</experienceType>
+		<soundWorking>HateChant_Sighing</soundWorking>
 		<xpPerTick>0.003</xpPerTick>
 		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
 		<activityTargetType>SpecificBuildings</activityTargetType>

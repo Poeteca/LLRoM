@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RoomRoleDef>
+		<defName>LLRoM_trainingHall</defName>
+		<label>training hall</label>
+		<workerClass>LLRoM.RoomRoleWorker_TrainingHall</workerClass>
+		<relatedStats>
+			<li>Beauty</li>
+		</relatedStats>
+	</RoomRoleDef>
+</Defs>

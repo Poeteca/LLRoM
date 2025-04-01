@@ -8,6 +8,7 @@
 		<xpPerTick>0.0025</xpPerTick>
 		<dailyRepetitionsUntilExhausted>1</dailyRepetitionsUntilExhausted>
 		<effectWorking>LearnFromLecture</effectWorking>
+		<soundWorking>Interact_Research</soundWorking>
 		<validWorkstations>
 			<li>SimpleResearchBench</li>
 		</validWorkstations>
@@ -34,8 +35,10 @@
 		<xpPerTick>0.005</xpPerTick>
 		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
 		<effectWorking>LLRoM_CSmallMagicCircle</effectWorking>
+		<soundWorking>Interact_Research</soundWorking>
 		<validWorkstations>
 			<li>SimpleResearchBench</li>
+			<li>LLRoM_practicespot</li>
 		</validWorkstations>
 		<consumeIngredientTargets>true</consumeIngredientTargets>
 	</LifeLessons.LearningActivityDef>
@@ -49,6 +52,7 @@
 		<xpPerTick>0.0025</xpPerTick>
 		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
 		<effectWorking>LearnFromLecture</effectWorking>
+		<soundWorking>Interact_Research</soundWorking>
 		<validWorkstations>
 			<li>SimpleResearchBench</li>
 		</validWorkstations>
@@ -60,6 +64,7 @@
 		<label>Ponder Magic Gem of Insight</label>
 		<description>Absorb fragments of basic fighting techniques from a gem of insight.</description>
 		<activityJob>LLRoM_Ponder</activityJob>
+		<soundWorking>Interact_Research</soundWorking>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
 		<baseTickLength>7500</baseTickLength>
@@ -92,6 +97,7 @@
 		<label>Ponder Might Gem of Insight</label>
 		<description>Absorb fragments of basic magics from a gem of insight.</description>
 		<activityJob>LLRoM_Ponder</activityJob>
+		<soundWorking>Interact_Research</soundWorking>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
 		<baseTickLength>7500</baseTickLength>
@@ -122,6 +128,7 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_practice_magic</defName>
 		<label>Practice Magic</label>
+		<soundWorking>Interact_Research</soundWorking>
 		<description>Practice different kinds of magic using raw magicyte instead of personal stores of mana.</description>
 		<activityJob>LLRoM_practice_magic</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
@@ -161,7 +168,7 @@
 		<xpPerTick>0.0015</xpPerTick>
 		<baseTickLength>3000</baseTickLength>
 		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
-		<effectWorking>LearnFromLecture</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<validWorkstations>
 			<li>LLRoM_practicespot</li>
 		</validWorkstations>
