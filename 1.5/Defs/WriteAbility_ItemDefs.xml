@@ -89,6 +89,7 @@
 				<failChance>50</failChance>
 				<HedifftoApply>LLRoM_Drained</HedifftoApply>
 				<tab>LLROM_Magic</tab>
+				<drainBase>.4</drainBase>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -155,6 +156,7 @@
 				<failChance>30</failChance>
 				<HedifftoApply>LLRoM_Drained</HedifftoApply>
 				<tab>LLROM_Magic</tab>
+				<drainBase>.3</drainBase>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -221,6 +223,7 @@
 				<failChance>10</failChance>
 				<HedifftoApply>LLRoM_Drained</HedifftoApply>
 				<tab>LLROM_Magic</tab>
+				<drainBase>.2</drainBase>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -287,6 +290,7 @@
 				<failChance>25</failChance>
 				<HedifftoApply>LLRoM_Drained</HedifftoApply>
 				<tab>LLROM_Might</tab>
+				<drainBase>.3</drainBase>
 			</li>
 		</modExtensions>
 	</ThingDef>

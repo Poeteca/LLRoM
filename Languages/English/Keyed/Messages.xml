@@ -58,4 +58,16 @@ Missing developments in: </MissingCat>
 	<ClassProLockout>If gaining a class will block learning proficiencies not normally usable  by the class (detection based on Hediffs).</ClassProLockout>
 	<LLRoMNothingToLearn>Must not already have a class.</LLRoMNothingToLearn>
 	<CantLevelPower>{0} lacks the understanding needed to develop that power further.</CantLevelPower>
+	
+	<LLRoM_DangeriousDrainWarning><![CDATA[Doing this will leave {1} extremely drained reducing consciousness potentailly leading to a coma. It will take <color=#00FFFF><b>{0} days</b></color> to fully recover.]]></LLRoM_DangeriousDrainWarning>
+	<LLRoM_DurationHintStart>
+
+To reduce the recovery time:</LLRoM_DurationHintStart>
+	<LLRoM_WrongRoomHint> perform the action in a dedicated training hall</LLRoM_WrongRoomHint>
+	<LLRoM_Or> or</LLRoM_Or>
+	<LLRoM_Comma>,</LLRoM_Comma>
+	<LLRoM_ImpressivenessHint> improve the impressiveness of the room</LLRoM_ImpressivenessHint>
+	<LLRoM_OxOr>, or</LLRoM_OxOr>
+	<LLRoM_ItemQualityHint> use a more potent object for training</LLRoM_ItemQualityHint>
+	<LLRoM_Period>.</LLRoM_Period>
 </LanguageData>

@@ -25,6 +25,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<failChance>25</failChance>
 				<Magic>true</Magic>
+				<drainBase>.5</drainBase>
 			</li>
 		</value>
 	</Operation>
@@ -34,6 +35,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<failChance>15</failChance>
 				<Magic>true</Magic>
+				<drainBase>.3</drainBase>
 			</li>
 		</value>
 	</Operation>
@@ -42,6 +44,7 @@
 		<value>
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<failChance>25</failChance>
+				<drainBase>.3</drainBase>
 				<Might>true</Might>
 			</li>
 		</value>

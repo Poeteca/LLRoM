@@ -7,7 +7,7 @@
 		<label>drained</label>
 		<description>An extreme form of exhaustion caused by excess training. It causes reduced mental capacity and reduced energy.</description>
 		<isBad>false</isBad>
-		<initialSeverity>.2</initialSeverity>
+		<initialSeverity>.1</initialSeverity>
 		<maxSeverity>1</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">

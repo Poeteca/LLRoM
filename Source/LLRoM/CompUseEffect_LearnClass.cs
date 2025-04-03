@@ -1,7 +1,10 @@
 ﻿using LifeLessons;
 using RimWorld;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using TorannMagic;
+using UnityEngine;
 using Verse;
 
 namespace LLRoM
@@ -206,14 +209,15 @@ namespace LLRoM
                 {
                     Messages.Message("LLRoM_AutoLearnClassFail".Translate(usedBy.LabelShort, classname, Classextension.Prefix), MessageTypeDefOf.RejectInput);
                 }
+                float factor = Utility.ImpressivenessFactor(usedBy) * Parentextension.drainBase;
                 if (usedBy.health.hediffSet.HasHediff(Classextension.appliedHediff))
                 {
-                    HealthUtility.AdjustSeverity(usedBy, Classextension.appliedHediff, .5f);
+                    HealthUtility.AdjustSeverity(usedBy, Classextension.appliedHediff, factor);
                 }
                 else
                 {
                     usedBy.health.AddHediff(Classextension.appliedHediff);
-                    HealthUtility.AdjustSeverity(usedBy, Classextension.appliedHediff, .5f);
+                    HealthUtility.AdjustSeverity(usedBy, Classextension.appliedHediff, factor);
                 }
                 if (parent.def.defName.Contains("Unfinished"))
                 {
@@ -230,6 +234,63 @@ namespace LLRoM
                 Messages.Message("LLRoM_FailAutoLearnedClassNoClasses".Translate(usedBy.LabelShort), MessageTypeDefOf.RejectInput);
                 return;
             }
+        }
+        public override TaggedString ConfirmMessage(Pawn p)
+        {
+            ClassAutoLearnExtension Parentextension = parent.def.GetModExtension<ClassAutoLearnExtension>();
+            if (Parentextension == null)
+            {
+                return null;
+            }
+            bool flagTH = true;
+            bool flagI = true;
+            bool flagD = true;
+            bool flagQ = true;
+            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.LLRoM_Drained);
+            Room room = parent.GetRoom();
+            float factor = Utility.ImpressivenessCurve(room) * Parentextension.drainBase;
+            float sevfactor = 0f;
+            if (firstHediffOfDef != null)
+            {
+                float severity = firstHediffOfDef.Severity;
+                if (severity + factor > .5f)
+                {
+                    flagD = false;
+                    sevfactor = factor + severity;
+                }
+            }
+            else if ((factor +.1f) > .5f)
+            {
+                flagD = false;
+                sevfactor = factor + .1f;
+            }
+            if (sevfactor > 1f) { sevfactor = 1f; }
+            string duration = (sevfactor / .4f).ToString("#.#");
+            if (flagD) { return null; }
+            int tipcount = 0;
+            if (room == null || room.PsychologicallyOutdoors || room.Role != RoomRoleDefOf.LLRoM_trainingHall) { flagTH = false; tipcount++; }
+            if (room != null && !room.PsychologicallyOutdoors && room.GetStat(RoomStatDefOf.Impressiveness) < 240) { flagI = false; tipcount++; }
+            if (Parentextension.drainBase > .3f) { flagQ = false; tipcount++; }
+            string outstring = "LLRoM_DangeriousDrainWarning".Translate(duration, p.LabelShort);
+            if (tipcount > 0)
+            {
+                outstring += "LLRoM_DurationHintStart".Translate();
+                if (!flagTH)
+                {
+                    outstring += "LLRoM_WrongRoomHint".Translate();
+                    if (tipcount == 2) { outstring += "LLRoM_Or".Translate(); }
+                    else if (tipcount == 3) { outstring += "LLRoM_Comma".Translate(); }
+                }
+                if (!flagI)
+                {
+                    outstring += "LLRoM_ImpressivenessHint".Translate();
+                    if (tipcount == 2 && flagTH) { outstring += "LLRoM_Or".Translate(); }
+                    else if (tipcount == 3) { outstring += "LLRoM_OxOr".Translate(); }
+                }
+                if (!flagQ) { outstring += "LLRoM_ItemQualityHint".Translate(); }
+                outstring += "LLRoM_Period".Translate();
+            }
+            return outstring;
         }
         public override AcceptanceReport CanBeUsedBy(Pawn p)
         {

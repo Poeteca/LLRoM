@@ -79,6 +79,7 @@
     <Compile Include="CompUseEffect_TrySelfLearnSpell.cs" />
     <Compile Include="GemOfInsightProficiencyExtension.cs" />
     <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="HediffDefOf.cs" />
     <Compile Include="HideIfCantLearnExtension.cs" />
     <Compile Include="LockoutExtension.cs" />
     <Compile Include="ProficiencyCategoryDefOf.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="LLRoM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LLRoMSettings.cs" />
+    <Compile Include="RoomRoleDefOf.cs" />
     <Compile Include="RoomRoleWorker_TrainingHall.cs" />
     <Compile Include="StatModifier.cs" />
     <Compile Include="StatOffseter.cs" />

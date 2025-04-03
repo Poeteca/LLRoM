@@ -16,6 +16,40 @@ namespace LLRoM
 {
     public class Utility
     {
+        public static float ImpressivenessCurve(Room room)
+        {
+            float num;
+            if (room != null && !room.PsychologicallyOutdoors)
+            {
+                float impress = room.GetStat(RoomStatDefOf.Impressiveness);
+                if (room.Role == RoomRoleDefOf.LLRoM_trainingHall)
+                {
+                    impress *= 1.25f;
+                }
+                if (impress > 240f) { num = .25f; }
+                else if (impress < 20f) { num = 1.75f; }
+                else
+                {
+                    num = (-1.5f / 220f) * impress + (83f / 44f);
+                }
+            }
+            else
+            {
+                num = 1.75f;
+            }
+            return num;
+        }
+        public static float ImpressivenessFactor(Pawn pawn)
+        {
+            float num = 1f;
+            if (!pawn.Spawned)
+            {
+                return num;
+            }
+            Room room = pawn.GetRoom();
+            num = ImpressivenessCurve(room);
+            return num;
+        }
         public static bool CanLearnClass(Pawn p, TraitDef Class)
         {
             bool validClass = true;

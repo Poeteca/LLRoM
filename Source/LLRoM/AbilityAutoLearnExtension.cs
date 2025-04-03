@@ -8,5 +8,6 @@ namespace LLRoM
         public int failChance = 0;
         public HediffDef HedifftoApply;
         public ProficiencyTabDef tab;
+        public float drainBase = .1f;
     }
 }

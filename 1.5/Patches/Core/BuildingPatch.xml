@@ -210,6 +210,7 @@
 		<value>
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<failChance>10</failChance>
+				<drainBase>.2</drainBase>
 			</li>
 		</value>
 	</Operation>
@@ -258,6 +259,7 @@
 		<value>
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<failChance>30</failChance>
+				<drainBase>.4</drainBase>
 			</li>
 		</value>
 	</Operation>

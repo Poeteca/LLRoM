@@ -6,6 +6,7 @@
 		<workerClass>LLRoM.RoomRoleWorker_TrainingHall</workerClass>
 		<relatedStats>
 			<li>Beauty</li>
+			<li>Impressiveness</li>
 		</relatedStats>
 	</RoomRoleDef>
 </Defs>

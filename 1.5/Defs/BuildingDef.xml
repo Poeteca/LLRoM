@@ -55,6 +55,7 @@
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<failChance>50</failChance>
+				<drainBase>.6</drainBase>
 			</li>
 		</modExtensions>
 	</ThingDef>

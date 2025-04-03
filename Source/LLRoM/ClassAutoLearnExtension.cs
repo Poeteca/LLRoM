@@ -21,5 +21,6 @@ namespace LLRoM
         public bool Magic = false;
         public bool Might = false;
         public int failChance = 0;
+        public float drainBase = .1f;
     }
 }
