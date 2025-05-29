@@ -15,7 +15,7 @@ namespace LLRoM
             this.settings = GetSettings<LLRoMSettings>();
         }
         private static Vector2 scrollPosition = new Vector2(0f, 0f);
-        private const float totalContentHeight = 680f;
+        private const float totalContentHeight = 700f;
         private const float ScrollBarWidthMargin = 18f;
         public override void DoSettingsWindowContents(Rect inRect)
         {
@@ -147,6 +147,14 @@ namespace LLRoM
             if (settings.CanSelfTeachSkills || settings.CanSelfTeachSpells || settings.CanSelfTeachClasses)
             {
                 listingStandard.CheckboxLabeled("CanFailLearn".Translate(), ref settings.CanFailLearn);
+            }
+            else
+            {
+                listingStandard.Label("");
+            }
+            if (settings.CanSelfTeachSkills || settings.CanSelfTeachSpells || settings.CanSelfTeachClasses)
+            {
+                listingStandard.CheckboxLabeled("LearningDrain".Translate(), ref settings.LearningDrain);
             }
             else
             {

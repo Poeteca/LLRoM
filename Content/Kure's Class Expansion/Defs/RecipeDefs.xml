@@ -10,7 +10,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -66,7 +65,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -122,7 +120,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -178,7 +175,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -234,7 +230,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -290,7 +285,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -346,7 +340,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -402,7 +395,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -514,7 +506,6 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -570,7 +561,7 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -626,7 +617,7 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -682,7 +673,7 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>
@@ -738,7 +729,7 @@
 			<li>TableMagicPrinter</li>
 		</recipeUsers>
 		<effectWorking>Smelt</effectWorking>
-		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>8</Intellectual>

@@ -64,7 +64,6 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
-			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>6</Intellectual>
@@ -83,6 +82,15 @@
 				<requirements>
 					<li>LLRoM_ScribI</li>
 				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
 				<hardRequirement>false</hardRequirement>
 			</li>
 			<li Class="LLRoM.AbilityAutoLearnExtension">
@@ -131,7 +139,6 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
-			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>8</Intellectual>
@@ -150,6 +157,15 @@
 				<requirements>
 					<li>LLRoM_ScribII</li>
 				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
 				<hardRequirement>false</hardRequirement>
 			</li>
 			<li Class="LLRoM.AbilityAutoLearnExtension">
@@ -198,7 +214,6 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
-			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>8</Intellectual>
@@ -217,6 +232,15 @@
 				<requirements>
 					<li>LLRoM_ScribIII</li>
 				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
 				<hardRequirement>false</hardRequirement>
 			</li>
 			<li Class="LLRoM.AbilityAutoLearnExtension">
@@ -265,7 +289,6 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
-			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>6</Intellectual>

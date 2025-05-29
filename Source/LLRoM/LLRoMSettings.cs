@@ -29,6 +29,7 @@ namespace LLRoM
         public bool strictMagicCastReuRequirement = false;
         public bool learnBycastingSpells = true;
         public float MaxCostScaleFactor = .5f;
+        public bool LearningDrain = true;
         public void RestoreDefaults()
         {
             StrictMightClassLearning = false;
@@ -56,6 +57,7 @@ namespace LLRoM
             strictMagicCastReuRequirement = false;
             learnBycastingSpells = true;
             MaxCostScaleFactor = .5f;
+            LearningDrain = true;
         }
         public override void ExposeData()
         {
@@ -83,6 +85,7 @@ namespace LLRoM
             Scribe_Values.Look(ref ClassProLockout, "ClassProLockout");
             Scribe_Values.Look(ref UnlearnProOnClassGain, "UnlearnProOnClassGain");
             Scribe_Values.Look(ref ProficienciesMasterOffseter, "ProficienciesMasterOffseter");
+            Scribe_Values.Look(ref LearningDrain, "LearningDrain");
             base.ExposeData();
         }
     }

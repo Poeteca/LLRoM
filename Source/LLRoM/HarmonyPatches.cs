@@ -22,6 +22,20 @@ using static UnityEngine.Scripting.GarbageCollector;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class EnableChecks
+    {
+        [HarmonyPatch(typeof(CompUseEffect_LearnMagic),nameof(CompUseEffect_LearnMagic.DoEffect))]
+        public static class BlockClassCheck
+        {
+            public static bool Prefix(CompUseEffect_LearnMagic __instance)
+            {
+                ThingDef book = ((ThingComp)(object)__instance).parent.def;
+                bool Out = Utility.EnabledBook(book);
+                if (!Out) { Messages.Message("LLRoMDisableInOptions".Translate(), MessageTypeDefOf.RejectInput); }
+                return Out;
+            }
+        }
+    }
     public static class RemoveClassPatch
     {
         [HarmonyPatch(typeof(TM_DebugTools), nameof(TM_DebugTools.RemoveClass))]
@@ -325,6 +339,10 @@ namespace LLRoM
                     foreach (TraitDef possibleClass in extension2.Relatedtraits)
                     {
                         if (possibleClass == TorannMagicDefOf.TM_Gifted || possibleClass == TorannMagicDefOf.PhysicalProdigy)
+                        {
+                            continue;
+                        }
+                        if (!Utility.EnabledClass(possibleClass))
                         {
                             continue;
                         }
