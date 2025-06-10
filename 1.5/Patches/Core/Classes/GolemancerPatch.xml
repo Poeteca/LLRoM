@@ -237,6 +237,9 @@
 				</Proficiencies>
 				<experienceType>Practical</experienceType>
 				<LearnRate>1</LearnRate>
+				<Classes>
+					<li>TM_Golemancer</li>
+				</Classes>
 			</li>
 		</value>
 	</Operation>

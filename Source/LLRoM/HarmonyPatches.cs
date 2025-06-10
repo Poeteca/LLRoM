@@ -213,6 +213,19 @@ namespace LLRoM
             CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
             CompAbilityUserTMBase data = p.GetComp<CompAbilityUserTMBase>();
             TM_CustomClass customclass = data.customClass;
+            if (p == null || ability == null) { return false; }
+            if (ability == TorannMagicDefOf.TM_LivingWall)
+            {
+                AbilityXPGainExtension Livingextention = TorannMagicDefOf.TM_LivingWall.GetModExtension<AbilityXPGainExtension>();
+                if (customclass == null)
+                {
+                    foreach (TraitDef trait in Livingextention.Classes)
+                    {
+                        if (p.story.traits.HasTrait(trait)) { return true; }
+                    }
+                    return false;
+                }
+            }
             if (ability.learnItem != null && customclass != null)
             {
                 if (ability.learnItem.defName.Contains("SpellOf") && customclass.isMage && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
@@ -277,7 +290,7 @@ namespace LLRoM
                 foreach (TMAbilityDef ability in DefDatabase<TMAbilityDef>.AllDefs)
                 {
                     AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
-                    if (extension != null && extension.Proficiencies.Contains(___selectedProficiency) && ShouldShw(pawn, ability) && extension.LearnRate != 0)
+                    if (extension != null && extension.Proficiencies.Contains(___selectedProficiency) && ShouldShw(pawn, ability) && extension.LearnRate != 0 && ability.uiIcon != null)
                     {
                         abilities.Add(ability);
                     }
