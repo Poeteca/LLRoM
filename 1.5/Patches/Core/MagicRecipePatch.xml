@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_HeatWaveMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_FireI</li>
+					<li>LLRoM_WindI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_ColdSnapMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_IceI</li>
+					<li>LLRoM_WindI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_NameWindMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_WindII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_PsychicSootheMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawI</li>
+					<li>LLRoM_EmotionI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_HealingRainMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_RawII</li>
+					<li>LLRoM_HealingI</li>
+					<li>LLRoM_WindI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_NaturesGiftMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ChaosI</li>
+					<li>LLRoM_Summon</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_CallOfTheWildMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ChaosI</li>
+					<li>LLRoM_VitalityI</li>
+					<li>LLRoM_Summon</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_TerrestrialBeaconMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_SummonII</li>
+					<li>LLRoM_ChaosI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_MeteorFallMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_SummonII</li>
+					<li>LLRoM_EarthII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_CreateSkeletonMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingI</li>
+					<li>LLRoM_NecroI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_CreateGiantSkeletonMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_BindingII</li>
+					<li>LLRoM_NecroII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_SummonSpiritMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_SummonII</li>
+					<li>LLRoM_NecroI</li>
+					<li>LLRoM_BindingI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_RuunbledMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_SummonII</li>
+					<li>LLRoM_BindingII</li>
+					<li>LLRoM_Offensive</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_ArcaneAugmentationMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_DefensiveBuff</li>
+					<li>LLRoM_RawII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_BlightWildlifeMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroII</li>
+					<li>LLRoM_PlantI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_BeastialRageMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EmotionII</li>
+					<li>LLRoM_VitalityI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_ArcaneInspirationMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_EmotionII</li>
+					<li>LLRoM_ChaosII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_DivineBlessingMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_HolyII</li>
+					<li>LLRoM_DefensiveBuff</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_SummonDemonMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_UnholyII</li>
+					<li>LLRoM_SummonII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TorannMagic.MagicRecipeDef[defName="TM_SummonWanderingLichMR"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_NecroII</li>
+					<li>LLRoM_SummonII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>

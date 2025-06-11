@@ -15,6 +15,7 @@ using TorannMagic.TMDefs;
 using TorannMagic.Utils;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using Verse.Sound;
 using static HarmonyLib.Code;
 using static UnityEngine.Scripting.GarbageCollector;
@@ -22,6 +23,54 @@ using static UnityEngine.Scripting.GarbageCollector;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class MagicBillCheck
+    {
+        [HarmonyPatch(typeof(Building_TMMagicCircleBase), nameof(Building_TMMagicCircleBase.CanEverDoBill))]
+        public static class MagicbBillProficiencyCheck
+        {
+            public static void Postfix(Bill bill, ref List<Pawn> pawnsAble, MagicRecipeDef mrDefIn, ref bool __result)
+            {
+                if (!__result) { return; }
+                MagicRecipeDef magicRecipeDef = null;
+                if (bill != null)
+                {
+                    magicRecipeDef = bill.recipe as MagicRecipeDef;
+                }
+                if (mrDefIn != null)
+                {
+                    magicRecipeDef = mrDefIn;
+                }
+                List<Pawn> pawnscapable = new List<Pawn>();
+                foreach (Pawn pawn in pawnsAble)
+                {
+                    BillProficiencyExtension extension = Util.GetExtensionFromRecipeDef(bill.recipe);
+                    if (extension != null && extension.AnyRequirements())
+                    {
+                        if (bill.recipe.productHasIngredientStuff && !extension.StuffRequirements.NullOrEmpty())
+                        {
+                            List<StuffCategoryDef> stuffCats = Util.GetStuffCategoriesEnabled(bill);
+                            foreach (StuffRequirements req in extension.StuffRequirements.Where((StuffRequirements sr) => stuffCats.Contains(sr.stuffCategory)))
+                            {
+                                if (!Util.Qualification(pawn, req.requirements, extension.IsHardRequirement).Allowed(extension.IsHardRequirement))
+                                {
+                                    BillContext.LastMissingStuffRequirements.Add(req);
+                                }
+                            }
+                        }
+                        List<ProficiencyDef> resolvedRequirements = extension.ResolvedRequirements();
+                        if (!Util.Qualification(pawn, resolvedRequirements, extension.IsHardRequirement).Allowed(extension.IsHardRequirement))
+                        {
+                            ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+                            JobFailReason.Is(comp.UnqualifiedJobMessage(resolvedRequirements, extension.IsHardRequirement), bill.Label);
+                            continue;
+                        }
+                        else { pawnscapable.Add(pawn); }
+                    }
+                }
+                if (pawnscapable.Count < magicRecipeDef.mageCount) { __result = false; }
+            }
+        }
+    }
     public static class EnableChecks
     {
         [HarmonyPatch(typeof(CompUseEffect_LearnMagic),nameof(CompUseEffect_LearnMagic.DoEffect))]

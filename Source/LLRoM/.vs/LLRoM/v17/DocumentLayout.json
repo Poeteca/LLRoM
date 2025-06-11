@@ -124,7 +124,7 @@
               "RelativeDocumentMoniker": "HarmonyPatches.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
               "RelativeToolTip": "HarmonyPatches.cs",
-              "ViewState": "AQIAAL8AAAAAAAAAAAAIwNEAAAAkAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwBsAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T02:48:05.275Z",
               "EditorCaption": ""
@@ -139,8 +139,7 @@
               "RelativeToolTip": "Utility.cs",
               "ViewState": "AQIAAOIBAAAAAAAAAAAmwOEBAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T15:59:01.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T15:59:01.478Z"
             },
             {
               "$type": "Document",
@@ -176,8 +175,7 @@
               "RelativeToolTip": "CompUseEffect_LearnClass.cs",
               "ViewState": "AQIAAJAAAAAAAAAAAAAIwCYBAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:22:10.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T15:22:10.16Z"
             },
             {
               "$type": "Document",
@@ -189,8 +187,7 @@
               "RelativeToolTip": "AbilityXPGainExtension.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAqwAgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T14:04:03.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T14:04:03.534Z"
             },
             {
               "$type": "Document",
@@ -202,8 +199,7 @@
               "RelativeToolTip": "CompUseEffect_TrySelfLearnSkill.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T21:25:35.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T21:25:35.005Z"
             },
             {
               "$type": "Document",
@@ -215,8 +211,7 @@
               "RelativeToolTip": "CompProperties_UseEffectLearnClass.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:52:09.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T16:52:09.71Z"
             },
             {
               "$type": "Document",
