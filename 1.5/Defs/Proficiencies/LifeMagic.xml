@@ -24,6 +24,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_VitalityI</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_VitalityI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_VitalityI</li>
@@ -55,6 +57,8 @@
 			<li>LLRoM_UseScroll_NecroI</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_NecroI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_NecroI</li>
@@ -115,6 +119,8 @@
 			<li>LLRoM_UseScroll_HealingI</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_HealingI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_HealingI</li>
@@ -171,6 +177,8 @@
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 			<li>LLAnalyzePlantBiomatterChemistry</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_PlantI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_PlantI</li>
@@ -225,6 +233,8 @@
 			<li>LLRoM_UseScroll_HealingII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_HealingII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_HealingII</li>
@@ -276,6 +286,8 @@
 			<li>LLRoM_UseScroll_NecroII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_NecroII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_NecroII</li>
@@ -325,6 +337,8 @@
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
 			<li>LLAnalyzePlantBiomatterChemistry</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_PlantII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_PlantII</li>
@@ -375,6 +389,8 @@
 			<li>LLRoM_UseScroll_VitalityII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_VitalityII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_VitalityII</li>

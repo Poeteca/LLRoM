@@ -24,6 +24,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LightI</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_LightI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LightI</li>
@@ -56,6 +58,8 @@
 			<li>LLRoM_UseScroll_LightII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_LightII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LightII</li>
@@ -114,6 +118,8 @@
 			<li>LLRoM_UseScroll_LightIII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_LightIII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LightIII</li>

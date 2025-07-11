@@ -24,6 +24,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_Summon</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_Summon_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Summon</li>
@@ -62,6 +64,8 @@
 			<li>LLRoM_UseScroll_SummonII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_SummonII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_SummonII</li>
@@ -113,6 +117,8 @@
 			<li>LLRoM_UseScroll_TeleportationI</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_TeleportationI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_TeleportationI</li>
@@ -166,6 +172,8 @@
 			<li>LLRoM_UseScroll_TeleportationII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_TeleportationII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_TeleportationII</li>

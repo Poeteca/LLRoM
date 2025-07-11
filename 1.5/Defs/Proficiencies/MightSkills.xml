@@ -57,6 +57,8 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
 			<li>LLRoM_UseScroll_Physical_Conditioning</li>
+			<li>LLRoM_general_physical_training</li>
+			<li>LLRoM_UseScroll_Physical_Conditioning_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</li>
@@ -94,6 +96,7 @@
 			<li>LLRoM_MightPonder</li>
 			<li>LLRoM_UseScroll_Equipment_Mastery</li>
 			<li>LLRoM_study_gear</li>
+			<li>LLRoM_UseScroll_Equipment_Mastery_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</li>
@@ -135,6 +138,8 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MightPonder</li>
 			<li>LLRoM_UseScroll_Mental_Conditioning</li>
+			<li>LLRoM_general_mental_training</li>
+			<li>LLRoM_UseScroll_Mental_Conditioning_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_Mental_Conditioning</li>
@@ -171,7 +176,8 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Coordination</li>
-			<li>LLRoM_UseScroll_Physical_Conditioning</li>
+			<li>LLRoM_general_physical_training</li>
+			<li>LLRoM_UseScroll_Coordination_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Coordination</li>
@@ -230,7 +236,8 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Strength</li>
-			<li>LLRoM_UseScroll_Physical_Conditioning</li>
+			<li>LLRoM_general_physical_training</li>
+			<li>LLRoM_UseScroll_Strength_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Strength</li>
@@ -284,7 +291,8 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Endurance</li>
-			<li>LLRoM_UseScroll_Physical_Conditioning</li>
+			<li>LLRoM_general_physical_training</li>
+			<li>LLRoM_UseScroll_Endurance_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Endurance</li>
@@ -339,6 +347,7 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_CQC</li>
+			<li>LLRoM_UseScroll_CQC_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_CQC</li>
@@ -405,6 +414,7 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Breath_Control</li>
 			<li>LLRoM_deep_meditatoin</li>
+			<li>LLRoM_UseScroll_Breath_Control_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Breath_Control</li>
@@ -461,6 +471,7 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Ranged</li>
+			<li>LLRoM_UseScroll_Ranged_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Ranged</li>
@@ -524,6 +535,7 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Tactics</li>
 			<li>LLRoM_general_mental_training</li>
+			<li>LLRoM_UseScroll_Tactics_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Tactics</li>
@@ -584,6 +596,7 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Manipulation</li>
 			<li>LLRoM_general_mental_training</li>
+			<li>LLRoM_UseScroll_Manipulation_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Manipulation</li>
@@ -645,6 +658,7 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Charisma</li>
 			<li>LLRoM_general_mental_training</li>
+			<li>LLRoM_UseScroll_Charisma_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Charisma</li>
@@ -710,6 +724,7 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Extreme_Range</li>
+			<li>LLRoM_UseScroll_Extreme_Range_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</li>
@@ -767,6 +782,7 @@
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Defensive_Fighting</li>
+			<li>LLRoM_UseScroll_Defensive_Fighting_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</li>
@@ -829,6 +845,7 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_UseScroll_Mind_Mastery</li>
 			<li>LLRoM_deep_meditatoin</li>
+			<li>LLRoM_UseScroll_Mind_Mastery_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</li>

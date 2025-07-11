@@ -81,7 +81,9 @@
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="HideIfCantLearnExtension.cs" />
+    <Compile Include="InspirationExtension.cs" />
     <Compile Include="LockoutExtension.cs" />
+    <Compile Include="NeedActivityConsumerExtension.cs" />
     <Compile Include="ProficiencyCategoryDefOf.cs" />
     <Compile Include="ProficiencyDefOf.cs" />
     <Compile Include="ProficiencyTableDefOf.cs" />

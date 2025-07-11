@@ -57,7 +57,7 @@
 				<requirements>
 					<li>LLRoM_ScribI</li>
 				</requirements>
-				<hardRequirement>false</hardRequirement>
+				<hardRequirement>true</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -68,7 +68,7 @@
 				<requirements>
 					<li>LLRoM_ScribII</li>
 				</requirements>
-				<hardRequirement>false</hardRequirement>
+				<hardRequirement>true</hardRequirement>
 			</li>
 		</value>
 	</Operation>

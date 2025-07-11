@@ -58,6 +58,29 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_Defensive_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blur</li>
+						<li>SpellOf_LightningTrap</li>
+						<li>SpellOf_HeatShield</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blur</li>
+				<li>SpellOf_LightningTrap</li>
+				<li>SpellOf_HeatShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_Defensive</defName>
 		<ingredients>
@@ -104,6 +127,31 @@
 				<li MayRequire="kure.arom">BookOfTroubadour</li>
 				<li MayRequire="kure.arom">BookOfGambler</li>
 				<li MayRequire="kure.arom">BookOfOracle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_DefensiveBuff_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Invisibility</li>
+						<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+						<li MayRequire="kure.arom">SpellOf_Reflect</li>
+						<li MayRequire="kure.arom">SpellOf_TailwindC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Invisibility</li>
+				<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+				<li MayRequire="kure.arom">SpellOf_Reflect</li>
+				<li MayRequire="kure.arom">SpellOf_TailwindC</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
@@ -181,6 +229,45 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LLRoM_DefensiveBarrier</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_ManaShield</li>
+						<li>SpellOf_ShieldOther</li>
+						<li>SpellOf_TechnoShield</li>
+						<li MayRequire="kure.arom">SpellOf_BarkskinC</li>
+						<li MayRequire="kure.arom">SpellOf_DarkMind</li>
+						<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
+						<li MayRequire="kure.arom">SpellOf_RetributionC</li>
+						<li MayRequire="kure.arom">SpellOf_ChromaticFlash</li>
+						<li MayRequire="kure.arom">SpellOf_WardensPaean</li>
+						<li MayRequire="kure.arom">SpellOf_FrostArmor</li>
+						<li MayRequire="kure.arom">SpellOf_Manaward</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_ManaShield</li>
+				<li>SpellOf_ShieldOther</li>
+				<li>SpellOf_TechnoShield</li>
+				<li MayRequire="kure.arom">SpellOf_BarkskinC</li>
+				<li MayRequire="kure.arom">SpellOf_DarkMind</li>
+				<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
+				<li MayRequire="kure.arom">SpellOf_RetributionC</li>
+				<li MayRequire="kure.arom">SpellOf_ChromaticFlash</li>
+				<li MayRequire="kure.arom">SpellOf_WardensPaean</li>
+				<li MayRequire="kure.arom">SpellOf_FrostArmor</li>
+				<li MayRequire="kure.arom">SpellOf_Manaward</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_DefensiveBarrier_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -339,6 +426,49 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_Offensive_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_EMP</li>
+						<li>SpellOf_ArcaneBolt</li>
+						<li>SpellOf_Ignite</li>
+						<li>SpellOf_SnapFreeze</li>
+						<li MayRequire="kure.arom">SpellOf_Eruption</li>
+						<li MayRequire="kure.arom">SpellOf_Oblation</li>
+						<li MayRequire="kure.arom">SpellOf_Incinerate</li>
+						<li MayRequire="kure.arom">SpellOf_HyoshoRanryu</li>
+						<li MayRequire="kure.arom">SpellOf_EldritchBarrage</li>
+						<li MayRequire="kure.arom">SpellOf_ContreSixte</li>
+						<li MayRequire="kure.arom">SpellOf_Despair</li>
+						<li MayRequire="kure.arom">SpellOf_ForceMissile</li>
+						<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_EMP</li>
+				<li>SpellOf_ArcaneBolt</li>
+				<li>SpellOf_Ignite</li>
+				<li>SpellOf_SnapFreeze</li>
+				<li MayRequire="kure.arom">SpellOf_Eruption</li>
+				<li MayRequire="kure.arom">SpellOf_Oblation</li>
+				<li MayRequire="kure.arom">SpellOf_Incinerate</li>
+				<li MayRequire="kure.arom">SpellOf_HyoshoRanryu</li>
+				<li MayRequire="kure.arom">SpellOf_EldritchBarrage</li>
+				<li MayRequire="kure.arom">SpellOf_ContreSixte</li>
+				<li MayRequire="kure.arom">SpellOf_Despair</li>
+				<li MayRequire="kure.arom">SpellOf_ForceMissile</li>
+				<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_Offensive</defName>
 		<ingredients>
@@ -440,6 +570,43 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_OffensiveLargeArea_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Firestorm</li>
+						<li>SpellOf_Blizzard</li>
+						<li>SpellOf_EyeOfTheStorm</li>
+						<li>SpellOf_HolyWrath</li>
+						<li>SpellOf_Meteor</li>
+						<li>SpellOf_BloodMoon</li>
+						<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
+						<li MayRequire="kure.arom">SpellOf_Balefire</li>
+						<li MayRequire="kure.arom">SpellOf_Xenoglossy</li>
+						<li MayRequire="kure.arom">SpellOf_UnstableSingularity</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Firestorm</li>
+				<li>SpellOf_Blizzard</li>
+				<li>SpellOf_EyeOfTheStorm</li>
+				<li>SpellOf_HolyWrath</li>
+				<li>SpellOf_Meteor</li>
+				<li>SpellOf_BloodMoon</li>
+				<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
+				<li MayRequire="kure.arom">SpellOf_Balefire</li>
+				<li MayRequire="kure.arom">SpellOf_Xenoglossy</li>
+				<li MayRequire="kure.arom">SpellOf_UnstableSingularity</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_OffensiveLargeArea</defName>
 		<ingredients>
@@ -502,6 +669,33 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LLRoM_OffensiveDeBuff</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Discord</li>
+						<li>SpellOf_Sabotage</li>
+						<li MayRequire="kure.arom">SpellOf_BramblePatch</li>
+						<li MayRequire="kure.arom">SpellOf_CircleOfScorn</li>
+						<li MayRequire="kure.arom">SpellOf_Doton</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Discord</li>
+				<li>SpellOf_Sabotage</li>
+				<li MayRequire="kure.arom">SpellOf_BramblePatch</li>
+				<li MayRequire="kure.arom">SpellOf_CircleOfScorn</li>
+				<li MayRequire="kure.arom">SpellOf_Doton</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_OffensiveDeBuff_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -628,6 +822,41 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_RawI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blur</li>
+						<li>SpellOf_ArcaneBolt</li>
+						<li>SpellOf_Discord</li>
+						<li>SpellOf_BrandSiphon</li>
+						<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
+						<li MayRequire="kure.arom">SpellOf_Effulgence</li>
+						<li MayRequire="kure.arom">SpellOf_EldritchBarrage</li>
+						<li MayRequire="kure.arom">SpellOf_Erase</li>
+						<li MayRequire="kure.arom">SpellOf_LuckyStar</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blur</li>
+				<li>SpellOf_ArcaneBolt</li>
+				<li>SpellOf_Discord</li>
+				<li>SpellOf_BrandSiphon</li>
+				<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
+				<li MayRequire="kure.arom">SpellOf_Effulgence</li>
+				<li MayRequire="kure.arom">SpellOf_EldritchBarrage</li>
+				<li MayRequire="kure.arom">SpellOf_Erase</li>
+				<li MayRequire="kure.arom">SpellOf_LuckyStar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_RawI</defName>
 		<ingredients>
@@ -692,6 +921,57 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LLRoM_RawII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_TransferMana</li>
+						<li>SpellOf_SiphonMana</li>
+						<li>SpellOf_ManaShield</li>
+						<li>SpellOf_SpellMending</li>
+						<li>SpellOf_ShieldOther</li>
+						<li>SpellOf_Invisibility</li>
+						<li MayRequire="kure.arom">SpellOf_Balefire</li>
+						<li MayRequire="kure.arom">SpellOf_ContreSixte</li>
+						<li MayRequire="kure.arom">SpellOf_Despair</li>
+						<li MayRequire="kure.arom">SpellOf_ForceMissile</li>
+						<li MayRequire="kure.arom">SpellOf_Manaward</li>
+						<li MayRequire="kure.arom">SpellOf_Reflect</li>
+						<li MayRequire="kure.arom">SpellOf_Renew</li>
+						<li MayRequire="kure.arom">SpellOf_Sharpcast</li>
+						<li MayRequire="kure.arom">SpellOf_Xenoglossy</li>
+						<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
+						<li MayRequire="kure.arom">SpellOf_GuidingLight</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_TransferMana</li>
+				<li>SpellOf_SiphonMana</li>
+				<li>SpellOf_ManaShield</li>
+				<li>SpellOf_SpellMending</li>
+				<li>SpellOf_ShieldOther</li>
+				<li>SpellOf_Invisibility</li>
+				<li MayRequire="kure.arom">SpellOf_Balefire</li>
+				<li MayRequire="kure.arom">SpellOf_ContreSixte</li>
+				<li MayRequire="kure.arom">SpellOf_Despair</li>
+				<li MayRequire="kure.arom">SpellOf_ForceMissile</li>
+				<li MayRequire="kure.arom">SpellOf_Manaward</li>
+				<li MayRequire="kure.arom">SpellOf_Reflect</li>
+				<li MayRequire="kure.arom">SpellOf_Renew</li>
+				<li MayRequire="kure.arom">SpellOf_Sharpcast</li>
+				<li MayRequire="kure.arom">SpellOf_Xenoglossy</li>
+				<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
+				<li MayRequire="kure.arom">SpellOf_GuidingLight</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_RawII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -862,6 +1142,45 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_BindingI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BlankMind</li>
+						<li>SpellOf_SummonMinion</li>
+						<li>SpellOf_BrandSiphon</li>
+						<li>SpellOf_BrandFitness</li>
+						<li>SpellOf_BrandEmotion</li>
+						<li>SpellOf_BrandVitality</li>
+						<li>SpellOf_BrandProtection</li>
+						<li>SpellOf_BrandAwareness</li>
+						<li MayRequire="kure.arom">SpellOf_Effulgence</li>
+						<li MayRequire="kure.arom">SpellOf_Sharpcast</li>
+						<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BlankMind</li>
+				<li>SpellOf_SummonMinion</li>
+				<li>SpellOf_BrandSiphon</li>
+				<li>SpellOf_BrandFitness</li>
+				<li>SpellOf_BrandEmotion</li>
+				<li>SpellOf_BrandVitality</li>
+				<li>SpellOf_BrandProtection</li>
+				<li>SpellOf_BrandAwareness</li>
+				<li MayRequire="kure.arom">SpellOf_Effulgence</li>
+				<li MayRequire="kure.arom">SpellOf_Sharpcast</li>
+				<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_BindingI</defName>
 		<ingredients>
@@ -926,6 +1245,35 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LLRoM_BindingII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_MagicWardrobe</li>
+						<li>SpellOf_LivingWall</li>
+						<li>SpellOf_SummonPoppi</li>
+						<li>SpellOf_Scorn</li>
+						<li>SpellOf_PsychicShock</li>
+						<li>SpellOf_Recall</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_MagicWardrobe</li>
+				<li>SpellOf_LivingWall</li>
+				<li>SpellOf_SummonPoppi</li>
+				<li>SpellOf_Scorn</li>
+				<li>SpellOf_PsychicShock</li>
+				<li>SpellOf_Recall</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_BindingII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1032,6 +1380,31 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_EmotoinI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BrandEmotion</li>
+						<li MayRequire="kure.arom">SpellOf_ClearMindC</li>
+						<li MayRequire="kure.arom">SpellOf_TauntC</li>
+						<li MayRequire="kure.arom">SpellOf_CallOfDarkness</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BrandEmotion</li>
+				<li MayRequire="kure.arom">SpellOf_ClearMindC</li>
+				<li MayRequire="kure.arom">SpellOf_TauntC</li>
+				<li MayRequire="kure.arom">SpellOf_CallOfDarkness</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_EmotoinI</defName>
 		<ingredients>
@@ -1084,6 +1457,33 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LLRoM_EmotoinII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_BlankMind</li>
+						<li>SpellOf_BattleHymn</li>
+						<li>SpellOf_FadeEmotions</li>
+						<li MayRequire="kure.arom">SpellOf_Impromptu</li>
+						<li MayRequire="kure.arom">SpellOf_WardensPaean</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_BlankMind</li>
+				<li>SpellOf_BattleHymn</li>
+				<li>SpellOf_FadeEmotions</li>
+				<li MayRequire="kure.arom">SpellOf_Impromptu</li>
+				<li MayRequire="kure.arom">SpellOf_WardensPaean</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_EmotoinII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1178,6 +1578,25 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_TimeI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_BulletTime</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_BulletTime</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_TimeI</defName>
 		<ingredients>
@@ -1235,6 +1654,23 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_TimeII_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_TimeII</defName>
 		<ingredients>
@@ -1273,6 +1709,27 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LLRoM_TimeIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Recall</li>
+						<li MayRequire="kure.arom">SpellOf_UnstableSingularity</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Recall</li>
+				<li MayRequire="kure.arom">SpellOf_UnstableSingularity</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_TimeIII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -1365,6 +1822,29 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_ChaosI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li MayRequire="kure.arom">SpellOf_ChromaticFlash</li>
+						<li MayRequire="kure.arom">SpellOf_Destiny</li>
+						<li MayRequire="kure.arom">SpellOf_Impromptu</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li MayRequire="kure.arom">SpellOf_ChromaticFlash</li>
+				<li MayRequire="kure.arom">SpellOf_Destiny</li>
+				<li MayRequire="kure.arom">SpellOf_Impromptu</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LLRoM_ChaosI</defName>
 		<ingredients>
@@ -1411,6 +1891,29 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LLRoM_ChaosII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Shapeshift</li>
+						<li MayRequire="kure.arom">SpellOf_SleeveDraw</li>
+						<li MayRequire="kure.arom">SpellOf_PlanetaryForce</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Shapeshift</li>
+				<li MayRequire="kure.arom">SpellOf_SleeveDraw</li>
+				<li MayRequire="kure.arom">SpellOf_PlanetaryForce</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_ChaosII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>

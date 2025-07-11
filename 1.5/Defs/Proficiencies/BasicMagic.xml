@@ -20,6 +20,7 @@
 		<practicalLearningActivityDefs>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
 		</practicalLearningActivityDefs>
 		<customAcquisitionDescriptions>
 			<li>Can be learned by pioneering, being taught in class, or by using a Gem of Arcane Insight.</li>
@@ -56,6 +57,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LLRoM_Defensive</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_Defensive_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_Defensive</li>
@@ -94,6 +97,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LLRoM_DefensiveBuff</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_UseScroll_LLRoM_DefensiveBuff_Safe</li>
+			<li>LLRoM_practice_magic_mana</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_DefensiveBuff</li>
@@ -134,6 +139,8 @@
 			<li>LLRoM_UseScroll_LLRoM_DefensiveBarrier</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_DefensiveBarrier_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_DefensiveBarrier</li>
@@ -171,6 +178,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LLRoM_Offensive</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_Offensive_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_Offensive</li>
@@ -214,6 +223,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LLRoM_OffensiveLargeArea</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_OffensiveLargeArea_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_OffensiveLargeArea</li>
@@ -251,6 +262,8 @@
 			<li>LLRoM_UseScroll_LLRoM_OffensiveDeBuff</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_OffensiveDeBuff_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_OffensiveDeBuff</li>
@@ -289,6 +302,8 @@
 			<li>LLRoM_UseScroll_LLRoM_RawI</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_RawI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_RawI</li>
@@ -329,6 +344,8 @@
 			<li>LLRoM_UseScroll_LLRoM_BindingI</li>
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_BindingI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_BindingI</li>
@@ -369,6 +386,8 @@
 			<li>LLRoM_UseScroll_LLRoM_RawII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_RawII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLDocument</li>
@@ -425,6 +444,8 @@
 			<li>LLRoM_UseScroll_LLRoM_TimeI</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_TimeI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLAnalyzeWriting</li>
@@ -476,6 +497,8 @@
 			<li>LLRoM_UseScroll_LLRoM_BindingII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_BindingII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_BindingII</li>
@@ -533,6 +556,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_LLRoM_EmotoinI</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_EmotoinI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_EmotoinI</li>
@@ -563,6 +588,8 @@
 			<li>LLRoM_UseScroll_LLRoM_EmotoinII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_EmotoinII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_LLRoM_EmotoinII</li>
@@ -616,6 +643,8 @@
 			<li>LLRoM_UseScroll_LLRoM_TimeII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_TimeII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_TimeII</li>
@@ -671,6 +700,8 @@
 			<li>LLRoM_UseScroll_LLRoM_ChaosI</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_ChaosI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_ChaosI</li>
@@ -730,6 +761,8 @@
 			<li>LLRoM_UseScroll_LLRoM_TimeIII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_TimeIII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_TimeIII</li>
@@ -781,6 +814,8 @@
 			<li>LLRoM_UseScroll_LLRoM_ChaosII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_ChaosII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ExamineScroll_LLRoM_ChaosII</li>

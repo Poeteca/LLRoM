@@ -43,6 +43,58 @@
 		<consumeIngredientTargets>true</consumeIngredientTargets>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef Name="LLRoM_UseScroll_Mana_Safe" Abstract="True">
+		<activityJob>LLRoM_StudyLearnObject</activityJob>
+		<label>Practice Usin a Scroll</label>
+		<description>Practice a spell by channeling mana through a scroll containing it.
+
+Requires 20 mana</description>
+		<disabledByDefault>true</disabledByDefault>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.005</xpPerTick>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLRoM_CSmallMagicCircle</effectWorking>
+		<soundWorking>Interact_Research</soundWorking>
+		<validWorkstations>
+			<li>SimpleResearchBench</li>
+			<li>LLRoM_practicespot</li>
+		</validWorkstations>
+		<consumeIngredientTargets>false</consumeIngredientTargets>
+		<modExtensions>
+			<li Class="LLRoM.NeedActivityConsumerExtension">
+				<magicPro>true</magicPro>
+				<amount>.20</amount>
+			</li>
+		</modExtensions>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef Name="LLRoM_UseScroll_Stamina_Safe" Abstract="True">
+		<activityJob>LLRoM_StudyLearnObject</activityJob>
+		<label>Practice Usin a Scroll</label>
+		<description>Practice a skill by concentrating on it.
+
+Requires 20 stamina</description>
+		<disabledByDefault>true</disabledByDefault>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.005</xpPerTick>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLRoM_CSmallMagicCircle</effectWorking>
+		<soundWorking>Interact_Research</soundWorking>
+		<validWorkstations>
+			<li>SimpleResearchBench</li>
+			<li>LLRoM_practicespot</li>
+		</validWorkstations>
+		<consumeIngredientTargets>false</consumeIngredientTargets>
+		<modExtensions>
+			<li Class="LLRoM.NeedActivityConsumerExtension">
+				<mightPro>true</mightPro>
+				<amount>.20</amount>
+			</li>
+		</modExtensions>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef Name="LLRoM_ExamineScroll" Abstract="True">
 		<activityJob>LLRoM_StudyLearnObject</activityJob>
 		<label>Study Scroll</label>
@@ -133,6 +185,7 @@
 		<activityJob>LLRoM_practice_magic</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
+		<disabledByDefault>true</disabledByDefault>
 		<xpPerTick>0.0025</xpPerTick>
 		<baseTickLength>1500</baseTickLength>
 		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
@@ -156,6 +209,32 @@
 				<li>RawMagicyte</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_practice_magic_mana</defName>
+		<label>Practice Magic</label>
+		<soundWorking>Interact_Research</soundWorking>
+		<description>Practice different kinds of magic.
+
+Requires 10 mana</description>
+		<activityJob>LLRoM_practice_magic</activityJob>
+		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
+		<experienceType>Practical</experienceType>
+		<xpPerTick>0.0025</xpPerTick>
+		<baseTickLength>1500</baseTickLength>
+		<disabledByDefault>true</disabledByDefault>
+		<dailyRepetitionsUntilExhausted>4</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLRoM_CSmallMagicCircle</effectWorking>
+		<validWorkstations>
+			<li>LLRoM_practicespot</li>
+		</validWorkstations>
+		<modExtensions>
+			<li Class="LLRoM.NeedActivityConsumerExtension">
+				<magicPro>true</magicPro>
+				<amount>.10</amount>
+			</li>
+		</modExtensions>
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef>
@@ -265,7 +344,10 @@
 	<LifeLessons.LearningActivityDef>
 		<defName>LLRoM_practice_Ritual_magic</defName>
 		<label>Practice Magic Rituals</label>
-		<description>Practice complex magic rituals using raw magicyte as a catalyst.</description>
+		<disabledByDefault>true</disabledByDefault>
+		<description>Practice complex magic rituals using raw magicyte as a catalyst.
+
+Requires 25 mana</description>
 		<activityJob>LLRoM_practice_Ritual_magic</activityJob>
 		<workstationThingGroup>BuildingArtificial</workstationThingGroup>
 		<experienceType>Practical</experienceType>
@@ -293,6 +375,12 @@
 				<li>RawMagicyte</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<modExtensions>
+			<li Class="LLRoM.NeedActivityConsumerExtension">
+				<magicPro>true</magicPro>
+				<amount>.25</amount>
+			</li>
+		</modExtensions>
 	</LifeLessons.LearningActivityDef>
 	
 	<LifeLessons.LearningActivityDef>

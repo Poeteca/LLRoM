@@ -23,6 +23,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_WindI</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_WindI_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindI</li>
@@ -54,6 +56,8 @@
 			<li>LLRoM_UseScroll_WindII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_WindII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindII</li>
@@ -110,6 +114,8 @@
 			<li>LLRoM_UseScroll_WindIII</li>
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_WindIII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_WindIII</li>

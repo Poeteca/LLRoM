@@ -2,6 +2,28 @@
 
 <Patch>
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ManaPotion"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>ChemicalSynthesis</li>
+					<li>LLRoM_MagicRefinement</li>
+				</requirements>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/RecipeDef[defName="ManaPotion_Refined"]</xpath>
 		<value>
 			<li Class="LifeLessons.BillProficiencyExtension">

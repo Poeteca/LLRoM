@@ -68,6 +68,35 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_Summon_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Blink</li>
+						<li>SpellOf_SummonMinion</li>
+						<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+						<li MayRequire="kure.arom">SpellOf_Disarm</li>
+						<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+						<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Blink</li>
+				<li>SpellOf_SummonMinion</li>
+				<li MayRequire="kure.arom">SpellOf_ArcaneWallC</li>
+				<li MayRequire="kure.arom">SpellOf_Disarm</li>
+				<li MayRequire="kure.arom">SpellOf_HammerBoltC</li>
+				<li MayRequire="kure.arom">SpellOf_FeyBlessing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_Summon</defName>
 		<ingredients>
@@ -126,6 +155,33 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_SummonII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_MagicWardrobe</li>
+						<li>SpellOf_SummonPoppi</li>
+						<li>SpellOf_GuardianSpirit</li>
+						<li MayRequire="kure.arom">SpellOf_AspectChanneling</li>
+						<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_MagicWardrobe</li>
+				<li>SpellOf_SummonPoppi</li>
+				<li>SpellOf_GuardianSpirit</li>
+				<li MayRequire="kure.arom">SpellOf_AspectChanneling</li>
+				<li MayRequire="kure.arom">SpellOf_ElementalRift</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_SummonII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
@@ -222,6 +278,29 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_TeleportationI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Teleport</li>
+						<li MayRequire="kure.arom">SpellOf_Destiny</li>
+						<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Teleport</li>
+				<li MayRequire="kure.arom">SpellOf_Destiny</li>
+				<li MayRequire="kure.arom">SpellOf_AetherialManipulation</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_TeleportationI</defName>
 		<ingredients>
@@ -266,6 +345,25 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_TeleportationII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_FoldReality</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_FoldReality</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_TeleportationII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>

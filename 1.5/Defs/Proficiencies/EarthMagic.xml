@@ -24,6 +24,8 @@
 			<li>LLRoM_MagicPonder</li>
 			<li>LLRoM_UseScroll_EarthI</li>
 			<li>LLRoM_practice_magic</li>
+			<li>LLRoM_UseScroll_LLRoM_EarthI_Safe</li>
+			<li>LLRoM_practice_magic_mana</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EarthI</li>
@@ -56,6 +58,8 @@
 			<li>LLRoM_UseScroll_EarthII</li>		
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_EarthII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EarthII</li>
@@ -117,6 +121,8 @@
 			<li>LLRoM_UseScroll_EarthIII</li>		
 			<li>LLRoM_practice_magic</li>
 			<li>LLRoM_practice_Ritual_magic</li>
+			<li>LLRoM_practice_magic_mana</li>
+			<li>LLRoM_UseScroll_LLRoM_EarthIII_Safe</li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
 			<li>LLRoM_ReadMagicLearnObjectBase_EarthIII</li>

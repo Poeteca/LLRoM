@@ -54,6 +54,31 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_FireI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Heater</li>
+						<li>SpellOf_DryGround</li>
+						<li>SpellOf_CauterizeWound</li>
+						<li>SpellOf_Ignite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Heater</li>
+				<li>SpellOf_DryGround</li>
+				<li>SpellOf_CauterizeWound</li>
+				<li>SpellOf_Ignite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_FireI</defName>
 		<ingredients>
@@ -123,6 +148,27 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_FireII_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_HeatShield</li>
+						<li MayRequire="kure.arom">SpellOf_Incinerate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_HeatShield</li>
+				<li MayRequire="kure.arom">SpellOf_Incinerate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_FireII</defName>
 		<ingredients>
@@ -165,6 +211,25 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_FireIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Firestorm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Firestorm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_FireIII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>

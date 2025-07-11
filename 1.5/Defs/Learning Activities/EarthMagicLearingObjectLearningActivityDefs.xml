@@ -54,6 +54,31 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_EarthI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_DryGround</li>
+						<li>SpellOf_WetGround</li>
+						<li>SpellOf_DirtDevil</li>
+						<li MayRequire="kure.arom">SpellOf_Eruption</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_DryGround</li>
+				<li>SpellOf_WetGround</li>
+				<li>SpellOf_DirtDevil</li>
+				<li MayRequire="kure.arom">SpellOf_Eruption</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_EarthI</defName>
 		<ingredients>
@@ -125,6 +150,29 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_EarthII_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_FertileLands</li>
+						<li MayRequire="kure.arom">SpellOf_Doton</li>
+						<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_FertileLands</li>
+				<li MayRequire="kure.arom">SpellOf_Doton</li>
+				<li MayRequire="kure.arom">SpellOf_ChurningEarth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_EarthII</defName>
 		<ingredients>
@@ -169,6 +217,25 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_EarthIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_Meteor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_Meteor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_EarthIII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>

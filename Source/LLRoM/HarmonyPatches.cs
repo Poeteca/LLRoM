@@ -23,6 +23,162 @@ using static UnityEngine.Scripting.GarbageCollector;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class randomClassPatch
+    {
+        [HarmonyPatch(typeof(TM_Calc), nameof(TM_Calc.GetRandomAcceptableMagicClassIndex))]
+        public static class RandomPostChanger
+        {
+            public static void Postfix(Pawn p, ref int __result)
+            {
+                if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
+                {
+                    if (Utility.CanLearnClass(p, TM_Data.EnabledMagicTraits[__result]))
+                    {
+                        return;
+                    }
+                    List<TraitDef> classes = new List<TraitDef>();
+                    foreach (TraitDef td in DefDatabase<TraitDef>.AllDefs.Where((TraitDef t) => Utility.CanLearnClass(p, t) && TM_Data.EnabledMagicTraits.Contains(t)))
+                    {
+                        classes.Add(td);
+                    }
+                    if (classes.Count == 0) { return; }
+                    TraitDef ranClass = classes.RandomElement();
+                    int outIndex = TM_Data.EnabledMagicTraits.IndexOf(ranClass);
+                    if (outIndex == -1) { return; }
+                    __result = outIndex;
+                }
+            }
+        }
+    }
+    public static class AdjsutCommonality
+    {
+        [HarmonyPatch(typeof(InspirationWorker), nameof(InspirationWorker.CommonalityFor))]
+        public static class ExtenderInspirationChecher
+        {
+            public static void Postfix(Pawn pawn, ref float __result, InspirationWorker __instance)
+            {
+                float adjuster = 1f;
+                InspirationExtension extension = __instance.def.GetModExtension<InspirationExtension>();
+                if (__instance.def == TorannMagicDefOf.ID_ArcanePathways && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
+                {
+                    List<TraitDef> classes = new List<TraitDef>();
+                    foreach (TraitDef td in DefDatabase<TraitDef>.AllDefs.Where((TraitDef t) => Utility.CanLearnClass(pawn, t) && TM_Data.EnabledMagicTraits.Contains(t)))
+                    {
+                        classes.Add(td);
+                    }
+                    if (classes.Count == 0)
+                    {
+                        adjuster = 0f;
+                    }
+                }
+                if (extension != null)
+                {
+                    if (!LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().Inspiredepiphanies || !LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
+                    {
+                        adjuster = 0f;
+                    }
+                    if (extension.hediff != null)
+                    {
+                        if (!pawn.health.hediffSet.HasHediff(extension.hediff))
+                        {
+                            adjuster = 0f;
+                        }
+                    }
+                    if (extension.requiredproficiencies != null && extension.requiredproficiencies.Count > 0)
+                    {
+                        foreach (ProficiencyDef pro in extension.requiredproficiencies)
+                        {
+                            if (!Util.IsQualified(pawn, pro))
+                            {
+                                adjuster = 0f;
+                            }
+                        }
+                    }
+                    if (extension.relatedproficiencies != null)
+                    {
+                        float knownRelated = 0f;
+                        foreach (ProficiencyDef related in extension.relatedproficiencies)
+                        {
+                            if (Util.IsQualified(pawn, related))
+                            {
+                                knownRelated++;
+                            }
+                        }
+                        if (knownRelated < extension.relatedCountNeeded)
+                        {
+                            adjuster = 0f;
+                        }
+                    }
+                    if (extension.blockingcategory != null)
+                    {
+                        if (Utility.KnownInCatagory(pawn, extension.blockingcategory).Count > 0)
+                        {
+                            adjuster = 0f;
+                        }
+                    }
+                }
+                __result *= adjuster;
+            }
+        }
+    }
+    public static class ConsumNeed
+    {
+        [HarmonyPatch(typeof(Util), nameof(Util.LearnFromActivity))]
+        public static class ConsumeNeededNeed
+        {
+            public static void Postfix(LearningActivity activity, Pawn pawn)
+            {
+                NeedActivityConsumerExtension extension = activity.def.GetModExtension<NeedActivityConsumerExtension>();
+                if (extension != null)
+                {
+                    if (extension.magicPro && TM_Calc.IsMagicUser(pawn))
+                    {
+                        CompAbilityUserMagic compAbilityUserMagic = pawn.GetCompAbilityUserMagic();
+                        compAbilityUserMagic.Mana.UseMagicPower(extension.amount);
+                        compAbilityUserMagic.MagicUserXP += Mathf.Clamp((int)(extension.amount * 150f * compAbilityUserMagic.xpGain * Settings.Instance.xpMultiplier), 0, 9999);
+                    }
+                    else if (extension.mightPro && TM_Calc.IsMightUser(pawn))
+                    {
+                        CompAbilityUserMight compAbilityUseright = pawn.GetCompAbilityUserMight();
+                        compAbilityUseright.Stamina.UseMightPower(extension.amount);
+                        compAbilityUseright.MightUserXP += Mathf.Clamp((int)(extension.amount * 150f * compAbilityUseright.xpGain * Settings.Instance.xpMultiplier), 0, 9999);
+                    }
+                }
+            }
+        }
+        [HarmonyPatch(typeof(LearningActivity), nameof(LearningActivity.CanStartNow))]
+        public static class HasNeededNeed
+        {
+            public static void Postfix(ref bool __result, Pawn pawn, LearningActivity __instance)
+            {
+                if (!__result) { return; }
+                NeedActivityConsumerExtension extension = __instance.def.GetModExtension<NeedActivityConsumerExtension>();
+                if (extension != null)
+                {
+                    if (extension.magicPro && TM_Calc.IsMagicUser(pawn))
+                    {
+                        CompAbilityUserMagic compAbilityUserMagic = pawn.GetCompAbilityUserMagic();
+                        if (extension.amount > compAbilityUserMagic.Mana.CurLevel)
+                        {
+                            __result = false;
+                        }
+                    }
+                    else if (extension.mightPro && TM_Calc.IsMightUser(pawn))
+                    {
+                        CompAbilityUserMight compAbilityUseright = pawn.GetCompAbilityUserMight();
+                        if (extension.amount > compAbilityUseright.Stamina.CurLevel)
+                        {
+                            __result = false;
+                        }
+                    }
+                    else if ((extension.mightPro && !TM_Calc.IsMagicUser(pawn)) || (extension.mightPro && !TM_Calc.IsMightUser(pawn)))
+                    {
+                        __result = false;
+                    }
+                }
+            }
+        }
+    }
     public static class MagicBillCheck
     {
         [HarmonyPatch(typeof(Building_TMMagicCircleBase), nameof(Building_TMMagicCircleBase.CanEverDoBill))]
@@ -862,10 +1018,10 @@ namespace LLRoM
             }
         }
     }
-    public static class HediffLockoutPatch
+    public static class ProficiencyLockoutPatch
     {
         [HarmonyPatch(typeof(ProficiencyComp), nameof(ProficiencyComp.CanLearn))]
-        public class HediffLockoutPrefix
+        public class ProficiencyLockoutPrefix
         {
             public static bool Prefix(ProficiencyDef def, ProficiencyComp __instance)
             {
@@ -877,6 +1033,11 @@ namespace LLRoM
                     {
                         return false;
                     }
+                }
+                InspirationExtension Inspirationextension = def.GetModExtension<InspirationExtension>();
+                if (Inspirationextension != null)
+                {
+                    return !Inspirationextension.requiresInspiration;
                 }
                 return true;
             }
@@ -1153,6 +1314,36 @@ namespace LLRoM
         {
             public static bool Prefix(Pawn user, object __instance)
             {
+                ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
+                if (user.mindState.inspirationHandler.Inspired)
+                {
+                    InspirationExtension inspirationextension = user.mindState.inspirationHandler.CurStateDef.GetModExtension<InspirationExtension>();
+                    if (inspirationextension != null)
+                    {
+                        if (((ThingComp)(object)__instance).parent.def.defName == "GemstoneOfInsight_Magic" && inspirationextension.hediff != null && inspirationextension.hediff == TorannMagicDefOf.TM_MagicUserHD)
+                        {
+                            ProficiencyDef randomPro = Utility.GetRandomInspirationProficiency(user, user.mindState.inspirationHandler.CurStateDef);
+                            if (randomPro != null)
+                            {
+                                comp.TryGainProficiency(randomPro, true);
+                                ((ThingComp)(object)__instance).parent.SplitOff(1).Destroy();
+                                user.mindState.inspirationHandler.EndInspiration(user.mindState.inspirationHandler.CurState);
+                                return false;
+                            }
+                        }
+                        if (((ThingComp)(object)__instance).parent.def.defName == "GemstoneOfInsight_Might" && inspirationextension.hediff != null && inspirationextension.hediff == TorannMagicDefOf.TM_MightUserHD)
+                        {
+                            ProficiencyDef randomPro = Utility.GetRandomInspirationProficiency(user, user.mindState.inspirationHandler.CurStateDef);
+                            if (randomPro != null)
+                            {
+                                comp.TryGainProficiency(randomPro, true);
+                                ((ThingComp)(object)__instance).parent.SplitOff(1).Destroy();
+                                user.mindState.inspirationHandler.EndInspiration(user.mindState.inspirationHandler.CurState);
+                                return false;
+                            }
+                        }
+                    }
+                }
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfTeachClasses && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachClasses)
                 {
                     Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
@@ -1160,7 +1351,6 @@ namespace LLRoM
                 }
                 CompAbilityUserMight compAbilityUserMight = user.GetCompAbilityUserMight();
                 CompAbilityUserMagic compAbilityUserMagic = user.GetCompAbilityUserMagic();
-                ProficiencyComp comp = user.TryGetComp<ProficiencyComp>();
                 if (!compAbilityUserMagic.IsMagicUser && !compAbilityUserMight.IsMightUser && !user.story.traits.HasTrait(TorannMagicDefOf.TM_Gifted) && !user.story.traits.HasTrait(TorannMagicDefOf.PhysicalProdigy) && !user.story.traits.HasTrait(TorannMagicDefOf.Undead) && !user.IsShambler && !user.IsGhoul)
                 {
                     GemOfInsightProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<GemOfInsightProficiencyExtension>();

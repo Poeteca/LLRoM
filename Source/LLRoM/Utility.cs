@@ -17,6 +17,41 @@ namespace LLRoM
 {
     public class Utility
     {
+        public static ProficiencyDef GetRandomInspirationProficiency(Pawn pawn, InspirationDef inspiration)
+        {
+            List<ProficiencyDef> possibleResults = new List<ProficiencyDef>();
+            InspirationExtension extension = inspiration.GetModExtension<InspirationExtension>();
+            if (extension != null)
+            {
+                foreach (ProficiencyDef pro in extension.Outcomeproficiencies)
+                {
+                    if (extension != null && Util.Qualification(pawn, pro.prerequisites).Allowed(true))
+                    {
+                       possibleResults.Add(pro);
+                    }
+                }
+            }
+            if (possibleResults.Count == 0)
+            {
+                Log.Error("ERROR: No Possible Inspiration Proficiencies");
+                return null;
+            }
+            ProficiencyDef outProficiency = possibleResults.RandomElement();
+            if (outProficiency == null) { Log.Error("ERROR: Random Inspiration Proficiency is null"); }
+            return outProficiency;
+        }
+        public static List<ProficiencyDef> KnownInCatagory(Pawn pawn, ProficiencyCategoryDef category)
+        {
+            List<ProficiencyDef> foundProficiencies= new List<ProficiencyDef>();
+            foreach (ProficiencyDef pro in DefDatabase<ProficiencyDef>.AllDefs)
+            {
+                if (pro.category == category && Util.IsQualified(pawn, pro))
+                {
+                    foundProficiencies.Add(pro);
+                }
+            }
+            return foundProficiencies;
+        }
         private static List<TraitDef> _EnabledMightTraits = null;
         public static List<TraitDef> EnabledMightTraits
         {
@@ -272,6 +307,7 @@ namespace LLRoM
                 return false;
             }
             ClassAutoLearnExtension traitextension = Class.GetModExtension<ClassAutoLearnExtension>();
+            if (traitextension == null) { return false; }
             if (traitextension != null)
             {
                 if (traitextension.GenderRequirment != Gender.None && p.gender != traitextension.GenderRequirment)

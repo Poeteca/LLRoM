@@ -6,7 +6,7 @@
 			<li Class="LifeLessons.BillProficiencyExtension">
 				<requirements>
 					<li>Glassblowing</li>
-					<li>LLRoM_RawI</li>
+					<li>LLRoM_MagicRefinement</li>
 				</requirements>
 				<unqualifiedPenalty>
 					<statModifiers>

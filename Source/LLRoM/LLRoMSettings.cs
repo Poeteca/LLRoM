@@ -30,6 +30,7 @@ namespace LLRoM
         public bool learnBycastingSpells = true;
         public float MaxCostScaleFactor = .5f;
         public bool LearningDrain = true;
+        public bool Inspiredepiphanies = true;
         public void RestoreDefaults()
         {
             StrictMightClassLearning = false;
@@ -58,6 +59,7 @@ namespace LLRoM
             learnBycastingSpells = true;
             MaxCostScaleFactor = .5f;
             LearningDrain = true;
+            Inspiredepiphanies = true;
         }
         public override void ExposeData()
         {
@@ -86,6 +88,7 @@ namespace LLRoM
             Scribe_Values.Look(ref UnlearnProOnClassGain, "UnlearnProOnClassGain");
             Scribe_Values.Look(ref ProficienciesMasterOffseter, "ProficienciesMasterOffseter");
             Scribe_Values.Look(ref LearningDrain, "LearningDrain");
+            Scribe_Values.Look(ref Inspiredepiphanies, "Inspiredepiphanies");
             base.ExposeData();
         }
     }

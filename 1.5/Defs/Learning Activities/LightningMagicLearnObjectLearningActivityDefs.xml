@@ -52,6 +52,29 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_LightningI_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_PowerNode</li>
+						<li>SpellOf_ChargeBattery</li>
+						<li>SpellOf_EMP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_PowerNode</li>
+				<li>SpellOf_ChargeBattery</li>
+				<li>SpellOf_EMP</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LightningI</defName>
 		<ingredients>
@@ -125,6 +148,33 @@
 		</fixedIngredientFilter>
 	</LifeLessons.LearningActivityDef>
 	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_LightningII_Safe</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_OrbitalStrike</li>
+						<li>SpellOf_LightningTrap</li>
+						<li>SpellOf_MechaniteReprogramming</li>
+						<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+						<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_OrbitalStrike</li>
+				<li>SpellOf_LightningTrap</li>
+				<li>SpellOf_MechaniteReprogramming</li>
+				<li MayRequire="kure.arom">SpellOf_Overcharge</li>
+				<li MayRequire="kure.arom">SpellOf_MagneticAura</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_ExamineScroll">
 		<defName>LLRoM_ExamineScroll_LightningII</defName>
 		<ingredients>
@@ -173,6 +223,25 @@
 	
 	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll">
 		<defName>LLRoM_UseScroll_LightningIII</defName>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SpellOf_EyeOfTheStorm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SpellOf_EyeOfTheStorm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</LifeLessons.LearningActivityDef>
+	
+	<LifeLessons.LearningActivityDef ParentName="LLRoM_UseScroll_Mana_Safe">
+		<defName>LLRoM_UseScroll_LLRoM_LightningIII_Safe</defName>
 		<ingredients>
 			<li>
 				<filter>
