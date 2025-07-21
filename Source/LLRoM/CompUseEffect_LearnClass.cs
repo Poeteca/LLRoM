@@ -306,6 +306,10 @@ namespace LLRoM
             {
                 return "LLRoMNothingToLearn".Translate();
             }
+            if(!p.story.traits.HasTrait(TorannMagicDefOf.TM_Gifted) && !p.story.traits.HasTrait(TorannMagicDefOf.PhysicalProdigy) && parent.def.defName.Contains("Unfinished"))
+            {
+                return "LLRoM_NoClasses".Translate();
+            }
             return base.CanBeUsedBy(p);
         }
         private void Removerequirements(TraitDef trait, List<Trait> traitlist)

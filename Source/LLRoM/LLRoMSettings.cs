@@ -30,7 +30,7 @@ namespace LLRoM
         public bool learnBycastingSpells = true;
         public float MaxCostScaleFactor = .5f;
         public bool LearningDrain = true;
-        public bool Inspiredepiphanies = true;
+        public bool Inspiredepiphanies = false;
         public void RestoreDefaults()
         {
             StrictMightClassLearning = false;
@@ -59,7 +59,7 @@ namespace LLRoM
             learnBycastingSpells = true;
             MaxCostScaleFactor = .5f;
             LearningDrain = true;
-            Inspiredepiphanies = true;
+            Inspiredepiphanies = false;
         }
         public override void ExposeData()
         {

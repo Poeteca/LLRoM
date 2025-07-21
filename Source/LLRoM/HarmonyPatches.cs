@@ -23,7 +23,7 @@ using static UnityEngine.Scripting.GarbageCollector;
 namespace LLRoM
 {
     [HarmonyPatch]
-    public static class randomClassPatch
+    public static class RandomClassPatch
     {
         [HarmonyPatch(typeof(TM_Calc), nameof(TM_Calc.GetRandomAcceptableMagicClassIndex))]
         public static class RandomPostChanger

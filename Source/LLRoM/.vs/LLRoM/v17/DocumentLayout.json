@@ -3,96 +3,44 @@
   "WorkspaceRootPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_learnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_learnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_tryselflearnskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_tryselflearnskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compproperties_useeffectlearnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compproperties_useeffectlearnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\classautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:classautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\abilityautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:abilityautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\llaromdev\\source\\llrom\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\llromsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:llromsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\inspirationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:inspirationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\needactivityconsumerextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:needactivityconsumerextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\llrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:llrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\lockoutextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:lockoutextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compproperties_useeffecttryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compproperties_useeffecttryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\gemofinsightproficiencyextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:gemofinsightproficiencyextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_learnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_learnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\roomroleworker_traininghall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:roomroleworker_traininghall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\abilityxpgainextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:abilityxpgainextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\thing_buildingdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:thing_buildingdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\roomroledefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:roomroledefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\statoffsetextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:statoffsetextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\statoffseter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:statoffseter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\statmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:statmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\statoffsetextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:statoffsetextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\roomroleworker_traininghall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:roomroleworker_traininghall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\roomroledefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:roomroledefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\proficiencytabledefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,16 +51,68 @@
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:proficiencydefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\statoffseter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:statoffseter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\proficiencycategorydefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:proficiencycategorydefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\needactivityconsumerextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:needactivityconsumerextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\lockoutextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:lockoutextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\inspirationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:inspirationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\hideifcantlearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:hideifcantlearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\gemofinsightproficiencyextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:gemofinsightproficiencyextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compproperties_useeffectlearnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compproperties_useeffectlearnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\classautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:classautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\abilityxpgainextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:abilityxpgainextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\abilityautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:abilityautolearnextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\llromsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:llromsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\llaromdev\\source\\llrom\\llrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:llrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,17 +122,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StatModifier.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatModifier.cs",
+              "RelativeDocumentMoniker": "StatModifier.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatModifier.cs",
+              "RelativeToolTip": "StatModifier.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:56:19.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StatOffseter.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffseter.cs",
+              "RelativeDocumentMoniker": "StatOffseter.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffseter.cs",
+              "RelativeToolTip": "StatOffseter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:30:26.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "StatOffsetExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffsetExtension.cs",
+              "RelativeDocumentMoniker": "StatOffsetExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffsetExtension.cs",
+              "RelativeToolTip": "StatOffsetExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:31:51.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Thing_BuildingDefOf.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\Thing_BuildingDefOf.cs",
+              "RelativeDocumentMoniker": "Thing_BuildingDefOf.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\Thing_BuildingDefOf.cs",
+              "RelativeToolTip": "Thing_BuildingDefOf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T13:37:46.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Utility.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\Utility.cs",
               "RelativeDocumentMoniker": "Utility.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\Utility.cs",
               "RelativeToolTip": "Utility.cs",
-              "ViewState": "AQIAACEBAAAAAAAAAAAIwDUBAAA5AAAA",
+              "ViewState": "AQIAAOYAAAAAAAAAAAAowCgBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T15:59:01.478Z",
               "EditorCaption": ""
@@ -140,6 +192,214 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CompUseEffect_LearnClass.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_LearnClass.cs",
+              "RelativeDocumentMoniker": "CompUseEffect_LearnClass.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_LearnClass.cs",
+              "RelativeToolTip": "CompUseEffect_LearnClass.cs",
+              "ViewState": "AQIAABkBAAAAAAAAAAAcwB4BAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T15:22:10.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompProperties_UseEffectTrySelfLearnSpell.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompProperties_UseEffectTrySelfLearnSpell.cs",
+              "RelativeDocumentMoniker": "CompProperties_UseEffectTrySelfLearnSpell.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompProperties_UseEffectTrySelfLearnSpell.cs",
+              "RelativeToolTip": "CompProperties_UseEffectTrySelfLearnSpell.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T16:47:39.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompUseEffect_TrySelfLearnSkill.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSkill.cs",
+              "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSkill.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSkill.cs",
+              "RelativeToolTip": "CompUseEffect_TrySelfLearnSkill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T21:25:35.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoomRoleWorker_TrainingHall.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleWorker_TrainingHall.cs",
+              "RelativeDocumentMoniker": "RoomRoleWorker_TrainingHall.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleWorker_TrainingHall.cs",
+              "RelativeToolTip": "RoomRoleWorker_TrainingHall.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T13:28:58.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoomRoleDefOf.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleDefOf.cs",
+              "RelativeDocumentMoniker": "RoomRoleDefOf.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleDefOf.cs",
+              "RelativeToolTip": "RoomRoleDefOf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T18:16:40.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProficiencyTableDefOf.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyTableDefOf.cs",
+              "RelativeDocumentMoniker": "ProficiencyTableDefOf.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyTableDefOf.cs",
+              "RelativeToolTip": "ProficiencyTableDefOf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T15:30:16.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProficiencyDefOf.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyDefOf.cs",
+              "RelativeDocumentMoniker": "ProficiencyDefOf.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyDefOf.cs",
+              "RelativeToolTip": "ProficiencyDefOf.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T13:46:11.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProficiencyCategoryDefOf.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyCategoryDefOf.cs",
+              "RelativeDocumentMoniker": "ProficiencyCategoryDefOf.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyCategoryDefOf.cs",
+              "RelativeToolTip": "ProficiencyCategoryDefOf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:52:40.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NeedActivityConsumerExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\NeedActivityConsumerExtension.cs",
+              "RelativeDocumentMoniker": "NeedActivityConsumerExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\NeedActivityConsumerExtension.cs",
+              "RelativeToolTip": "NeedActivityConsumerExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T15:04:49.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LockoutExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LockoutExtension.cs",
+              "RelativeDocumentMoniker": "LockoutExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LockoutExtension.cs",
+              "RelativeToolTip": "LockoutExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:33:07.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InspirationExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\InspirationExtension.cs",
+              "RelativeDocumentMoniker": "InspirationExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\InspirationExtension.cs",
+              "RelativeToolTip": "InspirationExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T20:30:27.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HideIfCantLearnExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HideIfCantLearnExtension.cs",
+              "RelativeDocumentMoniker": "HideIfCantLearnExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HideIfCantLearnExtension.cs",
+              "RelativeToolTip": "HideIfCantLearnExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T15:43:08.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HediffDefOf.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HediffDefOf.cs",
+              "RelativeDocumentMoniker": "HediffDefOf.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HediffDefOf.cs",
+              "RelativeToolTip": "HediffDefOf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:12:56.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HarmonyPatches.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
+              "RelativeDocumentMoniker": "HarmonyPatches.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
+              "RelativeToolTip": "HarmonyPatches.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T02:48:05.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GemOfInsightProficiencyExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\GemOfInsightProficiencyExtension.cs",
+              "RelativeDocumentMoniker": "GemOfInsightProficiencyExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\GemOfInsightProficiencyExtension.cs",
+              "RelativeToolTip": "GemOfInsightProficiencyExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T02:47:16.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CompUseEffect_TrySelfLearnSpell.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSpell.cs",
+              "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSpell.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSpell.cs",
+              "RelativeToolTip": "CompUseEffect_TrySelfLearnSpell.cs",
+              "ViewState": "AQIAAN0CAAAAAAAAAAAcwOECAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T15:39:19.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "CompProperties_UseEffectLearnClass.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompProperties_UseEffectLearnClass.cs",
               "RelativeDocumentMoniker": "CompProperties_UseEffectLearnClass.cs",
@@ -152,44 +412,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LLRoM.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LLRoM.cs",
-              "RelativeDocumentMoniker": "LLRoM.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LLRoM.cs",
-              "RelativeToolTip": "LLRoM.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAnwKIAAAA0AAAA",
+              "DocumentIndex": 22,
+              "Title": "ClassAutoLearnExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ClassAutoLearnExtension.cs",
+              "RelativeDocumentMoniker": "ClassAutoLearnExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ClassAutoLearnExtension.cs",
+              "RelativeToolTip": "ClassAutoLearnExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:47:04.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InspirationExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\InspirationExtension.cs",
-              "RelativeDocumentMoniker": "InspirationExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\InspirationExtension.cs",
-              "RelativeToolTip": "InspirationExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T20:30:27.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CompUseEffect_LearnClass.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_LearnClass.cs",
-              "RelativeDocumentMoniker": "CompUseEffect_LearnClass.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_LearnClass.cs*",
-              "RelativeToolTip": "CompUseEffect_LearnClass.cs*",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAwwB0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:22:10.16Z",
+              "WhenOpened": "2025-01-24T15:43:06.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 23,
+              "Title": "AbilityXPGainExtension.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\AbilityXPGainExtension.cs",
+              "RelativeDocumentMoniker": "AbilityXPGainExtension.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\AbilityXPGainExtension.cs",
+              "RelativeToolTip": "AbilityXPGainExtension.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T14:04:03.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "AbilityAutoLearnExtension.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\AbilityAutoLearnExtension.cs",
               "RelativeDocumentMoniker": "AbilityAutoLearnExtension.cs",
@@ -202,141 +451,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClassAutoLearnExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ClassAutoLearnExtension.cs",
-              "RelativeDocumentMoniker": "ClassAutoLearnExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ClassAutoLearnExtension.cs",
-              "RelativeToolTip": "ClassAutoLearnExtension.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:43:06.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompUseEffect_TrySelfLearnSkill.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSkill.cs",
-              "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSkill.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSkill.cs",
-              "RelativeToolTip": "CompUseEffect_TrySelfLearnSkill.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T21:25:35.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 25,
               "Title": "LLRoMSettings.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LLRoMSettings.cs",
               "RelativeDocumentMoniker": "LLRoMSettings.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LLRoMSettings.cs",
               "RelativeToolTip": "LLRoMSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCAAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:47:03.254Z"
+              "WhenOpened": "2025-01-24T02:47:03.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LockoutExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LockoutExtension.cs",
-              "RelativeDocumentMoniker": "LockoutExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LockoutExtension.cs",
-              "RelativeToolTip": "LockoutExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "DocumentIndex": 26,
+              "Title": "LLRoM.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LLRoM.cs",
+              "RelativeDocumentMoniker": "LLRoM.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\LLRoM.cs",
+              "RelativeToolTip": "LLRoM.cs",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAowKYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T18:33:07.037Z"
+              "WhenOpened": "2025-01-24T02:47:04.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NeedActivityConsumerExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\NeedActivityConsumerExtension.cs",
-              "RelativeDocumentMoniker": "NeedActivityConsumerExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\NeedActivityConsumerExtension.cs",
-              "RelativeToolTip": "NeedActivityConsumerExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T15:04:49.034Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HarmonyPatches.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
-              "RelativeDocumentMoniker": "HarmonyPatches.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
-              "RelativeToolTip": "HarmonyPatches.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAcwDgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:48:05.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CompProperties_UseEffectTrySelfLearnSpell.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompProperties_UseEffectTrySelfLearnSpell.cs",
-              "RelativeDocumentMoniker": "CompProperties_UseEffectTrySelfLearnSpell.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompProperties_UseEffectTrySelfLearnSpell.cs",
-              "RelativeToolTip": "CompProperties_UseEffectTrySelfLearnSpell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:47:39.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GemOfInsightProficiencyExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\GemOfInsightProficiencyExtension.cs",
-              "RelativeDocumentMoniker": "GemOfInsightProficiencyExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\GemOfInsightProficiencyExtension.cs",
-              "RelativeToolTip": "GemOfInsightProficiencyExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:47:16.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CompUseEffect_TrySelfLearnSpell.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSpell.cs",
-              "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSpell.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSpell.cs",
-              "RelativeToolTip": "CompUseEffect_TrySelfLearnSpell.cs",
-              "ViewState": "AQIAAN0CAAAAAAAAAAAcwOECAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T15:39:19.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RoomRoleWorker_TrainingHall.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleWorker_TrainingHall.cs",
-              "RelativeDocumentMoniker": "RoomRoleWorker_TrainingHall.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleWorker_TrainingHall.cs",
-              "RelativeToolTip": "RoomRoleWorker_TrainingHall.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T13:28:58.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AbilityXPGainExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\AbilityXPGainExtension.cs",
-              "RelativeDocumentMoniker": "AbilityXPGainExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\AbilityXPGainExtension.cs",
-              "RelativeToolTip": "AbilityXPGainExtension.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAgAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T14:04:03.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
@@ -345,126 +486,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-02-05T21:09:31.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RoomRoleDefOf.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleDefOf.cs",
-              "RelativeDocumentMoniker": "RoomRoleDefOf.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\RoomRoleDefOf.cs",
-              "RelativeToolTip": "RoomRoleDefOf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:16:40.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Thing_BuildingDefOf.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\Thing_BuildingDefOf.cs",
-              "RelativeDocumentMoniker": "Thing_BuildingDefOf.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\Thing_BuildingDefOf.cs",
-              "RelativeToolTip": "Thing_BuildingDefOf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T13:37:46.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "HediffDefOf.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HediffDefOf.cs",
-              "RelativeDocumentMoniker": "HediffDefOf.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HediffDefOf.cs",
-              "RelativeToolTip": "HediffDefOf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T19:12:56.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "StatOffsetExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffsetExtension.cs",
-              "RelativeDocumentMoniker": "StatOffsetExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffsetExtension.cs",
-              "RelativeToolTip": "StatOffsetExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:31:51.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ProficiencyTableDefOf.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyTableDefOf.cs",
-              "RelativeDocumentMoniker": "ProficiencyTableDefOf.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyTableDefOf.cs",
-              "RelativeToolTip": "ProficiencyTableDefOf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:30:16.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ProficiencyDefOf.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyDefOf.cs",
-              "RelativeDocumentMoniker": "ProficiencyDefOf.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyDefOf.cs",
-              "RelativeToolTip": "ProficiencyDefOf.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T13:46:11.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ProficiencyCategoryDefOf.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyCategoryDefOf.cs",
-              "RelativeDocumentMoniker": "ProficiencyCategoryDefOf.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\ProficiencyCategoryDefOf.cs",
-              "RelativeToolTip": "ProficiencyCategoryDefOf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T13:52:40.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "StatModifier.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatModifier.cs",
-              "RelativeDocumentMoniker": "StatModifier.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatModifier.cs",
-              "RelativeToolTip": "StatModifier.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T15:56:19.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "StatOffseter.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffseter.cs",
-              "RelativeDocumentMoniker": "StatOffseter.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\StatOffseter.cs",
-              "RelativeToolTip": "StatOffseter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:30:26.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "HideIfCantLearnExtension.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HideIfCantLearnExtension.cs",
-              "RelativeDocumentMoniker": "HideIfCantLearnExtension.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HideIfCantLearnExtension.cs",
-              "RelativeToolTip": "HideIfCantLearnExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:43:08.451Z"
             },
             {
               "$type": "Bookmark",

@@ -51,7 +51,6 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.JSONSerializeModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.LocalizationModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UnityWebRequestModule.dll
-D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UNETModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
@@ -62,7 +61,6 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.SpriteMaskModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.StreamingModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
-D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.TextCoreModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.SpriteShapeModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UIElementsModule.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.VehiclesModule.dll
@@ -78,3 +76,15 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\obj\Debug\
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\obj\Debug\LLRoM.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\obj\Debug\LLRoM.pdb
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.IMGUIModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\Unity.Collections.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\netstandard.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UnityCurlModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.ContentLoadModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.PropertiesModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.TLSModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.UnityAnalyticsCommonModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.NVIDIAModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.VirtualTexturingModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.TextCoreFontEngineModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\UnityEngine.TextCoreTextEngineModule.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\Unity.Collections.LowLevel.ILSupport.dll

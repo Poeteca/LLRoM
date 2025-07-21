@@ -160,14 +160,14 @@ namespace LLRoM
             {
                 listingStandard.Label("");
             }
-            if (settings.ProficienciesMasterOffseter)
+            /*if (settings.ProficienciesMasterOffseter)
             {
                 listingStandard.CheckboxLabeled("Inspiredepiphanies".Translate(), ref settings.Inspiredepiphanies);
             }
             else
             {
                 listingStandard.Label("");
-            }
+            }*/
             if (listingStandard.ButtonText("LLRoM_RestoreDefaults".Translate()))
             {
                 settings.RestoreDefaults();

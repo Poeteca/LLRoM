@@ -36,7 +36,7 @@
       <HintPath>packages\Lib.Harmony.2.3.3\lib\net48\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="AbilityUser">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\932008009\1.5\Assemblies\AbilityUser.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3312959701\1.6\Assemblies\AbilityUser.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>

@@ -71,4 +71,5 @@ To reduce the recovery time:</LLRoM_DurationHintStart>
 	<LLRoM_ItemQualityHint> use a more potent object for training</LLRoM_ItemQualityHint>
 	<LLRoM_Period>.</LLRoM_Period>
 	<LearningDrain>If attempting to self teach should apply a scaling debuff.</LearningDrain>
+	<LLRoM_NoClasses>No possible valid classes</LLRoM_NoClasses>
 </LanguageData>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--Removes the ability to write random class books-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="UnfinishedArcane" or defName="UnfinishedAdvArcane" or defName="UnfinishedMartial"]/comps</xpath>
+		<value>
+			<comps Inherit="false">
+				<li Class="CompProperties_Forbiddable" />
+				<li Class="CompProperties_Usable">
+					<useJob>UseArtifact</useJob>
+					<useLabel>Experiment with {0_label}</useLabel>
+				</li>
+				<li Class="CompProperties_UseEffect">
+					<compClass>LLRoM.CompUseEffect_LearnClass</compClass>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedArcane"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>25</failChance>
+				<Magic>true</Magic>
+				<drainBase>.5</drainBase>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedAdvArcane"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>15</failChance>
+				<Magic>true</Magic>
+				<drainBase>.3</drainBase>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedMartial"]</xpath>
+		<value>
+			<li Class="LLRoM.ClassAutoLearnExtension">
+				<failChance>25</failChance>
+				<drainBase>.3</drainBase>
+				<Might>true</Might>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedArcane"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribI</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UnfinishedAdvArcane" or defName="UnfinishedMartial"]</xpath>
+		<value>
+			<li Class="LifeLessons.BillProficiencyExtension">
+				<requirements>
+					<li>LLRoM_ScribII</li>
+				</requirements>
+				<hardRequirement>true</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>
