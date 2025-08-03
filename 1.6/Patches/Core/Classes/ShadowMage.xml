@@ -7,6 +7,7 @@
 			<li Class="LifeLessons.BillProficiencyExtension">
 				<requirements>
 					<li>LLRoM_RawI</li>
+					<li>LLRoM_Equipment_Mastery</li>
 				</requirements>
 				<hardRequirement>True</hardRequirement>
 			</li>
@@ -58,7 +59,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_Summon</li>
+					<li>LLRoM_Equipment_Mastery</li>
 					<li>LLRoM_RawI</li>
 					<li>LLRoM_Offensive</li>
 				</Proficiencies>
@@ -72,7 +73,7 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_Summon</li>
+					<li>LLRoM_Equipment_Mastery</li>
 					<li>LLRoM_RawII</li>
 					<li>LLRoM_OffensiveDeBuff</li>
 				</Proficiencies>
@@ -86,7 +87,6 @@
 		<value>
 			<li Class="LLRoM.AbilityXPGainExtension">
 				<Proficiencies>
-					<li>LLRoM_Summon</li>
 					<li>LLRoM_RawII</li>
 					<li>LLRoM_DefensiveBuff</li>
 				</Proficiencies>

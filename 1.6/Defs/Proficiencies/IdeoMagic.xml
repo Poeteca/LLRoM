@@ -48,7 +48,7 @@
 					</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">
 						<Stat>CertaintyLossFactor</Stat>
-						<value>1.1</value>
+						<value>.9</value>
 					</li>
 					<li>
 						<Stat>JoyFallRateFactor</Stat>
@@ -163,7 +163,7 @@
 					</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">
 						<Stat>CertaintyLossFactor</Stat>
-						<value>1.1</value>
+						<value>.9</value>
 					</li>
 					<li>
 						<Stat>RestFallRateFactor</Stat>

@@ -794,6 +794,10 @@ namespace LLRoM
         }
         public override AcceptanceReport CanBeUsedBy(Pawn p)
         {
+            if (!p.GetComp<ProficiencyComp>().CanRead())
+            {
+                return "LLRoMMustBeAbleToRead".Translate(p.LabelShort);
+            }
             if (p.IsShambler || p.IsGhoul || p.story.traits.HasTrait(TorannMagicDefOf.Undead))
             {
                 return "LLRoMMustNotBeUndead".Translate();

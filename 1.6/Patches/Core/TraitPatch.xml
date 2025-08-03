@@ -1351,13 +1351,16 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<RequiredProficiencies>
 					<li>LLRoM_RawI</li>
+					<li>LLRoM_Equipment_Mastery</li>
 				</RequiredProficiencies>
 				<RequiredTrait>
 					<li>TM_Gifted</li>
+					<li>PhysicalProdigy</li>
 				</RequiredTrait>
 				<appliedHediff>LLRoM_Drained</appliedHediff>
 				<Prefix>a </Prefix>
 				<Magic>true</Magic>
+				<Might>true</Might>
 			</li>
 		</value>
 	</Operation>

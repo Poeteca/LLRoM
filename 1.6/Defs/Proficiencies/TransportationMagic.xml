@@ -127,6 +127,7 @@
 			<li>LLBrainstorm</li>
 			<li>LLRigorization</li>
 			<li>LLRoM_study_rift</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">LLRoM_study_grav_thing</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -182,6 +183,7 @@
 			<li>LLBrainstorm</li>
 			<li>LLRigorization</li>
 			<li>LLRoM_study_rift</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">LLRoM_study_grav_thing</li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">

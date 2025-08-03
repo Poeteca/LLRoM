@@ -405,13 +405,25 @@ Requires 25 mana</description>
 			<li>WoodFiredGenerator</li>
 			<li>ChemfuelPoweredGenerator</li>
 			<li>GeothermalGenerator</li>
+			<li>Hive</li>
+			<li>SunLamp</li>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>ElectricSmelter</li>
+			<li>ElectricCrematorium</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+			<li MayRequire="Ludeon.Rimworld.Biotech">SanguphageMeetingTorch</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">GeothermalVent</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty, Ludeon.RimWorld.Ideology">DarklightBrazier</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Effigy</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">SacrificialFlag</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Pyre</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Burnbong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IncenseShrine</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteGenerator</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">AtmosphericHeater</li>
 		</specificTargetBuildings>
@@ -455,10 +467,68 @@ Requires 25 mana</description>
 			<li>SunLamp</li>
 			<li>WallLamp</li>
 			<li>FloodLight</li>
+			<li>GlowPod</li>
+			<li>WoodFiredGenerator</li>
+			<li>ChemfuelPoweredGenerator</li>
+			<li>ElectricSmelter</li>
+			<li>ElectricCrematorium</li>
+			<li>Heater</li>
+			<li>AncientHermeticCrate</li>
+			<li>AncientLamp</li>
+			<li>AncientMechGestatorTank</li>
+			<li>Gloomlight</li>
+			<li>TableMachining</li>
+			<li>VanometricPowerCell</li>
+			<li>Glowstool</li>
+			<li>Agarilux</li>
+			<li>Bryolux</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">UnstablePowerCell</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ActivatorCountdown</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ActivatorProximity</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ShipLandingBeacon</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty, Ludeon.RimWorld.Ideology">DarklightBrazier</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Effigy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SacrificialFlag</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Pyre</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientEnemyTerminal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientSecurityCrate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientCommsConsole</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ChristmasTree</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LightBall</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loudspeaker</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Autobong</li>
+			<li MayRequire="Ludeon.Rimworld.Biotech">SanguphageMeetingTorch</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteGenerator</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">AtmosphericHeater</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Fleshbulb</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">ProximityDetector</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Noctolith</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteShaper</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SerumCentrifuge</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">VoidMonolith</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">VoidStructure</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientSealedContainer</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientSealedContainer_GravshipUpgrade</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">SealedCrate</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">GravEngine</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">GravFieldExtender</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientGravEngine</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">EggSac</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientHatch</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">CerebrexCore</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">MechPylon</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">SurveyScanner</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientUplink</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientEmergencyLight_Red</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientEmergencyLight_Blue</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientEmergencyLight_Green</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">Boomshroom</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">Plant_Psilocap</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">Plant_Willowgill</li>
 		</specificTargetBuildings>
 	</LifeLessons.LearningActivityDef>
 	
@@ -486,11 +556,101 @@ Requires 25 mana</description>
 			<li>SolarGenerator</li>
 			<li>GeothermalGenerator</li>
 			<li>WatermillGenerator</li>
+			<li>StandingLamp</li>
+			<li>SunLamp</li>
+			<li>WallLamp</li>
+			<li>FloodLight</li>
+			<li>TubeTelevision</li>
+			<li>FlatscreenTelevision</li>
+			<li>MegascreenTelevision</li>
+			<li>OrbitalTradeBeacon</li>
+			<li>CommsConsole</li>
+			<li>MoisturePump</li>
+			<li>GroundPenetratingScanner</li>
+			<li>LongRangeMineralScanner</li>
+			<li>MultiAnalyzer</li>
+			<li>VitalsMonitor</li>
+			<li>ElectricTailoringBench</li>
+			<li>ElectricSmithy</li>
+			<li>TableMachining</li>
+			<li>ElectricStove</li>
+			<li>ElectricSmelter</li>
+			<li>ElectricCrematorium</li>
+			<li>BiofuelRefinery</li>
+			<li>FabricationBench</li>
+			<li>HiTechResearchBench</li>
+			<li>HydroponicsBasin</li>
+			<li>DeepDrill</li>
+			<li>NutrientPasteDispenser</li>
+			<li>Turret_MiniTurret</li>
+			<li>Turret_Autocannon</li>
+			<li>Turret_Sniper</li>
+			<li>Turret_FoamTurret</li>
+			<li>Turret_RocketswarmLauncher</li>
+			<li>Ship_Beam</li>
+			<li>Ship_CryptosleepCasket</li>
+			<li>Ship_ComputerCore</li>
 			<li>Ship_Reactor</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">UnstablePowerCell</li>
+			<li>Ship_Engine</li>
+			<li>Ship_SensorCluster</li>
+			<li>VanometricPowerCell</li>
+			<li>PsychicEmanator</li>
+			<li>InfiniteChemreactor</li>
+			<li>Heater</li>
+			<li>Cooler</li>
+			<li>Autodoor</li>
+			<li>LLChemistryStation</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ShipLandingBeacon</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">UnstablePowerCell</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">BiosculpterPod</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharger</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LightBall</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loudspeaker</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Autobong</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Hemopump</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">HemogenAmplifier</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">GlucosoidPump</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PsychofluidPump</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestAccelerator</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BandNode</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">GeneAssembler</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">ToxifierGenerator</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">GeneBank</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">GeneExtractor</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">GrowthVat</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">PollutionPump</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">WastepackAtomizer</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">GeneProcessor</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechBooster</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechGestator</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">LargeMechGestator</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">SubcoreEncoder</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">SubcoreSoftscanner</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">SubcoreRipscanner</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BasicRecharger</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">StandardRecharger</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteGenerator</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Electroharvester</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">ElectricInhibitor</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">ProximityDetector</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">AtmosphericHeater</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteShaper</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SerumCentrifuge</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">FrenzyInducer</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SleepSuppressor</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BioferriteHarvester</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">GravcorePowerCell</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">PilotSubpersonaCore</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">GravshipShieldGenerator</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientGravReactor</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">AncientTerraformer</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">LifeSupportUnit</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">OrbitalScanner</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">OxygenPump</li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">VacBarrier</li>
 		</specificTargetBuildings>
 	</LifeLessons.LearningActivityDef>
 </Defs>

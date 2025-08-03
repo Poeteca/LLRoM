@@ -107,6 +107,7 @@
 			<li Class="LLRoM.ClassAutoLearnExtension">
 				<Relatedtraits>
 					<li>TM_Apothecary</li>
+					<li>TM_TheShadow</li>
 					<li MayRequire="kure.arom">TM_Plaguedoctor</li>
 					<li MayRequire="kure.arom">TM_Gadgeteer</li>
 					<li MayRequire="kure.arom">TM_Gunbreaker</li>

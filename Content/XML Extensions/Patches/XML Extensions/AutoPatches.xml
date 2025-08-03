@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!--LLRoM_study_temperature_thing auto patches-->
+	<Operation Class="XmlExtensions.ForEachLoop">
+		<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_HeatPusher"]]/defName</xpath>
+		<mode>InnerText</mode>
+		<storeIn>name</storeIn>
+		<apply>
+			<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_temperature_thing"]/specificTargetBuildings</xpath>
+				<compare>InnerText</compare>
+				<value>
+					<li>{name}</li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.ForEachLoop">
+		<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_TempControl"]]/defName</xpath>
+		<mode>InnerText</mode>
+		<storeIn>name</storeIn>
+		<apply>
+			<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_temperature_thing"]/specificTargetBuildings</xpath>
+				<compare>InnerText</compare>
+				<value>
+					<li>{name}</li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="XmlExtensions.ForEachLoop">
+			<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_FireOverlayRitual"]]/defName</xpath>
+			<mode>InnerText</mode>
+			<storeIn>name</storeIn>
+			<apply>
+				<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_temperature_thing"]/specificTargetBuildings</xpath>
+					<compare>InnerText</compare>
+					<value>
+						<li>{name}</li>
+					</value>
+				</Operation>
+			</apply>
+		</match>
+	</Operation>
+	<!--LLRoM_study_light_thing auto patches-->
+	<Operation Class="XmlExtensions.ForEachLoop">
+		<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Glower"]]/defName</xpath>
+		<mode>InnerText</mode>
+		<storeIn>name</storeIn>
+		<apply>
+			<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_light_thing"]/specificTargetBuildings</xpath>
+				<compare>InnerText</compare>
+				<value>
+					<li>{name}</li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<!--LLRoM_study_electric_thing auto patches-->
+	<Operation Class="XmlExtensions.ForEachLoop">
+		<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Power"]]/defName</xpath>
+		<mode>InnerText</mode>
+		<storeIn>name</storeIn>
+		<apply>
+			<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_electric_thing"]/specificTargetBuildings</xpath>
+				<compare>InnerText</compare>
+				<value>
+					<li>{name}</li>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<!--LLRoM_study_grav_thing auto patches-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="XmlExtensions.ForEachLoop">
+			<xpath>Defs/ThingDef[terrainAffordanceNeeded="Substructure"]/defName</xpath>
+			<mode>InnerText</mode>
+			<storeIn>name</storeIn>
+			<apply>
+				<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_grav_thing"]/specificTargetBuildings</xpath>
+					<compare>InnerText</compare>
+					<value>
+						<li>{name}</li>
+					</value>
+				</Operation>
+			</apply>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="XmlExtensions.ForEachLoop">
+			<xpath>Defs/ThingDef[building/relatedTerrain/li="Substructure"]/defName</xpath>
+			<mode>InnerText</mode>
+			<storeIn>name</storeIn>
+			<apply>
+				<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_grav_thing"]/specificTargetBuildings</xpath>
+					<compare>InnerText</compare>
+					<value>
+						<li>{name}</li>
+					</value>
+				</Operation>
+			</apply>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="XmlExtensions.ForEachLoop">
+			<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_GravshipThruster"]]/defName</xpath>
+			<mode>InnerText</mode>
+			<storeIn>name</storeIn>
+			<apply>
+				<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/LifeLessons.LearningActivityDef[defName="LLRoM_study_grav_thing"]/specificTargetBuildings</xpath>
+					<compare>InnerText</compare>
+					<value>
+						<li>{name}</li>
+					</value>
+				</Operation>
+			</apply>
+		</match>
+	</Operation>
+</Patch>

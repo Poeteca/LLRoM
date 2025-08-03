@@ -143,6 +143,7 @@
 						<li>BookOfBladedancer</li>
 						<li>BookOfMonk</li>
 						<li>BookOfRanger</li>
+						<li>BookOfShadow</li>
 						<li MayRequire="kure.arom">BookOfNinja</li>
 						<li MayRequire="kure.arom">BookOfElementalGunner</li>
 						<li MayRequire="kure.arom">BookOfPridestalker</li>
@@ -182,6 +183,7 @@
 				<li>BookOfBladedancer</li>
 				<li>BookOfMonk</li>
 				<li>BookOfRanger</li>
+				<li>BookOfShadow</li>
 				<li MayRequire="kure.arom">BookOfNinja</li>
 				<li MayRequire="kure.arom">BookOfElementalGunner</li>
 				<li MayRequire="kure.arom">BookOfPridestalker</li>

@@ -71,7 +71,6 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\Unity.Burst.Unsafe.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\0Harmony.pdb
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\0Harmony.xml
-D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\bin\Debug\LifeLessons.pdb
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\obj\Debug\LLRoM.csproj.Up2Date
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\obj\Debug\LLRoM.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\LLARoMdev\Source\LLRoM\obj\Debug\LLRoM.pdb

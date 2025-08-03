@@ -8,7 +8,9 @@
 		<li IfModActive="ludeon.rimworld.anomaly">Content/Anomaly</li>
 		<li IfModActive="ludeon.rimworld.ideology">Content/Ideology</li>
 		<li IfModActive="ludeon.rimworld.royalty">Content/Royalty</li>
+		<li IfModActive="ludeon.rimworld.odyssey">Content/Odyssey</li>
 		<li IfModActive="kure.arom">Content/Kure's Class Expansion</li>
+		<li IfModActive="imranfish.xmlextensions">Content/XML Extensions</li>
 		
 	</v1.6>
 </loadFolders>

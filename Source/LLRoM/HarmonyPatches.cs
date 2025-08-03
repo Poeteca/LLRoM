@@ -1393,7 +1393,12 @@ namespace LLRoM
             {
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfTeachClasses && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachClasses)
                 {
-                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.RejectInput);
+                    return false;
+                }
+                if (!user.GetComp<ProficiencyComp>().CanRead())
+                {
+                    Messages.Message("LLRoMMustBeAbleToRead".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                     return false;
                 }
                 BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
@@ -1416,7 +1421,12 @@ namespace LLRoM
             {
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfTeachClasses && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachClasses)
                 {
-                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.RejectInput);
+                    return false;
+                }
+                if (!user.GetComp<ProficiencyComp>().CanRead())
+                {
+                    Messages.Message("LLRoMMustBeAbleToRead".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                     return false;
                 }
                 BillProficiencyExtension extension = ((ThingComp)(object)__instance).parent.def.GetModExtension<BillProficiencyExtension>();
@@ -1442,7 +1452,12 @@ namespace LLRoM
             {
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfSpells && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachSpells)
                 {
-                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.RejectInput);
+                    return false;
+                }
+                if (!user.GetComp<ProficiencyComp>().CanRead())
+                {
+                    Messages.Message("LLRoMMustBeAbleToRead".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                     return false;
                 }
                 BillProficiencyExtension extension = __instance.parent.def.GetModExtension<BillProficiencyExtension>();
@@ -1465,7 +1480,12 @@ namespace LLRoM
             {
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanSelfTeachSkills && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanOnlySelfSkills)
                 {
-                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.SituationResolved);
+                    Messages.Message("LLAROM_OptionDisabled".Translate(user.LabelShort, user.Named("USER")), user, MessageTypeDefOf.RejectInput);
+                    return false;
+                }
+                if (!user.GetComp<ProficiencyComp>().CanRead())
+                {
+                    Messages.Message("LLRoMMustBeAbleToRead".Translate(user.LabelShort), MessageTypeDefOf.RejectInput);
                     return false;
                 }
                 BillProficiencyExtension extension = __instance.parent.def.GetModExtension<BillProficiencyExtension>();

@@ -164,9 +164,11 @@ namespace LLRoM
                 TraitDef Class = possibleclasses.RandomElement();
                 ClassAutoLearnExtension Classextension = Class.GetModExtension<ClassAutoLearnExtension>();
                 string classname = null;
+                int degree = 0;
                 foreach (TraitDegreeData data in Class.degreeDatas)
                 {
                     classname = data.label;
+                    degree = data.degree;
                     break;
                 }
                 if (classname == null)
@@ -202,7 +204,7 @@ namespace LLRoM
                         int toremove = Rand.RangeInclusive(0, 6);
                         RemovecertainTrait(usedBy.story.traits.allTraits, toremove);
                     }
-                    usedBy.story.traits.GainTrait(new Trait(Class));
+                    usedBy.story.traits.GainTrait(new Trait(Class, degree));
                     Messages.Message("LLRoM_AutoLearnedClass".Translate(usedBy.LabelShort, classname, Classextension.Prefix), MessageTypeDefOf.PositiveEvent);
                 }
                 else
@@ -294,6 +296,10 @@ namespace LLRoM
         }
         public override AcceptanceReport CanBeUsedBy(Pawn p)
         {
+            if (parent.def.defName.Contains("Unfinished") && !p.GetComp<ProficiencyComp>().CanRead())
+            {
+                return "LLRoMMustBeAbleToRead".Translate(p.LabelShort);
+            }
             if (p.IsShambler || p.IsGhoul || p.story.traits.HasTrait(TorannMagicDefOf.Undead))
             {
                 return "LLRoMMustNotBeUndead".Translate();

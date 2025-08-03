@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<LifeLessons.LearningActivityDef>
+		<defName>LLRoM_study_grav_thing</defName>
+		<label>Study Gravity Manipulation</label>
+		<description>Study how advanced machinery interacts and manipulates gravitational fields.</description>
+		<activityJob>LLAnalyzeBuilding</activityJob>
+		<activityTargetType>SpecificBuildings</activityTargetType>
+		<experienceType>Theoretical</experienceType>
+		<xpPerTick>0.003</xpPerTick>
+		<baseTickLength>3000</baseTickLength>
+		<dailyRepetitionsUntilExhausted>2</dailyRepetitionsUntilExhausted>
+		<effectWorking>LLAnalyze</effectWorking>
+		<targetIconsEnabled>false</targetIconsEnabled>
+		<specificTargetBuildings>
+			<li>GravEngine</li>
+			<li>GravFieldExtender</li>
+			<li>AncientGravEngine</li>
+			<li>GravcorePowerCell</li>
+			<li>PilotSubpersonaCore</li>
+			<li>GravshipShieldGenerator</li>
+			<li>AncientGravReactor</li>
+			<li>GravshipHull</li>
+			<li>PilotConsole</li>
+			<li>SmallThruster</li>
+			<li>LargeThruster</li>
+			<li>FuelOptimizer</li>
+			<li>SignalJammer</li>
+			<li>GravAnchor</li>
+		</specificTargetBuildings>
+	</LifeLessons.LearningActivityDef>
+</Defs>
