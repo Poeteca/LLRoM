@@ -1026,20 +1026,25 @@ namespace LLRoM
             public static bool Prefix(ProficiencyDef def, ProficiencyComp __instance)
             {
                 Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
+                bool canlearn = true;
+                InspirationExtension Inspirationextension = def.GetModExtension<InspirationExtension>();
+                if (Inspirationextension != null)
+                {
+                    canlearn = !Inspirationextension.requiresInspiration;
+                }
+                if (TM_Calc.IsUndead(pawn))
+                {
+                    canlearn = false;
+                }
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout && !TM_Calc.IsWanderer(pawn) && !TM_Calc.IsWayfarer(pawn))
                 {
                     LockoutExtension extension = def.GetModExtension<LockoutExtension>();
                     if (pawn != null && extension != null && !pawn.health.hediffSet.HasHediff(extension.withouHediff) && pawn.health.hediffSet.HasHediff(extension.hasHediff))
                     {
-                        return false;
+                        canlearn = false;
                     }
                 }
-                InspirationExtension Inspirationextension = def.GetModExtension<InspirationExtension>();
-                if (Inspirationextension != null)
-                {
-                    return !Inspirationextension.requiresInspiration;
-                }
-                return true;
+                return canlearn;
             }
         }
     }
