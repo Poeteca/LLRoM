@@ -21,18 +21,18 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_HolyI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_HolyI_Safe</li>
+			<li><def>LLRoM_UseScroll_HolyI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_HolyI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_HolyI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_HolyI</li>			
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
+			<li><def>LLRoM_ExamineScroll_HolyI</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_HolyI</def></li>			
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li MayRequire="Ludeon.RimWorld.Ideology"><def>LLRoM_Divine_Inspiration</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -78,18 +78,18 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_UnholyI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_UnholyI_Safe</li>
+			<li><def>LLRoM_UseScroll_UnholyI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_UnholyI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_UnholyI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_UnholyI</li>			
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
+			<li><def>LLRoM_ExamineScroll_UnholyI</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_UnholyI</def></li>			
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly"><def>LLRoM_Consult_Dark_archotech</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -136,18 +136,18 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_HolyII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_UseScroll_LLRoM_HolyII_Safe</li>
-			<li>LLRoM_practice_magic_mana</li>
+			<li><def>LLRoM_UseScroll_HolyII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_HolyII_Safe</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_HolyII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_HolyII</li>			
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
+			<li><def>LLRoM_ExamineScroll_HolyII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_HolyII</def></li>			
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li MayRequire="Ludeon.RimWorld.Ideology"><def>LLRoM_Divine_Inspiration</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -193,18 +193,18 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_UnholyII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_UnholyII_Safe</li>
+			<li><def>LLRoM_UseScroll_UnholyII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_UnholyII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_UnholyII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_UnholyII</li>			
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
+			<li><def>LLRoM_ExamineScroll_UnholyII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_UnholyII</def></li>			
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly"><def>LLRoM_Consult_Dark_archotech</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">

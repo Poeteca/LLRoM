@@ -21,17 +21,17 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_Summon</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_Summon_Safe</li>
+			<li><def>LLRoM_MagicPonder</def></li>
+			<li><def>LLRoM_UseScroll_Summon</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_Summon_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Summon</li>
-			<li>LLRoM_ExamineScroll_Summon</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Summon</def></li>
+			<li><def>LLRoM_ExamineScroll_Summon</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -61,19 +61,19 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_SummonII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_SummonII_Safe</li>
+			<li><def>LLRoM_UseScroll_SummonII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_SummonII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_SummonII</li>
-			<li>LLRoM_ExamineScroll_SummonII</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_SummonII</def></li>
+			<li><def>LLRoM_ExamineScroll_SummonII</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -114,20 +114,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_TeleportationI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_TeleportationI_Safe</li>
+			<li><def>LLRoM_UseScroll_TeleportationI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_TeleportationI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_TeleportationI</li>
-			<li>LLRoM_ExamineScroll_TeleportationI</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
-			<li>LLRoM_study_rift</li>
-			<li MayRequire="Ludeon.Rimworld.Odyssey">LLRoM_study_grav_thing</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_TeleportationI</def></li>
+			<li><def>LLRoM_ExamineScroll_TeleportationI</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLRoM_study_rift</def></li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey"><def>LLRoM_study_grav_thing</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -170,20 +170,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_TeleportationII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_TeleportationII_Safe</li>
+			<li><def>LLRoM_UseScroll_TeleportationII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_TeleportationII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_TeleportationII</li>
-			<li>LLRoM_ExamineScroll_TeleportationII</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
-			<li>LLRoM_study_rift</li>
-			<li MayRequire="Ludeon.Rimworld.Odyssey">LLRoM_study_grav_thing</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_TeleportationII</def></li>
+			<li><def>LLRoM_ExamineScroll_TeleportationII</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLRoM_study_rift</def></li>
+			<li MayRequire="Ludeon.Rimworld.Odyssey"><def>LLRoM_study_grav_thing</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">

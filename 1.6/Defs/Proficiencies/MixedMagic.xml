@@ -25,11 +25,11 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<theoreticalLearningActivityDefs>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_study_temperature_thing</li>
-			<li>LLDocument</li>
-			<li>LLRigorization</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_study_temperature_thing</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -53,11 +53,11 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<theoreticalLearningActivityDefs>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_study_temperature_thing</li>
-			<li>LLDocument</li>
-			<li>LLRigorization</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_study_temperature_thing</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -81,14 +81,14 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<theoreticalLearningActivityDefs>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_study_temperature_thing</li>
-			<li>LLDocument</li>
-			<li>LLRoM_study_rift</li>
-			<li>LLRoM_study_light_thing</li>
-			<li>LLRoM_SolarObservation</li>
-			<li>LLRigorization</li>
-			<li>LLRoM_study_electric_thing</li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_study_temperature_thing</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLRoM_study_rift</def></li>
+			<li><def>LLRoM_study_light_thing</def></li>
+			<li><def>LLRoM_SolarObservation</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLRoM_study_electric_thing</def></li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	

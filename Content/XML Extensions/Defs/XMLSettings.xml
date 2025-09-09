@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<XmlExtensions.SettingsMenuDef>
+		<modId>albinogod.LLARoM.Auto</modId>
+		<label>Life Lessons and A Rimworld of Magic Integration Autopatchers</label>
+		<tKey>LLRoMXMLsettings</tKey>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Autopatcher Settings, Requires restart for changes to take effect.</text>
+				<tKey>LLARoM_Header</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMHeatPusherPatcher</key>
+				<label>Heat Pusher Autopatcher</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_HeatPusherPatcher</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMTempControl</key>
+				<label>Temperature Control Autopatcher</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_TempControl</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMFireOverlayRitual</key>
+				<label>Burning Ritual Autopatcher (Requires Ideology)</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_FireOverlayRitual</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMGlower</key>
+				<label>Glower Autopatcher</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_Glower</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMPower</key>
+				<label>Power Grid Autopatcher</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_Power</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMSubstructure</key>
+				<label>Requires Substructure Autopatcher (Requires Odyssey)</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_Substructure</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMRelatedSubstructure</key>
+				<label>Related to Substructure Autopatcher (Requires Odyssey)</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_RelatedSubstructure</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>LLARoMGravshipThruster</key>
+				<label>Gravship Thruster Autopatcher (Requires Odyssey)</label>
+				<defaultValue>true</defaultValue>
+				<tKey>LLARoM_GravshipThruster</tKey>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+</Defs>

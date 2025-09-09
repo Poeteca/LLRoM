@@ -1,0 +1,7 @@
+I have listed a few notable deviations for the normal way of displaying text, caused by it being written in English, for your convenience. 
+-The {2} in the keyed message <LLRoM_AutoLearnedClass> is linked to the node <Prefix> inside the LLRoM.ClassAutoLearnExtension mod extension. You can safely remove or set the node to be an empty string if it is not needed for the translation.
+-The text for drain mechanic displays in the following configurations, with the empty nodes being any hints that are to be displayed.
+<><LLRoM_Comma><><LLRoM_OxOr><><LLRoM_Period>
+<><LLRoM_Or><><LLRoM_Period>
+<><LLRoM_Period>
+-The names for magic proficiencies are pulled from random parts of the Indo-European language family to give it an archaic feel. You have my full consent to replaced them if they do not work in for the language or writing system that you are translating it in to.

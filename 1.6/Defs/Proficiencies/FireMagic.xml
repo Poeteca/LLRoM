@@ -14,17 +14,17 @@
 			<li>Magic_Insight</li>
 		</prerequisites>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_FireI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_FireI_Safe</li>
+			<li><def>LLRoM_MagicPonder</def></li>
+			<li><def>LLRoM_UseScroll_FireI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_FireI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_FireI</li>
-			<li>LLRoM_ExamineScroll_FireI</li>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_study_temperature_thing</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_FireI</def></li>
+			<li><def>LLRoM_ExamineScroll_FireI</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_study_temperature_thing</def></li>
 		</theoreticalLearningActivityDefs>
 		<viewerX>1</viewerX>
 		<viewerY>5</viewerY>
@@ -55,19 +55,19 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_FireII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_FireII_Safe</li>
+			<li><def>LLRoM_UseScroll_FireII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_FireII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_FireII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_FireII</li>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_study_temperature_thing</li>
-			<li>LLDocument</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLRoM_ExamineScroll_FireII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_FireII</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_study_temperature_thing</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -124,19 +124,19 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_FireIII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_FireIII_Safe</li>
+			<li><def>LLRoM_UseScroll_FireIII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_FireIII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_FireIII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_FireIII</li>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_study_temperature_thing</li>
-			<li>LLDocument</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLRoM_ExamineScroll_FireIII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_FireIII</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_study_temperature_thing</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">

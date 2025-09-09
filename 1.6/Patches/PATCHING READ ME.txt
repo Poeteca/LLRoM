@@ -1,0 +1,71 @@
+–Trait Patches–
+Traits tied to classes need to have the LifeLessons.BackstoryProficiencyExtension mod extension added to generate with basic proficiencies. It accepts any template valid for backstories.
+For a class to be able to be self-taught it must have the LLRoM.ClassAutoLearnExtension added. The <RequiredProficiencies> list what proficiencies are needed to learn the class and should match the tome/script/manual/misc learn object. The <BlockingHediffs> list will prevent the class from being learned if the pawn has any of the listed hediffs and should not be used. The <BlockingTraits> list is the same as the <BlockingHediffs> list, and should also not be used. The <RequiredTrait> list will require the pawn to have ANY of the listed traits to be able to learn the class, and the listed traits will be removed after they learn it. The <appliedHediff> node should be set to LLRoM_Drained, support of other hediffs may come in the future. The <Prefix> node is a translation node, it will be displayed before the name of the class when a pawn learns it, it is safe to leave blank or null. The nodes <Might> and <Magic> tells the code if the class is a magic and/or might class, both can be set to true. The <Strict> node when set to true overrides the user defined settings and should not be used.
+For the class to display in the proficiency window when learnable, add it to the <Relatedtraits> list in the LLRoM.ClassAutoLearnExtension mod extension for each of the proficiencies needed to learn the class, it should match the tome/script/manual/misc learn object and the LLRoM.ClassAutoLearnExtension settings.
+–Ability Patches–
+Abilities need the LLRoM.AbilityXPGainExtension mod extension added to be able to interact with the proficiency systems. The <Proficiencies> list determines which proficiencies the ability display under, which proficiencies are needed to be able to learn the ability, and which proficiencies are used for determining the adjusted casting cost. The <experienceType> node is the experience type gained on use, use Practical unless you have a reason to use a different type. The <LearnRate> node is a multiplier on proficiency experience gained on use. The <Classes> list is for non-custom classes, do not use without reason.
+–Ability Scroll Patches–
+Ability scrolls should be patched like any other crafted item, requirements should match the required proficiencies needed to learn. To be brought in line with other patches, replace the <costlist> list to include LLRoM_ScrollBasic, LLRoM_ScrollAdvance, LLRoM_ScrollMaster, or LLRoM_ScrollSkill based on the research needed to unlock the recipe and whether it is a spell or skill with additional cloth/DevilstrandCloth/RawMagicyte to keep the cost roughly the same. 
+To allow the scroll to be used in pioneering, the scroll needs to be added to the lists for the LLRoM_UseScroll_LLRoM_*, LLRoM_UseScroll_*_Safe, and LLRoM_ExamineScroll_* for the proficiencies needed to learn the spell:
+ingredients/li/filter/thingDefs
+fixedIngredientFilter/thingDefs
+–Tome/Script/Manual/Misc Learn Object Patches–
+Tomes/Scripts/Manuals/Misc Learn Objects, shortened to tomes, should be patched like any other crafted item, the requirements should match the required proficiencies needed to learn. 
+For the Tome to be obtainable, one of the following recipe needs to be added to the tome based on what class it teaches:
+(for torn scripts)
+<costList>
+	<RawMagicyte>50</RawMagicyte>
+	<UnfinishedArcane>1</UnfinishedArcane>
+</costList>
+<recipeMaker>		    
+	<workAmount>2500</workAmount>
+	<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+	<workSkill>Intellectual</workSkill>
+	<recipeUsers>
+		<li>TableMagicPrinter</li>
+	</recipeUsers>
+	<effectWorking>Smelt</effectWorking>
+	<skillRequirements>
+		<Crafting>4</Crafting>
+		<Intellectual>8</Intellectual>
+	</skillRequirements>
+</recipeMaker>
+(For tomes)
+<recipeMaker>
+	<workAmount>3500</workAmount>
+	<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+	<workSkill>Intellectual</workSkill>
+	<recipeUsers>
+		<li>TableMagicPrinter</li>
+	</recipeUsers>
+	<effectWorking>Smelt</effectWorking>
+	<skillRequirements>
+		<Crafting>6</Crafting>
+		<Intellectual>8</Intellectual>
+	</skillRequirements>
+	<researchPrerequisite>
+		<li>TM_AdvancedScribing</li>
+	</researchPrerequisite>
+</recipeMaker>
+(For Manuals and Misc Learn Objects)
+<costList>
+	<RawMagicyte>50</RawMagicyte>
+	<UnfinishedMartial>1</UnfinishedMartial>
+</costList>
+<recipeMaker>		    
+	<workAmount>2500</workAmount>
+<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+<workSkill>Intellectual</workSkill>
+<recipeUsers>
+		<li>TableMagicPrinter</li>
+</recipeUsers>
+<effectWorking>Smelt</effectWorking>
+<skillRequirements>
+		<Crafting>4</Crafting>
+		<Intellectual>8</Intellectual>
+	</skillRequirements>
+</recipeMaker>
+Any hybrid classes will need a new RecipeDef. Please see the Kure's Class Expansion patch and added defs for examples.
+To allow for the tome to be used in the pioneering system, it needs to be added to the list in LLRoM_ReadMagicLearnObjectBase_* like the ability scroll. If torn script version of the tome, the tome should also be added to the proficiencies that the torn script uses. If the tome is a manual or a misc learn object, then it should also be added to the prerequisites of the required proficiencies that are in the might tab.
+–Rituals–
+Rituals (TorannMagic.MagicRecipeDef) should be patched like any recipe, however it only works properly if <hardRequirement> is enabled.

@@ -1271,7 +1271,7 @@ namespace LLRoM
                                     {
                                         foreach (ProficiencyDef pro in item.AllPrequisites)
                                         {
-                                            if (pro.category == ProficiencyCategoryDefOf.ProficiencyCategory_MixedMagic || pro.tab != ProficiencyTableDefOf.LLROM_Magic)
+                                            if (pro.category.defName == "ProficiencyCategory_MixedMagic" || pro.tab != ProficiencyTableDefOf.LLROM_Magic)
                                             {
                                                 continue;
                                             }

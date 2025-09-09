@@ -18,10 +18,10 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MightPonder</li>
-			<li>LLRoM_general_physical_training</li>
-			<li>LLRoM_general_mental_training</li>
-			<li>LLRoM_deep_meditatoin</li>
+			<li><def>LLRoM_MightPonder</def></li>
+			<li><def>LLRoM_general_physical_training</def></li>
+			<li><def>LLRoM_general_mental_training</def></li>
+			<li><def>LLRoM_deep_meditatoin</def></li>
 		</practicalLearningActivityDefs>
 		<customAcquisitionDescriptions>
 			<li>Can be learned by pioneering, being taught in class, or by using a Gem of Physical Insight.</li>
@@ -55,15 +55,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MightPonder</li>
-			<li>LLRoM_UseScroll_Physical_Conditioning</li>
-			<li>LLRoM_general_physical_training</li>
-			<li>LLRoM_UseScroll_Physical_Conditioning_Safe</li>
+			<li><def>LLRoM_MightPonder</def></li>
+			<li><def>LLRoM_UseScroll_Physical_Conditioning</def></li>
+			<li><def>LLRoM_general_physical_training</def></li>
+			<li><def>LLRoM_UseScroll_Physical_Conditioning_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</li>
-			<li>LLRoM_ExamineScroll_Physical_Conditioning</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Physical_Conditioning</def></li>
+			<li><def>LLRoM_ExamineScroll_Physical_Conditioning</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -93,15 +93,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MightPonder</li>
-			<li>LLRoM_UseScroll_Equipment_Mastery</li>
-			<li>LLRoM_study_gear</li>
-			<li>LLRoM_UseScroll_Equipment_Mastery_Safe</li>
+			<li><def>LLRoM_MightPonder</def></li>
+			<li><def>LLRoM_UseScroll_Equipment_Mastery</def></li>
+			<li><def>LLRoM_study_gear</def></li>
+			<li><def>LLRoM_UseScroll_Equipment_Mastery_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</li>
-			<li>LLRoM_ExamineScroll_Equipment_Mastery</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Equipment_Mastery</def></li>
+			<li><def>LLRoM_ExamineScroll_Equipment_Mastery</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -137,15 +137,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MightPonder</li>
-			<li>LLRoM_UseScroll_Mental_Conditioning</li>
-			<li>LLRoM_general_mental_training</li>
-			<li>LLRoM_UseScroll_Mental_Conditioning_Safe</li>
+			<li><def>LLRoM_MightPonder</def></li>
+			<li><def>LLRoM_UseScroll_Mental_Conditioning</def></li>
+			<li><def>LLRoM_general_mental_training</def></li>
+			<li><def>LLRoM_UseScroll_Mental_Conditioning_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_Mental_Conditioning</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ExamineScroll_Mental_Conditioning</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Mental_Conditioning</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -176,15 +176,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Coordination</li>
-			<li>LLRoM_general_physical_training</li>
-			<li>LLRoM_UseScroll_Coordination_Safe</li>
+			<li><def>LLRoM_UseScroll_Coordination</def></li>
+			<li><def>LLRoM_general_physical_training</def></li>
+			<li><def>LLRoM_UseScroll_Coordination_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Coordination</li>
-			<li>LLRoM_ExamineScroll_Coordination</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Coordination</def></li>
+			<li><def>LLRoM_ExamineScroll_Coordination</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -236,15 +236,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Strength</li>
-			<li>LLRoM_general_physical_training</li>
-			<li>LLRoM_UseScroll_Strength_Safe</li>
+			<li><def>LLRoM_UseScroll_Strength</def></li>
+			<li><def>LLRoM_general_physical_training</def></li>
+			<li><def>LLRoM_UseScroll_Strength_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Strength</li>
-			<li>LLRoM_ExamineScroll_Strength</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Strength</def></li>
+			<li><def>LLRoM_ExamineScroll_Strength</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -291,15 +291,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Endurance</li>
-			<li>LLRoM_general_physical_training</li>
-			<li>LLRoM_UseScroll_Endurance_Safe</li>
+			<li><def>LLRoM_UseScroll_Endurance</def></li>
+			<li><def>LLRoM_general_physical_training</def></li>
+			<li><def>LLRoM_UseScroll_Endurance_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Endurance</li>
-			<li>LLRoM_ExamineScroll_Endurance</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Endurance</def></li>
+			<li><def>LLRoM_ExamineScroll_Endurance</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -347,14 +347,14 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_CQC</li>
-			<li>LLRoM_UseScroll_CQC_Safe</li>
+			<li><def>LLRoM_UseScroll_CQC</def></li>
+			<li><def>LLRoM_UseScroll_CQC_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_CQC</li>
-			<li>LLRoM_ExamineScroll_CQC</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_CQC</def></li>
+			<li><def>LLRoM_ExamineScroll_CQC</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -413,15 +413,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Breath_Control</li>
-			<li>LLRoM_deep_meditatoin</li>
-			<li>LLRoM_UseScroll_Breath_Control_Safe</li>
+			<li><def>LLRoM_UseScroll_Breath_Control</def></li>
+			<li><def>LLRoM_deep_meditatoin</def></li>
+			<li><def>LLRoM_UseScroll_Breath_Control_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Breath_Control</li>
-			<li>LLRoM_ExamineScroll_Breath_Control</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Breath_Control</def></li>
+			<li><def>LLRoM_ExamineScroll_Breath_Control</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -471,14 +471,14 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Ranged</li>
-			<li>LLRoM_UseScroll_Ranged_Safe</li>
+			<li><def>LLRoM_UseScroll_Ranged</def></li>
+			<li><def>LLRoM_UseScroll_Ranged_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Ranged</li>
-			<li>LLRoM_ExamineScroll_Ranged</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Ranged</def></li>
+			<li><def>LLRoM_ExamineScroll_Ranged</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -534,15 +534,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Tactics</li>
-			<li>LLRoM_general_mental_training</li>
-			<li>LLRoM_UseScroll_Tactics_Safe</li>
+			<li><def>LLRoM_UseScroll_Tactics</def></li>
+			<li><def>LLRoM_general_mental_training</def></li>
+			<li><def>LLRoM_UseScroll_Tactics_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Tactics</li>
-			<li>LLRoM_ExamineScroll_Tactics</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Tactics</def></li>
+			<li><def>LLRoM_ExamineScroll_Tactics</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -595,16 +595,16 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Manipulation</li>
-			<li>LLRoM_general_mental_training</li>
-			<li>LLRoM_UseScroll_Manipulation_Safe</li>
+			<li><def>LLRoM_UseScroll_Manipulation</def></li>
+			<li><def>LLRoM_general_mental_training</def></li>
+			<li><def>LLRoM_UseScroll_Manipulation_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Manipulation</li>
-			<li>LLRoM_ExamineScroll_Manipulation</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLDraft</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Manipulation</def></li>
+			<li><def>LLRoM_ExamineScroll_Manipulation</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDraft</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -657,15 +657,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Charisma</li>
-			<li>LLRoM_general_mental_training</li>
-			<li>LLRoM_UseScroll_Charisma_Safe</li>
+			<li><def>LLRoM_UseScroll_Charisma</def></li>
+			<li><def>LLRoM_general_mental_training</def></li>
+			<li><def>LLRoM_UseScroll_Charisma_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Charisma</li>
-			<li>LLRoM_ExamineScroll_Charisma</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Charisma</def></li>
+			<li><def>LLRoM_ExamineScroll_Charisma</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -724,15 +724,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Extreme_Range</li>
-			<li>LLRoM_UseScroll_Extreme_Range_Safe</li>
+			<li><def>LLRoM_UseScroll_Extreme_Range</def></li>
+			<li><def>LLRoM_UseScroll_Extreme_Range_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</li>
-			<li>LLRoM_ExamineScroll_Extreme_Range</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Extreme_Range</def></li>
+			<li><def>LLRoM_ExamineScroll_Extreme_Range</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -782,15 +782,15 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Defensive_Fighting</li>
-			<li>LLRoM_UseScroll_Defensive_Fighting_Safe</li>
+			<li><def>LLRoM_UseScroll_Defensive_Fighting</def></li>
+			<li><def>LLRoM_UseScroll_Defensive_Fighting_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</li>
-			<li>LLRoM_ExamineScroll_Defensive_Fighting</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Defensive_Fighting</def></li>
+			<li><def>LLRoM_ExamineScroll_Defensive_Fighting</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -844,16 +844,16 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_Mind_Mastery</li>
-			<li>LLRoM_deep_meditatoin</li>
-			<li>LLRoM_UseScroll_Mind_Mastery_Safe</li>
+			<li><def>LLRoM_UseScroll_Mind_Mastery</def></li>
+			<li><def>LLRoM_deep_meditatoin</def></li>
+			<li><def>LLRoM_UseScroll_Mind_Mastery_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</li>
-			<li>LLRoM_ExamineScroll_Mind_Mastery</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_Mind_Mastery</def></li>
+			<li><def>LLRoM_ExamineScroll_Mind_Mastery</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">

@@ -21,18 +21,18 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_EarthI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_UseScroll_LLRoM_EarthI_Safe</li>
-			<li>LLRoM_practice_magic_mana</li>
+			<li><def>LLRoM_MagicPonder</def></li>
+			<li><def>LLRoM_UseScroll_EarthI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_EarthI_Safe</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_EarthI</li>
-			<li>LLRoM_ExamineScroll_EarthI</li>
-			<li>LLAnalyzeFormation</li>
-			<li>LLAnalyzeMinerals</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_EarthI</def></li>
+			<li><def>LLRoM_ExamineScroll_EarthI</def></li>
+			<li><def>LLAnalyzeFormation</def></li>
+			<li><def>LLAnalyzeMinerals</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -55,19 +55,19 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_EarthII</li>		
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_EarthII_Safe</li>
+			<li><def>LLRoM_UseScroll_EarthII</def></li>		
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_EarthII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_EarthII</li>
-			<li>LLRoM_ExamineScroll_EarthII</li>
-			<li>LLAnalyzeFormation</li>
-			<li>LLAnalyzeMinerals</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_EarthII</def></li>
+			<li><def>LLRoM_ExamineScroll_EarthII</def></li>
+			<li><def>LLAnalyzeFormation</def></li>
+			<li><def>LLAnalyzeMinerals</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -118,19 +118,19 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_EarthIII</li>		
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_EarthIII_Safe</li>
+			<li><def>LLRoM_UseScroll_EarthIII</def></li>		
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_EarthIII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_EarthIII</li>
-			<li>LLRoM_ExamineScroll_EarthIII</li>
-			<li>LLAnalyzeFormation</li>
-			<li>LLAnalyzeMinerals</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_EarthIII</def></li>
+			<li><def>LLRoM_ExamineScroll_EarthIII</def></li>
+			<li><def>LLAnalyzeFormation</def></li>
+			<li><def>LLAnalyzeMinerals</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">

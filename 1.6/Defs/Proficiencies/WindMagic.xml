@@ -20,17 +20,17 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_WindI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_WindI_Safe</li>
+			<li><def>LLRoM_MagicPonder</def></li>
+			<li><def>LLRoM_UseScroll_WindI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_WindI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_WindI</li>
-			<li>LLRoM_ExamineScroll_WindI</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_WindI</def></li>
+			<li><def>LLRoM_ExamineScroll_WindI</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -53,20 +53,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_WindII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_WindII_Safe</li>
+			<li><def>LLRoM_UseScroll_WindII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_WindII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_WindII</li>
-			<li>LLRoM_ExamineScroll_WindII</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
-			<li>LLAnalyzeGeyser</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_WindII</def></li>
+			<li><def>LLRoM_ExamineScroll_WindII</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLAnalyzeGeyser</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -111,20 +111,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_WindIII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_WindIII_Safe</li>
+			<li><def>LLRoM_UseScroll_WindIII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_WindIII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_WindIII</li>
-			<li>LLRoM_ExamineScroll_WindIII</li>
-			<li>LLDocument</li>
-			<li>LLBrainstorm</li>
-			<li>LLRigorization</li>
-			<li>LLAnalyzeGeyser</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_WindIII</def></li>
+			<li><def>LLRoM_ExamineScroll_WindIII</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRigorization</def></li>
+			<li><def>LLAnalyzeGeyser</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">

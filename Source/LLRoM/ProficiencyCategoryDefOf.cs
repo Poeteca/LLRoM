@@ -3,7 +3,7 @@ using RimWorld;
 
 namespace LLRoM
 {
-    [DefOf]
+    /*[DefOf]
     public static class ProficiencyCategoryDefOf
     {
         public static ProficiencyCategoryDef ProficiencyCategory_MixedMagic;
@@ -11,5 +11,5 @@ namespace LLRoM
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ProficiencyCategoryDefOf));
         }
-    }
+    }*/
 }

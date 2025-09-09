@@ -21,18 +21,18 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_LightI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_LightI_Safe</li>
+			<li><def>LLRoM_MagicPonder</def></li>
+			<li><def>LLRoM_UseScroll_LightI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_LightI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_LightI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_LightI</li>
-			<li>LLRoM_study_light_thing</li>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_SolarObservation</li>
+			<li><def>LLRoM_ExamineScroll_LightI</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_LightI</def></li>
+			<li><def>LLRoM_study_light_thing</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_SolarObservation</def></li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -55,20 +55,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_LightII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_LightII_Safe</li>
+			<li><def>LLRoM_UseScroll_LightII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_LightII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_LightII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_LightII</li>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_SolarObservation</li>
-			<li>LLRoM_study_light_thing</li>
-			<li>LLDocument</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLRoM_ExamineScroll_LightII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_LightII</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_SolarObservation</def></li>
+			<li><def>LLRoM_study_light_thing</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -115,20 +115,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_LightIII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_LightIII_Safe</li>
+			<li><def>LLRoM_UseScroll_LightIII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_LightIII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_LightIII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_LightIII</li>
-			<li>LLBrainstorm</li>
-			<li>LLRoM_SolarObservation</li>
-			<li>LLRoM_study_light_thing</li>
-			<li>LLDocument</li>
-			<li>LLRoM_study_rift</li>
+			<li><def>LLRoM_ExamineScroll_LightIII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_LightIII</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLRoM_SolarObservation</def></li>
+			<li><def>LLRoM_study_light_thing</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLRoM_study_rift</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">

@@ -21,16 +21,16 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_MagicPonder</li>
-			<li>LLRoM_UseScroll_VitalityI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_VitalityI_Safe</li>
+			<li><def>LLRoM_MagicPonder</def></li>
+			<li><def>LLRoM_UseScroll_VitalityI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_VitalityI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ReadMagicLearnObjectBase_VitalityI</li>
-			<li>LLRoM_ExamineScroll_VitalityI</li>
-			<li>LLBrainstorm</li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_VitalityI</def></li>
+			<li><def>LLRoM_ExamineScroll_VitalityI</def></li>
+			<li><def>LLBrainstorm</def></li>
 		</theoreticalLearningActivityDefs>
 	</LifeLessons.ProficiencyDef>
 	
@@ -54,20 +54,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_NecroI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_NecroI_Safe</li>
+			<li><def>LLRoM_UseScroll_NecroI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_NecroI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_NecroI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_NecroI</li>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li>LLDissectCritterCorpse</li>
-			<li>LLDissectHumanCorpse</li>
+			<li><def>LLRoM_ExamineScroll_NecroI</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_NecroI</def></li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly"><def>LLRoM_Consult_Dark_archotech</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLDissectCritterCorpse</def></li>
+			<li><def>LLDissectHumanCorpse</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -116,20 +116,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_HealingI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_HealingI_Safe</li>
+			<li><def>LLRoM_UseScroll_HealingI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_HealingI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_HealingI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_HealingI</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li>LLDissectCritterCorpse</li>
-			<li>LLDissectHumanCorpse</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
+			<li><def>LLRoM_ExamineScroll_HealingI</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_HealingI</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLDissectCritterCorpse</def></li>
+			<li><def>LLDissectHumanCorpse</def></li>
+			<li MayRequire="Ludeon.RimWorld.Ideology"><def>LLRoM_Divine_Inspiration</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -173,21 +173,21 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_PlantI</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLAnalyzePlantBiomatterChemistry</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_PlantI_Safe</li>
+			<li><def>LLRoM_UseScroll_PlantI</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLAnalyzePlantBiomatterChemistry</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_PlantI_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_PlantI</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_PlantI</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li>LLAnalyzePlantBiomatter</li>
-			<li>LLStudyMushrooms</li>
-			<li>LLAnalyzePlant</li>
+			<li><def>LLRoM_ExamineScroll_PlantI</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_PlantI</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLAnalyzePlantBiomatter</def></li>
+			<li><def>LLStudyMushrooms</def></li>
+			<li><def>LLAnalyzePlant</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.ClassAutoLearnExtension">
@@ -230,20 +230,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_HealingII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_HealingII_Safe</li>
+			<li><def>LLRoM_UseScroll_HealingII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_HealingII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_HealingII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_HealingII</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li>LLDissectCritterCorpse</li>
-			<li>LLDissectHumanCorpse</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
+			<li><def>LLRoM_ExamineScroll_HealingII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_HealingII</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLDissectCritterCorpse</def></li>
+			<li><def>LLDissectHumanCorpse</def></li>
+			<li MayRequire="Ludeon.RimWorld.Ideology"><def>LLRoM_Divine_Inspiration</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -283,20 +283,20 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_NecroII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_NecroII_Safe</li>
+			<li><def>LLRoM_UseScroll_NecroII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_NecroII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_NecroII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_NecroII</li>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li>LLDissectCritterCorpse</li>
-			<li>LLDissectHumanCorpse</li>
+			<li><def>LLRoM_ExamineScroll_NecroII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_NecroII</def></li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly"><def>LLRoM_Consult_Dark_archotech</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLDissectCritterCorpse</def></li>
+			<li><def>LLDissectHumanCorpse</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -333,21 +333,21 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_PlantII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLAnalyzePlantBiomatterChemistry</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_PlantII_Safe</li>
+			<li><def>LLRoM_UseScroll_PlantII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLAnalyzePlantBiomatterChemistry</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_PlantII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_PlantII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_PlantII</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li>LLAnalyzePlantBiomatter</li>
-			<li>LLStudyMushrooms</li>
-			<li>LLAnalyzePlant</li>
+			<li><def>LLRoM_ExamineScroll_PlantII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_PlantII</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLAnalyzePlantBiomatter</def></li>
+			<li><def>LLStudyMushrooms</def></li>
+			<li><def>LLAnalyzePlant</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">
@@ -386,21 +386,21 @@
 			<li>Things/Mote/Disoriented</li>
 		</thoughtIcons>
 		<practicalLearningActivityDefs>
-			<li>LLRoM_UseScroll_VitalityII</li>
-			<li>LLRoM_practice_magic</li>
-			<li>LLRoM_practice_Ritual_magic</li>
-			<li>LLRoM_practice_magic_mana</li>
-			<li>LLRoM_UseScroll_LLRoM_VitalityII_Safe</li>
+			<li><def>LLRoM_UseScroll_VitalityII</def></li>
+			<li><def>LLRoM_practice_magic</def></li>
+			<li><def>LLRoM_practice_Ritual_magic</def></li>
+			<li><def>LLRoM_practice_magic_mana</def></li>
+			<li><def>LLRoM_UseScroll_LLRoM_VitalityII_Safe</def></li>
 		</practicalLearningActivityDefs>
 		<theoreticalLearningActivityDefs>
-			<li>LLRoM_ExamineScroll_VitalityII</li>
-			<li>LLRoM_ReadMagicLearnObjectBase_VitalityII</li>
-			<li MayRequire="Ludeon.RimWorld.Anomaly">LLRoM_Consult_Dark_archotech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">LLRoM_Divine_Inspiration</li>
-			<li>LLBrainstorm</li>
-			<li>LLDocument</li>
-			<li>LLDissectCritterCorpse</li>
-			<li>LLDissectHumanCorpse</li>
+			<li><def>LLRoM_ExamineScroll_VitalityII</def></li>
+			<li><def>LLRoM_ReadMagicLearnObjectBase_VitalityII</def></li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly"><def>LLRoM_Consult_Dark_archotech</def></li>
+			<li MayRequire="Ludeon.RimWorld.Ideology"><def>LLRoM_Divine_Inspiration</def></li>
+			<li><def>LLBrainstorm</def></li>
+			<li><def>LLDocument</def></li>
+			<li><def>LLDissectCritterCorpse</def></li>
+			<li><def>LLDissectHumanCorpse</def></li>
 		</theoreticalLearningActivityDefs>
 		<modExtensions>
 			<li Class="LLRoM.StatOffsetExtension">
