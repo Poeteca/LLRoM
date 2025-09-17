@@ -12,6 +12,8 @@ using TorannMagic.TMDefs;
 using TorannMagic.ModOptions;
 using UnityEngine;
 using Verse;
+using RimWorld.Planet;
+using Verse.Noise;
 
 namespace LLRoM
 {

@@ -3,6 +3,7 @@ using HarmonyLib;
 using LifeLessons;
 using RimWorld;
 using RimWorld.BaseGen;
+using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -444,11 +445,11 @@ namespace LLRoM
             }
             else if (ability.learnItem != null)
             {
-                if (pMagic != null && pMagic.IsMagicUser && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
+                if (pMagic != null && pMagic.IsMagicUser && ability.learnItem.defName.Contains("SpellOf") && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
                 {
                     return true;
                 }
-                if (pMight != null && pMight.IsMightUser && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
+                else if (pMight != null && pMight.IsMightUser && ability.learnItem.defName.Contains("SkillOf") && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
                 {
                     return true;
                 }
@@ -1060,17 +1061,17 @@ namespace LLRoM
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ObscureCertianProficiencies && extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
                 {
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
-                    if (comp != null && !Util.IsQualified(pawn, def))
+                    if (comp != null)
                     {
-                        return comp.CanLearn(def);
+                        return comp.CanLearn(def) || Util.IsQualified(pawn, def);
                     }
                 }
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ObscureCertianProficiencies && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ObscureAllProficiencies && pawn != null && (!DebugSettings.godMode || Current.Game.InitData != null))
                 {
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
-                    if (comp != null && !Util.IsQualified(pawn, def))
+                    if (comp != null)
                     {
-                        return comp.CanLearn(def);
+                        return comp.CanLearn(def) || Util.IsQualified(pawn, def);
                     }
                 }
                 return true;
@@ -1148,17 +1149,17 @@ namespace LLRoM
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ObscureCertianProficiencies && extension != null && pawn != null && extension.HiddenIfCantLearn == true && (!DebugSettings.godMode || Current.Game.InitData != null))
                 {
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
-                    if (comp != null && !Util.IsQualified(pawn, def))
+                    if (comp != null)
                     {
-                        return comp.CanLearn(def);
+                        return comp.CanLearn(def) || Util.IsQualified(pawn, def);
                     }
                 }
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ObscureCertianProficiencies && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ObscureAllProficiencies && pawn != null && (!DebugSettings.godMode || Current.Game.InitData != null))
                 {
                     ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
-                    if (comp != null && !Util.IsQualified(pawn, def))
+                    if (comp != null)
                     {
-                        return comp.CanLearn(def);
+                        return comp.CanLearn(def) || Util.IsQualified(pawn, def);
                     }
                 }
                 return true;
