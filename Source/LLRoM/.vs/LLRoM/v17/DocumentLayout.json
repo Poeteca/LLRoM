@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\llaromdev\\source\\llrom\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\llaromdev\\source\\llrom\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_tryselflearnskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_tryselflearnskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compproperties_useeffectlearnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -132,14 +132,14 @@
               "RelativeDocumentMoniker": "HarmonyPatches.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
               "RelativeToolTip": "HarmonyPatches.cs",
-              "ViewState": "AQIAAIoBAAAAAAAAAAAcwJ0BAAAyAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwCEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T02:48:05.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CompUseEffect_TrySelfLearnSpell.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSpell.cs",
               "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSpell.cs",
@@ -147,8 +147,7 @@
               "RelativeToolTip": "CompUseEffect_TrySelfLearnSpell.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAgwAwAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T15:39:19.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T15:39:19.318Z"
             },
             {
               "$type": "Document",
@@ -188,16 +187,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CompUseEffect_TrySelfLearnSkill.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSkill.cs",
               "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSkill.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSkill.cs",
               "RelativeToolTip": "CompUseEffect_TrySelfLearnSkill.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAowJYBAABFAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowFoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T21:25:35.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T21:25:35.005Z"
             },
             {
               "$type": "Document",
@@ -207,7 +205,7 @@
               "RelativeDocumentMoniker": "Utility.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\Utility.cs",
               "RelativeToolTip": "Utility.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgCAAAJAAAA",
+              "ViewState": "AQIAAE4CAAAAAAAAAADwvxMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T15:59:01.478Z",
               "EditorCaption": ""
@@ -222,8 +220,7 @@
               "RelativeToolTip": "CompProperties_UseEffectLearnClass.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:52:09.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T16:52:09.71Z"
             },
             {
               "$type": "Document",

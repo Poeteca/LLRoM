@@ -24,6 +24,17 @@ using static UnityEngine.Scripting.GarbageCollector;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class ConstructDetectionPatch
+    {
+        [HarmonyPatch(typeof(Util), nameof(Util.MechanicalLike))]
+        public static void Postfix(ThingDef def, ref bool __result)
+        {
+            if (!__result && def.race.thinkTreeMain.defName == "TM_GolemMain" || def.race.thinkTreeMain.defName == "TM_GolemConstant")
+            {
+                __result = true;
+            }
+        }
+    }
     public static class RandomClassPatch
     {
         [HarmonyPatch(typeof(TM_Calc), nameof(TM_Calc.GetRandomAcceptableMagicClassIndex))]
