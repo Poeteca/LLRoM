@@ -428,9 +428,11 @@ namespace LLRoM
         {
             CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
             CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
-            CompAbilityUserTMBase data = p.GetComp<CompAbilityUserTMBase>();
-            TM_CustomClass customclass = data.customClass;
+            TM_CustomClass customclass = null;
+            if (pMagic.customClass != null) { customclass = pMagic.customClass; }
+            else if (pMight.customClass != null) { customclass = pMight.customClass; }
             if (p == null || ability == null) { return false; }
+            if (Utility.FullyKnowsAbility(p, ability)) { return false; }
             if (ability == TorannMagicDefOf.TM_LivingWall)
             {
                 AbilityXPGainExtension Livingextention = TorannMagicDefOf.TM_LivingWall.GetModExtension<AbilityXPGainExtension>();
@@ -456,11 +458,11 @@ namespace LLRoM
             }
             else if (ability.learnItem != null)
             {
-                if (pMagic != null && pMagic.IsMagicUser && ability.learnItem.defName.Contains("SpellOf") && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
+                if (pMagic.MagicData != null && pMagic.IsMagicUser && ability.learnItem.defName.Contains("SpellOf") && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
                 {
                     return true;
                 }
-                else if (pMight != null && pMight.IsMightUser && ability.learnItem.defName.Contains("SkillOf") && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
+                else if (pMight.MightData != null && pMight.IsMightUser && ability.learnItem.defName.Contains("SkillOf") && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
                 {
                     return true;
                 }

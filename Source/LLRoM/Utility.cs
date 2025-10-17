@@ -19,6 +19,88 @@ namespace LLRoM
 {
     public class Utility
     {
+        public static bool FullyKnowsAbility(Pawn pawn, TMAbilityDef ability)
+        {
+            CompAbilityUserMagic pMagic = pawn.GetCompAbilityUserMagic();
+            CompAbilityUserMight pMight = pawn.GetCompAbilityUserMight();
+            if (pMagic == null && pMight == null) { return false; }
+            bool foundability = false;
+            if (pMagic.MagicData != null)
+            {
+                foreach(MagicPower power in pMagic.MagicData.AllMagicPowers)
+                {
+                    if (power.abilityDef.defName == ability.defName && power.learned)
+                    {
+                        foundability = true;
+                    }
+                    else if (power.nextLevelAbilityDef.defName == ability.defName && power.learned)
+                    {
+                        return false;
+                    }
+                    else if(power.learned && !(power.abilityDef.defName == ability.defName && power.nextLevelAbilityDef.defName == ability.defName))
+                    {
+                        AbilityUser.AbilityDef generalizedAbility = (AbilityUser.AbilityDef)(object)ability;
+                        if (power.TMabilityDefs.Contains(generalizedAbility))
+                        {
+                            return true;
+                        }
+                    }
+                    else if(power.abilityDef.defName != ability.defName)
+                    {
+                        AbilityUser.AbilityDef generalizedAbility = (AbilityUser.AbilityDef)(object)ability;
+                        if (power.TMabilityDefs.Contains(generalizedAbility))
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            if (pMight.MightData != null)
+            {
+                foreach(MightPower power in pMight.MightData.AllMightPowers)
+                {
+                    if (power.abilityDef.defName == ability.defName && power.learned)
+                    {
+                        foundability = true;
+                    }
+                    else if (power.nextLevelAbilityDef.defName == ability.defName && power.learned)
+                    {
+                        return false;
+                    }
+                    else if (power.learned && !(power.nextLevelAbilityDef.defName == ability.defName && power.abilityDef.defName == ability.defName))
+                    {
+                        AbilityUser.AbilityDef generalizedAbility = (AbilityUser.AbilityDef)(object)ability;
+                        if (power.TMabilityDefs.Contains(generalizedAbility))
+                        {
+                            return true;
+                        }
+                    }
+                    else if (power.abilityDef.defName != ability.defName)
+                    {
+                        AbilityUser.AbilityDef generalizedAbility = (AbilityUser.AbilityDef)(object)ability;
+                        if (power.TMabilityDefs.Contains(generalizedAbility))
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            ProficiencyComp comp = pawn.TryGetComp<ProficiencyComp>();
+            AbilityXPGainExtension extension = ability.GetModExtension<AbilityXPGainExtension>();
+            if (extension != null && comp != null && foundability)
+            {
+                List<ProficiencyDef> relatedproficiencies = extension.Relatedproficiencies;
+                foreach(ProficiencyDef pro in relatedproficiencies)
+                {
+                    if (!comp.CompletedProficiencies.Contains(pro))
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
         public static ProficiencyDef GetRandomInspirationProficiency(Pawn pawn, InspirationDef inspiration)
         {
             List<ProficiencyDef> possibleResults = new List<ProficiencyDef>();
@@ -476,8 +558,8 @@ namespace LLRoM
         {
             List<Trait> traits = p.story.traits.allTraits;
             List<TraitDef> traitdefs = new List<TraitDef>();
-            CompAbilityUserTMBase data = p.GetComp<CompAbilityUserTMBase>();
-            TM_CustomClass customclass = data.customClass;
+            CompAbilityUserMight pMight = p.GetCompAbilityUserMight();
+            TM_CustomClass customclass = pMight.customClass;
             foreach (Trait t in traits)
             {
                 traitdefs.Add(t.def);
@@ -521,8 +603,8 @@ namespace LLRoM
         {
             List<Trait> traits = p.story.traits.allTraits;
             List<TraitDef> traitdefs = new List<TraitDef>();
-            CompAbilityUserTMBase data = p.GetComp<CompAbilityUserTMBase>();
-            TM_CustomClass customclass = data.customClass;
+            CompAbilityUserMagic pMagic = p.GetCompAbilityUserMagic();
+            TM_CustomClass customclass = pMagic.customClass;
             foreach (Trait t in traits)
             {
                 traitdefs.Add(t.def);
