@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace LLRoM
 {
@@ -6,5 +7,6 @@ namespace LLRoM
     {
         public HediffDef hasHediff;
         public HediffDef withouHediff;
+        public TraitDef disallowedTrait;
     }
 }

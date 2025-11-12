@@ -9,14 +9,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 using TorannMagic;
+using TorannMagic.AutoCast;
 using TorannMagic.ModOptions;
 using TorannMagic.TMDefs;
 using TorannMagic.Utils;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using Verse.AI.Group;
 using Verse.Sound;
 using static HarmonyLib.Code;
 using static UnityEngine.Scripting.GarbageCollector;
@@ -24,6 +27,36 @@ using static UnityEngine.Scripting.GarbageCollector;
 namespace LLRoM
 {
     [HarmonyPatch]
+    public static class UndeadPatch
+    {
+        [HarmonyPatch(nameof(TeachingManagerComp), "IsPawnAvailable")]
+        public static void Postfix(Pawn pawn, LessonPlan plan, ref string reason, ref bool __result)
+        {
+            if (TM_Calc.IsUndead(pawn))
+            {
+                __result = false;
+                reason = "UnvailableUndead".Translate(pawn.LabelShortCap);
+            }
+        }
+        [HarmonyPatch(typeof(LearningUtil), nameof(LearningUtil.CalculateTeacherXp))]
+        public static void Postfix(Pawn teacher, ref float __result)
+        {
+            if (TM_Calc.IsUndead(teacher))
+            {
+                __result = 0;
+            }
+        }
+        [HarmonyPatch(typeof(ProficiencyComp), nameof(ProficiencyComp.TryGainXp))]
+        public static bool Prefix(ref float xp, ProficiencyDef def, ExperienceType type, ProficiencyComp __instance)
+        {
+            Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
+            if (TM_Calc.IsUndead(pawn))
+            {
+                xp *= .1f;
+            }
+            return true;
+        }
+    }
     public static class ConstructDetectionPatch
     {
         [HarmonyPatch(typeof(Util), nameof(Util.MechanicalLike))]
@@ -1046,14 +1079,14 @@ namespace LLRoM
                 {
                     canlearn = !Inspirationextension.requiresInspiration;
                 }
-                if (TM_Calc.IsUndead(pawn))
-                {
-                    canlearn = false;
-                }
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassProLockout && !TM_Calc.IsWanderer(pawn) && !TM_Calc.IsWayfarer(pawn))
                 {
                     LockoutExtension extension = def.GetModExtension<LockoutExtension>();
                     if (pawn != null && extension != null && !pawn.health.hediffSet.HasHediff(extension.withouHediff) && pawn.health.hediffSet.HasHediff(extension.hasHediff))
+                    {
+                        canlearn = false;
+                    }
+                    if (pawn != null && extension != null && extension.disallowedTrait != null && pawn.story.traits.HasTrait(extension.disallowedTrait))
                     {
                         canlearn = false;
                     }
@@ -1383,7 +1416,7 @@ namespace LLRoM
             }
         }
     }
-    public static class CompUseEffect_ClassPatch
+    public static class TraitGainPatch
     {
         [HarmonyPatch(typeof(TraitSet), nameof(TraitSet.GainTrait))]
         public class CompUseEffect_LearnMagic_DoEffectk_Postfix
@@ -1403,8 +1436,45 @@ namespace LLRoM
                         pawn.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Magic_Insight, true);
                     }
                 }
+                if(trait.def == TorannMagicDefOf.Undead)
+                {
+                    pawn.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Magic_Insight, true);
+                    pawn.GetComp<ProficiencyComp>().RemoveProficiency(ProficiencyDefOf.Physical_Insight, true);
+                }
             }
         }
+    }
+    public static class LearnClassFromPowerPatch
+    {
+        [HarmonyPatch(typeof(TM_Action), nameof(TM_Action.PromoteWanderer))]
+        public class WandererPatch
+        {
+            public static bool Prefix(Pawn pawn)
+            {
+                if (!pawn.GetComp<ProficiencyComp>().CompletedProficiencies.Contains(ProficiencyDefOf.Magic_Insight) && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMagicClassLearning && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
+                {
+                    Messages.Message("LLRoMNeedMagicInsight".Translate(pawn.LabelShort), MessageTypeDefOf.RejectInput);
+                    return false;
+                }
+                return true;
+            }
+        }
+        [HarmonyPatch(typeof(TM_Action), nameof(TM_Action.PromoteWayfarer))]
+        public class WayfarerPatch
+        {
+            public static bool Prefix(Pawn pawn)
+            {
+                if (!pawn.GetComp<ProficiencyComp>().CompletedProficiencies.Contains(ProficiencyDefOf.Physical_Insight) && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().StrictMightClassLearning && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
+                {
+                    Messages.Message("LLRoMNeedMightInsight".Translate(pawn.LabelShort), MessageTypeDefOf.RejectInput);
+                    return false;
+                }
+                return true;
+            }
+        }
+    }
+    public static class CompUseEffect_ClassPatch
+    { 
         [HarmonyPatch(typeof(TorannMagic.CompUseEffect_LearnMagic), nameof(TorannMagic.CompUseEffect_LearnMagic.DoEffect))]
         public class CompUseEffect_LearnMagic_DoEffectk_Prefix
         {

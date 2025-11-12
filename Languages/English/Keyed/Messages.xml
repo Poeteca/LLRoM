@@ -73,4 +73,7 @@ To reduce the recovery time:</LLRoM_DurationHintStart>
 	<LearningDrain>If attempting to self-teach should apply a scaling debuff.</LearningDrain>
 	<LLRoM_NoClasses>No possible valid classes</LLRoM_NoClasses>
 	<LLRoMMustBeAbleToRead>{0} must be able to read to do that.</LLRoMMustBeAbleToRead>
+	<UnvailableUndead>{0} has skipped class because they are undead.</UnvailableUndead>
+	<LLRoMNeedMagicInsight>{0} must master Magic Insight befoer doing that.</LLRoMNeedMagicInsight>
+	<LLRoMNeedMightInsight>{0} must master Physical Insight befoer doing that.</LLRoMNeedMightInsight>
 </LanguageData>

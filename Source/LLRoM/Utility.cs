@@ -45,7 +45,7 @@ namespace LLRoM
                             return true;
                         }
                     }
-                    else if(power.abilityDef.defName != ability.defName)
+                    else if(power.abilityDef.defName != ability.defName && !power.learned)
                     {
                         AbilityUser.AbilityDef generalizedAbility = (AbilityUser.AbilityDef)(object)ability;
                         if (power.TMabilityDefs.Contains(generalizedAbility))
@@ -55,7 +55,7 @@ namespace LLRoM
                     }
                 }
             }
-            if (pMight.MightData != null)
+            if (pMight.MightData != null && !foundability)
             {
                 foreach(MightPower power in pMight.MightData.AllMightPowers)
                 {
@@ -75,7 +75,7 @@ namespace LLRoM
                             return true;
                         }
                     }
-                    else if (power.abilityDef.defName != ability.defName)
+                    else if (power.abilityDef.defName != ability.defName && !power.learned)
                     {
                         AbilityUser.AbilityDef generalizedAbility = (AbilityUser.AbilityDef)(object)ability;
                         if (power.TMabilityDefs.Contains(generalizedAbility))

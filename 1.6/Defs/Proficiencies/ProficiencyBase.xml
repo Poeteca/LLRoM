@@ -15,6 +15,7 @@
 			<li Class="LLRoM.LockoutExtension">
 				<hasHediff>TM_MightUserHD</hasHediff>
 				<withouHediff>TM_MagicUserHD</withouHediff>
+				<disallowedTrait>Undead</disallowedTrait>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -33,6 +34,7 @@
 			<li Class="LLRoM.LockoutExtension">
 				<hasHediff>TM_MightUserHD</hasHediff>
 				<withouHediff>TM_MagicUserHD</withouHediff>
+				<disallowedTrait>Undead</disallowedTrait>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -51,6 +53,7 @@
 			<li Class="LLRoM.LockoutExtension">
 				<hasHediff>TM_MightUserHD</hasHediff>
 				<withouHediff>TM_MagicUserHD</withouHediff>
+				<disallowedTrait>Undead</disallowedTrait>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -69,6 +72,7 @@
 			<li Class="LLRoM.LockoutExtension">
 				<hasHediff>TM_MagicUserHD</hasHediff>
 				<withouHediff>TM_MightUserHD</withouHediff>
+				<disallowedTrait>Undead</disallowedTrait>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -87,6 +91,7 @@
 			<li Class="LLRoM.LockoutExtension">
 				<hasHediff>TM_MagicUserHD</hasHediff>
 				<withouHediff>TM_MightUserHD</withouHediff>
+				<disallowedTrait>Undead</disallowedTrait>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
@@ -105,6 +110,7 @@
 			<li Class="LLRoM.LockoutExtension">
 				<hasHediff>TM_MagicUserHD</hasHediff>
 				<withouHediff>TM_MightUserHD</withouHediff>
+				<disallowedTrait>Undead</disallowedTrait>
 			</li>
 		</modExtensions>
 	</LifeLessons.ProficiencyDef>
