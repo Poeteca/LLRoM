@@ -119,7 +119,16 @@
 					<li>RoboticsAssembly</li>
 					<li>LLRoM_MagicConstructsII</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -132,7 +141,16 @@
 					<li>Anatomy</li>
 					<li>LLRoM_MagicConstructsII</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -145,7 +163,16 @@
 					<li>Armorsmithing</li>
 					<li>LLRoM_MagicConstructsII</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -158,7 +185,16 @@
 					<li>Masonry</li>
 					<li>LLRoM_MagicConstructsI</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -171,7 +207,16 @@
 					<li>Leatherworking</li>
 					<li>LLRoM_MagicConstructsI</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -184,7 +229,16 @@
 					<li>Threadcraft</li>
 					<li>LLRoM_MagicConstructsI</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -197,7 +251,16 @@
 					<li>Carpentry</li>
 					<li>LLRoM_MagicConstructsI</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
@@ -210,7 +273,16 @@
 					<li>Tailoring</li>
 					<li>LLRoM_MagicConstructsI</li>
 				</requirements>
-				<hardRequirement>true</hardRequirement>
+				<unqualifiedPenalty>
+					<statModifiers>
+						<li>
+							<stat>GeneralLaborSpeed</stat>
+							<applyGlobally>True</applyGlobally>
+							<modifier>0.5</modifier>
+						</li>
+					</statModifiers>
+				</unqualifiedPenalty>
+				<hardRequirement>False</hardRequirement>
 			</li>
 		</value>
 	</Operation>
