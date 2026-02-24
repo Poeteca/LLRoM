@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedMagicWeapon</defName>
+		<label>unfinished magic weapon</label>
+		<description>An unfinished weapon.</description>
+		<isUnfinishedThing>true</isUnfinishedThing>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+	
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedScroll</defName>
+		<label>unfinished scroll</label>
+		<description>An unfinished scroll.</description>
+		<isUnfinishedThing>true</isUnfinishedThing>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+	
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedBook</defName>
+		<label>unfinished book</label>
+		<description>An unfinished book.</description>
+		<isUnfinishedThing>true</isUnfinishedThing>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+	
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedMagicArmor</defName>
+		<label>unfinished magic simple armor</label>
+		<description>An unfinished piece of simple enchanted armor.</description>
+		<isUnfinishedThing>true</isUnfinishedThing>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+	
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedMagicMetallicTechArmor</defName>
+		<label>unfinished magic metal armor</label>
+		<description>An unfinished piece of enchanted metal armor.</description>
+		<isUnfinishedThing>true</isUnfinishedThing>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+	
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedMagicApparel</defName>
+		<label>unfinished magic apparel</label>
+		<description>An unfinished piece of enchanted apparel.</description>
+		<isUnfinishedThing>true</isUnfinishedThing>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedApparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+</Defs>

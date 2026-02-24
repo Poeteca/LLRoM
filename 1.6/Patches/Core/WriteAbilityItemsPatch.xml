@@ -72,4 +72,10 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="UnfinishedArcane" or defName="UnfinishedAdvArcane" or defName="UnfinishedMartial"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedBook</unfinishedThingDef>
+		</value>
+	</Operation>
 </Patch>

@@ -12,12 +12,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ArcaneBolt"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Blink"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>24</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Blink"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -30,12 +42,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Blur"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Cooler"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>8</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Cooler"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -48,12 +72,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_DirtDevil"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_EMP"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>48</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_EMP"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -66,12 +102,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Extinguish"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Heal"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>24</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Heal"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -85,12 +133,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_HeatShield"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Heater"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>8</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Heater"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -104,12 +164,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Ignite"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_MageLight"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>8</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_MageLight"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -122,11 +194,23 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_PowerNode"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Rain"]/costList</xpath>
 		<value>
 			<costList>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Rain"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -140,6 +224,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_SnapFreeze"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_SmokeCloud"]/costList</xpath>
 		<value>
 			<costList>
@@ -149,12 +239,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_SmokeCloud"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Sunlight"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>64</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Sunlight"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -168,6 +270,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BrandSiphon"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_BrandFitness"]/costList</xpath>
 		<value>
 			<costList>
@@ -175,6 +283,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BrandFitness"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -188,6 +302,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BrandEmotion"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_BrandVitality"]/costList</xpath>
 		<value>
 			<costList>
@@ -195,6 +315,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BrandVitality"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -208,6 +334,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BrandProtection"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_BrandAwareness"]/costList</xpath>
 		<value>
 			<costList>
@@ -215,6 +347,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BrandAwareness"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -227,12 +365,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ChargeBattery"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_CauterizeWound"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>10</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_CauterizeWound"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -246,12 +396,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ConsumeCorpse_Mass"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Discord"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>58</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Discord"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -264,12 +426,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_DryGround"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_WetGround"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>40</RawMagicyte>
 				<LLRoM_ScrollBasic>1</LLRoM_ScrollBasic>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_WetGround"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 <!--Advance-->
@@ -284,6 +458,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_MagicWardrobe"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Invisibility"]/costList</xpath>
 		<value>
 			<costList>
@@ -291,6 +471,12 @@
 				<DevilstrandCloth>20</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Invisibility"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -304,6 +490,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_LightningTrap"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_ManaShield"]/costList</xpath>
 		<value>
 			<costList>
@@ -311,6 +503,12 @@
 				<DevilstrandCloth>10</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ManaShield"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -324,6 +522,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_ShieldOther"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_SpellMending"]/costList</xpath>
 		<value>
 			<costList>
@@ -331,6 +535,12 @@
 				<DevilstrandCloth>10</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_SpellMending"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -344,6 +554,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_SiphonMana"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_SummonMinion"]/costList</xpath>
 		<value>
 			<costList>
@@ -351,6 +567,12 @@
 				<DevilstrandCloth>10</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_SummonMinion"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -364,6 +586,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Teleport"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_TransferMana"]/costList</xpath>
 		<value>
 			<costList>
@@ -371,6 +599,12 @@
 				<DevilstrandCloth>10</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_TransferMana"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -384,6 +618,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_FadeEmotions"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_BlankMind"]/costList</xpath>
 		<value>
 			<costList>
@@ -391,6 +631,12 @@
 				<DevilstrandCloth>20</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BlankMind"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -404,6 +650,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BriarPatch"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_FertileLands"]/costList</xpath>
 		<value>
 			<costList>
@@ -411,6 +663,12 @@
 				<DevilstrandCloth>10</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_FertileLands"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -424,6 +682,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_AlterStorm"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_MechaniteReprogramming"]/costList</xpath>
 		<value>
 			<costList>
@@ -433,12 +697,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_MechaniteReprogramming"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Overdrive"]/costList</xpath>
 		<value>
 			<costList>
 				<DevilstrandCloth>10</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Overdrive"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -452,6 +728,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Sabotage"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_TechnoShield"]/costList</xpath>
 		<value>
 			<costList>
@@ -459,6 +741,12 @@
 				<DevilstrandCloth>15</DevilstrandCloth>
 				<LLRoM_ScrollAdvance>1</LLRoM_ScrollAdvance>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_TechnoShield"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 <!--Master-->
@@ -471,12 +759,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BattleHymn"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Blizzard"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>102</RawMagicyte>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Blizzard"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -490,12 +790,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_BloodMoon"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_EyeOfTheStorm"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>100</RawMagicyte>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_EyeOfTheStorm"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -508,12 +820,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Firestorm"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_FoldReality"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>250</RawMagicyte>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_FoldReality"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -526,12 +850,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_GuardianSpirit"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_HolyWrath"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>90</RawMagicyte>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_HolyWrath"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -544,6 +880,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_LichForm"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_LivingWall"]/costList</xpath>
 		<value>
 			<costList>
@@ -553,11 +895,23 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_LivingWall"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Meteor"]/costList</xpath>
 		<value>
 			<costList>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Meteor"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -570,11 +924,23 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_OrbitalStrike"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_PsychicShock"]/costList</xpath>
 		<value>
 			<costList>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_PsychicShock"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -588,12 +954,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Recall"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_RegrowLimb"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>62</RawMagicyte>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_RegrowLimb"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -606,11 +984,23 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Resurrection"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_Scorn"]/costList</xpath>
 		<value>
 			<costList>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Scorn"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -624,6 +1014,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_Shapeshift"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_SummonPoppi"]/costList</xpath>
 		<value>
 			<costList>
@@ -633,12 +1029,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_SummonPoppi"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SpellOf_SpiritOfLight"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>102</RawMagicyte>
 				<LLRoM_ScrollMaster>1</LLRoM_ScrollMaster>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SpellOf_SpiritOfLight"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 <!--Skill-->
@@ -653,12 +1061,24 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_ThrowingKnife"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SkillOf_BurningFury"]/costList</xpath>
 		<value>
 			<costList>
 				<RawMagicyte>65</RawMagicyte>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_BurningFury"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -672,6 +1092,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_FightersFocus"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SkillOf_GearRepair"]/costList</xpath>
 		<value>
 			<costList>
@@ -679,6 +1105,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_GearRepair"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -692,6 +1124,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_HeavyBlow"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SkillOf_InnerHealing"]/costList</xpath>
 		<value>
 			<costList>
@@ -699,6 +1137,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_InnerHealing"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -712,6 +1156,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_Legion"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SkillOf_PommelStrike"]/costList</xpath>
 		<value>
 			<costList>
@@ -719,6 +1169,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_PommelStrike"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -732,6 +1188,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_Sprint"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SkillOf_StrongBack"]/costList</xpath>
 		<value>
 			<costList>
@@ -739,6 +1201,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_StrongBack"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -752,6 +1220,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_Taunt"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SkillOf_TempestStrike"]/costList</xpath>
 		<value>
 			<costList>
@@ -759,6 +1233,12 @@
 				<Cloth>40</Cloth>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_TempestStrike"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -772,11 +1252,23 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_ThickSkin"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SkillOf_HerbalBliss"]/costList</xpath>
 		<value>
 			<costList>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_HerbalBliss"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -787,6 +1279,12 @@
 				<Cloth>20</Cloth>
 				<LLRoM_ScrollSkill>1</LLRoM_ScrollSkill>	
 			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SkillOf_HerbalClarity"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 		</value>
 	</Operation>
 </Patch>

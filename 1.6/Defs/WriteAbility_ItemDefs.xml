@@ -64,6 +64,7 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>6</Intellectual>
@@ -139,6 +140,7 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>8</Intellectual>
@@ -214,6 +216,7 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>8</Intellectual>
@@ -289,6 +292,7 @@
 				<li>TableMagicPrinter</li>
 			</recipeUsers>
 			<effectWorking>Smelt</effectWorking>
+			<unfinishedThingDef>UnfinishedScroll</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 				<Intellectual>6</Intellectual>

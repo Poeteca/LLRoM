@@ -6,6 +6,7 @@ For the class to display in the proficiency window when learnable, add it to the
 Abilities need the LLRoM.AbilityXPGainExtension mod extension added to be able to interact with the proficiency systems. The <Proficiencies> list determines which proficiencies the ability display under, which proficiencies are needed to be able to learn the ability, and which proficiencies are used for determining the adjusted casting cost. The <experienceType> node is the experience type gained on use, use Practical unless you have a reason to use a different type. The <LearnRate> node is a multiplier on proficiency experience gained on use. The <Classes> list is for non-custom classes, do not use without reason.
 –Ability Scroll Patches–
 Ability scrolls should be patched like any other crafted item, requirements should match the required proficiencies needed to learn. To be brought in line with other patches, replace the <costlist> list to include LLRoM_ScrollBasic, LLRoM_ScrollAdvance, LLRoM_ScrollMaster, or LLRoM_ScrollSkill based on the research needed to unlock the recipe and whether it is a spell or skill with additional cloth/DevilstrandCloth/RawMagicyte to keep the cost roughly the same. 
+Replace the contents unfinishedThingDef with UnfinishedScroll to prevent issues with toils
 To allow the scroll to be used in pioneering, the scroll needs to be added to the lists for the LLRoM_UseScroll_LLRoM_*, LLRoM_UseScroll_*_Safe, and LLRoM_ExamineScroll_* for the proficiencies needed to learn the spell:
 ingredients/li/filter/thingDefs
 fixedIngredientFilter/thingDefs
@@ -25,6 +26,7 @@ For the Tome to be obtainable, one of the following recipe needs to be added to 
 		<li>TableMagicPrinter</li>
 	</recipeUsers>
 	<effectWorking>Smelt</effectWorking>
+	<unfinishedThingDef>UnfinishedBook</unfinishedThingDef>
 	<skillRequirements>
 		<Crafting>4</Crafting>
 		<Intellectual>8</Intellectual>
@@ -39,6 +41,7 @@ For the Tome to be obtainable, one of the following recipe needs to be added to 
 		<li>TableMagicPrinter</li>
 	</recipeUsers>
 	<effectWorking>Smelt</effectWorking>
+	<unfinishedThingDef>UnfinishedBook</unfinishedThingDef>
 	<skillRequirements>
 		<Crafting>6</Crafting>
 		<Intellectual>8</Intellectual>
@@ -54,13 +57,13 @@ For the Tome to be obtainable, one of the following recipe needs to be added to 
 </costList>
 <recipeMaker>		    
 	<workAmount>2500</workAmount>
-<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
-<workSkill>Intellectual</workSkill>
-<recipeUsers>
+	<workSpeedStat>WorkSpeedGlobal</workSpeedStat>
+	<workSkill>Intellectual</workSkill>
+	<recipeUsers>
 		<li>TableMagicPrinter</li>
-</recipeUsers>
-<effectWorking>Smelt</effectWorking>
-<skillRequirements>
+	</recipeUsers>
+	<effectWorking>Smelt</effectWorking>
+	<skillRequirements>
 		<Crafting>4</Crafting>
 		<Intellectual>8</Intellectual>
 	</skillRequirements>

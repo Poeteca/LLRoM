@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>//ThingDef[@Name="TM_BaseWand"]/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedMagicWeapon</unfinishedThingDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>//ThingDef[@Name="TMTailoredApparelBase"
+						or @Name="TMSmithedApparelBase"
+						or @Name="TM_CraftableArtifactBase"]
+						/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedMagicApparel</unfinishedThingDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>//ThingDef[defName="TM_ElephantSpear"
+						or defName="TM_ElephantTusk"
+						or defName="TM_ElephantBow"
+						or defName="TM_ThrumboAxe"
+						or defName="TM_ThrumboSaber"
+						or defName="TM_GloryMaul"
+						or defName="TM_Decimation"
+						or defName="TM_ThrumBow"
+						or defName="TM_DemonFang"
+						or defName="TM_DefenderStaff"
+						or defName="TM_BlazingPowerStaff"
+						or defName="TM_WinterStaff"]
+						/recipeMaker/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedMagicWeapon</unfinishedThingDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>//RecipeDef[defName="ArcaneForge_ThrumBow"
+						or defName="ArcaneForge_ThrumboSaber"
+						or defName="ArcaneForge_ThrumboAxe"
+						or defName="ArcaneForge_ElephantBow"
+						or defName="ArcaneForge_ElephantSpear"]
+						/unfinishedThingDef</xpath>
+		<value>
+			<unfinishedThingDef>UnfinishedMagicWeapon</unfinishedThingDef>
+		</value>
+	</Operation>
+	
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="ManaPotion"]</xpath>
 		<value>
