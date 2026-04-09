@@ -1,6 +1,7 @@
 ﻿using AbilityUser;
 using LifeLessons;
 using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TorannMagic;
@@ -65,7 +66,7 @@ namespace LLRoM
                         {
                             if (!ValidAbilities.Contains(def)) { canGain = false; }
                         }
-                        if (canGain && Utility.LearnableSkillCheck(usedBy, Scroll))
+                        if (canGain && AbilityLearningHandlercs.LearnableSkillCheck(usedBy, Scroll))
                         {
                             possibleAbilities.Add(Scroll);
                         }
@@ -93,15 +94,16 @@ namespace LLRoM
             {
                 ThingDef TargetScroll = possibleAbilities.RandomElement();
                 int chance = 100;
-                int compare = 1;
+                float compare = 1;
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
                 {
+                    float LearningFactor = usedBy.GetStatValue(StatDefOf.GlobalLearningFactor);
                     chance = Rand.RangeInclusive(1, 100);
-                    compare = Parentextension.failChance;
+                    compare = Math.Max(Parentextension.failChance * .25f, Parentextension.failChance - ((LearningFactor - 1f) * Parentextension.failChance));
                 }
                 if (chance > compare)
                 {
-                    float imfactor = Utility.ImpressivenessFactor(usedBy) * Parentextension.drainBase;
+                    float imfactor = ImpressivenessHandler.ImpressivenessFactor(usedBy) * Parentextension.drainBase;
                     if (usedBy.health.hediffSet.HasHediff(Parentextension.HedifftoApply) && Parentextension.HedifftoApply != null)
                     {
                         HealthUtility.AdjustSeverity(usedBy, Parentextension.HedifftoApply, imfactor);
@@ -350,52 +352,65 @@ namespace LLRoM
             {
                 return null;
             }
-            bool flagTH = true;
-            bool flagI = true;
-            bool flagD = true;
-            bool flagQ = true;
+            bool TrainingHall = true;
+            bool ImpressiveEnough = true;
+            bool SafeDrain = true;
+            bool QualityTrainingTool = true;
+            bool CannotFail = true;
+            string outstring = null;
+            if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
+            {
+                float LearningFactor = p.GetStatValue(StatDefOf.GlobalLearningFactor);
+                float trueCahnce = Math.Max(Parentextension.failChance * .25f, Parentextension.failChance - ((LearningFactor - 1f) * Parentextension.failChance));
+                int displayedChance = (int)(100f - trueCahnce);
+                if (displayedChance < 100)
+                {
+                    CannotFail = false;
+                    outstring = "LLRoM_LearnSkillChanve".Translate(displayedChance, p.LabelShort);
+                }
+            }
             Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.LLRoM_Drained);
             Room room = parent.GetRoom();
-            float factor = Utility.ImpressivenessCurve(room) * Parentextension.drainBase;
+            float factor = ImpressivenessHandler.ImpressivenessCurve(room) * Parentextension.drainBase;
             float sevfactor = 0f;
             if (firstHediffOfDef != null)
             {
                 float severity = firstHediffOfDef.Severity;
                 if (severity + factor > .5f)
                 {
-                    flagD = false;
+                    SafeDrain = false;
                     sevfactor = factor + severity;
                 }
             }
             else if ((factor + .1f) > .5f)
             {
-                flagD = false;
+                SafeDrain = false;
                 sevfactor = factor + .1f;
             }
             if (sevfactor > 1f) { sevfactor = 1f; }
             string duration = (sevfactor / .4f).ToString("#.#");
-            if (flagD) { return null; }
+            if (SafeDrain && CannotFail) { return null; }
             int tipcount = 0;
-            if (room == null || room.PsychologicallyOutdoors || room.Role != RoomRoleDefOf.LLRoM_trainingHall) { flagTH = false; tipcount++; }
-            if (room != null && !room.PsychologicallyOutdoors && room.GetStat(RoomStatDefOf.Impressiveness) < 240) { flagI = false; tipcount++; }
-            if (Parentextension.drainBase > .3f) { flagQ = false; tipcount++; }
-            string outstring = "LLRoM_DangeriousDrainWarning".Translate(duration, p.LabelShort);
+            if (room == null || room.PsychologicallyOutdoors || room.Role != RoomRoleDefOf.LLRoM_trainingHall) { TrainingHall = false; tipcount++; }
+            if (room != null && !room.PsychologicallyOutdoors && room.GetStat(RoomStatDefOf.Impressiveness) < 240) { ImpressiveEnough = false; tipcount++; }
+            if (Parentextension.drainBase > .3f) { QualityTrainingTool = false; tipcount++; }
+            outstring += "LLRoM_DangeriousDrainWarning".Translate(duration, p.LabelShort);
             if (tipcount > 0)
             {
                 outstring += "LLRoM_DurationHintStart".Translate();
-                if (!flagTH)
+                if (!TrainingHall)
                 {
                     outstring += "LLRoM_WrongRoomHint".Translate();
                     if (tipcount == 2) { outstring += "LLRoM_Or".Translate(); }
                     else if (tipcount == 3) { outstring += "LLRoM_Comma".Translate(); }
                 }
-                if (!flagI)
+                if (!ImpressiveEnough)
                 {
                     outstring += "LLRoM_ImpressivenessHint".Translate();
-                    if (tipcount == 2 && flagTH) { outstring += "LLRoM_Or".Translate(); }
+                    if (tipcount == 2 && TrainingHall) { outstring += "LLRoM_Or".Translate(); }
                     else if (tipcount == 3) { outstring += "LLRoM_OxOr".Translate(); }
                 }
-                if (!flagQ) { outstring += "LLRoM_ItemQualityHint".Translate(); }
+                if (!QualityTrainingTool) { outstring += "LLRoM_ItemQualityHint".Translate(); }
                 outstring += "LLRoM_Period".Translate();
             }
             return outstring;

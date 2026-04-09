@@ -70,8 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbilityAutoLearnExtension.cs" />
+    <Compile Include="AbilityLearningHandlercs.cs" />
     <Compile Include="AbilityXPGainExtension.cs" />
     <Compile Include="ClassAutoLearnExtension.cs" />
+    <Compile Include="ClassLearnabilityHandler.cs" />
     <Compile Include="CompProperties_UseEffectLearnClass.cs" />
     <Compile Include="CompProperties_UseEffectTrySelfLearnSpell.cs" />
     <Compile Include="CompUseEffect_LearnClass.cs" />
@@ -81,6 +83,8 @@
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="HideIfCantLearnExtension.cs" />
+    <Compile Include="ImpressivenessHandler.cs" />
+    <Compile Include="InspiratinHandler.cs" />
     <Compile Include="InspirationExtension.cs" />
     <Compile Include="LockoutExtension.cs" />
     <Compile Include="NeedActivityConsumerExtension.cs" />
@@ -96,7 +100,6 @@
     <Compile Include="StatOffseter.cs" />
     <Compile Include="StatOffsetExtension.cs" />
     <Compile Include="Thing_BuildingDefOf.cs" />
-    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

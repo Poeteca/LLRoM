@@ -14,8 +14,8 @@ Missing developments in: </MissingCat>
 	<RelatedSpells>Related Abilities:</RelatedSpells>
 	<MissingPro>Missing proficiencies:</MissingPro>
 	<ProStatOffset>Proficiency Modifiers:</ProStatOffset>
-	<FailChance>Self teach fail chance.</FailChance>
-	<FailChanceReport>The chance for an individual to fail to discover a class or spell when using this.</FailChanceReport>
+	<LLRoM_FailChance>Self teach success rate.</LLRoM_FailChance>
+	<LLRoM_FailChanceReport>The chance for an individual to discover a class or spell when using this.</LLRoM_FailChanceReport>
 	<ProficienciesMasterOffseter>If proficiencies enhanced stat modifier behavior is enabled.</ProficienciesMasterOffseter>
 	<UnlearnProOnClassGain>If a pawn will unlearn proficiencies that they normally would not use when gaining a class.</UnlearnProOnClassGain>
 	<LLARoM_LearnMagicMissingProficiencies>{0} is not able to understand that tome.</LLARoM_LearnMagicMissingProficiencies>
@@ -76,4 +76,7 @@ To reduce the recovery time:</LLRoM_DurationHintStart>
 	<UnvailableUndead>{0} has skipped class because they are undead.</UnvailableUndead>
 	<LLRoMNeedMagicInsight>{0} must master Magic Insight befoer doing that.</LLRoMNeedMagicInsight>
 	<LLRoMNeedMightInsight>{0} must master Physical Insight befoer doing that.</LLRoMNeedMightInsight>
+	<LLRoM_LearnSkillChanve>{1} has a {0}% chance to learn a skill or class that they meet the requirements of.
+	
+</LLRoM_LearnSkillChanve>
 </LanguageData>

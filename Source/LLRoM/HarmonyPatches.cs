@@ -30,7 +30,7 @@ namespace LLRoM
     public static class UndeadPatch
     {
         [HarmonyPatch(nameof(TeachingManagerComp), "IsPawnAvailable")]
-        public static void Postfix(Pawn pawn, LessonPlan plan, ref string reason, ref bool __result)
+        public static void Postfix(Pawn pawn, ref string reason, ref bool __result)
         {
             if (TM_Calc.IsUndead(pawn))
             {
@@ -47,7 +47,7 @@ namespace LLRoM
             }
         }
         [HarmonyPatch(typeof(ProficiencyComp), nameof(ProficiencyComp.TryGainXp))]
-        public static bool Prefix(ref float xp, ProficiencyDef def, ExperienceType type, ProficiencyComp __instance)
+        public static bool Prefix(ref float xp, ProficiencyComp __instance)
         {
             Pawn pawn = ((ProficiencyComp)(object)__instance).parent as Pawn;
             if (TM_Calc.IsUndead(pawn))
@@ -77,12 +77,12 @@ namespace LLRoM
             {
                 if (LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
                 {
-                    if (Utility.CanLearnClass(p, TM_Data.EnabledMagicTraits[__result]))
+                    if (ClassLearnabilityHandler.CanLearnClass(p, TM_Data.EnabledMagicTraits[__result]))
                     {
                         return;
                     }
                     List<TraitDef> classes = new List<TraitDef>();
-                    foreach (TraitDef td in DefDatabase<TraitDef>.AllDefs.Where((TraitDef t) => Utility.CanLearnClass(p, t) && TM_Data.EnabledMagicTraits.Contains(t)))
+                    foreach (TraitDef td in DefDatabase<TraitDef>.AllDefs.Where((TraitDef t) => ClassLearnabilityHandler.CanLearnClass(p, t) && TM_Data.EnabledMagicTraits.Contains(t)))
                     {
                         classes.Add(td);
                     }
@@ -107,7 +107,7 @@ namespace LLRoM
                 if (__instance.def == TorannMagicDefOf.ID_ArcanePathways && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ClassRequiresProficiencies)
                 {
                     List<TraitDef> classes = new List<TraitDef>();
-                    foreach (TraitDef td in DefDatabase<TraitDef>.AllDefs.Where((TraitDef t) => Utility.CanLearnClass(pawn, t) && TM_Data.EnabledMagicTraits.Contains(t)))
+                    foreach (TraitDef td in DefDatabase<TraitDef>.AllDefs.Where((TraitDef t) => ClassLearnabilityHandler.CanLearnClass(pawn, t) && TM_Data.EnabledMagicTraits.Contains(t)))
                     {
                         classes.Add(td);
                     }
@@ -156,7 +156,7 @@ namespace LLRoM
                     }
                     if (extension.blockingcategory != null)
                     {
-                        if (Utility.KnownInCatagory(pawn, extension.blockingcategory).Count > 0)
+                        if (InspiratinHandler.KnownInCatagory(pawn, extension.blockingcategory).Count > 0)
                         {
                             adjuster = 0f;
                         }
@@ -280,7 +280,7 @@ namespace LLRoM
             public static bool Prefix(CompUseEffect_LearnMagic __instance)
             {
                 ThingDef book = ((ThingComp)(object)__instance).parent.def;
-                bool Out = Utility.EnabledBook(book);
+                bool Out = ClassLearnabilityHandler.EnabledBook(book);
                 if (!Out) { Messages.Message("LLRoMDisableInOptions".Translate(), MessageTypeDefOf.RejectInput); }
                 return Out;
             }
@@ -465,7 +465,7 @@ namespace LLRoM
             if (pMagic.customClass != null) { customclass = pMagic.customClass; }
             else if (pMight.customClass != null) { customclass = pMight.customClass; }
             if (p == null || ability == null) { return false; }
-            if (Utility.FullyKnowsAbility(p, ability)) { return false; }
+            if (AbilityLearningHandlercs.FullyKnowsAbility(p, ability)) { return false; }
             if (ability == TorannMagicDefOf.TM_LivingWall)
             {
                 AbilityXPGainExtension Livingextention = TorannMagicDefOf.TM_LivingWall.GetModExtension<AbilityXPGainExtension>();
@@ -480,22 +480,22 @@ namespace LLRoM
             }
             if (ability.learnItem != null && customclass != null)
             {
-                if (ability.learnItem.defName.Contains("SpellOf") && customclass.isMage && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
+                if (ability.learnItem.defName.Contains("SpellOf") && customclass.isMage && AbilityLearningHandlercs.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
                 {
                     return true;
                 }
-                else if (ability.learnItem.defName.Contains("SkillOf") && customclass.isFighter && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
+                else if (ability.learnItem.defName.Contains("SkillOf") && customclass.isFighter && AbilityLearningHandlercs.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
                 {
                     return true;
                 }
             }
             else if (ability.learnItem != null)
             {
-                if (pMagic.MagicData != null && pMagic.IsMagicUser && ability.learnItem.defName.Contains("SpellOf") && Utility.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
+                if (pMagic.MagicData != null && pMagic.IsMagicUser && ability.learnItem.defName.Contains("SpellOf") && AbilityLearningHandlercs.LearnableSpellCheck(p, ability.learnItem) && TM_Calc.IsMagicUser(p))
                 {
                     return true;
                 }
-                else if (pMight.MightData != null && pMight.IsMightUser && ability.learnItem.defName.Contains("SkillOf") && Utility.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
+                else if (pMight.MightData != null && pMight.IsMightUser && ability.learnItem.defName.Contains("SkillOf") && AbilityLearningHandlercs.LearnableSkillCheck(p, ability.learnItem) && TM_Calc.IsMightUser(p))
                 {
                     return true;
                 }
@@ -569,7 +569,7 @@ namespace LLRoM
                         }
                         Rect abilityRect = new Rect(requiredByabilityRect.x + (float)(i % maxRowIconCount * iconWidth), requiredByabilityRect.y + requiredByabilityRect.height + (float)(j * iconHeight), iconWidth, iconHeight);
                         string label = ability.LabelCap;
-                        List<ProficiencyCategoryDef> missingTypes = Utility.GetMissingAbilityRequirements(ability, pawn);
+                        List<ProficiencyCategoryDef> missingTypes = AbilityLearningHandlercs.GetMissingAbilityRequirements(ability, pawn);
                         if (missingTypes.Count > 0)
                         {
                             label += "MissingCat".Translate();
@@ -607,7 +607,7 @@ namespace LLRoM
                         {
                             continue;
                         }
-                        if (!Utility.EnabledClass(possibleClass))
+                        if (!ClassLearnabilityHandler.EnabledClass(possibleClass))
                         {
                             continue;
                         }
@@ -685,7 +685,7 @@ namespace LLRoM
                                 label = data.label;
                                 break;
                             }
-                            List<ProficiencyCategoryDef> missingTypes = Utility.GetMissingClassRequirements(Class, pawn);
+                            List<ProficiencyCategoryDef> missingTypes = ClassLearnabilityHandler.GetMissingClassRequirements(Class, pawn);
                             if (missingTypes.Count > 0)
                             {
                                 label += "MissingCat".Translate();
@@ -765,8 +765,7 @@ namespace LLRoM
         }
     }
     public static class DrawStatExplainPatch
-    {
-        [HarmonyPatch(nameof(StatWorker), "GetExplanationUnfinalized")]
+    {[HarmonyPatch(nameof(StatWorker), "GetExplanationUnfinalized")]
         public static class DrawStatExplainPatchPostFix
         {
             public static void Postfix(StatRequest req, ref string __result, StatDef ___stat)
@@ -820,10 +819,10 @@ namespace LLRoM
                             }
                         }
                     }
-                }
-                if (flag && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
-                {
-                    __result = statbuilder.ToString();
+                    if (flag && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().ProficienciesMasterOffseter)
+                    {
+                        __result = statbuilder.ToString();
+                    }
                 }
             }
         }
@@ -833,32 +832,27 @@ namespace LLRoM
         [HarmonyPatch(typeof(ThingDef), nameof(ThingDef.SpecialDisplayStats))]
         public static class DrawThingFailPatchPostfix
         {
-            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, ThingDef __instance)
+            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> value, ThingDef __instance)
             {
                 ClassAutoLearnExtension extension1 = __instance.GetModExtension<ClassAutoLearnExtension>();
                 AbilityAutoLearnExtension extension2 = __instance.GetModExtension<AbilityAutoLearnExtension>();
+                foreach (StatDrawEntry item in value)
+                {
+                    yield return item;
+                }
+                if (extension1 == null && extension2 == null)
+                {
+                    yield break;
+                }
                 if (extension1 != null && extension1.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
                 {
-                    string failchance = extension1.failChance.ToString() + "%";
-                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"FailChance".Translate(), (string)failchance, (string)"FailChanceReport".Translate(), (int)500);
+                    string failchance = (100 - extension1.failChance).ToString() + "%";
+                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"LLRoM_FailChance".Translate(), (string)failchance, (string)"LLRoM_FailChanceReport".Translate(), (int)500);
                 }
                 if (extension2 != null && extension2.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
                 {
-                    string failchance = extension2.failChance.ToString() + "%";
-                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"FailChance".Translate(), (string)failchance, (string)"FailChanceReport".Translate(), (int)500);
-                }
-            }
-        }
-        [HarmonyPatch(typeof(BuildingProperties), nameof(BuildingProperties.SpecialDisplayStats))]
-        public static class DrawFailBuildingPatchPostfix
-        {
-            public static IEnumerable<StatDrawEntry> Postfix(IEnumerable<StatDrawEntry> __result, ThingDef parentDef)
-            {
-                ClassAutoLearnExtension extension = parentDef.GetModExtension<ClassAutoLearnExtension>();
-                if (extension.failChance != 0 && LoadedModManager.GetMod<LLROM>().GetSettings<LLRoMSettings>().CanFailLearn)
-                {
-                    string failchance = extension.failChance.ToString() + "%";
-                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"FailChance".Translate(), (string)failchance, (string)"FailChanceReport".Translate(), (int)500);
+                    string failchance = (100 - extension2.failChance).ToString() + "%";
+                    yield return new StatDrawEntry((StatCategoryDef)LLStatCategoryDefOf.ProficiencyInfo, (string)"LLRoM_FailChance".Translate(), (string)failchance, (string)"LLRoM_FailChanceReport".Translate(), (int)500);
                 }
             }
         }
@@ -1374,7 +1368,7 @@ namespace LLRoM
                     {
                         if (((ThingComp)(object)__instance).parent.def.defName == "GemstoneOfInsight_Magic" && inspirationextension.hediff != null && inspirationextension.hediff == TorannMagicDefOf.TM_MagicUserHD)
                         {
-                            ProficiencyDef randomPro = Utility.GetRandomInspirationProficiency(user, user.mindState.inspirationHandler.CurStateDef);
+                            ProficiencyDef randomPro = InspiratinHandler.GetRandomInspirationProficiency(user, user.mindState.inspirationHandler.CurStateDef);
                             if (randomPro != null)
                             {
                                 comp.TryGainProficiency(randomPro, true);
@@ -1385,7 +1379,7 @@ namespace LLRoM
                         }
                         if (((ThingComp)(object)__instance).parent.def.defName == "GemstoneOfInsight_Might" && inspirationextension.hediff != null && inspirationextension.hediff == TorannMagicDefOf.TM_MightUserHD)
                         {
-                            ProficiencyDef randomPro = Utility.GetRandomInspirationProficiency(user, user.mindState.inspirationHandler.CurStateDef);
+                            ProficiencyDef randomPro = InspiratinHandler.GetRandomInspirationProficiency(user, user.mindState.inspirationHandler.CurStateDef);
                             if (randomPro != null)
                             {
                                 comp.TryGainProficiency(randomPro, true);
