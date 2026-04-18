@@ -188,6 +188,18 @@ namespace LLRoM
                         compAbilityUseright.Stamina.UseMightPower(extension.amount);
                         compAbilityUseright.MightUserXP += Mathf.Clamp((int)(extension.amount * 150f * compAbilityUseright.xpGain * Settings.Instance.xpMultiplier), 0, 9999);
                     }
+                    else
+                    {
+                        if (pawn.health.hediffSet.HasHediff(HediffDefOf.LLRoM_Drained))
+                        {
+                            HealthUtility.AdjustSeverity(pawn, HediffDefOf.LLRoM_Drained, extension.amount);
+                        }
+                        else
+                        {
+                            pawn.health.AddHediff(HediffDefOf.LLRoM_Drained);
+                            HealthUtility.AdjustSeverity(pawn, HediffDefOf.LLRoM_Drained, extension.amount);
+                        }
+                    }
                 }
             }
         }
@@ -200,25 +212,31 @@ namespace LLRoM
                 NeedActivityConsumerExtension extension = __instance.def.GetModExtension<NeedActivityConsumerExtension>();
                 if (extension != null)
                 {
-                    if (extension.magicPro && TM_Calc.IsMagicUser(pawn))
+                    if (extension.magicPro)
                     {
-                        CompAbilityUserMagic compAbilityUserMagic = pawn.GetCompAbilityUserMagic();
-                        if (extension.amount > compAbilityUserMagic.Mana.CurLevel)
+                        if (TM_Calc.IsMagicUser(pawn))
                         {
-                            __result = false;
+                            CompAbilityUserMagic compAbilityUserMagic = pawn.GetCompAbilityUserMagic();
+                            if (extension.amount > compAbilityUserMagic.Mana.CurLevel)
+                            {
+                                __result = false;
+                            }
+                            return;
                         }
+                        else { __result = false; }
                     }
-                    else if (extension.mightPro && TM_Calc.IsMightUser(pawn))
+                    if (extension.mightPro)
                     {
-                        CompAbilityUserMight compAbilityUseright = pawn.GetCompAbilityUserMight();
-                        if (extension.amount > compAbilityUseright.Stamina.CurLevel)
+                        if (TM_Calc.IsMightUser(pawn))
                         {
-                            __result = false;
+                            CompAbilityUserMight compAbilityUseright = pawn.GetCompAbilityUserMight();
+                            if (extension.amount > compAbilityUseright.Stamina.CurLevel)
+                            {
+                                __result = false;
+                            }
+                            return;
                         }
-                    }
-                    else if ((extension.mightPro && !TM_Calc.IsMagicUser(pawn)) || (extension.mightPro && !TM_Calc.IsMightUser(pawn)))
-                    {
-                        __result = false;
+                        else { __result = false; }
                     }
                 }
             }

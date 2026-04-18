@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\llaromdev\\source\\llrom\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_learnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_learnclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:compuseeffect_tryselflearnspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:hediffdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -83,7 +83,7 @@
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:inspirationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\llaromdev\\source\\llrom\\inspiratinhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\inspiratinhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CC90C7F-F457-4F53-9A0D-10C106277E67}|LLRoM.csproj|solutionrelative:inspiratinhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -134,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -146,8 +146,7 @@
               "RelativeToolTip": "StatOffseter.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:30:26.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T16:30:26.176Z"
             },
             {
               "$type": "Document",
@@ -159,8 +158,7 @@
               "RelativeToolTip": "StatOffsetExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:31:51.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T16:31:51.965Z"
             },
             {
               "$type": "Document",
@@ -172,8 +170,7 @@
               "RelativeToolTip": "Thing_BuildingDefOf.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T13:37:46.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T13:37:46.181Z"
             },
             {
               "$type": "Document",
@@ -185,38 +182,37 @@
               "RelativeToolTip": "packages.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-02-05T21:09:31.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T21:09:31.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "HediffDefOf.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HediffDefOf.cs",
               "RelativeDocumentMoniker": "HediffDefOf.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HediffDefOf.cs",
               "RelativeToolTip": "HediffDefOf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T19:12:56.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "HarmonyPatches.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
               "RelativeDocumentMoniker": "HarmonyPatches.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\HarmonyPatches.cs",
               "RelativeToolTip": "HarmonyPatches.cs",
-              "ViewState": "AQIAAOECAAAAAAAAAADgvz0DAAAlAAAA",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAkwMoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T02:48:05.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CompUseEffect_TrySelfLearnSpell.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSpell.cs",
               "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSpell.cs",
@@ -224,12 +220,11 @@
               "RelativeToolTip": "CompUseEffect_TrySelfLearnSpell.cs",
               "ViewState": "AQIAANkCAAAAAAAAAAAcwPQCAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T15:39:19.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T15:39:19.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CompUseEffect_TrySelfLearnSkill.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_TrySelfLearnSkill.cs",
               "RelativeDocumentMoniker": "CompUseEffect_TrySelfLearnSkill.cs",
@@ -237,18 +232,17 @@
               "RelativeToolTip": "CompUseEffect_TrySelfLearnSkill.cs",
               "ViewState": "AQIAAFQBAAAAAAAAAAAcwHABAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T21:25:35.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T21:25:35.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CompUseEffect_LearnClass.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_LearnClass.cs",
               "RelativeDocumentMoniker": "CompUseEffect_LearnClass.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\LLARoMdev\\Source\\LLRoM\\CompUseEffect_LearnClass.cs",
               "RelativeToolTip": "CompUseEffect_LearnClass.cs",
-              "ViewState": "AQIAAPAAAAAAAAAAAAAcwAQBAAARAAAA",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAcwNgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T15:22:10.16Z",
               "EditorCaption": ""
@@ -263,8 +257,7 @@
               "RelativeToolTip": "StatModifier.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T15:56:19.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T15:56:19.588Z"
             },
             {
               "$type": "Document",
@@ -276,8 +269,7 @@
               "RelativeToolTip": "RoomRoleWorker_TrainingHall.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T13:28:58.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T13:28:58.943Z"
             },
             {
               "$type": "Document",
@@ -289,8 +281,7 @@
               "RelativeToolTip": "RoomRoleDefOf.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:16:40.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T18:16:40.793Z"
             },
             {
               "$type": "Document",
@@ -302,8 +293,7 @@
               "RelativeToolTip": "ProficiencyTableDefOf.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:30:16.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T15:30:16.949Z"
             },
             {
               "$type": "Document",
@@ -315,8 +305,7 @@
               "RelativeToolTip": "ProficiencyDefOf.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAiwBAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T13:46:11.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T13:46:11.354Z"
             },
             {
               "$type": "Document",
@@ -328,8 +317,7 @@
               "RelativeToolTip": "ProficiencyCategoryDefOf.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T13:52:40.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T13:52:40.976Z"
             },
             {
               "$type": "Document",
@@ -341,8 +329,7 @@
               "RelativeToolTip": "NeedActivityConsumerExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T15:04:49.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T15:04:49.034Z"
             },
             {
               "$type": "Document",
@@ -354,8 +341,7 @@
               "RelativeToolTip": "LockoutExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T18:33:07.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:33:07.037Z"
             },
             {
               "$type": "Document",
@@ -367,8 +353,7 @@
               "RelativeToolTip": "LLRoMSettings.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAgwCAAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:47:03.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T02:47:03.254Z"
             },
             {
               "$type": "Document",
@@ -380,8 +365,7 @@
               "RelativeToolTip": "LLRoM.cs",
               "ViewState": "AQIAAJAAAAAAAAAAAAAowKYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:47:04.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T02:47:04.594Z"
             },
             {
               "$type": "Document",
@@ -393,8 +377,7 @@
               "RelativeToolTip": "InspirationExtension.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAqwA8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T20:30:27.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T20:30:27.929Z"
             },
             {
               "$type": "Document",
@@ -406,8 +389,7 @@
               "RelativeToolTip": "InspiratinHandler.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAADwvxQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T14:44:17.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T14:44:17.33Z"
             },
             {
               "$type": "Document",
@@ -419,8 +401,7 @@
               "RelativeToolTip": "ImpressivenessHandler.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAiwCcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T14:36:25.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T14:36:25.743Z"
             },
             {
               "$type": "Document",
@@ -432,8 +413,7 @@
               "RelativeToolTip": "HideIfCantLearnExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:43:08.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T15:43:08.451Z"
             },
             {
               "$type": "Document",
@@ -445,8 +425,7 @@
               "RelativeToolTip": "GemOfInsightProficiencyExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T02:47:16.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T02:47:16.771Z"
             },
             {
               "$type": "Document",
@@ -458,8 +437,7 @@
               "RelativeToolTip": "CompProperties_UseEffectTrySelfLearnSpell.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:47:39.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T16:47:39.077Z"
             },
             {
               "$type": "Document",
@@ -471,8 +449,7 @@
               "RelativeToolTip": "CompProperties_UseEffectLearnClass.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:52:09.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T16:52:09.71Z"
             },
             {
               "$type": "Document",
@@ -484,8 +461,7 @@
               "RelativeToolTip": "ClassLearnabilityHandler.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAYwBIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T14:41:31.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T14:41:31.93Z"
             },
             {
               "$type": "Document",
@@ -497,8 +473,7 @@
               "RelativeToolTip": "ClassAutoLearnExtension.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:43:06.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T15:43:06.181Z"
             },
             {
               "$type": "Document",
@@ -510,8 +485,7 @@
               "RelativeToolTip": "AbilityXPGainExtension.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAqwAwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T14:04:03.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T14:04:03.534Z"
             },
             {
               "$type": "Document",
@@ -523,8 +497,7 @@
               "RelativeToolTip": "AbilityLearningHandlercs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T14:47:28.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T14:47:28.312Z"
             },
             {
               "$type": "Document",
@@ -536,8 +509,7 @@
               "RelativeToolTip": "AbilityAutoLearnExtension.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T15:44:21.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T15:44:21.769Z"
             }
           ]
         }
